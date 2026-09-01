@@ -1,5 +1,25 @@
-document.addEventListener('DOMContentLoaded', () => {
-	// Mobile menu toggle
+// animated page header text
+
+var aboutElement = document.getElementById("about");
+var projectsElement = document.getElementById("projects");
+
+var i = 0;
+var speed = 120;
+
+function typewriter() {
+	if (aboutElement !== null && i < aboutElement.id.length) {
+		aboutElement.innerHTML += aboutElement.id.charAt(i);
+	} else if (projectsElement !== null && i < projectsElement.id.length) {
+		projectsElement.innerHTML += projectsElement.id.charAt(i);
+	}
+	i++;
+	if ((aboutElement !== null && i < aboutElement.id.length) || (projectsElement !== null && i < projectsElement.id.length)) {
+		setTimeout(typewriter, speed);
+	}
+}
+
+// Mobile navigation and page active state handling
+function setupNavigation() {
 	const menuToggle = document.getElementById('menuToggle');
 	const dropdownLinks = document.getElementById('dropdownLinks');
 
@@ -43,4 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			card.style.transform = 'translateY(0)';
 		}, 50);
 	});
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	setupNavigation();
+	typewriter();
 });
