@@ -431,8 +431,8 @@ body {
 
 .project {
 	display: grid;
-	grid-template-columns: 68% 32%;
-	gap: 3.5rem;
+	grid-template-columns: 50% 50%;
+	gap: 4rem;
 	align-items: center;
 	background-color: transparent;
 	padding: 0;
@@ -448,16 +448,19 @@ body {
 
 .project img {
 	width: 100%;
+	max-width: 440px;
 	height: auto;
 	border-radius: 4px;
 	display: block;
+	margin: 0 auto;
 	border: none;
-	box-shadow: 0 20px 50px rgba(18, 19, 22, 0.22), 0 6px 16px rgba(0, 0, 0, 0.12);
-	transition: box-shadow 0.3s ease;
+	filter: drop-shadow(0 16px 36px rgba(18, 19, 22, 0.25));
+	transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .project:hover img {
-	box-shadow: 0 28px 65px rgba(18, 19, 22, 0.28), 0 8px 22px rgba(0, 0, 0, 0.16);
+	filter: drop-shadow(0 24px 48px rgba(18, 19, 22, 0.32));
+	transform: scale(1.01);
 }
 
 /** Authentic Art Museum Placard (Plain White Card, No Border, Clean Box Shadow) **/
@@ -529,8 +532,8 @@ body {
 	}
 
 	.project {
-		grid-template-columns: 62% 38%;
-		gap: 2rem;
+		grid-template-columns: 52% 48%;
+		gap: 2.5rem;
 	}
 
 	.project .placard {
