@@ -1,7 +1,10 @@
+/** font imports **/
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
 /** color variables **/
 
 :root {
-	font-family: "Avenir", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
 	--primary-bg-color: #FFF2D0; /** dark cream */
 	--secondary-bg-color: #FFFBF1; /** light cream */
@@ -13,6 +16,7 @@
 
 * {
 	box-sizing: border-box;
+	font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 /** global pages **/
@@ -423,7 +427,7 @@ body {
 
 .project .placard h4 {
 	margin: 0 0 0.6rem;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: inherit;
 	font-weight: 400;
 	font-size: 0.95rem;
 	line-height: 1.45;
