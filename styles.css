@@ -416,6 +416,14 @@ body {
 	padding: 1.25rem;
 	text-align: left;
 	color: #000;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.project .placard h3,
+.project .placard h4,
+.project .placard p,
+.project .placard span {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .project .placard h3 {
@@ -427,7 +435,7 @@ body {
 
 .project .placard h4 {
 	margin: 0 0 0.6rem;
-	font-family: inherit;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	font-size: 0.95rem;
 	line-height: 1.45;
