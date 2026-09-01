@@ -25,3 +25,14 @@ npx serve .
 # or Python 3:
 python3 -m http.server 8080
 ```
+
+## Pushing to GitLab
+
+1. Create a new blank project on [GitLab](https://gitlab.com/projects/new).
+2. Link and push your local repository:
+```bash
+git remote add gitlab git@gitlab.com:<your-gitlab-username>/<your-repo-name>.git
+git branch -M main
+git push -u gitlab main
+```
+The included `.gitlab-ci.yml` file will automatically build and publish your site via **GitLab Pages**.
