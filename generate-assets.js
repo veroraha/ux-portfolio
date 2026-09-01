@@ -592,13 +592,13 @@ async function main() {
   </svg>
   `;
 
-  await createAsset(headshotSvg, './me/sample-headshot.png', 800, 800);
+  // Keep the photographed framed portrait in me/sample-headshot.png.
   await createAsset(otwSvg, './otw/framed-otw.png', 1200, 800);
   await createAsset(bttfSvg, './bttf/framed-bttf.png', 1200, 800);
   await createAsset(flixSvg, './flix/framed-flix.png', 1200, 800);
   
   // Also create public copy for direct access
-  await createAsset(headshotSvg, './public/me/sample-headshot.png', 800, 800);
+  // Headshot is the real portrait; do not regenerate the illustrated placeholder.
   await createAsset(otwSvg, './public/otw/framed-otw.png', 1200, 800);
   await createAsset(bttfSvg, './public/bttf/framed-bttf.png', 1200, 800);
   await createAsset(flixSvg, './public/flix/framed-flix.png', 1200, 800);
