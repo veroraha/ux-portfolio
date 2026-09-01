@@ -419,57 +419,65 @@ body {
 	transform: translateY(-2px);
 }
 
-/** projects page - gallery exhibition layout **/
+/** projects page - art museum gallery exhibition layout **/
 
 .project-grid {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	gap: 4.5rem;
-	margin-top: 2.5rem;
+	gap: 6rem;
+	margin-top: 3rem;
 }
 
 .project {
 	display: grid;
-	grid-template-columns: 70% 30%;
-	gap: 2.5rem;
-	align-items: start;
-	background-color: var(--secondary-bg-color);
-	padding: 2rem;
-	border-radius: 12px;
-	border: 1px solid var(--border-color);
-	box-shadow: 0 6px 24px rgba(18, 19, 22, 0.04);
-	transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+	grid-template-columns: 68% 32%;
+	gap: 3.5rem;
+	align-items: center;
+	background-color: transparent;
+	padding: 0;
+	border: none;
+	box-shadow: none;
+	transition: transform 0.3s ease;
 }
 
 .project:hover {
 	transform: translateY(-4px);
-	box-shadow: 0 16px 40px rgba(18, 19, 22, 0.08);
-	border-color: #D2CEC3;
+	box-shadow: none;
 }
 
 .project img {
 	width: 100%;
 	height: auto;
-	border-radius: 6px;
+	border-radius: 4px;
 	display: block;
-	border: 1px solid rgba(18, 19, 22, 0.06);
-	box-shadow: 0 4px 16px rgba(18, 19, 22, 0.06);
+	border: none;
+	box-shadow: 0 20px 50px rgba(18, 19, 22, 0.22), 0 6px 16px rgba(0, 0, 0, 0.12);
+	transition: box-shadow 0.3s ease;
 }
 
-/** Authentic Museum Exhibition Placard **/
+.project:hover img {
+	box-shadow: 0 28px 65px rgba(18, 19, 22, 0.28), 0 8px 22px rgba(0, 0, 0, 0.16);
+}
+
+/** Authentic Art Museum Placard (Plain White Card, No Border, Clean Box Shadow) **/
 
 .project .placard {
 	background-color: #FFFFFF;
-	box-shadow: 0 2px 12px rgba(18, 19, 22, 0.05);
-	border-left: 3px solid var(--primary-text-color);
-	border-top: 1px solid var(--border-subtle);
-	border-right: 1px solid var(--border-subtle);
-	border-bottom: 1px solid var(--border-subtle);
-	border-radius: 2px;
-	padding: 1.5rem;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 0 8px 30px rgba(18, 19, 22, 0.08), 0 2px 8px rgba(18, 19, 22, 0.04);
+	padding: 2rem 2.25rem;
 	text-align: left;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	align-self: center;
+	max-width: 420px;
+	transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.project:hover .placard {
+	box-shadow: 0 14px 40px rgba(18, 19, 22, 0.12), 0 3px 10px rgba(18, 19, 22, 0.06);
+	transform: translateY(-2px);
 }
 
 .project .placard h3,
@@ -481,31 +489,31 @@ body {
 
 .project .placard h3 {
 	margin: 0 0 0.4rem;
-	font-size: 1.3rem;
+	font-size: 1.45rem;
 	font-weight: 700;
-	letter-spacing: -0.3px;
-	color: var(--primary-text-color);
+	letter-spacing: -0.4px;
+	color: #121316;
 }
 
 .project .placard .project-year {
 	font-weight: 500;
-	font-size: 0.9rem;
+	font-size: 0.95rem;
 	color: var(--tertiary-text-color);
-	margin-bottom: 1rem;
+	margin-bottom: 1.25rem;
 	text-transform: none;
 	letter-spacing: 0.2px;
 }
 
 .project .placard h4 {
-	margin: 0 0 0.75rem;
+	margin: 0 0 0.85rem;
 	font-weight: 400;
-	font-size: 0.92rem;
-	line-height: 1.5;
+	font-size: 0.94rem;
+	line-height: 1.55;
 	color: #4A4E57;
 }
 
 .project .placard h4 strong {
-	color: var(--primary-text-color);
+	color: #121316;
 	font-weight: 600;
 }
 
@@ -517,12 +525,16 @@ body {
 	}
 
 	.page-header, .content {
-		margin: 0 8%;
+		margin: 0 6%;
 	}
 
 	.project {
-		grid-template-columns: 65% 35%;
-		gap: 1.75rem;
+		grid-template-columns: 62% 38%;
+		gap: 2rem;
+	}
+
+	.project .placard {
+		padding: 1.5rem 1.75rem;
 	}
 }
 
@@ -536,13 +548,17 @@ body {
 		padding: 3rem 0 1.5rem;
 	}
 
+	.project-grid {
+		gap: 4rem;
+	}
+
 	.project {
 		grid-template-columns: 100%;
-		gap: 1.5rem;
-		padding: 1.25rem;
+		gap: 2rem;
 	}
 
 	.project .placard {
-		margin-top: 0;
+		max-width: 100%;
+		padding: 1.5rem;
 	}
 }
