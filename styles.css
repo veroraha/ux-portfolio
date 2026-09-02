@@ -335,7 +335,7 @@ body {
 }
 
 body:has(.home-intro-card) .page-header {
-	padding-bottom: 0.5rem;
+	padding-bottom: 0;
 }
 
 #about, #projects, #otw, #bttf, #flix {
@@ -475,7 +475,7 @@ body:has(.home-intro-card) .page-header {
 	border: 1px solid rgba(149, 112, 131, 0.22);
 	border-radius: 12px;
 	padding: 1.15rem 3rem 2.25rem;
-	margin: 0 0 3.5rem;
+	margin: 2rem 0 3.5rem;
 	box-shadow: 0 8px 24px rgba(40, 24, 34, 0.05);
 }
 
