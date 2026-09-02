@@ -496,6 +496,7 @@ body:has(.home-intro-card) .page-header {
 	letter-spacing: 0.01em;
 	color: #3A3D44;
 	margin: 0;
+	padding-top: 2rem;
 }
 
 .home-intro-card p strong {
