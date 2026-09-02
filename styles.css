@@ -468,15 +468,25 @@ body:has(.home-intro-card) .page-header {
 	filter: drop-shadow(0 22px 44px rgba(18, 19, 22, 0.32));
 }
 
-/** hero banner / home quick features **/
+/** home intro — museum wall placard **/
 
 .home-intro-card {
-	background-color: #E9E0E5;
-	border: 1px solid rgba(149, 112, 131, 0.22);
-	border-radius: 12px;
-	padding: 1.15rem 3rem 2.25rem;
-	margin: 2rem 0 3.5rem;
-	box-shadow: 0 8px 24px rgba(40, 24, 34, 0.05);
+	position: relative;
+	background-color: #FFFFFF;
+	border: 1px solid var(--placard-border);
+	border-radius: 0;
+	padding: 2.15rem 2.75rem 2.35rem;
+	margin: 2rem auto 3.5rem;
+	max-width: 44rem;
+	box-shadow: none;
+}
+
+.home-intro-card::before {
+	content: "";
+	position: absolute;
+	inset: 0.55rem;
+	border: 1px solid rgba(18, 19, 22, 0.2);
+	pointer-events: none;
 }
 
 .home-intro-card h2 {
@@ -489,9 +499,10 @@ body:has(.home-intro-card) .page-header {
 }
 
 .home-intro-card p {
-	font-size: 1.12rem;
-	line-height: 1.65;
-	color: #4A4146;
+	font-size: 1.08rem;
+	line-height: 1.7;
+	letter-spacing: 0.01em;
+	color: #3A3D44;
 	margin: 0;
 }
 
@@ -500,26 +511,33 @@ body:has(.home-intro-card) .page-header {
 	color: var(--primary-text-color);
 }
 
+.home-intro-card .cta-btn {
+	border-radius: 0;
+	letter-spacing: 0.06em;
+	font-size: 0.88rem;
+	padding: 0.7rem 1.35rem;
+}
+
 .home-intro-card .cta-btn.primary {
-	background-color: var(--primary-accent-color);
-	border-color: var(--primary-accent-color);
+	background-color: var(--primary-text-color);
+	border-color: var(--primary-text-color);
 	color: #FFFFFF;
 }
 
 .home-intro-card .cta-btn.primary:hover {
-	background-color: #A88193;
-	border-color: #A88193;
+	background-color: var(--primary-accent-color);
+	border-color: var(--primary-accent-color);
 }
 
 .home-intro-card .cta-btn.secondary {
 	background-color: transparent;
-	border-color: rgba(18, 19, 22, 0.22);
+	border-color: var(--placard-border);
 	color: var(--primary-text-color);
 }
 
 .home-intro-card .cta-btn.secondary:hover {
-	background-color: rgba(247, 246, 242, 0.55);
-	border-color: var(--primary-text-color);
+	background-color: var(--primary-bg-color);
+	border-color: var(--placard-border);
 }
 
 .home-cta-row {
@@ -710,6 +728,15 @@ body:has(.home-intro-card) .page-header {
 	.page-header {
 		font-size: 1.6rem;
 		padding: 3.75rem 0 1.25rem;
+	}
+
+	.home-intro-card {
+		padding: 1.75rem 1.5rem 1.9rem;
+		max-width: 100%;
+	}
+
+	.home-intro-card::before {
+		inset: 0.4rem;
 	}
 
 	.project-grid {
