@@ -1,19 +1,14 @@
 // animated page header text
 
-var aboutElement = document.getElementById("about");
-var projectsElement = document.getElementById("projects");
+var titleElement = document.querySelector("h1.page-header[id]");
 
 var i = 0;
 var speed = 120;
 
 function typewriter() {
-	if (aboutElement !== null && i < aboutElement.id.length) {
-		aboutElement.innerHTML += aboutElement.id.charAt(i);
-	} else if (projectsElement !== null && i < projectsElement.id.length) {
-		projectsElement.innerHTML += projectsElement.id.charAt(i);
-	}
-	i++;
-	if ((aboutElement !== null && i < aboutElement.id.length) || (projectsElement !== null && i < projectsElement.id.length)) {
+	if (titleElement !== null && i < titleElement.id.length) {
+		titleElement.innerHTML += titleElement.id.charAt(i);
+		i++;
 		setTimeout(typewriter, speed);
 	}
 }
