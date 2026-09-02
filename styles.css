@@ -505,7 +505,7 @@ body:has(.home-intro-card) .page-header {
 }
 
 .home-intro-card .cta-btn {
-	border-radius: 0;
+	border-radius: 6px;
 	letter-spacing: 0.06em;
 	font-size: 0.88rem;
 	padding: 0.7rem 1.35rem;
