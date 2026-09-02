@@ -467,19 +467,19 @@ body {
 /** hero banner / home quick features **/
 
 .home-intro-card {
-	background-color: var(--secondary-bg-color);
-	border: 1px solid var(--border-color);
+	background-color: var(--footer-bg-color);
+	border: 1px solid rgba(149, 112, 131, 0.45);
 	border-radius: 12px;
 	padding: 2.5rem 3rem;
 	margin: 2rem 0 3.5rem;
-	box-shadow: 0 8px 24px rgba(18, 19, 22, 0.04);
+	box-shadow: 0 16px 40px rgba(40, 24, 34, 0.18);
 }
 
 .home-intro-card h2 {
 	margin-top: 0;
 	font-size: 1.45rem;
 	font-weight: 700;
-	color: var(--primary-text-color);
+	color: #F7F6F2;
 	text-transform: lowercase;
 	letter-spacing: -0.3px;
 }
@@ -487,12 +487,34 @@ body {
 .home-intro-card p {
 	font-size: 1.12rem;
 	line-height: 1.65;
-	color: var(--secondary-text-color);
+	color: #D5C6CE;
 }
 
 .home-intro-card p strong {
 	font-weight: 700;
-	color: var(--primary-text-color);
+	color: #F7F6F2;
+}
+
+.home-intro-card .cta-btn.primary {
+	background-color: var(--primary-accent-color);
+	border-color: var(--primary-accent-color);
+	color: #FFFFFF;
+}
+
+.home-intro-card .cta-btn.primary:hover {
+	background-color: #A88193;
+	border-color: #A88193;
+}
+
+.home-intro-card .cta-btn.secondary {
+	background-color: transparent;
+	border-color: rgba(247, 246, 242, 0.35);
+	color: #F7F6F2;
+}
+
+.home-intro-card .cta-btn.secondary:hover {
+	background-color: rgba(247, 246, 242, 0.08);
+	border-color: #F7F6F2;
 }
 
 .home-cta-row {
