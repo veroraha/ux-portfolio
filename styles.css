@@ -345,17 +345,21 @@ body {
 	margin: 0 auto;
 }
 
+.case-study-body section + section {
+	padding-top: 2rem;
+}
+
+.case-study-body section > :last-child {
+	margin-bottom: 0;
+}
+
 .case-study-body h2 {
 	font-size: 1.35rem;
 	font-weight: 700;
 	text-transform: lowercase;
 	letter-spacing: -0.3px;
 	color: var(--primary-text-color);
-	margin: 2.25rem 0 0.75rem;
-}
-
-.case-study-body h2:first-child {
-	margin-top: 0;
+	margin: 0 0 0.75rem;
 }
 
 .case-study-body p {
