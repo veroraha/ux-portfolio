@@ -277,13 +277,14 @@ body {
 
 .footer .button {
 	margin: 0;
-	padding: 0.65rem 1.35rem;
-	background-color: rgba(255, 255, 255, 0.08);
-	border: 1px solid rgba(255, 255, 255, 0.2);
+	padding: 0.7rem 1.35rem;
+	background-color: transparent;
+	border: 1px solid #F7F6F2;
 	border-radius: 6px;
 	text-decoration: none;
 	text-transform: lowercase;
-	color: #FFFFFF;
+	color: #F7F6F2;
+	letter-spacing: 0.06em;
 	transition: all 0.2s ease;
 	display: inline-flex;
 	align-items: center;
@@ -291,17 +292,18 @@ body {
 
 .footer .button:hover {
 	cursor: pointer;
-	background-color: var(--primary-accent-color);
-	border-color: var(--primary-accent-color);
-	color: #FFFFFF;
+	background-color: #F7F6F2;
+	border-color: var(--placard-border);
+	color: var(--primary-text-color);
 	transform: translateY(-2px);
 }
 
 .footer .button h4 { 
 	margin: 0; 
-	font-size: 0.95rem;
-	font-weight: 500;
+	font-size: 0.88rem;
+	font-weight: 600;
 	color: inherit;
+	letter-spacing: inherit;
 }
 
 @media (max-width: 600px) {
