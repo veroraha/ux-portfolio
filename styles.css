@@ -343,6 +343,7 @@ body {
 .content .headshot {
 	display: block;
 	margin: 0 auto 3.5rem;
+	padding-top: 2rem;
 	max-width: 300px;
 	width: 100%;
 	height: auto;
