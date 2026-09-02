@@ -383,6 +383,11 @@ body {
 	color: var(--secondary-text-color);
 }
 
+.home-intro-card p strong {
+	font-weight: 700;
+	color: var(--primary-text-color);
+}
+
 .home-cta-row {
 	display: flex;
 	gap: 1.25rem;
