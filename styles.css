@@ -120,15 +120,21 @@ body {
 }
 
 .nav .header-links a,
-.nav .dropdown-links a {
+.nav .dropdown-links a,
+.nav .header-links .nav-current,
+.nav .dropdown-links .nav-current {
 	color: var(--secondary-text-color);
 	text-decoration: none;
 	text-transform: lowercase;
-	cursor: pointer;
-	transition: color 0.2s ease, transform 0.2s ease;
 	display: inline-block;
 	position: relative;
 	padding: 0.25rem 0;
+}
+
+.nav .header-links a,
+.nav .dropdown-links a {
+	cursor: pointer;
+	transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .nav .header-links a:hover,
@@ -137,13 +143,23 @@ body {
 	text-decoration: none;
 }
 
+.nav .header-links .nav-current,
+.nav .dropdown-links .nav-current {
+	color: var(--primary-text-color);
+	font-weight: 700;
+	cursor: default;
+}
+
 .nav .header-links a.active,
-.nav .dropdown-links a.active {
+.nav .dropdown-links a.active,
+.nav .header-links .nav-current,
+.nav .dropdown-links .nav-current {
 	color: var(--primary-text-color);
 	font-weight: 700;
 }
 
-.nav .header-links a.active::after {
+.nav .header-links a.active::after,
+.nav .header-links .nav-current::after {
 	content: '';
 	position: absolute;
 	bottom: -2px;
@@ -218,7 +234,8 @@ body {
 		width: 100%;
 	}
 
-	.nav .dropdown-links li a {
+	.nav .dropdown-links li a,
+	.nav .dropdown-links li .nav-current {
 		width: 100%;
 		display: block;
 		color: var(--primary-text-color);
