@@ -12,7 +12,9 @@ export default defineConfig({
         home: './home.html',
         about: './about.html',
         projects: './projects.html',
-        otw: './otw.html'
+        otw: './otw.html',
+        bttf: './bttf.html',
+        flix: './flix.html'
       }
     }
   }

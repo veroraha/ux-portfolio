@@ -1,13 +1,14 @@
 // animated page header text
 
 var titleElement = document.querySelector("h1.page-header[id]");
+var titleText = titleElement ? (titleElement.dataset.title || titleElement.id) : "";
 
 var i = 0;
 var speed = 120;
 
 function typewriter() {
-	if (titleElement !== null && i < titleElement.id.length) {
-		titleElement.innerHTML += titleElement.id.charAt(i);
+	if (titleElement !== null && i < titleText.length) {
+		titleElement.innerHTML += titleText.charAt(i);
 		i++;
 		setTimeout(typewriter, speed);
 	}

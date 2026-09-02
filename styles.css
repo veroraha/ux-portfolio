@@ -317,13 +317,13 @@ body {
 	letter-spacing: -0.6px;
 }
 
-#about, #projects, #otw {
+#about, #projects, #otw, #bttf, #flix {
 	padding-top: 4rem;
 	margin-top: 0;
 	min-height: 2.2rem;
 }
 
-#otw {
+.case-study-header {
 	padding-top: 1.25rem;
 }
 
