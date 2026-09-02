@@ -321,6 +321,29 @@ body {
 	padding-top: 4rem;
 	margin-top: 0;
 	min-height: 2.2rem;
+}
+
+#otw {
+	padding-top: 1.25rem;
+}
+
+.back-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	margin-top: 4rem;
+	color: var(--secondary-text-color);
+	text-decoration: none;
+	text-transform: lowercase;
+	font-size: 0.98rem;
+	font-weight: 600;
+	letter-spacing: 0.1px;
+	transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.back-link:hover {
+	color: var(--primary-accent-color);
+	transform: translateX(-3px);
 }	
 
 /** page content **/
