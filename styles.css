@@ -344,6 +344,19 @@ body {
 	margin: 0 auto;
 }
 
+.case-study-body h2 {
+	font-size: 1.35rem;
+	font-weight: 700;
+	text-transform: lowercase;
+	letter-spacing: -0.3px;
+	color: var(--primary-text-color);
+	margin: 2.25rem 0 0.75rem;
+}
+
+.case-study-body h2:first-child {
+	margin-top: 0;
+}
+
 .case-study-body p {
 	font-size: 1.15rem;
 	line-height: 1.7;
