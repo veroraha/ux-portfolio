@@ -379,15 +379,6 @@ body {
 	box-shadow: 0 8px 30px rgba(18, 19, 22, 0.08), 0 2px 8px rgba(18, 19, 22, 0.04);
 }
 
-@media (min-width: 900px) {
-	.case-study-figure:not(.case-study-figure-inline) {
-		width: 160%;
-		max-width: 1100px;
-		margin-left: 50%;
-		transform: translateX(-50%);
-	}
-}
-
 .back-link {
 	display: inline-flex;
 	align-items: center;
