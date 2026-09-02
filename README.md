@@ -7,7 +7,7 @@ A multi-disciplinary UX Designer & Product Owner portfolio showcasing case studi
 - **Pages:**
   - `index.html` / `home.html`: Headline statement and intro hero.
   - `about.html`: Professional narrative, background (Booz Allen, Virginia Tech CS/HCI), and interests.
-  - `projects.html`: Gallery-style museum placards for *On The Way*, *Back to the Future*, and *Flixtapes*.
+  - `projects.html`: Gallery-style museum placards for *On The Way*, *Back to the Future*, and *Flixtape*.
   - `Eroraha Resume.pdf`: Downloadable/viewable resume PDF.
 - **Interactivity:** Responsive mobile hamburger/dropdown menu, smooth entrance animations, and clean semantic markup.
 

@@ -264,7 +264,7 @@ async function renderAll() {
   </svg>
   `;
 
-  // PROJECT 3: FLIXTAPES (Landscape 964x573 inner artwork)
+  // PROJECT 3: FLIXTAPE (Landscape 964x573 inner artwork)
   const flixSvg = `
   <svg width="964" height="573" viewBox="0 0 964 573" xmlns="http://www.w3.org/2000/svg">
     <defs>
@@ -282,7 +282,7 @@ async function renderAll() {
     <rect width="964" height="573" fill="url(#flixMatte)"/>
 
     <g transform="translate(45, 36)">
-      <text x="0" y="24" font-family="'Helvetica Neue', Helvetica, sans-serif" font-size="22" font-weight="700" fill="#121316">FLIXTAPES — Social Film Discovery &amp; Mixtapes</text>
+      <text x="0" y="24" font-family="'Helvetica Neue', Helvetica, sans-serif" font-size="22" font-weight="700" fill="#121316">FLIXTAPE — Social Film Discovery &amp; Mixtapes</text>
       <text x="0" y="46" font-family="'Helvetica Neue', Helvetica, sans-serif" font-size="12.5" font-weight="500" fill="#5F6A54">Curated Movie Playlists • Mood-Based Matching • Cross-Platform Queueing</text>
 
       <g transform="translate(0, 68)">

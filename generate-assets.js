@@ -399,7 +399,7 @@ async function main() {
   </svg>
   `;
 
-  // 4. Flixtapes (flix) - 1200x800 with Rococo Swept Scroll Vintage Gold Leaf Frame
+  // 4. Flixtape (flix) - 1200x800 with Rococo Swept Scroll Vintage Gold Leaf Frame
   const flixSvg = `
   <svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
     <defs>
@@ -488,9 +488,9 @@ async function main() {
       <rect x="92" y="87" width="1016" height="626" rx="2" fill="#FAF8F5" filter="url(#innerCanvasShadow3)"/>
     </g>
 
-    <!-- Content: Flixtapes -->
+    <!-- Content: Flixtape -->
     <g transform="translate(125, 115)">
-      <text x="0" y="26" font-family="'Helvetica Neue', Helvetica, sans-serif" font-size="24" font-weight="700" fill="#121316">FLIXTAPES — Social Film Discovery &amp; Mixtapes</text>
+      <text x="0" y="26" font-family="'Helvetica Neue', Helvetica, sans-serif" font-size="24" font-weight="700" fill="#121316">FLIXTAPE — Social Film Discovery &amp; Mixtapes</text>
       <text x="0" y="50" font-family="'Helvetica Neue', Helvetica, sans-serif" font-size="13" font-weight="500" fill="#5F6A54">Curated Movie Playlists • Mood-Based Matching • Cross-Platform Queueing</text>
 
       <!-- App Mockup -->

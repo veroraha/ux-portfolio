@@ -44,7 +44,7 @@ async function main() {
   await processFramedImage('/home/ubuntu/.cursor/projects/workspace/assets/5efe0f3e-e5f8-48e7-98a0-fc3f57411098.png', './bttf/framed-bttf.png');
   await processFramedImage('/home/ubuntu/.cursor/projects/workspace/assets/5efe0f3e-e5f8-48e7-98a0-fc3f57411098.png', './public/bttf/framed-bttf.png');
 
-  // 3. flix: b9edbaf4-ad0c-4157-b28a-6e4644e27a9b.png (Netflix / Flixtapes project)
+  // 3. flix: b9edbaf4-ad0c-4157-b28a-6e4644e27a9b.png (Netflix / Flixtape project)
   await processFramedImage('/home/ubuntu/.cursor/projects/workspace/assets/b9edbaf4-ad0c-4157-b28a-6e4644e27a9b.png', './flix/framed-flix.png');
   await processFramedImage('/home/ubuntu/.cursor/projects/workspace/assets/b9edbaf4-ad0c-4157-b28a-6e4644e27a9b.png', './public/flix/framed-flix.png');
 

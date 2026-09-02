@@ -79,7 +79,7 @@ function generateResume(outputPath) {
   y += 38;
 
   // Project 3
-  doc.fillColor(coral).fontSize(11).font('Helvetica-Bold').text('Flixtapes', 40, y);
+  doc.fillColor(coral).fontSize(11).font('Helvetica-Bold').text('Flixtape', 40, y);
   doc.fillColor(mutedGreen).fontSize(10).font('Helvetica').text('Social Film Discovery App (2020)', 380, y, { align: 'right' });
   y += 15;
   doc.fillColor('#444').fontSize(9.5).font('Helvetica')
