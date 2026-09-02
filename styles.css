@@ -380,7 +380,7 @@ body {
 }
 
 @media (min-width: 900px) {
-	.case-study-figure {
+	.case-study-figure:not(.case-study-figure-inline) {
 		width: 160%;
 		max-width: 1100px;
 		margin-left: 50%;
