@@ -336,6 +336,7 @@ body {
 	line-height: 1.5;
 	color: var(--secondary-text-color);
 	margin: 0 auto 2.5rem;
+	padding-bottom: 2rem;
 	max-width: 36rem;
 }
 
