@@ -471,19 +471,19 @@ body:has(.home-intro-card) .page-header {
 /** hero banner / home quick features **/
 
 .home-intro-card {
-	background-color: var(--footer-bg-color);
-	border: 1px solid rgba(149, 112, 131, 0.45);
+	background-color: #E9E0E5;
+	border: 1px solid rgba(149, 112, 131, 0.22);
 	border-radius: 12px;
 	padding: 1.15rem 3rem 2.25rem;
 	margin: 0 0 3.5rem;
-	box-shadow: 0 16px 40px rgba(40, 24, 34, 0.18);
+	box-shadow: 0 8px 24px rgba(40, 24, 34, 0.05);
 }
 
 .home-intro-card h2 {
 	margin-top: 0;
 	font-size: 1.45rem;
 	font-weight: 700;
-	color: #F7F6F2;
+	color: var(--primary-text-color);
 	text-transform: lowercase;
 	letter-spacing: -0.3px;
 }
@@ -491,13 +491,13 @@ body:has(.home-intro-card) .page-header {
 .home-intro-card p {
 	font-size: 1.12rem;
 	line-height: 1.65;
-	color: #D5C6CE;
+	color: #4A4146;
 	margin: 0;
 }
 
 .home-intro-card p strong {
 	font-weight: 700;
-	color: #F7F6F2;
+	color: var(--primary-text-color);
 }
 
 .home-intro-card .cta-btn.primary {
@@ -513,13 +513,13 @@ body:has(.home-intro-card) .page-header {
 
 .home-intro-card .cta-btn.secondary {
 	background-color: transparent;
-	border-color: rgba(247, 246, 242, 0.35);
-	color: #F7F6F2;
+	border-color: rgba(18, 19, 22, 0.22);
+	color: var(--primary-text-color);
 }
 
 .home-intro-card .cta-btn.secondary:hover {
-	background-color: rgba(247, 246, 242, 0.08);
-	border-color: #F7F6F2;
+	background-color: rgba(247, 246, 242, 0.55);
+	border-color: var(--primary-text-color);
 }
 
 .home-cta-row {
