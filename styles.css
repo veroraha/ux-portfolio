@@ -7,7 +7,7 @@
  * - Gallery Wall / Alabaster background (#F7F6F2)
  * - Archival Canvas / Pure Off-White (#FFFFFF)
  * - Deep Obsidian / Gallery Charcoal (#121316) for crisp, readable typography
- * - Exhibition Terracotta / Vermilion (#E05A47) for curated, striking accents
+ * - Dusty Mauve / Rosewood (#957083) for curated, striking accents
  * - Curator Sage / Warm Olive (#5F6A54) for subdued metadata and dates
  * - Muted Stone / Architectural Linen (#E6E4DD) for subtle frame borders
  **/
@@ -21,9 +21,10 @@
 	--border-color: #E2DFD7; /** Architectural Frame Line */
 	--border-subtle: #ECEAE4;
 	
-	--primary-accent-color: #E05A47; /** Exhibition Terracotta / Vermilion */
-	--primary-accent-hover: #C94836;
-	--secondary-accent-color: #F4D5CE; /** Soft Terracotta Wash */
+	--primary-accent-color: #957083; /** Dusty Mauve / Rosewood */
+	--primary-accent-hover: #7A5A6B;
+	--secondary-accent-color: #E4D5DC; /** Soft Mauve Wash */
+	--footer-bg-color: #281822; /** Deep Plum */
 	
 	--primary-text-color: #121316; /** Gallery Obsidian / Deep Charcoal */
 	--secondary-text-color: #5C6068; /** Muted Slate / Curator Grey */
@@ -236,11 +237,11 @@ body {
 	right: 0;
 	justify-content: space-between;
 	align-items: center;
-	background-color: var(--primary-text-color);
+	background-color: var(--footer-bg-color);
 	color: #FFFFFF;
 	padding: 3.5rem 4rem;
 	margin-top: auto;
-	border-top: 1px solid rgba(255, 255, 255, 0.08);
+	border-top: 1px solid rgba(149, 112, 131, 0.28);
 }
 
 .footer h4 {
@@ -417,7 +418,7 @@ body {
 	border-color: var(--primary-accent-color);
 	color: #FFFFFF;
 	transform: translateY(-2px);
-	box-shadow: 0 6px 18px rgba(224, 90, 71, 0.25);
+	box-shadow: 0 6px 18px rgba(149, 112, 131, 0.28);
 }
 
 .cta-btn.secondary {
