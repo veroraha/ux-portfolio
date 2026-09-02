@@ -472,7 +472,7 @@ body:has(.home-intro-card) .page-header {
 
 .home-intro-card {
 	position: relative;
-	background-color: #FFFFFF;
+	background-color: #E3DDD4;
 	border: 1px solid var(--placard-border);
 	border-radius: 0;
 	padding: 2.15rem 2.75rem 2.35rem;
