@@ -514,8 +514,8 @@ body:has(.home-intro-card) .page-header {
 }
 
 .home-intro-card .cta-btn.primary {
-	background-color: var(--primary-text-color);
-	border-color: var(--primary-text-color);
+	background-color: var(--footer-bg-color);
+	border-color: var(--footer-bg-color);
 	color: #FFFFFF;
 }
 
