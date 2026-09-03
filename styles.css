@@ -477,7 +477,7 @@ body:has(.home-intro-card) .page-header {
 	border: none;
 	border-radius: 0;
 	padding: 0;
-	margin: 2rem auto 3.5rem;
+	margin: 0 auto 3.5rem;
 	max-width: 44rem;
 	box-shadow: none;
 	text-align: center;
@@ -493,12 +493,12 @@ body:has(.home-intro-card) .page-header {
 }
 
 .home-intro-card p {
-	font-size: 1.08rem;
-	line-height: 1.7;
+	font-size: 1.4rem;
+	line-height: 1.6;
 	letter-spacing: 0.01em;
 	color: #3A3D44;
 	margin: 0;
-	padding-top: 2rem;
+	padding-top: 0;
 }
 
 .home-intro-card p strong {
