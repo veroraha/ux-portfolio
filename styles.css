@@ -520,9 +520,9 @@ body:has(.home-intro-card) .page-header {
 }
 
 .home-intro-card .cta-btn.primary:hover {
-	background-color: #8B4A38;
-	border-color: #8B4A38;
-	box-shadow: 0 6px 18px rgba(139, 74, 56, 0.28);
+	background-color: #2E5C5A;
+	border-color: #2E5C5A;
+	box-shadow: 0 6px 18px rgba(46, 92, 90, 0.28);
 }
 
 .home-intro-card .cta-btn.secondary {
