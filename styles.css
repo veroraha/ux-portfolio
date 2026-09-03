@@ -486,15 +486,19 @@ body:has(.home-page) .page-header {
 	padding: var(--home-gap) 1.25rem;
 }
 
-.home-page .page-header {
-	padding: 0;
-	margin: 0;
-	max-width: none;
+.home-page .page-header,
+.home-blurb {
 	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.home-page .page-header {
 	font-size: clamp(1.65rem, 3.4vw, 2.35rem);
 	line-height: 1.4;
 	letter-spacing: -0.3px;
-	text-wrap: balance;
 }
 
 .home-blurb {
@@ -502,11 +506,6 @@ body:has(.home-page) .page-header {
 	line-height: 1.7;
 	letter-spacing: 0.03em;
 	color: #3A3D44;
-	margin: 0;
-	padding: 0;
-	max-width: none;
-	width: 100%;
-	text-wrap: pretty;
 }
 
 .home-blurb strong {
@@ -552,13 +551,6 @@ body:has(.home-page) .page-header {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-}
-
-body:has(.home-page) .footer {
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 1.5rem;
-	text-align: center;
 }
 
 .cta-btn {
@@ -746,6 +738,8 @@ body:has(.home-page) .footer {
 
 	.home-page {
 		--home-gap: 2rem;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
 	}
 
 	.home-page .page-header {
