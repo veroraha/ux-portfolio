@@ -278,12 +278,12 @@ body {
 .footer .button {
 	margin: 0;
 	padding: 0.7rem 1.35rem;
-	background-color: transparent;
+	background-color: #F7F6F2;
 	border: 1px solid #F7F6F2;
 	border-radius: 6px;
 	text-decoration: none;
 	text-transform: lowercase;
-	color: #F7F6F2;
+	color: var(--primary-text-color);
 	letter-spacing: 0.06em;
 	transition: all 0.2s ease;
 	display: inline-flex;
@@ -292,9 +292,9 @@ body {
 
 .footer .button:hover {
 	cursor: pointer;
-	background-color: #F7F6F2;
-	border-color: var(--placard-border);
-	color: var(--primary-text-color);
+	background-color: var(--footer-bg-color);
+	border-color: #F7F6F2;
+	color: #F7F6F2;
 	transform: translateY(-2px);
 }
 
