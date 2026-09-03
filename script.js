@@ -48,7 +48,7 @@ function setupNavigation() {
 	});
 
 	// Smooth subtle image entrance animations
-	const cards = document.querySelectorAll('.project, .headshot, .home-intro-card');
+	const cards = document.querySelectorAll('.project, .headshot, .home-page');
 	cards.forEach((card, index) => {
 		card.style.opacity = '0';
 		card.style.transform = 'translateY(15px)';
