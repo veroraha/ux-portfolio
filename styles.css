@@ -528,9 +528,9 @@ body:has(.home-page) .page-header {
 }
 
 .home-page .cta-btn.primary:hover {
-	background-color: #2E5C5A;
-	border-color: #2E5C5A;
-	box-shadow: 0 6px 18px rgba(46, 92, 90, 0.28);
+	background-color: var(--primary-accent-color);
+	border-color: var(--primary-accent-color);
+	box-shadow: 0 6px 18px rgba(149, 112, 131, 0.28);
 }
 
 .home-page .cta-btn.secondary {
