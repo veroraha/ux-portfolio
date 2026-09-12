@@ -35,24 +35,24 @@
 		<p class="case-study-subtitle">smarter pitstops between A and B</p>
 		<div class="case-study-body">
 			<section>
-				<h2>overview</h2>
+				<h2>discover what lies ahead</h2>
 				<p>
-					On The Way is a wayfinding product I designed and built end to end: research, requirements, interaction design, visual identity, and a working Angular prototype on the Google Maps API. The core job is simple and high-stakes. Drivers need to get from point A to point B and add up to three stops without leaving the route, losing the destination, or making unsafe decisions behind the wheel. Users can search for a stop or pick from six nearby categories, then get guidance that keeps the main trip intact.
+					On The Way is a wayfinding product I designed and built in an end-to-end process involving research, requirements gathering, interaction and brand design, and building an Angular prototype that incorporates the Google Maps API. The core concept is simple: Help drivers get from point A to point B, and enable the addition of up to three stops without straying from the original route. On The Way enables clear decision-making and provides detour navigation that keeps the main trip intact.
 				</p>
 				<p>
-					The problem started as a lived user pain. On a family trip to the Outer Banks, we used one phone for hotel directions and another to find a stop. Existing GPS tools kept recommending places behind us, which would have meant turning around and adding time we did not have. I framed that as a design problem: recommend only what lies ahead, and keep every stop close to the primary route. When my supervisor later asked me to demonstrate UX/UI skill by shipping a maps-based Angular app, I used that brief to take the idea through a full product process instead of jumping straight to screens.
+					The idea was born from a real pain point. On a trip to the beach, my family used one phone for directions to our hotel, and a different phone to find stops like gas, convenience stores, and dessert shops. Various GPS apps recommended places behind us, which meant turning around and adding time to our journey. I framed this experience as a design problem: Recommend only upcoming stops, and keep every stop close to the primary route. When my supervisor later tasked me to build a maps-based Angular app, I knew it was the perfect time to bring this idea to fruition.
 				</p>
 			</section>
 			<section>
 				<h2>final design</h2>
 				<p>
-					The final experience is organized around one principle: discover what lies ahead without sacrificing the trip you already started. Drivers enter a destination, choose a route, add up to three stops by search or category, save favorite places, and end a stop without killing navigation to the hotel, campus, or meeting. I designed the UI for glanceability and low cognitive load because this is a driving context, not a desk task. The current build is a functional prototype, not a production-complete app, and I treat that constraint as part of the case: I prioritized the flows that proved the concept over polishing every edge case.
+					The final experience focuses on one core principle: Discover what lies ahead without sacrificing the trip you already started. Drivers can add up to three stops to their route, and remove stops, without killing their main navigation. I designed the UI around the context of driving, so as not to pull people’s attention from the road for too long. The current build is a functional prototype and differs slightly from the original design due to limitations with the Google Maps API.
 				</p>
 			</section>
 			<section>
 				<h2>user research</h2>
 				<p>
-					I started with a competitive analysis of Apple Maps, Google Maps, and Waze to find where market-leading GPS products were lacking. Apple Maps and Waze only allow one added stop. Apple Maps blocks address search when adding a stop, limiting people to categories like cafes, gas, and banks. Across all three apps, “end navigation” ends the entire trip instead of removing only detours. Those observations made it clear why adding one extra stop still sends people to a workaround, like opening a second phone just to get a separate set of directions.
+					I started with a competitive analysis of Apple Maps, Google Maps, and Waze to find where market-leading GPS products were lacking. Apple Maps and Waze only allow one added stop. Apple Maps blocks address search when adding a stop, limiting people to categories like cafes, gas, and banks. Across all three apps, “end navigation” ends the entire trip instead of removing only detours. Those observations made it clear why adding an extra stop still forces users into workarounds like opening a second phone to get a separate set of directions.
 				</p>
 				<p>
 					To define potential users, I wrote contextual use scenarios and built three personas: a student heading to campus, a father on a family road trip, and a professional driving to a meeting. These scenarios revealed shared needs, which I synthesized into a set of requirements: multiple stops, flexible search, route-aware recommendations, and a clear way to drop a stop and resume the main route.
@@ -61,7 +61,7 @@
 			<section>
 				<h2>ideation and conceptual design</h2>
 				<p>
-					I prototyped the primary task flow against the Erin Wyman persona. The scenario routes her from NC to her new house in Blacksburg, VA, saves the Blacksburg address to her favorite places, adds a stop at a Shaky’s along the route, and adds a stop for gas. Walking the prototype through that exact move made gaps obvious: anything that pulled her off-route or buried a stop behind extra taps had to be redesigned before I called the flow done.
+					I created the primary task flow using the Erin Wyman persona. The scenario routes her from NC to her new house in Blacksburg, VA, saves the Blacksburg address to her favorite places, adds a stop at a Shaky’s along the route, and adds a stop for gas. This flow met all of my requirements, which made identifying design gaps simple.
 				</p>
 				<p>
 					In parallel, I created a design system and logo for a consistent, coherent UI. I explored using shark symbology because sharks cannot swim backwards, a fun fact that emphasizes the app theme of discovering what lies ahead, but I cut that idea to hone in on the design - a clever idea is worthless if the product doesn’t serve the user.
@@ -70,7 +70,7 @@
 			<section>
 				<h2>reflection</h2>
 				<p>
-					On The Way was my first time owning a product across research, design, and implementation. It was also my first time creating a style guide, building an Angular application, and integrating the Google Maps API. I turned a messy, real-world frustration into a problem statement, justified requirements via competitive analysis and use case scenarios, prototyped a critical user flow, and adapted the design when engineering constraints showed up. What I keep from that work is a way of practicing UX: stay with the original frustration long enough to design the flow that would have helped on that drive, then treat every constraint as a reason to redesign, not a reason to drop the user.
+					On The Way was my first time owning a product across research, design, and implementation. It was also my first time creating a style guide, building an Angular application, and integrating the Google Maps API. I turned a messy, real-world frustration into a problem statement, justified requirements via competitive analysis and use case scenarios, prototyped a critical user flow, and adapted the design when engineering constraints revealed themselves. This product taught me to treat every constraint as a reason to redesign, not a reason to tweak requirements.
 				</p>
 			</section>
 		</div>
