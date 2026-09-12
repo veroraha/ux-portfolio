@@ -37,40 +37,40 @@
 			<section>
 				<h2>overview</h2>
 				<p>
-					On The Way is a GPS system that provides optimal navigation from point A to point B with the ability to add up to three stops. Just plug in your destination, choose a route, and head off on your journey. Search for a stop or choose from six categories for suggestions near your location. Clear decision-making guidance won't cause you frustration while you're behind the wheel. With On The Way, it's easy to discover what lies ahead.
+					On The Way is a wayfinding product I designed and built end to end: research, requirements, interaction design, visual identity, and a working Angular prototype on the Google Maps API. The core job is simple and high-stakes. Drivers need to get from point A to point B and add up to three stops without leaving the route, losing the destination, or making unsafe decisions behind the wheel. Users can search for a stop or pick from six nearby categories, then get guidance that keeps the main trip intact.
 				</p>
 				<p>
-					I noticed the problem on a trip to the Outer Banks with my family. We were using one phone's GPS for directions to our hotel, and another phone for a stop we wanted to make. As we searched for stops, we kept getting suggestions for places behind us, which would force us to drive in the opposite direction of our hotel. I wanted a platform that only recommended stops in the direction I was heading while staying close to the main route. When I started working in my current role, my supervisor assigned me a project to gauge my knowledge of UX/UI. I needed to learn Angular and build an application that somehow involved maps. I'd been sitting on this idea for years, and I felt it was the perfect time to bring it to fruition.
+					The problem started as a lived user pain. On a family trip to the Outer Banks, we used one phone for hotel directions and another to find a stop. Existing GPS tools kept recommending places behind us, which would have meant turning around and adding time we did not have. I framed that as a design problem: recommend only what lies ahead, and keep every stop close to the primary route. When my supervisor later asked me to demonstrate UX/UI skill by shipping a maps-based Angular app, I used that brief to take the idea through a full product process instead of jumping straight to screens.
 				</p>
 			</section>
 			<section>
 				<h2>final design</h2>
 				<p>
-					On The Way: Discover What Lies Ahead. This application is not fully developed, so this is not a full implementation.
+					The final experience is organized around one principle: discover what lies ahead without sacrificing the trip you already started. Drivers enter a destination, choose a route, add up to three stops by search or category, save favorite places, and end a stop without killing navigation to the hotel, campus, or meeting. I designed the UI for glanceability and low cognitive load because this is a driving context, not a desk task. The current build is a functional prototype, not a production-complete app, and I treat that constraint as part of the case: I prioritized the flows that proved the concept over polishing every edge case.
 				</p>
 			</section>
 			<section>
 				<h2>user research</h2>
 				<p>
-					Conducting a competitor review was integral to learning where popular GPS applications were lacking and how On The Way could be built better. Upon reviewing Apple Maps, Google Maps, and Waze, I found a number of issues. Apple Maps and Waze only allow for one stop to be added to the main route. There is no way to search for an address when adding a stop in Apple Maps; instead, users are restricted to categories like cafés, gas stations, and banks. In all three apps, pressing 'end navigation' ends navigation to all routes rather than ending the added stop and continuing the main route. The competitor review revealed flaws in existing GPS system design. I aimed to fix these flaws and create a more satisfactory user experience with On The Way.
+					I started with competitive analysis of Apple Maps, Google Maps, and Waze to find where market-leading GPS products still fail drivers. Apple Maps and Waze only allow one added stop. Apple Maps also blocks address search when adding a stop, limiting people to categories like cafés, gas, and banks. Across all three, “end navigation” ends the entire trip instead of closing just the detour. Those findings became design criteria, not just observations: multiple stops, flexible search, route-aware recommendations, and a clear way to drop a stop and resume the main route.
 				</p>
 				<p>
-					Generating contextual use scenarios that described how someone might use On The Way helped me define potential users. Who needed directions from point A to point B? Students going to college? Families going on road trips? Businesspeople driving to important meetings? I built three distinct personas to represent each of these groups. The product needed to generate directions from point A to point B, add multiple stops along the route, search for stop addresses, keep stops close to the main route, and end navigation clearly.
+					To keep the product from being designed only around my own trip, I wrote contextual use scenarios and built three personas: a student heading to campus, a family on a road trip, and a professional driving to a meeting. That work surfaced shared needs and different constraints, which I synthesized into a requirements set: generate A-to-B directions, add multiple stops, search by address, keep stops close to the main route, and end navigation without ambiguity. Those requirements were the contract I designed and built against.
 				</p>
 			</section>
 			<section>
 				<h2>ideation and conceptual design</h2>
 				<p>
-					I created a prototype with the Erin Wyman persona in mind. It depicts Erin getting directions to her house in Blacksburg from an address (as opposed to her current location), saving the Blacksburg address to her favorite places, adding a stop at a Shaky's less than 25 miles from the route, and adding another stop at a gas station. On The Way's final design varies slightly from the prototype due to some limitations with the Google Maps API.
+					I prototyped the primary task flow against the Erin Wyman persona so every screen had a reason to exist. The scenario walks her from an entered address (not “current location”) to her house in Blacksburg, saving that address to favorites, adding a Shaky’s less than 25 miles from the route, then adding a gas stop. Designing to a specific task kept the prototype honest: if a control did not help Erin complete that trip, it did not belong in the first iteration.
 				</p>
 				<p>
-					Creating a logo and defining a style guide were some of my favorite aspects of the design process. At first, I wanted to incorporate a shark into the logo since sharks are the only fish species that cannot swim backwards. This fun fact goes with the app's theme of discovering what lies ahead; however, I found it difficult to incorporate sharks into the final design of the product so I dropped the idea and created a more straightforward design.
+					Implementation on the Google Maps API forced tradeoffs. The shipped interaction model differs slightly from the earlier prototype where the API could not support the original behavior, and I redesigned those moments instead of pretending the constraint was not there. In parallel I created the logo and style guide so the product had a coherent visual system. I explored a shark mark because sharks cannot swim backward, which matched “discover what lies ahead,” then cut it when it fought the UI. The final identity is more direct, which is the same judgment I use on product work: a clever idea only stays if it still serves the user.
 				</p>
 			</section>
 			<section>
 				<h2>reflection</h2>
 				<p>
-					I experienced a lot of firsts building On The Way: my first Angular application, my first time working with the Google Maps API, my first style guide. I enjoyed every part of the design process, from ideation to implementation. Part of what makes On The Way so meaningful is that I built it from scratch. Seeing my vision brought to life has been incredible. I fully intend to revisit this project when I have more time.
+					On The Way was my first time owning a product across research, visual design, and implementation: first style guide, first Angular application, first Google Maps API integration. The value for my UX practice is the process I can repeat on a team. I can turn a messy real-world frustration into a problem statement, use competitive review and personas to justify requirements, prototype a critical user flow, and adapt the design when engineering constraints show up. If I returned to this work, I would run usability tests with drivers and families on the stop-adding and end-navigation flows, then iterate the prototype against that evidence before expanding the feature set.
 				</p>
 			</section>
 		</div>
