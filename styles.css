@@ -313,6 +313,15 @@ body {
 		text-align: center;
 		padding: 2.5rem 1.5rem;
 	}
+
+	.case-study-mockup-row {
+		flex-wrap: wrap;
+	}
+
+	.case-study-mockup-row img {
+		flex: 1 1 calc(50% - 0.35rem);
+		width: calc(50% - 0.35rem);
+	}
 }
 
 /** page headers **/
@@ -413,6 +422,25 @@ body:has(.home-page) .page-header {
 	font-style: italic;
 	color: var(--secondary-text-color);
 	text-align: center;
+}
+
+.case-study-mockup-row {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 0.65rem;
+	margin: 0.25rem 0 2.25rem;
+	width: 100%;
+}
+
+.case-study-mockup-row img {
+	display: block;
+	flex: 1 1 0;
+	min-width: 0;
+	width: 0;
+	height: auto;
+	border-radius: 14px;
+	box-shadow: 0 8px 30px rgba(18, 19, 22, 0.08), 0 2px 8px rgba(18, 19, 22, 0.04);
 }
 
 .back-link {
