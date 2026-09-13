@@ -423,6 +423,13 @@ body:has(.home-page) .page-header {
 	background-color: #fff;
 }
 
+.case-study-figure--portrait video {
+	width: auto;
+	max-width: 100%;
+	max-height: min(70vh, 36rem);
+	margin-inline: auto;
+}
+
 .case-study-figure--plain img {
 	background-color: transparent;
 	box-shadow: none;
