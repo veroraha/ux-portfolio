@@ -378,7 +378,7 @@ body:has(.home-page) .page-header {
 }
 
 .case-study-body section + section {
-	padding-top: 2rem;
+	padding-top: 4rem;
 }
 
 .case-study-body section > :last-child {
