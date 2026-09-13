@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1152px" height="931px" viewBox="0 0 1152 931" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>style guide</title>
+    <g id="style-guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#373F4B" x="0" y="0" width="1152" height="931"></rect>
+        <text id="Color-Palette" font-family="Helvetica" font-size="24" font-weight="normal" fill="#FFFFFF">
+            <tspan x="60" y="82">Color Palette</tspan>
+        </text>
+        <text id="Logo-colors" font-family="Helvetica" font-size="18" font-weight="normal" fill="#E0B550">
+            <tspan x="60" y="128">Logo colors</tspan>
+        </text>
+        <text id="Typefaces" font-family="Helvetica" font-size="24" font-weight="normal" fill="#FFFFFF">
+            <tspan x="62" y="532">Typefaces</tspan>
+        </text>
+        <text id="Primary-typeface" font-family="Helvetica" font-size="18" font-weight="normal" fill="#E0B550">
+            <tspan x="62" y="578">Primary typeface</tspan>
+        </text>
+        <text id="Secondary-typefaces" font-family="Helvetica" font-size="18" font-weight="normal" fill="#E0B550">
+            <tspan x="422" y="578">Secondary typefaces</tspan>
+        </text>
+        <text id="Additional-typefaces" font-family="Helvetica" font-size="18" font-weight="normal" fill="#E0B550">
+            <tspan x="782" y="578">Additional typefaces</tspan>
+        </text>
+        <text id="DM-Sans-Bold,-18px" font-family="DMSans-Bold, DM Sans" font-size="28" font-weight="bold" fill="#FFFFFF">
+            <tspan x="422" y="638">DM Sans Bold, 18px</tspan>
+        </text>
+        <text id="DM-Sans-Bold,-16px" font-family="DMSans-Bold, DM Sans" font-size="26" font-weight="bold" fill="#FFFFFF">
+            <tspan x="782" y="627">DM Sans Bold, 16px</tspan>
+        </text>
+        <text id="DM-Sans-Medium,-16px" font-family="DMSans-Medium, DM Sans" font-size="26" font-weight="400" fill="#FFFFFF">
+            <tspan x="782" y="667">DM Sans Medium, 16px</tspan>
+        </text>
+        <text id="DM-Sans-Medium,-14px" font-family="DMSans-Medium, DM Sans" font-size="24" font-weight="400" fill="#FFFFFF">
+            <tspan x="422" y="674">DM Sans Medium, 14px</tspan>
+        </text>
+        <text id="DM-Sans-Medium,-12px" font-family="DMSans-Medium, DM Sans" font-size="22" font-weight="400" fill="#FFFFFF">
+            <tspan x="422" y="712">DM Sans Medium, 12px</tspan>
+        </text>
+        <text id="DM-Sans-Regular,-12p" font-family="DMSans-Regular, DM Sans" font-size="22" font-weight="normal" fill="#FFFFFF">
+            <tspan x="782" y="703">DM Sans Regular, 12px</tspan>
+        </text>
+        <text id="DM-Sans-Italic,-12px" font-family="DMSans-Italic, DM Sans" font-size="22" font-style="italic" font-weight="normal" fill="#FFFFFF">
+            <tspan x="782" y="743">DM Sans Italic, 12px</tspan>
+        </text>
+        <text id="DM-Sans-Medium,-10px" font-family="DMSans-Medium, DM Sans" font-size="20" font-weight="400" fill="#FFFFFF">
+            <tspan x="782" y="781">DM Sans Medium, 10px</tspan>
+        </text>
+        <text id="DM-Sans-Regular,-10p" font-family="DMSans-Regular, DM Sans" font-size="20" font-weight="normal" fill="#FFFFFF">
+            <tspan x="782" y="821">DM Sans Regular, 10px</tspan>
+        </text>
+        <text id="DM-Sans-Italic,-10px" font-family="DMSans-Italic, DM Sans" font-size="20" font-style="italic" font-weight="normal" fill="#FFFFFF">
+            <tspan x="782" y="861">DM Sans Italic, 10px</tspan>
+        </text>
+        <text id="DM-Sans-Medium,-18px" font-family="DMSans-Medium, DM Sans" font-size="28" font-weight="400" fill="#FFFFFF">
+            <tspan x="62" y="638">DM Sans Medium, 18px</tspan>
+        </text>
+        <text id="Primary-colors" font-family="Helvetica" font-size="18" font-weight="normal" fill="#E0B550">
+            <tspan x="320" y="128">Primary colors</tspan>
+        </text>
+        <rect id="Rectangle" fill="#062D5D" x="60" y="410" width="210" height="40"></rect>
+        <rect id="Rectangle" fill="#235A9F" x="60" y="310" width="210" height="40"></rect>
+        <rect id="Rectangle" fill="#FFC200" x="60" y="210" width="210" height="40"></rect>
+        <rect id="Rectangle" fill="#FAFAFA" x="60" y="160" width="210" height="40"></rect>
+        <rect id="Rectangle" fill="#6F6F6F" x="60" y="260" width="210" height="40"></rect>
+        <rect id="Rectangle" fill="#323232" x="60" y="360" width="210" height="40"></rect>
+        <text id="Secondary-colors" font-family="Helvetica" font-size="18" font-weight="normal" fill="#E0B550">
+            <tspan x="580" y="128">Secondary colors</tspan>
+        </text>
+        <rect id="Rectangle" fill="#7E73FF" x="580" y="160" width="210" height="40"></rect>
+        <rect id="Rectangle" fill="#51B55A" x="580" y="360" width="210" height="40"></rect>
+        <rect id="Rectangle" fill="#F79540" x="580" y="260" width="210" height="40"></rect>
+        <rect id="Rectangle" fill="#FD64B9" x="580" y="210" width="210" height="40"></rect>
+        <rect id="Rectangle" fill="#EAD200" x="580" y="410" width="210" height="40"></rect>
+        <rect id="Rectangle" fill="#1CA0FE" x="580" y="310" width="210" height="40"></rect>
+        <rect id="Rectangle" fill="#062D5D" x="320" y="310" width="210" height="40"></rect>
+        <rect id="Rectangle" fill="#235A9F" x="320" y="260" width="210" height="40"></rect>
+        <rect id="Rectangle" fill="#000000" x="320" y="360" width="210" height="40"></rect>
+        <rect id="Rectangle" fill="#FAFAFA" x="320" y="160" width="210" height="40"></rect>
+        <rect id="Rectangle" fill="#70B3FF" x="320" y="210" width="210" height="40"></rect>
+        <text id="UI-elements" font-family="Helvetica" font-size="18" font-weight="normal" fill="#E0B550">
+            <tspan x="840" y="128">UI elements</tspan>
+        </text>
+        <rect id="Rectangle" fill="#FE4A48" x="840" y="210" width="210" height="40"></rect>
+        <rect id="Rectangle" fill="#B4B4B4" x="840" y="160" width="210" height="40"></rect>
+        <rect id="Rectangle" fill="#4DD964" x="840" y="260" width="210" height="40"></rect>
+        <g id="Hex-codes" transform="translate(178.000000, 172.000000)" font-family="Verdana" font-size="14" font-weight="normal">
+            <text id="#062D5D" fill="#FFFFFF">
+                <tspan x="0" y="264">#062D5D</tspan>
+            </text>
+            <text id="#235A9F" fill="#FFFFFF">
+                <tspan x="0" y="164">#235A9F</tspan>
+            </text>
+            <text id="#FFC200" fill="#000000">
+                <tspan x="0" y="64">#FFC200</tspan>
+            </text>
+            <text id="#FAFAFA" fill="#000000">
+                <tspan x="0" y="14">#FAFAFA</tspan>
+            </text>
+            <text id="#6F6F6F" fill="#FFFFFF">
+                <tspan x="0" y="114">#6F6F6F</tspan>
+            </text>
+            <text id="#323232" fill="#FFFFFF">
+                <tspan x="0" y="214">#323232</tspan>
+            </text>
+            <text id="#7E73FF" fill="#FFFFFF">
+                <tspan x="520" y="14">#7E73FF</tspan>
+            </text>
+            <text id="#51B55A" fill="#000000">
+                <tspan x="520" y="214">#51B55A</tspan>
+            </text>
+            <text id="#F79540" fill="#000000">
+                <tspan x="520" y="114">#F79540</tspan>
+            </text>
+            <text id="#FD64B9" fill="#000000">
+                <tspan x="520" y="64">#FD64B9</tspan>
+            </text>
+            <text id="#EAD200" fill="#000000">
+                <tspan x="520" y="264">#EAD200</tspan>
+            </text>
+            <text id="#1CA0FE" fill="#FFFFFF">
+                <tspan x="520" y="164">#1CA0FE</tspan>
+            </text>
+            <text id="#062D5D" fill="#FFFFFF">
+                <tspan x="262" y="164">#062D5D</tspan>
+            </text>
+            <text id="#235A9F" fill="#FFFFFF">
+                <tspan x="262" y="114">#235A9F</tspan>
+            </text>
+            <text id="#000000" fill="#FFFFFF">
+                <tspan x="262" y="214">#000000</tspan>
+            </text>
+            <text id="#FAFAFA" fill="#000000">
+                <tspan x="262" y="14">#FAFAFA</tspan>
+            </text>
+            <text id="#70B3FF" fill="#000000">
+                <tspan x="262" y="64">#70B3FF</tspan>
+            </text>
+            <text id="#FE4A48" fill="#000000">
+                <tspan x="780" y="64">#FE4A48</tspan>
+            </text>
+            <text id="#B4B4B4" fill="#000000">
+                <tspan x="780" y="14">#B4B4B4</tspan>
+            </text>
+            <text id="#4DD964" fill="#000000">
+                <tspan x="780" y="114">#4DD964</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

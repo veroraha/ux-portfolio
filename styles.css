@@ -413,12 +413,14 @@ body:has(.home-page) .page-header {
 	width: 100%;
 }
 
-.case-study-figure img {
+.case-study-figure img,
+.case-study-figure video {
 	display: block;
 	width: 100%;
 	height: auto;
 	border-radius: 8px;
 	box-shadow: 0 8px 30px rgba(18, 19, 22, 0.08), 0 2px 8px rgba(18, 19, 22, 0.04);
+	background-color: #fff;
 }
 
 .case-study-figure figcaption {
