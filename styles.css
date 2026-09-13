@@ -315,7 +315,12 @@ body {
 	}
 
 	.case-study-mockup-row {
+		--mockup-cols: 2;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.case-study-mockup-row--centered {
+		flex-wrap: wrap;
 	}
 }
 
@@ -420,10 +425,12 @@ body:has(.home-page) .page-header {
 }
 
 .case-study-mockup-row {
+	--mockup-gap: 0.65rem;
+	--mockup-cols: 4;
 	display: grid;
 	grid-template-columns: repeat(4, minmax(0, 1fr));
 	align-items: start;
-	gap: 0.65rem;
+	gap: var(--mockup-gap);
 	margin: 0.25rem 0 2.25rem;
 	width: 100%;
 }
@@ -434,6 +441,16 @@ body:has(.home-page) .page-header {
 	height: auto;
 	border-radius: 14px;
 	box-shadow: 0 8px 30px rgba(18, 19, 22, 0.08), 0 2px 8px rgba(18, 19, 22, 0.04);
+}
+
+.case-study-mockup-row--centered {
+	display: flex;
+	justify-content: center;
+}
+
+.case-study-mockup-row--centered img {
+	flex: 0 0 calc((100% - (var(--mockup-cols) - 1) * var(--mockup-gap)) / var(--mockup-cols));
+	width: calc((100% - (var(--mockup-cols) - 1) * var(--mockup-gap)) / var(--mockup-cols));
 }
 
 .back-link {
