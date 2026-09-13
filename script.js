@@ -1,16 +1,30 @@
 // animated page header text
 
+// The full title is written in the HTML so it still shows if this script is
+// blocked, cached stale, or fails to load. The script clears it and retypes it.
+
 var titleElement = document.querySelector("h1.page-header[id]");
-var titleText = titleElement ? (titleElement.dataset.title || titleElement.id) : "";
+var titleText = titleElement
+	? (titleElement.dataset.title || titleElement.textContent.trim() || titleElement.id)
+	: "";
 
 var i = 0;
 var speed = 120;
 
 function typewriter() {
-	if (titleElement !== null && i < titleText.length) {
-		titleElement.innerHTML += titleText.charAt(i);
+	if (titleElement === null) {
+		return;
+	}
+	if (i === 0) {
+		titleElement.setAttribute("aria-label", titleText);
+		titleElement.textContent = "";
+	}
+	if (i < titleText.length) {
+		titleElement.textContent += titleText.charAt(i);
 		i++;
 		setTimeout(typewriter, speed);
+	} else {
+		titleElement.removeAttribute("aria-label");
 	}
 }
 
