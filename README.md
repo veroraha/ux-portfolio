@@ -6,12 +6,14 @@ Live reference: [vanessaeroraha.com](https://vanessaeroraha.com)
 
 ## Pages
 
-- `index.html` / `home.html` — intro headline, current role, and calls to action. Keep these two files in sync.
-- `about.html` — background at Booz Allen Hamilton and Virginia Tech, plus personal notes.
-- `projects.html` — first-person gallery room: one framed case study and its wall placard at a time, with left/right arrows, dots, arrow keys, and swipe to move through the three projects.
-- `otw.html` — **On The Way**: route-aware recommendations for smarter pitstops.
-- `bttf.html` — **Back to the Future**: bringing music sharing back to Spotify.
-- `flix.html` — **Flixtape**: reimagining Netflix’s playlist service.
+URLs are extensionless: `/`, `/about`, `/projects`, `/otw`, `/bttf`, `/flix`. Requests for `page.html`, trailing slashes, `index.html`, and `home.html` 301 to the canonical form (`public/.htaccess` on Bluehost; the `cleanUrls` plugin in `vite.config.js` for `npm run dev` / `npm run preview`). Internal links use root-relative paths (`/about`).
+
+- `index.html` / `home.html` — `/`: intro headline, current role, and calls to action. Keep these two files in sync.
+- `about.html` — `/about`: background at Booz Allen Hamilton and Virginia Tech, plus personal notes.
+- `projects.html` — `/projects`: first-person gallery room: one framed case study and its wall placard at a time, with left/right arrows, dots, arrow keys, and swipe to move through the three projects.
+- `otw.html` — `/otw`: **On The Way**: route-aware recommendations for smarter pitstops.
+- `bttf.html` — `/bttf`: **Back to the Future**: bringing music sharing back to Spotify.
+- `flix.html` — `/flix`: **Flixtape**: reimagining Netflix’s playlist service.
 - `Eroraha Resume.pdf` — resume, linked from the nav on every page.
 
 ## Design
@@ -41,7 +43,7 @@ The site is hosted on Bluehost and built by GitHub Actions.
 1. Every push to `main` runs `.github/workflows/deploy.yml`, which builds with Vite and force-pushes the contents of `dist` to the `deploy` branch (a single orphan commit).
 2. Bluehost's cPanel **Git Version Control** has this repo cloned with the `deploy` branch checked out. Clicking **Update from Remote** then **Deploy HEAD Commit** runs `public/.cpanel.yml` (shipped inside `dist`), which copies the built files into `~/public_html/`.
 
-`public/.htaccess` sets MIME types for the MP4 demos, redirects `home.html` to `/`, and adds cache headers for the fingerprinted assets.
+`public/.htaccess` serves the extensionless URLs (and 301s the `.html` forms), sets MIME types for the MP4 demos, and adds cache headers for the fingerprinted assets. The page rewrite intentionally takes precedence over the same-named asset folders (`otw/`, `bttf/`, `flix/`), which is why it sets `DirectorySlash Off`.
 
 ### One-time Bluehost setup
 

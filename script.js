@@ -47,16 +47,22 @@ function setupNavigation() {
 	}
 
 	// Active link highlight based on current path
-	const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+	// URLs are extensionless (/about); normalise so /about, /about.html, and
+	// /about/ all count as the same page, with / index and home collapsing to "".
+	const normalise = (path) => path
+		.replace(/\.html$/, '')
+		.replace(/\/+$/, '')
+		.replace(/^\/?(index|home)$/, '')
+		.replace(/^\/+/, '');
+	const currentPath = normalise(window.location.pathname);
 	const navLinks = document.querySelectorAll('.header-links a, .dropdown-links a');
 
 	navLinks.forEach(link => {
-		const href = link.getAttribute('href');
-		if (
-			href === currentPath || 
-			(currentPath === '' && href === 'index.html') ||
-			(currentPath === 'home.html' && (href === 'home.html' || href === 'index.html'))
-		) {
+		const href = link.getAttribute('href') || '';
+		if (/^(https?:)?\/\//.test(href) || href.startsWith('mailto:')) {
+			return;
+		}
+		if (normalise(href) === currentPath) {
 			link.classList.add('active');
 		}
 	});
