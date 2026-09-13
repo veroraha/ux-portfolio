@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vanessa Eroraha | On The Way</title>
+	<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/avenir">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="header">
+		<h3 class="site-name"><a href="index.html">Vanessa Eroraha</a></h3>
+		<nav class="nav">
+			<ul class="header-links">
+				<li><a href="index.html"><h3>Home</h3></a></li>
+				<li><a href="about.html"><h3>About</h3></a></li>
+				<li><a href="projects.html"><h3>Projects</h3></a></li>
+				<li><a href="Eroraha Resume.pdf" target="_blank" rel="noopener noreferrer"><h3>Resume</h3></a></li>
+			</ul>
+			<button class="dropdown-btn" aria-label="Toggle navigation menu" id="menuToggle">
+				<h3>Menu</h3>
+				<ul class="dropdown-links" id="dropdownLinks">
+					<li><a href="index.html"><h3>Home</h3></a></li>
+					<li><a href="about.html"><h3>About</h3></a></li>
+					<li><a href="projects.html"><h3>Projects</h3></a></li>
+					<li><a href="Eroraha Resume.pdf" target="_blank" rel="noopener noreferrer"><h3>Resume</h3></a></li>
+				</ul>
+			</button>
+		</nav>
+	</div>
+
+	<main class="content">
+		<a class="back-link" href="projects.html">← back to projects</a>
+		<h1 id="otw" class="page-header case-study-header" data-title="on the way"></h1>
+		<p class="case-study-subtitle">route-aware recommendations for smarter pitstops</p>
+		<div class="case-study-body">
+			<section>
+				<h2>discover what lies ahead</h2>
+				<p>
+					On The Way is a wayfinding product I designed and built in an end-to-end process involving research, requirements gathering, interaction and brand design, and building an Angular prototype that incorporates the Google Maps API. The core concept is simple: Help drivers get from point A to point B, and enable the addition of up to three stops without straying from the original route. On The Way enables clear decision-making and provides detour navigation that keeps the main trip intact.
+				</p>
+				<p>
+					The idea was born from a real pain point. On a trip to the beach, my family used one phone for directions to our hotel, and a different phone to find stops like gas, convenience stores, and dessert shops. Various GPS apps recommended places behind us, which meant turning around and adding time to our journey. I framed this experience as a design problem: Recommend only upcoming stops, and keep every stop close to the primary route. When my supervisor later tasked me to build a maps-based Angular app, I knew it was the perfect time to bring this idea to fruition.
+				</p>
+			</section>
+			<section>
+				<h2>final design</h2>
+				<p>
+					The final experience focuses on one core principle: Discover what lies ahead without sacrificing the trip you already started. Drivers can add up to three stops to their route, and remove stops, without killing their main navigation. I designed the UI around the context of driving, so as not to pull people’s attention from the road for too long. The current build is a functional prototype and differs slightly from the original design due to limitations with the Google Maps API.
+				</p>
+				<figure class="case-study-figure">
+					<video controls playsinline preload="metadata" aria-label="Screen recording of the On The Way Angular prototype using Google Maps to route a trip and add stops">
+						<source src="./otw/otw-app.mp4" type="video/mp4">
+					</video>
+					<figcaption>Functional prototype of On The Way via Angular build</figcaption>
+				</figure>
+			</section>
+			<section>
+				<h2>user research</h2>
+				<p>
+					I started with a competitive analysis of Apple Maps, Google Maps, and Waze to find where market-leading GPS products were lacking. Apple Maps and Waze only allow one added stop. Apple Maps blocks address search when adding a stop, limiting people to categories like cafes, gas, and banks. Across all three apps, “end navigation” ends the entire trip instead of removing only detours. Those observations made it clear why adding an extra stop still forces users into workarounds like opening a second phone to get a separate set of directions.
+				</p>
+				<p>
+					To define potential users, I wrote contextual use scenarios and built three personas: a student heading to campus, a father on a family road trip, and a professional driving to a meeting. These scenarios revealed shared needs, which I synthesized into a set of requirements: multiple stops, flexible search, route-aware recommendations, and a way to end navigation without ambiguity.
+				</p>
+				<figure class="case-study-figure">
+					<img src="./otw/erin-wyman.svg" alt="Persona card for Erin Wyman, a Virginia Tech sophomore driving from Greenville, North Carolina to Blacksburg, with a use scenario about finding Shaky's on the way"/>
+					<figcaption>Erin Wyman persona and use scenario</figcaption>
+				</figure>
+				<figure class="case-study-figure">
+					<img src="./otw/andy-otoole.svg" alt="Persona card for Andy O'Toole, a father on a family road trip from Lima, Ohio to Niagara Falls, planning multiple stops"/>
+					<figcaption>Andy O'Toole persona and use scenario</figcaption>
+				</figure>
+				<figure class="case-study-figure">
+					<img src="./otw/olivia-royce.svg" alt="Persona card for Olivia Royce, a professional driving from Fredericksburg to a client meeting in DC who needs to add a shoe-store stop"/>
+					<figcaption>Olivia Royce persona and use scenario</figcaption>
+				</figure>
+			</section>
+			<section>
+				<h2>ideation and conceptual design</h2>
+				<p>
+					I created the primary task flow using the Erin Wyman persona. The scenario routes her from NC to her new house in Blacksburg, VA, saves the Blacksburg address to her favorite places, adds a stop at a Shaky’s along the route, and adds a stop for gas. This flow met all of my requirements, which made identifying design gaps simple.
+				</p>
+				<figure class="case-study-figure">
+					<video controls playsinline preload="metadata" aria-label="Screen recording of the On The Way prototype showing Erin routing to Blacksburg, saving a favorite place, and adding Shaky's and gas stops">
+						<source src="./otw/otw-prototype.mp4" type="video/mp4">
+					</video>
+					<figcaption>Primary task flow for Erin Wyman via Sketch mockups</figcaption>
+				</figure>
+				<p>
+					In parallel, I created a design system and logo for a consistent, coherent UI. I explored using shark symbology because sharks cannot swim backwards, a fun fact that emphasizes the app theme of discovering what lies ahead, but I cut that idea to hone in on the design - a clever idea is worthless if the product doesn’t serve the user.
+				</p>
+				<figure class="case-study-figure case-study-figure--plain">
+					<img src="./otw/logos.png" alt="Two On The Way logo concepts: an early shark-fin mark and the final road mark"/>
+					<figcaption>Logo exploration and final design</figcaption>
+				</figure>
+				<figure class="case-study-figure">
+					<img src="./otw/style-guide.svg" alt="On The Way style guide showing the color palette and typefaces"/>
+					<figcaption>On The Way style guide</figcaption>
+				</figure>
+			</section>
+			<section>
+				<h2>reflection</h2>
+				<p>
+					On The Way was my first time owning a product across research, design, and implementation. It was also my first time creating a style guide, building an Angular application, and integrating the Google Maps API. I turned a messy, real-world frustration into a problem statement, justified requirements via competitive analysis and use case scenarios, prototyped a critical user flow, and adapted the design when engineering constraints revealed themselves. This product taught me to treat every constraint as a reason to redesign, not a reason to tweak requirements.
+				</p>
+			</section>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<h4>let's connect!</h4>
+		<div class="footer-btns">
+			<a class="button" href="https://www.linkedin.com/in/vanessa-eroraha" target="_blank" rel="noopener noreferrer">
+				<h4>linkedin</h4>
+			</a>
+			<a class="button" href="mailto:vanessaeroraha@gmail.com">
+				<h4>email</h4>
+			</a>
+		</div>
+	</footer>
+
+	<script type="module" src="script.js"></script>
+</body>
+</html>

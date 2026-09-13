@@ -1,19 +1,15 @@
 // animated page header text
 
-var aboutElement = document.getElementById("about");
-var projectsElement = document.getElementById("projects");
+var titleElement = document.querySelector("h1.page-header[id]");
+var titleText = titleElement ? (titleElement.dataset.title || titleElement.id) : "";
 
 var i = 0;
 var speed = 120;
 
 function typewriter() {
-	if (aboutElement !== null && i < aboutElement.id.length) {
-		aboutElement.innerHTML += aboutElement.id.charAt(i);
-	} else if (projectsElement !== null && i < projectsElement.id.length) {
-		projectsElement.innerHTML += projectsElement.id.charAt(i);
-	}
-	i++;
-	if ((aboutElement !== null && i < aboutElement.id.length) || (projectsElement !== null && i < projectsElement.id.length)) {
+	if (titleElement !== null && i < titleText.length) {
+		titleElement.innerHTML += titleText.charAt(i);
+		i++;
 		setTimeout(typewriter, speed);
 	}
 }
@@ -52,7 +48,7 @@ function setupNavigation() {
 	});
 
 	// Smooth subtle image entrance animations
-	const cards = document.querySelectorAll('.project, .headshot, .home-intro-card');
+	const cards = document.querySelectorAll('.project, .headshot, .home-page');
 	cards.forEach((card, index) => {
 		card.style.opacity = '0';
 		card.style.transform = 'translateY(15px)';
