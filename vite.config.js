@@ -6,7 +6,7 @@ const pages = ['index', 'about', 'projects', 'otw', 'bttf', 'flix'];
 
 // Mirrors public/.htaccess for the dev and preview servers: serve /about from
 // about.html and send /about.html to /about, so links behave the same as on
-// the Apache host. /home.html is a legacy URL from the old site and goes to /.
+// the Apache host.
 function cleanUrls() {
   const rewrite = (root) => (req, res, next) => {
     const url = new URL(req.url, 'http://localhost');
@@ -14,7 +14,7 @@ function cleanUrls() {
 
     const htmlMatch = path.match(/^\/([^/]+)\.html$/);
     if (htmlMatch) {
-      const target = ['index', 'home'].includes(htmlMatch[1]) ? '/' : `/${htmlMatch[1]}`;
+      const target = htmlMatch[1] === 'index' ? '/' : `/${htmlMatch[1]}`;
       res.statusCode = 301;
       res.setHeader('Location', target + url.search);
       res.end();

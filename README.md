@@ -6,7 +6,7 @@ Live reference: [vanessaeroraha.com](https://vanessaeroraha.com)
 
 ## Pages
 
-URLs are extensionless: `/`, `/about`, `/projects`, `/otw`, `/bttf`, `/flix`. Requests for `page.html`, trailing slashes, `index.html`, and the old site's `home.html` 301 to the canonical form (`public/.htaccess` on Bluehost; the `cleanUrls` plugin in `vite.config.js` for `npm run dev` / `npm run preview`). Internal links use root-relative paths (`/about`).
+URLs are extensionless: `/`, `/about`, `/projects`, `/otw`, `/bttf`, `/flix`. Requests for `page.html`, trailing slashes, and `index.html` 301 to the canonical form (`public/.htaccess` on Bluehost; the `cleanUrls` plugin in `vite.config.js` for `npm run dev` / `npm run preview`). Internal links use root-relative paths (`/about`).
 
 - `index.html` — `/`: intro headline, current role, and calls to action.
 - `about.html` — `/about`: background at Booz Allen Hamilton and Virginia Tech, plus personal notes.
