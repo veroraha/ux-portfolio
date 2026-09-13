@@ -1,38 +1,39 @@
-# Vanessa Eroraha — UX Design Portfolio
+# Vanessa Eroraha — UX Portfolio
 
-A multi-disciplinary UX Designer & Product Owner portfolio showcasing case studies, design systems, and user research.
+Personal site for Vanessa Eroraha, a multi-disciplinary UX designer and product owner. The site is static HTML, CSS, and JavaScript, built with Vite.
 
-## Features & Tech Stack
-- **Design System:** Custom warm retro/editorial palette (Cream `#FFF2D0`, Coral `#FF5A5A`, Olive `#808249`, Brown `#321F12`).
-- **Pages:**
-  - `index.html` / `home.html`: Headline statement and intro hero.
-  - `about.html`: Professional narrative, background (Booz Allen, Virginia Tech CS/HCI), and interests.
-  - `projects.html`: Gallery-style museum placards for *On The Way*, *Back to the Future*, and *Flixtape*.
-  - `Eroraha Resume.pdf`: Downloadable/viewable resume PDF.
-- **Interactivity:** Responsive mobile hamburger/dropdown menu, smooth entrance animations, and clean semantic markup.
+Live reference: [vanessaeroraha.com](https://vanessaeroraha.com)
 
-## Running Locally
+## Pages
 
-### Option 1: Vite Dev Server (Recommended)
+- `index.html` / `home.html` — intro headline, current role, and calls to action. Keep these two files in sync.
+- `about.html` — background at Booz Allen Hamilton and Virginia Tech, plus personal notes.
+- `projects.html` — framed gallery cards for the three case studies.
+- `otw.html` — **On The Way**: route-aware recommendations for smarter pitstops.
+- `bttf.html` — **Back to the Future**: bringing music sharing back to Spotify.
+- `flix.html` — **Flixtape**: reimagining Netflix’s playlist service.
+- `Eroraha Resume.pdf` — resume, linked from the nav on every page.
+
+## Design
+
+Alabaster page background (`#F7F6F2`), dusty mauve accent (`#957083`), and a plum footer (`#281822`). Type is Avenir. Case studies use lowercase section headers, figure captions, and a shared layout in `styles.css`.
+
+## Run locally
+
 ```bash
 npm install
 npm run dev
 ```
 
-### Option 2: Any Static Web Server
+Vite serves the site at [http://localhost:43123](http://localhost:43123).
+
 ```bash
-npx serve .
-# or Python 3:
-python3 -m http.server 8080
+npm run build
+npm run preview
 ```
 
-## Pushing to GitLab
+You can also serve the files with any static server (`npx serve .` or `python3 -m http.server`).
 
-1. Create a new blank project on [GitLab](https://gitlab.com/projects/new).
-2. Link and push your local repository:
-```bash
-git remote add gitlab git@gitlab.com:<your-gitlab-username>/<your-repo-name>.git
-git branch -M main
-git push -u gitlab main
-```
-The included `.gitlab-ci.yml` file will automatically build and publish your site via **GitLab Pages**.
+## Deploy
+
+`.gitlab-ci.yml` builds with Vite and publishes `dist` to GitLab Pages on `main`.
