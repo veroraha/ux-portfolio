@@ -315,12 +315,7 @@ body {
 	}
 
 	.case-study-mockup-row {
-		flex-wrap: wrap;
-	}
-
-	.case-study-mockup-row img {
-		flex: 1 1 calc(50% - 0.35rem);
-		width: calc(50% - 0.35rem);
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 }
 
@@ -425,9 +420,9 @@ body:has(.home-page) .page-header {
 }
 
 .case-study-mockup-row {
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	align-items: start;
 	gap: 0.65rem;
 	margin: 0.25rem 0 2.25rem;
 	width: 100%;
@@ -435,9 +430,7 @@ body:has(.home-page) .page-header {
 
 .case-study-mockup-row img {
 	display: block;
-	flex: 1 1 0;
-	min-width: 0;
-	width: 0;
+	width: 100%;
 	height: auto;
 	border-radius: 14px;
 	box-shadow: 0 8px 30px rgba(18, 19, 22, 0.08), 0 2px 8px rgba(18, 19, 22, 0.04);
