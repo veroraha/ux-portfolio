@@ -643,112 +643,344 @@ body:has(.home-page) .page-header {
 	transform: translateY(-2px);
 }
 
-/** projects page - art museum gallery exhibition layout **/
+/** projects page - first-person gallery room carousel **/
 
-.project-grid {
+.gallery {
+	--wall: #1F4D93;
+	--wall-deep: #163B75;
+	--trim: #F4F1EA;
+	--floor-light: #E6CFA9;
+	--floor-mid: #DCC094;
+	--floor-dark: #CFB081;
+	--plank: 2.75rem;
+	--arrow-size: 3.25rem;
+	--wall-height: clamp(30rem, 70vh, 40rem);
+	position: relative;
+	width: 100vw;
+	margin: 1.5rem 0 3rem calc(50% - 50vw);
+}
+
+.gallery-room {
+	position: relative;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
-	gap: 6rem;
-	margin-top: 3rem;
+	overflow: hidden;
+	box-shadow: 0 30px 60px -30px rgba(18, 19, 22, 0.35);
 }
 
-.project-link {
-	display: block;
+/* ceiling: white vault with a skylight */
+.gallery-ceiling {
+	position: relative;
+	height: 4.5rem;
+	background:
+		linear-gradient(180deg, #FFFFFF 0%, #F6F4EE 70%, #E4E0D6 100%);
+}
+
+.gallery-ceiling::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 0.55rem;
+	background: linear-gradient(180deg, #FFFFFF, #DAD5CA);
+	box-shadow: 0 2px 4px rgba(18, 19, 22, 0.25);
+}
+
+.gallery-skylight {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: min(38%, 26rem);
+	height: 2.2rem;
+	transform: translateX(-50%) perspective(400px) rotateX(38deg);
+	transform-origin: top center;
+	background:
+		repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 0 2.5rem, rgba(180, 190, 200, 0.55) 2.5rem calc(2.5rem + 2px)),
+		linear-gradient(180deg, #DDE7F2, #F1F5F9);
+	border: 3px solid #FFFFFF;
+	border-top: 0;
+	box-shadow: 0 6px 14px rgba(120, 140, 170, 0.25);
+}
+
+/* wall: the viewer stands directly in front of it */
+.gallery-wall {
+	position: relative;
+	min-height: var(--wall-height);
+	display: flex;
+	align-items: center;
+	padding: 3rem calc(var(--arrow-size) + 3rem) 4.5rem;
+	background:
+		radial-gradient(ellipse 60% 70% at 50% 42%, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0) 70%),
+		linear-gradient(180deg, var(--wall-deep) 0%, var(--wall) 30%, var(--wall) 100%);
+}
+
+.gallery-baseboard {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1.35rem;
+	background: linear-gradient(180deg, #FFFFFF 0%, var(--trim) 55%, #D8D3C8 100%);
+	box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* floor: parquet planks receding toward the wall */
+.gallery-floor {
+	position: relative;
+	height: 11rem;
+	overflow: hidden;
+	background: var(--floor-mid);
+}
+
+.gallery-floor::before {
+	content: "";
+	position: absolute;
+	inset: -30% -90% -90%;
+	transform: perspective(30rem) rotateX(60deg);
+	transform-origin: top center;
+	background:
+		repeating-linear-gradient(90deg, rgba(90, 60, 30, 0.16) 0 1px, rgba(0, 0, 0, 0) 1px var(--plank)),
+		repeating-linear-gradient(180deg, rgba(90, 60, 30, 0.12) 0 1px, rgba(0, 0, 0, 0) 1px calc(var(--plank) * 3)),
+		repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.10) 0 0.5rem, rgba(0, 0, 0, 0) 0.5rem 1rem),
+		repeating-linear-gradient(90deg, var(--floor-light) 0 var(--plank), var(--floor-mid) var(--plank) calc(var(--plank) * 2), var(--floor-dark) calc(var(--plank) * 2) calc(var(--plank) * 3), var(--floor-mid) calc(var(--plank) * 3) calc(var(--plank) * 4));
+}
+
+.gallery-floor::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background:
+		linear-gradient(180deg, rgba(60, 40, 20, 0.30), rgba(60, 40, 20, 0) 40%),
+		radial-gradient(ellipse 45% 50% at 50% 0%, rgba(255, 250, 240, 0.35), rgba(255, 250, 240, 0) 70%);
+}
+
+/* slides stack in one grid cell so the wall keeps one height */
+.gallery-stage {
+	display: grid;
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.gallery-slide {
+	grid-area: 1 / 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: clamp(1.5rem, 4vw, 3.5rem);
 	color: inherit;
 	text-decoration: none;
-	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(var(--slide-offset, 0)) scale(0.98);
+	transition: opacity 0.45s ease, transform 0.45s ease, visibility 0s linear 0.45s;
 }
 
-.project {
-	display: grid;
-	grid-template-columns: 50% 50%;
-	gap: 4rem;
-	align-items: center;
-	background-color: transparent;
-	padding: 0;
-	border: none;
-	box-shadow: none;
-	transition: transform 0.3s ease;
+.gallery-slide.is-active {
+	opacity: 1;
+	visibility: visible;
+	transform: none;
+	transition: opacity 0.45s ease, transform 0.45s ease, visibility 0s;
 }
 
-.project:hover {
-	transform: translateY(-4px);
-	box-shadow: none;
+.gallery-slide.is-exit-left {
+	--slide-offset: -3rem;
 }
 
-.project img {
-	width: 100%;
-	max-width: 440px;
-	height: auto;
-	border-radius: 4px;
+.gallery-slide.is-exit-right {
+	--slide-offset: 3rem;
+}
+
+.gallery-artwork {
+	margin: 0;
+	flex: 0 0 auto;
+}
+
+.gallery-artwork img {
 	display: block;
-	margin: 0 auto;
-	border: none;
-	filter: drop-shadow(0 16px 36px rgba(18, 19, 22, 0.25));
-	transition: filter 0.3s ease, transform 0.3s ease;
+	height: min(calc(var(--wall-height) - 8.5rem), 30rem);
+	width: auto;
+	max-width: 100%;
+	filter: drop-shadow(0 22px 30px rgba(0, 0, 0, 0.45)) drop-shadow(0 4px 6px rgba(0, 0, 0, 0.35));
+	transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-.project:hover img {
-	filter: drop-shadow(0 24px 48px rgba(18, 19, 22, 0.32));
-	transform: scale(1.01);
+.gallery-slide:hover .gallery-artwork img,
+.gallery-slide:focus-visible .gallery-artwork img {
+	transform: translateY(-4px) scale(1.012);
+	filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.5)) drop-shadow(0 6px 8px rgba(0, 0, 0, 0.35));
 }
 
-/** Authentic Art Museum Placard (Plain White Card, No Border, Clean Box Shadow) **/
+.gallery-slide:focus-visible {
+	outline: 3px solid #FFFFFF;
+	outline-offset: 6px;
+	border-radius: 4px;
+}
 
-.project .placard {
+/** museum placard mounted on the wall beside the frame **/
+
+.placard {
 	background-color: #FFFFFF;
 	border: none;
-	border-radius: 4px;
-	box-shadow: 0 8px 30px rgba(18, 19, 22, 0.08), 0 2px 8px rgba(18, 19, 22, 0.04);
-	padding: 2rem 2.25rem;
+	border-radius: 3px;
+	box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35), 0 2px 6px rgba(0, 0, 0, 0.25);
+	padding: 1.5rem 1.65rem 1.35rem;
 	text-align: left;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	align-self: center;
-	max-width: 420px;
+	width: min(100%, 19rem);
+	flex: 0 1 19rem;
 	transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.project:hover .placard {
-	box-shadow: 0 14px 40px rgba(18, 19, 22, 0.12), 0 3px 10px rgba(18, 19, 22, 0.06);
+.gallery-slide:hover .placard {
+	box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), 0 3px 8px rgba(0, 0, 0, 0.25);
 	transform: translateY(-2px);
 }
 
-.project .placard h3,
-.project .placard h4,
-.project .placard p,
-.project .placard span {
+.placard h3,
+.placard h4,
+.placard p,
+.placard span {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.project .placard h3 {
-	margin: 0 0 0.4rem;
-	font-size: 1.45rem;
+.placard h3 {
+	margin: 0 0 0.3rem;
+	font-size: 1.25rem;
 	font-weight: 700;
-	letter-spacing: -0.4px;
+	letter-spacing: -0.3px;
 	color: #121316;
 }
 
-.project .placard .project-year {
+.placard .project-year {
 	font-weight: 500;
-	font-size: 0.95rem;
+	font-size: 0.85rem;
 	color: var(--tertiary-text-color);
-	margin-bottom: 1.25rem;
+	margin-bottom: 1rem;
 	text-transform: none;
 	letter-spacing: 0.2px;
 }
 
-.project .placard h4 {
-	margin: 0 0 0.85rem;
+.placard h4 {
+	margin: 0 0 0.65rem;
 	font-weight: 400;
-	font-size: 0.94rem;
-	line-height: 1.55;
+	font-size: 0.84rem;
+	line-height: 1.5;
 	color: #4A4E57;
 }
 
-.project .placard h4 strong {
+.placard h4 strong {
 	color: #121316;
 	font-weight: 600;
+}
+
+.placard-cta {
+	display: inline-block;
+	margin-top: 0.35rem;
+	padding-top: 0.6rem;
+	border-top: 1px solid var(--border-color);
+	width: 100%;
+	font-size: 0.78rem;
+	font-weight: 600;
+	letter-spacing: 0.4px;
+	text-transform: lowercase;
+	color: var(--primary-accent-color);
+}
+
+.gallery-slide:hover .placard-cta {
+	color: var(--primary-accent-hover);
+}
+
+/** arrows pinned to the left and right edges **/
+
+.gallery-arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+	width: var(--arrow-size);
+	height: var(--arrow-size);
+	transform: translateY(-50%);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: 0;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.92);
+	color: var(--primary-text-color);
+	cursor: pointer;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+	transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-arrow--prev {
+	left: 1.5rem;
+}
+
+.gallery-arrow--next {
+	right: 1.5rem;
+}
+
+.gallery-arrow svg {
+	width: 1.35rem;
+	height: 1.35rem;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 2.25;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.gallery-arrow:hover,
+.gallery-arrow:focus-visible {
+	background-color: var(--primary-accent-color);
+	color: #FFFFFF;
+	transform: translateY(-50%) scale(1.06);
+	outline: none;
+}
+
+.gallery-arrow:focus-visible {
+	box-shadow: 0 0 0 3px #FFFFFF, 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.gallery-dots {
+	display: flex;
+	justify-content: center;
+	gap: 0.6rem;
+	margin-top: 1.5rem;
+}
+
+.gallery-dot {
+	width: 0.65rem;
+	height: 0.65rem;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background-color: var(--border-color);
+	cursor: pointer;
+	transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-dot:hover,
+.gallery-dot:focus-visible {
+	background-color: var(--secondary-accent-color);
+	outline: none;
+}
+
+.gallery-dot.is-active {
+	background-color: var(--primary-accent-color);
+	transform: scale(1.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.gallery-slide,
+	.gallery-slide.is-active,
+	.gallery-artwork img,
+	.placard,
+	.gallery-arrow,
+	.gallery-dot {
+		transition: none;
+	}
 }
 
 /** responsive layout adjustments **/
@@ -764,13 +996,9 @@ body:has(.home-page) .page-header {
 		padding-right: 1.5rem;
 	}
 
-	.project {
-		grid-template-columns: 50% 50%;
-		gap: 2rem;
-	}
-
-	.project .placard {
-		padding: 1.5rem 1.75rem;
+	.gallery-wall {
+		padding-left: calc(var(--arrow-size) + 2rem);
+		padding-right: calc(var(--arrow-size) + 2rem);
 	}
 }
 
@@ -809,17 +1037,55 @@ body:has(.home-page) .page-header {
 		width: 100%;
 	}
 
-	.project-grid {
-		gap: 3.5rem;
+	.gallery {
+		--arrow-size: 2.6rem;
+		--wall-height: auto;
+		--plank: 1.5rem;
+		margin-top: 0.5rem;
 	}
 
-	.project {
-		grid-template-columns: 100%;
-		gap: 1.75rem;
+	.gallery-ceiling {
+		height: 3rem;
 	}
 
-	.project .placard {
-		max-width: 100%;
-		padding: 1.5rem;
+	.gallery-skylight {
+		height: 1.6rem;
+		width: 50%;
+	}
+
+	.gallery-wall {
+		padding: 2.5rem 1.25rem 3.75rem;
+	}
+
+	.gallery-slide {
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.gallery-artwork {
+		width: min(100%, 15rem);
+	}
+
+	.gallery-artwork img {
+		height: auto;
+		width: 100%;
+	}
+
+	.placard {
+		width: min(100%, 22rem);
+		flex: 0 0 auto;
+		padding: 1.15rem 1.25rem 1rem;
+	}
+
+	.gallery-arrow--prev {
+		left: 0.6rem;
+	}
+
+	.gallery-arrow--next {
+		right: 0.6rem;
+	}
+
+	.gallery-floor {
+		height: 7rem;
 	}
 }

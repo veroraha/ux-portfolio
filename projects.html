@@ -32,43 +32,74 @@
 	<main class="content">
 		<h1 id="projects" class="page-header" style="padding-bottom: 1rem;">projects</h1>
 
-		<div class="project-grid">
-			<a class="project-link" href="otw.html">
-				<article class="project">
-					<img src="./otw/framed-otw.png" alt="On The Way - Transit &amp; Route UX Mockup"/>
-					<div class="placard">
-						<h3>On The Way</h3>
-						<h4 class="project-year">c. 2021</h4>
-						<h4><strong>Skills:</strong> UI + interaction design, UX research, prototyping, branding + logo design</h4>
-						<h4><strong>Tools:</strong> Sketch, HTML + CSS, JavaScript, Angular, Google Maps API</h4>
-					</div>
-				</article>
-			</a>
+		<section class="gallery" id="projectGallery" aria-roledescription="carousel" aria-label="Project gallery">
+			<div class="gallery-room">
+				<div class="gallery-ceiling" aria-hidden="true">
+					<div class="gallery-skylight"></div>
+				</div>
 
-			<a class="project-link" href="bttf.html">
-				<article class="project">
-					<img src="./bttf/framed-bttf.png" alt="Back to the Future - Interactive Research Platform Mockup"/>
-					<div class="placard">
-						<h3>Back to the Future</h3>
-						<h4 class="project-year">c. 2021</h4>
-						<h4><strong>Skills:</strong> UI + interaction design, UX research, prototyping</h4>
-						<h4><strong>Tools:</strong> Adobe XD, Google Forms</h4>
-					</div>
-				</article>
-			</a>
+				<div class="gallery-wall">
+					<button class="gallery-arrow gallery-arrow--prev" type="button" data-gallery-prev aria-label="Previous project" aria-controls="galleryStage">
+						<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7"/></svg>
+					</button>
 
-			<a class="project-link" href="flix.html">
-				<article class="project">
-					<img src="./flix/framed-flix.png" alt="Flixtape - Social Film Discovery Mockup"/>
-					<div class="placard">
-						<h3>Flixtape</h3>
-						<h4 class="project-year">c. 2020</h4>
-						<h4><strong>Skills:</strong> UI + interaction design, UX research, affinity diagrams, prototyping</h4>
-						<h4><strong>Tools:</strong> Sketch, Miro</h4>
+					<div class="gallery-stage" id="galleryStage" aria-live="polite">
+						<a class="gallery-slide is-active" href="otw.html" role="group" aria-roledescription="slide" aria-label="1 of 3">
+							<figure class="gallery-artwork">
+								<img src="./otw/framed-otw.png" alt="On The Way - Transit &amp; Route UX Mockup"/>
+							</figure>
+							<div class="placard">
+								<h3>On The Way</h3>
+								<h4 class="project-year">c. 2021</h4>
+								<h4><strong>Skills:</strong> UI + interaction design, UX research, prototyping, branding + logo design</h4>
+								<h4><strong>Tools:</strong> Sketch, HTML + CSS, JavaScript, Angular, Google Maps API</h4>
+								<span class="placard-cta">view case study</span>
+							</div>
+						</a>
+
+						<a class="gallery-slide" href="bttf.html" role="group" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true" tabindex="-1">
+							<figure class="gallery-artwork">
+								<img src="./bttf/framed-bttf.png" alt="Back to the Future - Interactive Research Platform Mockup"/>
+							</figure>
+							<div class="placard">
+								<h3>Back to the Future</h3>
+								<h4 class="project-year">c. 2021</h4>
+								<h4><strong>Skills:</strong> UI + interaction design, UX research, prototyping</h4>
+								<h4><strong>Tools:</strong> Adobe XD, Google Forms</h4>
+								<span class="placard-cta">view case study</span>
+							</div>
+						</a>
+
+						<a class="gallery-slide" href="flix.html" role="group" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true" tabindex="-1">
+							<figure class="gallery-artwork">
+								<img src="./flix/framed-flix.png" alt="Flixtape - Social Film Discovery Mockup"/>
+							</figure>
+							<div class="placard">
+								<h3>Flixtape</h3>
+								<h4 class="project-year">c. 2020</h4>
+								<h4><strong>Skills:</strong> UI + interaction design, UX research, affinity diagrams, prototyping</h4>
+								<h4><strong>Tools:</strong> Sketch, Miro</h4>
+								<span class="placard-cta">view case study</span>
+							</div>
+						</a>
 					</div>
-				</article>
-			</a>
-		</div>
+
+					<button class="gallery-arrow gallery-arrow--next" type="button" data-gallery-next aria-label="Next project" aria-controls="galleryStage">
+						<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7"/></svg>
+					</button>
+
+					<div class="gallery-baseboard" aria-hidden="true"></div>
+				</div>
+
+				<div class="gallery-floor" aria-hidden="true"></div>
+			</div>
+
+			<div class="gallery-dots" role="tablist" aria-label="Choose a project">
+				<button type="button" role="tab" class="gallery-dot is-active" data-gallery-to="0" aria-selected="true" aria-label="On The Way"></button>
+				<button type="button" role="tab" class="gallery-dot" data-gallery-to="1" aria-selected="false" aria-label="Back to the Future"></button>
+				<button type="button" role="tab" class="gallery-dot" data-gallery-to="2" aria-selected="false" aria-label="Flixtape"></button>
+			</div>
+		</section>
 	</main>
 
 	<footer class="footer">

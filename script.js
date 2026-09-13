@@ -75,7 +75,97 @@ function setupNavigation() {
 	});
 }
 
+// Projects page gallery carousel
+function setupGallery() {
+	const gallery = document.getElementById('projectGallery');
+	if (!gallery) {
+		return;
+	}
+
+	const slides = Array.from(gallery.querySelectorAll('.gallery-slide'));
+	const dots = Array.from(gallery.querySelectorAll('[data-gallery-to]'));
+	const prevBtn = gallery.querySelector('[data-gallery-prev]');
+	const nextBtn = gallery.querySelector('[data-gallery-next]');
+	if (slides.length < 2) {
+		return;
+	}
+
+	let current = Math.max(0, slides.findIndex(slide => slide.classList.contains('is-active')));
+
+	function show(index, direction) {
+		const next = (index + slides.length) % slides.length;
+		if (next === current) {
+			return;
+		}
+
+		const leaving = slides[current];
+		const entering = slides[next];
+
+		leaving.classList.remove('is-active', 'is-exit-left', 'is-exit-right');
+		leaving.classList.add(direction > 0 ? 'is-exit-left' : 'is-exit-right');
+		leaving.setAttribute('aria-hidden', 'true');
+		leaving.setAttribute('tabindex', '-1');
+
+		entering.classList.remove('is-exit-left', 'is-exit-right');
+		entering.classList.add(direction > 0 ? 'is-exit-right' : 'is-exit-left');
+		// Force a style flush so the entering slide animates in from its offset.
+		void entering.offsetWidth;
+		entering.classList.remove('is-exit-left', 'is-exit-right');
+		entering.classList.add('is-active');
+		entering.removeAttribute('aria-hidden');
+		entering.removeAttribute('tabindex');
+
+		dots.forEach((dot, i) => {
+			const active = i === next;
+			dot.classList.toggle('is-active', active);
+			dot.setAttribute('aria-selected', active ? 'true' : 'false');
+		});
+
+		current = next;
+	}
+
+	if (prevBtn) {
+		prevBtn.addEventListener('click', () => show(current - 1, -1));
+	}
+	if (nextBtn) {
+		nextBtn.addEventListener('click', () => show(current + 1, 1));
+	}
+	dots.forEach(dot => {
+		dot.addEventListener('click', () => {
+			const target = Number(dot.dataset.galleryTo);
+			show(target, target > current ? 1 : -1);
+		});
+	});
+
+	gallery.addEventListener('keydown', (e) => {
+		if (e.key === 'ArrowLeft') {
+			e.preventDefault();
+			show(current - 1, -1);
+		} else if (e.key === 'ArrowRight') {
+			e.preventDefault();
+			show(current + 1, 1);
+		}
+	});
+
+	// Swipe on touch devices
+	let touchStartX = null;
+	gallery.addEventListener('touchstart', (e) => {
+		touchStartX = e.changedTouches[0].clientX;
+	}, { passive: true });
+	gallery.addEventListener('touchend', (e) => {
+		if (touchStartX === null) {
+			return;
+		}
+		const delta = e.changedTouches[0].clientX - touchStartX;
+		touchStartX = null;
+		if (Math.abs(delta) > 50) {
+			show(delta < 0 ? current + 1 : current - 1, delta < 0 ? 1 : -1);
+		}
+	}, { passive: true });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	setupNavigation();
 	typewriter();
+	setupGallery();
 });

@@ -8,7 +8,7 @@ Live reference: [vanessaeroraha.com](https://vanessaeroraha.com)
 
 - `index.html` / `home.html` — intro headline, current role, and calls to action. Keep these two files in sync.
 - `about.html` — background at Booz Allen Hamilton and Virginia Tech, plus personal notes.
-- `projects.html` — framed gallery cards for the three case studies.
+- `projects.html` — first-person gallery room: one framed case study and its wall placard at a time, with left/right arrows, dots, arrow keys, and swipe to move through the three projects.
 - `otw.html` — **On The Way**: route-aware recommendations for smarter pitstops.
 - `bttf.html` — **Back to the Future**: bringing music sharing back to Spotify.
 - `flix.html` — **Flixtape**: reimagining Netflix’s playlist service.
