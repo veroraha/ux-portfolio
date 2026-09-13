@@ -34,15 +34,14 @@
 
 		<section class="gallery" id="projectGallery" aria-roledescription="carousel" aria-label="Project gallery">
 			<div class="gallery-room">
-				<div class="gallery-ceiling" aria-hidden="true">
-					<div class="gallery-skylight"></div>
-				</div>
+				<div class="gallery-side-wall gallery-side-wall--left" aria-hidden="true"></div>
+				<div class="gallery-side-wall gallery-side-wall--right" aria-hidden="true"></div>
 
-				<div class="gallery-wall">
-					<button class="gallery-arrow gallery-arrow--prev" type="button" data-gallery-prev aria-label="Previous project" aria-controls="galleryStage">
-						<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7"/></svg>
-					</button>
+				<button class="gallery-arrow gallery-arrow--prev" type="button" data-gallery-prev aria-label="Previous project" aria-controls="galleryStage">
+					<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7"/></svg>
+				</button>
 
+				<div class="gallery-back-wall">
 					<div class="gallery-stage" id="galleryStage" aria-live="polite">
 						<a class="gallery-slide is-active" href="otw.html" role="group" aria-roledescription="slide" aria-label="1 of 3">
 							<figure class="gallery-artwork">
@@ -83,15 +82,11 @@
 							</div>
 						</a>
 					</div>
-
-					<button class="gallery-arrow gallery-arrow--next" type="button" data-gallery-next aria-label="Next project" aria-controls="galleryStage">
-						<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7"/></svg>
-					</button>
-
-					<div class="gallery-baseboard" aria-hidden="true"></div>
 				</div>
 
-				<div class="gallery-floor" aria-hidden="true"></div>
+				<button class="gallery-arrow gallery-arrow--next" type="button" data-gallery-next aria-label="Next project" aria-controls="galleryStage">
+					<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7"/></svg>
+				</button>
 			</div>
 
 			<div class="gallery-dots" role="tablist" aria-label="Choose a project">
