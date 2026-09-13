@@ -2,11 +2,11 @@ import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
 
-const pages = ['index', 'home', 'about', 'projects', 'otw', 'bttf', 'flix'];
+const pages = ['index', 'about', 'projects', 'otw', 'bttf', 'flix'];
 
 // Mirrors public/.htaccess for the dev and preview servers: serve /about from
 // about.html and send /about.html to /about, so links behave the same as on
-// the Apache host.
+// the Apache host. /home.html is a legacy URL from the old site and goes to /.
 function cleanUrls() {
   const rewrite = (root) => (req, res, next) => {
     const url = new URL(req.url, 'http://localhost');

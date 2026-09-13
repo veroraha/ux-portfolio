@@ -10,8 +10,9 @@ Options -MultiViews
   RewriteEngine On
 
   # Canonical URLs have no .html extension. Redirect direct requests for
-  # /index.html and /home.html to /, and /page.html to /page. THE_REQUEST is
-  # checked (not REQUEST_URI) so the internal rewrite below does not loop.
+  # /index.html (and the old site's /home.html) to /, and /page.html to /page.
+  # THE_REQUEST is checked (not REQUEST_URI) so the internal rewrite below
+  # does not loop.
   RewriteCond %{THE_REQUEST} \s/+(index|home)\.html[\s?] [NC]
   RewriteRule ^ / [R=301,L]
 

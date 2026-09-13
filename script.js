@@ -48,11 +48,11 @@ function setupNavigation() {
 
 	// Active link highlight based on current path
 	// URLs are extensionless (/about); normalise so /about, /about.html, and
-	// /about/ all count as the same page, with / index and home collapsing to "".
+	// /about/ all count as the same page, with / and index collapsing to "".
 	const normalise = (path) => path
 		.replace(/\.html$/, '')
 		.replace(/\/+$/, '')
-		.replace(/^\/?(index|home)$/, '')
+		.replace(/^\/?index$/, '')
 		.replace(/^\/+/, '');
 	const currentPath = normalise(window.location.pathname);
 	const navLinks = document.querySelectorAll('.header-links a, .dropdown-links a');
