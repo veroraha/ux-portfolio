@@ -423,6 +423,11 @@ body:has(.home-page) .page-header {
 	background-color: #fff;
 }
 
+.case-study-figure--plain img {
+	background-color: transparent;
+	box-shadow: none;
+}
+
 .case-study-figure figcaption {
 	margin-top: 0.65rem;
 	font-size: 0.95rem;
