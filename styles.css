@@ -646,13 +646,14 @@ body:has(.home-page) .page-header {
 /** projects page - first-person gallery room carousel **/
 
 .gallery {
-	--wall: var(--primary-bg-color);
-	--wall-shade: #ECE9E2;
-	--wall-shade-deep: #DFDBD2;
-	--wall-edge: rgba(18, 19, 22, 0.10);
+	--wall: var(--footer-bg-color);
+	--wall-shade: #342530;
+	--wall-shade-deep: #1C1218;
+	--wall-edge: rgba(247, 246, 242, 0.10);
 	--side-wall-width: clamp(7rem, 16vw, 15rem);
 	/* how far the side walls' inner (corner) edges sit inside the room's top and bottom */
 	--corner-drop: clamp(3rem, 8vh, 4.5rem);
+	--floor-depth: clamp(7.5rem, 16vh, 11rem);
 	--arrow-size: 3rem;
 	--wall-height: clamp(30rem, 70vh, 40rem);
 	position: relative;
@@ -680,13 +681,13 @@ body:has(.home-page) .page-header {
 /* raking light: side walls darken toward the corner where they meet the back wall */
 .gallery-side-wall--left {
 	left: 0;
-	clip-path: polygon(0 0, 100% var(--corner-drop), 100% calc(100% - var(--corner-drop)), 0 100%);
+	clip-path: polygon(0 0, 100% var(--corner-drop), 100% calc(100% - var(--floor-depth)), 0 100%);
 	background-image: linear-gradient(90deg, var(--wall) 0%, var(--wall-shade) 55%, var(--wall-shade-deep) 100%);
 }
 
 .gallery-side-wall--right {
 	right: 0;
-	clip-path: polygon(0 var(--corner-drop), 100% 0, 100% 100%, 0 calc(100% - var(--corner-drop)));
+	clip-path: polygon(0 var(--corner-drop), 100% 0, 100% 100%, 0 calc(100% - var(--floor-depth)));
 	background-image: linear-gradient(270deg, var(--wall) 0%, var(--wall-shade) 55%, var(--wall-shade-deep) 100%);
 }
 
@@ -696,7 +697,7 @@ body:has(.home-page) .page-header {
 	display: flex;
 	align-items: center;
 	/* top and bottom edges meet the side walls' corner points so it reads as one room */
-	margin: var(--corner-drop) var(--side-wall-width);
+	margin: var(--corner-drop) var(--side-wall-width) var(--floor-depth);
 	padding: 2.5rem clamp(1rem, 3vw, 3rem);
 	background-color: var(--wall);
 	/* corner seams where the side walls meet the back wall */
@@ -705,8 +706,46 @@ body:has(.home-page) .page-header {
 		inset -1px 0 0 var(--wall-edge),
 		inset 0 1px 0 var(--wall-edge),
 		inset 0 -1px 0 var(--wall-edge),
-		inset 18px 0 24px -20px rgba(18, 19, 22, 0.18),
-		inset -18px 0 24px -20px rgba(18, 19, 22, 0.18);
+		inset 18px 0 24px -20px rgba(0, 0, 0, 0.35),
+		inset -18px 0 24px -20px rgba(0, 0, 0, 0.35);
+}
+
+/* parquet floor: trapezoid below the back wall, receding in perspective */
+.gallery-floor {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: var(--floor-depth);
+	overflow: hidden;
+	clip-path: polygon(
+		var(--side-wall-width) 0,
+		calc(100% - var(--side-wall-width)) 0,
+		100% 100%,
+		0 100%
+	);
+	background-color: #C9A66E;
+}
+
+.gallery-floor::before {
+	content: "";
+	position: absolute;
+	inset: -55% -95% -30%;
+	transform: perspective(26rem) rotateX(62deg);
+	transform-origin: top center;
+	background-color: #C9A66E;
+	background-image: url("/gallery-floor.svg");
+	background-size: 5.5rem 5.5rem;
+}
+
+.gallery-floor::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background:
+		linear-gradient(180deg, rgba(40, 24, 34, 0.38), rgba(40, 24, 34, 0) 42%),
+		radial-gradient(ellipse 55% 70% at 50% 0%, rgba(255, 244, 220, 0.18), transparent 70%);
+	pointer-events: none;
 }
 
 /* slides stack in one grid cell so the wall keeps one height */
@@ -753,17 +792,17 @@ body:has(.home-page) .page-header {
 
 .gallery-artwork img {
 	display: block;
-	height: min(calc(var(--wall-height) - 2 * var(--corner-drop) - 5.5rem), 30rem);
+	height: min(calc(var(--wall-height) - var(--corner-drop) - var(--floor-depth) - 5.5rem), 30rem);
 	width: auto;
 	max-width: 100%;
-	filter: drop-shadow(0 18px 28px rgba(18, 19, 22, 0.22)) drop-shadow(0 3px 6px rgba(18, 19, 22, 0.16));
+	filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.45)) drop-shadow(0 3px 6px rgba(0, 0, 0, 0.28));
 	transition: transform 0.4s ease, filter 0.4s ease;
 }
 
 .gallery-slide:hover .gallery-artwork img,
 .gallery-slide:focus-visible .gallery-artwork img {
 	transform: translateY(-4px) scale(1.012);
-	filter: drop-shadow(0 26px 36px rgba(18, 19, 22, 0.28)) drop-shadow(0 5px 8px rgba(18, 19, 22, 0.18));
+	filter: drop-shadow(0 26px 36px rgba(0, 0, 0, 0.55)) drop-shadow(0 5px 8px rgba(0, 0, 0, 0.32));
 }
 
 .gallery-slide:focus-visible {
@@ -860,9 +899,9 @@ body:has(.home-page) .page-header {
 	justify-content: center;
 	padding: 0;
 	background-color: transparent;
-	border: 1px solid var(--primary-text-color);
+	border: 1px solid #F7F6F2;
 	border-radius: 6px;
-	color: var(--primary-text-color);
+	color: #F7F6F2;
 	cursor: pointer;
 	transition: all 0.2s ease;
 }
@@ -887,9 +926,9 @@ body:has(.home-page) .page-header {
 
 .gallery-arrow:hover,
 .gallery-arrow:focus-visible {
-	background-color: var(--primary-text-color);
-	border-color: var(--primary-text-color);
-	color: var(--primary-bg-color);
+	background-color: #F7F6F2;
+	border-color: #F7F6F2;
+	color: var(--footer-bg-color);
 	transform: translateY(calc(-50% - 2px));
 	outline: none;
 }
@@ -995,6 +1034,7 @@ body:has(.home-page) .page-header {
 		--arrow-size: 2.5rem;
 		--side-wall-width: 3.75rem;
 		--corner-drop: 1.5rem;
+		--floor-depth: 5.5rem;
 		--wall-height: auto;
 		margin-top: 0.5rem;
 	}

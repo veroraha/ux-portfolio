@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#C9A66E"/>
+  <!-- herringbone unit: two rows of opposing 16x32 planks -->
+  <g stroke="#7A5428" stroke-opacity="0.32" stroke-width="0.7">
+    <path fill="#E6CFA0" d="M0 0h16l16 16H16z"/>
+    <path fill="#CBA66E" d="M16 16h16L16 32H0z"/>
+    <path fill="#D8B888" d="M32 0h16L64 16H48z"/>
+    <path fill="#B89058" d="M48 16h16L48 32H32z"/>
+    <path fill="#D4B27C" d="M0 32h16l16 16H16z"/>
+    <path fill="#C49A62" d="M16 48h16L16 64H0z"/>
+    <path fill="#E0C494" d="M32 32h16L64 48H48z"/>
+    <path fill="#A87E48" d="M48 48h16L48 64H32z"/>
+  </g>
+  <!-- faint grain along each plank -->
+  <g stroke="#FFF6DC" stroke-opacity="0.12" stroke-width="0.4" fill="none">
+    <path d="M4 4l12 12"/>
+    <path d="M8 20l8 8"/>
+    <path d="M36 4l20 20"/>
+    <path d="M4 36l12 12"/>
+    <path d="M36 36l20 20"/>
+  </g>
+</svg>
