@@ -17,7 +17,7 @@ URLs are extensionless: `/`, `/about`, `/projects`, `/bah`, `/otw`, `/bttf`, `/f
 - `flix.html` — `/flix`: **Flixtape**: reimagining Netflix’s playlist service.
 - `Eroraha Resume.pdf` — resume, linked from the nav on every page.
 
-Case-study images, videos, and the about-page headshot live in `otw/`, `bttf/`, `flix/`, `bah/`, and `me/` next to the HTML. Vite hashes those files into `dist/assets/` on build. `public/` only holds files that must keep their names in the built site (`.htaccess`, `.cpanel.yml`, and the resume).
+Case-study images, videos, and the about-page headshot live in `otw/`, `bttf/`, `flix/`, `bah/`, and `me/` next to the HTML. Vite hashes those files into `dist/assets/` on build. `public/` holds files that must keep their names in the built site (`.htaccess`, `.cpanel.yml`, the favicon, and the resume). When the unbundled repo is the docroot, root `.htaccess` maps `/favicon.svg` and `/Eroraha Resume.pdf` to those `public/` copies.
 
 ## Design
 
@@ -30,14 +30,12 @@ npm install
 npm run dev
 ```
 
-Vite serves the site at [http://localhost:43123](http://localhost:43123).
+Vite serves the site at [http://localhost:43123](http://localhost:43123). Use that (or `npm run preview` after a build) rather than a generic static server: the favicon and resume live in `public/` and are exposed at `/` by Vite and by Apache, not by `python3 -m http.server`.
 
 ```bash
 npm run build
 npm run preview
 ```
-
-You can also serve the files with any static server (`npx serve .` or `python3 -m http.server`).
 
 ## Deploy
 
