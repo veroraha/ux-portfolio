@@ -11,6 +11,12 @@ Options -MultiViews
   RewriteEngine On
   RewriteBase /
 
+  # When this source tree is the docroot, Vite's public/ files are in a
+  # subdirectory. The built `deploy` branch copies them to the root instead,
+  # so these rules are omitted from public/.htaccess.
+  RewriteRule ^favicon\.svg$ public/favicon.svg [L]
+  RewriteRule ^Eroraha\ Resume\.pdf$ public/Eroraha\ Resume.pdf [L]
+
   # Canonical URLs have no .html extension. THE_REQUEST is the original
   # browser request, so this 301 does not loop after the internal rewrite.
   RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]

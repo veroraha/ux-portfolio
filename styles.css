@@ -16,13 +16,10 @@
 	font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
 	--primary-bg-color: #F7F6F2; /** Gallery Alabaster / Limestone */
-	--secondary-bg-color: #FFFFFF; /** Pure Exhibition White */
 	--surface-muted-color: #EFECE6; /** Warm Linen Surface */
 	--border-color: #E2DFD7; /** Architectural Frame Line */
-	--border-subtle: #ECEAE4;
 	
 	--primary-accent-color: #957083; /** Dusty Mauve / Rosewood */
-	--primary-accent-hover: #7A5A6B;
 	--secondary-accent-color: #E4D5DC; /** Soft Mauve Wash */
 	--footer-bg-color: #281822; /** Deep Plum */
 	
@@ -106,8 +103,7 @@ body {
 }
 
 .nav .header-links, 
-.nav .dropdown-links, 
-.footer-links {
+.nav .dropdown-links {
 	display: flex;
 	list-style: none;
 	gap: 2.5rem;
