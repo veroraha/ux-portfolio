@@ -86,20 +86,19 @@ body {
 	text-decoration: none;
 	transition: color 0.2s ease;
 	display: inline-flex;
-	align-items: baseline;
-	gap: 0.9rem;
+	align-items: center;
+	gap: 1.2rem;
 }
 
-.header .site-initials {
-	color: var(--secondary-accent-color);
+.header .site-mark {
+	width: 2rem;
+	height: 2rem;
+	display: block;
+	flex-shrink: 0;
 }
 
 .header .site-name a:hover {
 	color: var(--primary-accent-color);
-}
-
-.header .site-name a:hover .site-initials {
-	color: var(--secondary-accent-color);
 }
 
 .nav {
