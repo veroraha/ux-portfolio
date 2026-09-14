@@ -44,7 +44,7 @@ The site is hosted on Bluehost and built by GitHub Actions.
 1. Every push to `main` runs `.github/workflows/deploy.yml`, which builds with Vite and force-pushes the contents of `dist` to the `deploy` branch (a single orphan commit).
 2. Bluehost's cPanel **Git Version Control** has this repo cloned with the `deploy` branch checked out. Clicking **Update from Remote** then **Deploy HEAD Commit** runs `public/.cpanel.yml` (shipped inside `dist`), which copies the built files into `~/public_html/`.
 
-`public/.htaccess` serves the extensionless URLs (and 301s the `.html` forms), sets MIME types for the MP4 demos, and adds cache headers for the fingerprinted assets. The page rewrite intentionally takes precedence over the same-named asset folders (`otw/`, `bttf/`, `flix/`), which is why it sets `DirectorySlash Off`.
+`.htaccess` (repo root, copied into `dist` from `public/.htaccess`) serves `/projects` from `projects.html` and 301s the `.html` forms. `RewriteBase /` is set for Bluehost. The rewrite wins over same-named asset folders (`otw/`, `bttf/`, `flix/`, `bah/`) and `DirectorySlash Off` stops Apache from 403'ing those folder names. The file must sit in `public_html`, not in a `public/` subfolder.
 
 ### One-time Bluehost setup
 
