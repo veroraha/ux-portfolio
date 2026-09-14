@@ -91,17 +91,39 @@ function setupGallery() {
 	const slides = Array.from(gallery.querySelectorAll('.project-link'));
 	const prevBtn = gallery.querySelector('[data-gallery-prev]');
 	const nextBtn = gallery.querySelector('[data-gallery-next]');
-	const indexEl = gallery.querySelector('[data-gallery-index]');
-	const totalEl = gallery.querySelector('[data-gallery-total]');
+	const dotsRoot = gallery.querySelector('[data-gallery-dots]');
 	if (slides.length < 2) {
 		return;
 	}
 
-	if (totalEl) {
-		totalEl.textContent = String(slides.length);
+	let current = Math.max(0, slides.findIndex(slide => slide.classList.contains('is-active')));
+	const dots = slides.map((_, i) => {
+		const btn = document.createElement('button');
+		btn.type = 'button';
+		btn.className = 'project-dot';
+		btn.setAttribute('role', 'tab');
+		btn.setAttribute('aria-label', `Project ${i + 1} of ${slides.length}`);
+		btn.addEventListener('click', () => {
+			if (i === current) {
+				return;
+			}
+			show(i, i > current ? 1 : -1);
+		});
+		return btn;
+	});
+
+	if (dotsRoot) {
+		dotsRoot.replaceChildren(...dots);
 	}
 
-	let current = Math.max(0, slides.findIndex(slide => slide.classList.contains('is-active')));
+	function syncDots() {
+		dots.forEach((dot, i) => {
+			const selected = i === current;
+			dot.classList.toggle('is-active', selected);
+			dot.setAttribute('aria-selected', selected ? 'true' : 'false');
+			dot.tabIndex = selected ? 0 : -1;
+		});
+	}
 
 	function show(index, direction) {
 		const next = (index + slides.length) % slides.length;
@@ -126,12 +148,11 @@ function setupGallery() {
 		entering.removeAttribute('aria-hidden');
 		entering.removeAttribute('tabindex');
 
-		if (indexEl) {
-			indexEl.textContent = String(next + 1);
-		}
-
 		current = next;
+		syncDots();
 	}
+
+	syncDots();
 
 	if (prevBtn) {
 		prevBtn.addEventListener('click', () => show(current - 1, -1));
