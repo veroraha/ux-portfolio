@@ -85,10 +85,21 @@ body {
 	color: inherit;
 	text-decoration: none;
 	transition: color 0.2s ease;
+	display: inline-flex;
+	align-items: baseline;
+	gap: 0.9rem;
+}
+
+.header .site-initials {
+	color: var(--secondary-accent-color);
 }
 
 .header .site-name a:hover {
 	color: var(--primary-accent-color);
+}
+
+.header .site-name a:hover .site-initials {
+	color: var(--secondary-accent-color);
 }
 
 .nav {
