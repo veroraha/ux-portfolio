@@ -82,16 +82,6 @@ body {
 	color: inherit;
 	text-decoration: none;
 	transition: color 0.2s ease;
-	display: inline-flex;
-	align-items: center;
-	gap: 1.2rem;
-}
-
-.header .site-mark {
-	width: 2rem;
-	height: 2rem;
-	display: block;
-	flex-shrink: 0;
 }
 
 .header .site-name a:hover {
