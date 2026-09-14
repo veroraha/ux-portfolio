@@ -17,6 +17,8 @@ URLs are extensionless: `/`, `/about`, `/projects`, `/bah`, `/otw`, `/bttf`, `/f
 - `flix.html` — `/flix`: **Flixtape**: reimagining Netflix’s playlist service.
 - `Eroraha Resume.pdf` — resume, linked from the nav on every page.
 
+Case-study images, videos, and the about-page headshot live in `otw/`, `bttf/`, `flix/`, `bah/`, and `me/` next to the HTML. Vite hashes those files into `dist/assets/` on build. `public/` only holds files that must keep their names in the built site (`.htaccess`, `.cpanel.yml`, and the resume).
+
 ## Design
 
 Alabaster page background (`#F7F6F2`), dusty mauve accent (`#957083`), and a plum footer (`#281822`). Type is Avenir. Case studies use lowercase section headers, figure captions, and a shared layout in `styles.css`.
@@ -44,7 +46,7 @@ The site is hosted on Bluehost and built by GitHub Actions.
 1. Every push to `main` runs `.github/workflows/deploy.yml`, which builds with Vite and force-pushes the contents of `dist` to the `deploy` branch (a single orphan commit).
 2. Bluehost's cPanel **Git Version Control** has this repo cloned with the `deploy` branch checked out. Clicking **Update from Remote** then **Deploy HEAD Commit** runs `public/.cpanel.yml` (shipped inside `dist`), which copies the built files into `~/public_html/`.
 
-`.htaccess` (repo root, copied into `dist` from `public/.htaccess`) serves `/projects` from `projects.html` and 301s the `.html` forms. `RewriteBase /` is set for Bluehost. The rewrite wins over same-named asset folders (`otw/`, `bttf/`, `flix/`, `bah/`) and `DirectorySlash Off` stops Apache from 403'ing those folder names. The file must sit in `public_html`, not in a `public/` subfolder.
+`.htaccess` (repo root, copied into `dist` from `public/.htaccess`) serves `/projects` from `projects.html` and 301s the `.html` forms. `RewriteBase /` is set for Bluehost. When the unbundled repo is served as the docroot, the rewrite also wins over same-named asset folders (`otw/`, `bttf/`, `flix/`, `bah/`) and `DirectorySlash Off` stops Apache from 403'ing those folder names. The file must sit in `public_html`, not in a `public/` subfolder.
 
 ### One-time Bluehost setup
 
