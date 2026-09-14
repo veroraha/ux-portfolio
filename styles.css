@@ -355,7 +355,7 @@ body:has(.home-page) .page-header {
 	padding-bottom: 0;
 }
 
-#about, #projects, #otw, #bttf, #flix {
+#about, #projects, #bah, #otw, #bttf, #flix {
 	padding-top: 4rem;
 	margin-top: 0;
 	min-height: 2.2rem;
@@ -643,21 +643,56 @@ body:has(.home-page) .page-header {
 	transform: translateY(-2px);
 }
 
-/** projects page - art museum gallery exhibition layout **/
+/** projects page - one project at a time, original hang **/
 
-.project-grid {
-	display: flex;
-	flex-direction: column;
+.project-carousel {
 	width: 100%;
-	gap: 6rem;
 	margin-top: 3rem;
 }
 
+.project-carousel-row {
+	position: relative;
+	padding: 0 6.5rem;
+}
+
+.project-stage {
+	display: grid;
+	min-width: 0;
+}
+
 .project-link {
+	grid-area: 1 / 1;
 	display: block;
 	color: inherit;
 	text-decoration: none;
 	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transform: translateX(var(--slide-offset, 0));
+	transition: opacity 0.45s ease, transform 0.45s ease, visibility 0s linear 0.45s;
+}
+
+.project-link.is-active {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+	transform: none;
+	transition: opacity 0.45s ease, transform 0.45s ease, visibility 0s;
+}
+
+.project-link.is-exit-left {
+	--slide-offset: -2.5rem;
+}
+
+.project-link.is-exit-right {
+	--slide-offset: 2.5rem;
+}
+
+.project-link:focus-visible {
+	outline: 3px solid var(--primary-accent-color);
+	outline-offset: 6px;
+	border-radius: 4px;
 }
 
 .project {
@@ -672,9 +707,8 @@ body:has(.home-page) .page-header {
 	transition: transform 0.3s ease;
 }
 
-.project:hover {
+.project-link.is-active .project:hover {
 	transform: translateY(-4px);
-	box-shadow: none;
 }
 
 .project img {
@@ -689,12 +723,10 @@ body:has(.home-page) .page-header {
 	transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-.project:hover img {
+.project-link.is-active:hover img {
 	filter: drop-shadow(0 24px 48px rgba(18, 19, 22, 0.32));
 	transform: scale(1.01);
 }
-
-/** Authentic Art Museum Placard (Plain White Card, No Border, Clean Box Shadow) **/
 
 .project .placard {
 	background-color: #FFFFFF;
@@ -709,7 +741,7 @@ body:has(.home-page) .page-header {
 	transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.project:hover .placard {
+.project-link.is-active:hover .placard {
 	box-shadow: 0 14px 40px rgba(18, 19, 22, 0.12), 0 3px 10px rgba(18, 19, 22, 0.06);
 	transform: translateY(-2px);
 }
@@ -749,6 +781,75 @@ body:has(.home-page) .page-header {
 .project .placard h4 strong {
 	color: #121316;
 	font-weight: 600;
+}
+
+.gallery-arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+	width: 2.75rem;
+	height: 2.75rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	background: transparent;
+	border: 0;
+	border-radius: 6px;
+	color: var(--primary-text-color);
+	cursor: pointer;
+	transform: translateY(-50%);
+	transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-arrow--prev {
+	left: 0;
+}
+
+.gallery-arrow--next {
+	right: 0;
+}
+
+.gallery-arrow svg {
+	width: 1.35rem;
+	height: 1.35rem;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.gallery-arrow:hover,
+.gallery-arrow:focus-visible {
+	color: var(--primary-accent-color);
+	transform: translateY(calc(-50% - 2px));
+	outline: none;
+}
+
+.gallery-arrow:focus-visible {
+	box-shadow: 0 0 0 3px var(--secondary-accent-color);
+}
+
+.project-counter {
+	display: block;
+	margin: 2rem 0 0;
+	text-align: center;
+	color: var(--secondary-text-color);
+	text-transform: lowercase;
+	font-size: 0.98rem;
+	font-weight: 600;
+	letter-spacing: 0.1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.project-link,
+	.project-link.is-active,
+	.project img,
+	.project .placard,
+	.gallery-arrow {
+		transition: none;
+	}
 }
 
 /** responsive layout adjustments **/
@@ -809,8 +910,8 @@ body:has(.home-page) .page-header {
 		width: 100%;
 	}
 
-	.project-grid {
-		gap: 3.5rem;
+	.project-carousel-row {
+		padding: 0 3.75rem;
 	}
 
 	.project {
@@ -822,4 +923,5 @@ body:has(.home-page) .page-header {
 		max-width: 100%;
 		padding: 1.5rem;
 	}
+
 }

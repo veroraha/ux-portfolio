@@ -1,16 +1,30 @@
 // animated page header text
 
+// The full title is written in the HTML so it still shows if this script is
+// blocked, cached stale, or fails to load. The script clears it and retypes it.
+
 var titleElement = document.querySelector("h1.page-header[id]");
-var titleText = titleElement ? (titleElement.dataset.title || titleElement.id) : "";
+var titleText = titleElement
+	? (titleElement.dataset.title || titleElement.textContent.trim() || titleElement.id)
+	: "";
 
 var i = 0;
 var speed = 120;
 
 function typewriter() {
-	if (titleElement !== null && i < titleText.length) {
-		titleElement.innerHTML += titleText.charAt(i);
+	if (titleElement === null) {
+		return;
+	}
+	if (i === 0) {
+		titleElement.setAttribute("aria-label", titleText);
+		titleElement.textContent = "";
+	}
+	if (i < titleText.length) {
+		titleElement.textContent += titleText.charAt(i);
 		i++;
 		setTimeout(typewriter, speed);
+	} else {
+		titleElement.removeAttribute("aria-label");
 	}
 }
 
@@ -33,22 +47,28 @@ function setupNavigation() {
 	}
 
 	// Active link highlight based on current path
-	const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+	// URLs are extensionless (/about); normalise so /about, /about.html, and
+	// /about/ all count as the same page, with / and index collapsing to "".
+	const normalise = (path) => path
+		.replace(/\.html$/, '')
+		.replace(/\/+$/, '')
+		.replace(/^\/?index$/, '')
+		.replace(/^\/+/, '');
+	const currentPath = normalise(window.location.pathname);
 	const navLinks = document.querySelectorAll('.header-links a, .dropdown-links a');
 
 	navLinks.forEach(link => {
-		const href = link.getAttribute('href');
-		if (
-			href === currentPath || 
-			(currentPath === '' && href === 'index.html') ||
-			(currentPath === 'home.html' && (href === 'home.html' || href === 'index.html'))
-		) {
+		const href = link.getAttribute('href') || '';
+		if (/^(https?:)?\/\//.test(href) || href.startsWith('mailto:')) {
+			return;
+		}
+		if (normalise(href) === currentPath) {
 			link.classList.add('active');
 		}
 	});
 
 	// Smooth subtle image entrance animations
-	const cards = document.querySelectorAll('.project, .headshot, .home-page');
+	const cards = document.querySelectorAll('.headshot, .home-page');
 	cards.forEach((card, index) => {
 		card.style.opacity = '0';
 		card.style.transform = 'translateY(15px)';
@@ -61,7 +81,95 @@ function setupNavigation() {
 	});
 }
 
+// Projects page gallery carousel
+function setupGallery() {
+	const gallery = document.getElementById('projectGallery');
+	if (!gallery) {
+		return;
+	}
+
+	const slides = Array.from(gallery.querySelectorAll('.project-link'));
+	const prevBtn = gallery.querySelector('[data-gallery-prev]');
+	const nextBtn = gallery.querySelector('[data-gallery-next]');
+	const indexEl = gallery.querySelector('[data-gallery-index]');
+	const totalEl = gallery.querySelector('[data-gallery-total]');
+	if (slides.length < 2) {
+		return;
+	}
+
+	if (totalEl) {
+		totalEl.textContent = String(slides.length);
+	}
+
+	let current = Math.max(0, slides.findIndex(slide => slide.classList.contains('is-active')));
+
+	function show(index, direction) {
+		const next = (index + slides.length) % slides.length;
+		if (next === current) {
+			return;
+		}
+
+		const leaving = slides[current];
+		const entering = slides[next];
+
+		leaving.classList.remove('is-active', 'is-exit-left', 'is-exit-right');
+		leaving.classList.add(direction > 0 ? 'is-exit-left' : 'is-exit-right');
+		leaving.setAttribute('aria-hidden', 'true');
+		leaving.setAttribute('tabindex', '-1');
+
+		entering.classList.remove('is-exit-left', 'is-exit-right');
+		entering.classList.add(direction > 0 ? 'is-exit-right' : 'is-exit-left');
+		// Force a style flush so the entering slide animates in from its offset.
+		void entering.offsetWidth;
+		entering.classList.remove('is-exit-left', 'is-exit-right');
+		entering.classList.add('is-active');
+		entering.removeAttribute('aria-hidden');
+		entering.removeAttribute('tabindex');
+
+		if (indexEl) {
+			indexEl.textContent = String(next + 1);
+		}
+
+		current = next;
+	}
+
+	if (prevBtn) {
+		prevBtn.addEventListener('click', () => show(current - 1, -1));
+	}
+	if (nextBtn) {
+		nextBtn.addEventListener('click', () => show(current + 1, 1));
+	}
+
+	document.addEventListener('keydown', (e) => {
+		if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') {
+			return;
+		}
+		if (e.target.closest('input, textarea, select, [contenteditable]')) {
+			return;
+		}
+		e.preventDefault();
+		show(e.key === 'ArrowRight' ? current + 1 : current - 1, e.key === 'ArrowRight' ? 1 : -1);
+	});
+
+	// Swipe on touch devices
+	let touchStartX = null;
+	gallery.addEventListener('touchstart', (e) => {
+		touchStartX = e.changedTouches[0].clientX;
+	}, { passive: true });
+	gallery.addEventListener('touchend', (e) => {
+		if (touchStartX === null) {
+			return;
+		}
+		const delta = e.changedTouches[0].clientX - touchStartX;
+		touchStartX = null;
+		if (Math.abs(delta) > 50) {
+			show(delta < 0 ? current + 1 : current - 1, delta < 0 ? 1 : -1);
+		}
+	}, { passive: true });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	setupNavigation();
 	typewriter();
+	setupGallery();
 });

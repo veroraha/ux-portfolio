@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="1118" viewBox="0 0 780 1118" role="img" aria-label="Sample framed placeholder">
+  <rect width="780" height="1118" fill="#C9A24A"/>
+  <rect x="28" y="28" width="724" height="1062" fill="#E8C96A"/>
+  <rect x="52" y="52" width="676" height="1014" fill="#A67C2A"/>
+  <rect x="78" y="78" width="624" height="962" fill="#281822"/>
+  <text x="390" y="540" text-anchor="middle" fill="#F7F6F2" font-family="Georgia, serif" font-size="42" letter-spacing="4">SAMPLE</text>
+  <text x="390" y="590" text-anchor="middle" fill="#E4D5DC" font-family="Georgia, serif" font-size="22" letter-spacing="2">placeholder image</text>
+</svg>

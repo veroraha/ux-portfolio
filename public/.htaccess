@@ -1,0 +1,47 @@
+DirectoryIndex index.html
+
+AddType video/mp4 .mp4
+AddType image/svg+xml .svg
+AddType application/pdf .pdf
+
+Options -MultiViews
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Canonical URLs have no .html extension. Redirect direct requests for
+  # /index.html to /, and /page.html to /page. THE_REQUEST is checked (not
+  # REQUEST_URI) so the internal rewrite below does not loop.
+  RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+  RewriteRule ^ / [R=301,L]
+
+  RewriteCond %{THE_REQUEST} \s/+([^\s?]+)\.html[\s?] [NC]
+  RewriteRule ^ /%1 [R=301,L]
+
+  # Drop trailing slashes on page URLs (/about/ -> /about), including when a
+  # same-named asset folder exists (/otw/ -> /otw).
+  RewriteCond %{REQUEST_FILENAME} !-d [OR]
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+  # Serve /page from page.html when that file exists. This deliberately wins
+  # over same-named asset folders (otw/, bttf/, flix/), so mod_dir must not
+  # redirect /otw to /otw/ first.
+  DirectorySlash Off
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.+)$ $1.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  # HTML, and any un-fingerprinted script.js / styles.css, must revalidate on
+  # every load so a stale copy from a previous deploy is never reused.
+  <FilesMatch "\.html$|^(script\.js|styles\.css)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+
+  # Vite emits assets/<name>-<8-char hash>.<ext>; those are safe to cache forever.
+  <FilesMatch "-[A-Za-z0-9_-]{8}\.(js|css|png|jpe?g|svg|mp4|pdf|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>

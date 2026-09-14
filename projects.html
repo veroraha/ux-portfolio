@@ -3,25 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Vanessa Eroraha | Projects</title>
+	<title>vanessa eroraha | projects</title>
 	<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/avenir">
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 	<div class="header">
-		<h3 class="site-name"><a href="index.html">Vanessa Eroraha</a></h3>
+		<h3 class="site-name"><a href="/">Vanessa Eroraha</a></h3>
 		<nav class="nav">
 			<ul class="header-links">
-				<li><a href="index.html"><h3>Home</h3></a></li>
-				<li><a href="about.html"><h3>About</h3></a></li>
+				<li><a href="/"><h3>Home</h3></a></li>
+				<li><a href="/about"><h3>About</h3></a></li>
 				<li><span class="nav-current" aria-current="page"><h3>Projects</h3></span></li>
 				<li><a href="Eroraha Resume.pdf" target="_blank" rel="noopener noreferrer"><h3>Resume</h3></a></li>
 			</ul>
 			<button class="dropdown-btn" aria-label="Toggle navigation menu" id="menuToggle">
 				<h3>Menu</h3>
 				<ul class="dropdown-links" id="dropdownLinks">
-					<li><a href="index.html"><h3>Home</h3></a></li>
-					<li><a href="about.html"><h3>About</h3></a></li>
+					<li><a href="/"><h3>Home</h3></a></li>
+					<li><a href="/about"><h3>About</h3></a></li>
 					<li><span class="nav-current" aria-current="page"><h3>Projects</h3></span></li>
 					<li><a href="Eroraha Resume.pdf" target="_blank" rel="noopener noreferrer"><h3>Resume</h3></a></li>
 				</ul>
@@ -30,45 +30,71 @@
 	</div>
 
 	<main class="content">
-		<h1 id="projects" class="page-header" style="padding-bottom: 1rem;"></h1>
+		<h1 id="projects" class="page-header" style="padding-bottom: 1rem;">projects</h1>
 
-		<div class="project-grid">
-			<a class="project-link" href="otw.html">
-				<article class="project">
-					<img src="./otw/framed-otw.png" alt="On The Way - Transit &amp; Route UX Mockup"/>
-					<div class="placard">
-						<h3>On The Way</h3>
-						<h4 class="project-year">c. 2021</h4>
-						<h4><strong>Skills:</strong> UI + interaction design, UX research, prototyping, branding + logo design</h4>
-						<h4><strong>Tools:</strong> Sketch, HTML + CSS, JavaScript, Angular, Google Maps API</h4>
-					</div>
-				</article>
-			</a>
+		<section class="project-carousel" id="projectGallery" aria-roledescription="carousel" aria-label="Projects">
+			<div class="project-carousel-row">
+				<button class="gallery-arrow gallery-arrow--prev" type="button" data-gallery-prev aria-label="Previous project" aria-controls="galleryStage">
+					<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7"/></svg>
+				</button>
 
-			<a class="project-link" href="bttf.html">
-				<article class="project">
-					<img src="./bttf/framed-bttf.png" alt="Back to the Future - Interactive Research Platform Mockup"/>
-					<div class="placard">
-						<h3>Back to the Future</h3>
-						<h4 class="project-year">c. 2021</h4>
-						<h4><strong>Skills:</strong> UI + interaction design, UX research, prototyping</h4>
-						<h4><strong>Tools:</strong> Adobe XD, Google Forms</h4>
-					</div>
-				</article>
-			</a>
+				<div class="project-stage" id="galleryStage" aria-live="polite">
+					<a class="project-link is-active" href="/bah" role="group" aria-roledescription="slide" aria-label="1 of 4">
+						<article class="project">
+							<img src="./bah/framed-bah.svg" alt="Sample framed placeholder for latest work at Booz Allen Hamilton"/>
+							<div class="placard">
+								<h3>Latest Work</h3>
+								<h4 class="project-year">c.2022-2026</h4>
+								<h4><strong>Skills:</strong> UI + interaction design, UX research, usability testing, prototyping, branding + logo design</h4>
+								<h4><strong>Tools:</strong> Adobe XD, HTML + CSS, JavaScript, Angular</h4>
+							</div>
+						</article>
+					</a>
 
-			<a class="project-link" href="flix.html">
-				<article class="project">
-					<img src="./flix/framed-flix.png" alt="Flixtape - Social Film Discovery Mockup"/>
-					<div class="placard">
-						<h3>Flixtape</h3>
-						<h4 class="project-year">c. 2020</h4>
-						<h4><strong>Skills:</strong> UI + interaction design, UX research, affinity diagrams, prototyping</h4>
-						<h4><strong>Tools:</strong> Sketch, Miro</h4>
-					</div>
-				</article>
-			</a>
-		</div>
+					<a class="project-link" href="/otw" role="group" aria-roledescription="slide" aria-label="2 of 4" aria-hidden="true" tabindex="-1">
+						<article class="project">
+							<img src="./otw/framed-otw.png" alt="On The Way - Transit &amp; Route UX Mockup"/>
+							<div class="placard">
+								<h3>On The Way</h3>
+								<h4 class="project-year">c. 2021</h4>
+								<h4><strong>Skills:</strong> UI + interaction design, UX research, prototyping, branding + logo design</h4>
+								<h4><strong>Tools:</strong> Sketch, HTML + CSS, JavaScript, Angular, Google Maps API</h4>
+							</div>
+						</article>
+					</a>
+
+					<a class="project-link" href="/bttf" role="group" aria-roledescription="slide" aria-label="3 of 4" aria-hidden="true" tabindex="-1">
+						<article class="project">
+							<img src="./bttf/framed-bttf.png" alt="Back to the Future - Interactive Research Platform Mockup"/>
+							<div class="placard">
+								<h3>Back to the Future</h3>
+								<h4 class="project-year">c. 2021</h4>
+								<h4><strong>Skills:</strong> UI + interaction design, UX research, prototyping</h4>
+								<h4><strong>Tools:</strong> Adobe XD, Google Forms</h4>
+							</div>
+						</article>
+					</a>
+
+					<a class="project-link" href="/flix" role="group" aria-roledescription="slide" aria-label="4 of 4" aria-hidden="true" tabindex="-1">
+						<article class="project">
+							<img src="./flix/framed-flix.png" alt="Flixtape - Social Film Discovery Mockup"/>
+							<div class="placard">
+								<h3>Flixtape</h3>
+								<h4 class="project-year">c. 2020</h4>
+								<h4><strong>Skills:</strong> UI + interaction design, UX research, affinity diagrams, prototyping</h4>
+								<h4><strong>Tools:</strong> Sketch, Miro</h4>
+							</div>
+						</article>
+					</a>
+				</div>
+
+				<button class="gallery-arrow gallery-arrow--next" type="button" data-gallery-next aria-label="Next project" aria-controls="galleryStage">
+					<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7"/></svg>
+				</button>
+			</div>
+
+			<p class="project-counter" aria-live="polite"><span data-gallery-index>1</span> of <span data-gallery-total>4</span></p>
+		</section>
 	</main>
 
 	<footer class="footer">
