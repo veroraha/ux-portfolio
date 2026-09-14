@@ -68,7 +68,7 @@ function setupNavigation() {
 	});
 
 	// Smooth subtle image entrance animations
-	const cards = document.querySelectorAll('.project, .headshot, .home-page');
+	const cards = document.querySelectorAll('.headshot, .home-page');
 	cards.forEach((card, index) => {
 		card.style.opacity = '0';
 		card.style.transform = 'translateY(15px)';
@@ -88,10 +88,10 @@ function setupGallery() {
 		return;
 	}
 
-	const slides = Array.from(gallery.querySelectorAll('.gallery-slide'));
-	const dots = Array.from(gallery.querySelectorAll('[data-gallery-to]'));
+	const slides = Array.from(gallery.querySelectorAll('.project-link'));
 	const prevBtn = gallery.querySelector('[data-gallery-prev]');
 	const nextBtn = gallery.querySelector('[data-gallery-next]');
+	const indexEl = gallery.querySelector('[data-gallery-index]');
 	if (slides.length < 2) {
 		return;
 	}
@@ -121,11 +121,9 @@ function setupGallery() {
 		entering.removeAttribute('aria-hidden');
 		entering.removeAttribute('tabindex');
 
-		dots.forEach((dot, i) => {
-			const active = i === next;
-			dot.classList.toggle('is-active', active);
-			dot.setAttribute('aria-selected', active ? 'true' : 'false');
-		});
+		if (indexEl) {
+			indexEl.textContent = String(next + 1);
+		}
 
 		current = next;
 	}
@@ -136,21 +134,16 @@ function setupGallery() {
 	if (nextBtn) {
 		nextBtn.addEventListener('click', () => show(current + 1, 1));
 	}
-	dots.forEach(dot => {
-		dot.addEventListener('click', () => {
-			const target = Number(dot.dataset.galleryTo);
-			show(target, target > current ? 1 : -1);
-		});
-	});
 
-	gallery.addEventListener('keydown', (e) => {
-		if (e.key === 'ArrowLeft') {
-			e.preventDefault();
-			show(current - 1, -1);
-		} else if (e.key === 'ArrowRight') {
-			e.preventDefault();
-			show(current + 1, 1);
+	document.addEventListener('keydown', (e) => {
+		if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') {
+			return;
 		}
+		if (e.target.closest('input, textarea, select, [contenteditable]')) {
+			return;
+		}
+		e.preventDefault();
+		show(e.key === 'ArrowRight' ? current + 1 : current - 1, e.key === 'ArrowRight' ? 1 : -1);
 	});
 
 	// Swipe on touch devices
