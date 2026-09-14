@@ -355,7 +355,7 @@ body:has(.home-page) .page-header {
 	padding-bottom: 0;
 }
 
-#about, #projects, #otw, #bttf, #flix {
+#about, #projects, #bah, #otw, #bttf, #flix {
 	padding-top: 4rem;
 	margin-top: 0;
 	min-height: 2.2rem;

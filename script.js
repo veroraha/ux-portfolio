@@ -92,8 +92,13 @@ function setupGallery() {
 	const prevBtn = gallery.querySelector('[data-gallery-prev]');
 	const nextBtn = gallery.querySelector('[data-gallery-next]');
 	const indexEl = gallery.querySelector('[data-gallery-index]');
+	const totalEl = gallery.querySelector('[data-gallery-total]');
 	if (slides.length < 2) {
 		return;
+	}
+
+	if (totalEl) {
+		totalEl.textContent = String(slides.length);
 	}
 
 	let current = Math.max(0, slides.findIndex(slide => slide.classList.contains('is-active')));

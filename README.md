@@ -6,11 +6,12 @@ Live reference: [vanessaeroraha.com](https://vanessaeroraha.com)
 
 ## Pages
 
-URLs are extensionless: `/`, `/about`, `/projects`, `/otw`, `/bttf`, `/flix`. Requests for `page.html`, trailing slashes, and `index.html` 301 to the canonical form (`public/.htaccess` on Bluehost; the `cleanUrls` plugin in `vite.config.js` for `npm run dev` / `npm run preview`). Internal links use root-relative paths (`/about`).
+URLs are extensionless: `/`, `/about`, `/projects`, `/bah`, `/otw`, `/bttf`, `/flix`. Requests for `page.html`, trailing slashes, and `index.html` 301 to the canonical form (`public/.htaccess` on Bluehost; the `cleanUrls` plugin in `vite.config.js` for `npm run dev` / `npm run preview`). Internal links use root-relative paths (`/about`).
 
 - `index.html` — `/`: intro headline, current role, and calls to action.
 - `about.html` — `/about`: background at Booz Allen Hamilton and Virginia Tech, plus personal notes.
-- `projects.html` — `/projects`: one framed case study and its placard at a time, with left/right arrows and a `1 of 3` counter.
+- `projects.html` — `/projects`: one framed case study and its placard at a time, with left/right arrows and a `1 of 4` counter.
+- `bah.html` — `/bah`: **Current Work**: my current work at Booz Allen Hamilton.
 - `otw.html` — `/otw`: **On The Way**: route-aware recommendations for smarter pitstops.
 - `bttf.html` — `/bttf`: **Back to the Future**: bringing music sharing back to Spotify.
 - `flix.html` — `/flix`: **Flixtape**: reimagining Netflix’s playlist service.
