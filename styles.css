@@ -652,7 +652,7 @@ body:has(.home-page) .page-header {
 
 .project-carousel-row {
 	position: relative;
-	padding: 0 3.25rem;
+	padding: 0 6.5rem;
 }
 
 .project-stage {
@@ -911,7 +911,7 @@ body:has(.home-page) .page-header {
 	}
 
 	.project-carousel-row {
-		padding: 0 2.25rem;
+		padding: 0 3.75rem;
 	}
 
 	.project {
