@@ -651,11 +651,12 @@ body:has(.home-page) .page-header {
 	--wall-shade-deep: #1C1218;
 	--wall-edge: rgba(247, 246, 242, 0.10);
 	--side-wall-width: clamp(7rem, 16vw, 15rem);
-	/* how far the side walls' inner (corner) edges sit inside the room's top and bottom */
-	--corner-drop: clamp(3rem, 8vh, 4.5rem);
-	--floor-depth: clamp(7.5rem, 16vh, 11rem);
+	/* ceiling and floor share this depth so the back wall is the tall plane */
+	--plane-depth: clamp(1.75rem, 4vh, 2.5rem);
+	--corner-drop: var(--plane-depth);
+	--floor-depth: var(--plane-depth);
 	--arrow-size: 3rem;
-	--wall-height: clamp(30rem, 70vh, 40rem);
+	--wall-height: clamp(36rem, 82vh, 48rem);
 	position: relative;
 	width: 100vw;
 	margin: 1.5rem 0 3rem calc(50% - 50vw);
@@ -698,7 +699,7 @@ body:has(.home-page) .page-header {
 	align-items: center;
 	/* top and bottom edges meet the side walls' corner points so it reads as one room */
 	margin: var(--corner-drop) var(--side-wall-width) var(--floor-depth);
-	padding: 2.5rem clamp(1rem, 3vw, 3rem);
+	padding: 1.25rem clamp(1rem, 3vw, 2.5rem);
 	background-color: var(--wall);
 	/* corner seams where the side walls meet the back wall */
 	box-shadow:
@@ -792,7 +793,7 @@ body:has(.home-page) .page-header {
 
 .gallery-artwork img {
 	display: block;
-	height: min(calc(var(--wall-height) - var(--corner-drop) - var(--floor-depth) - 5.5rem), 30rem);
+	height: min(calc(var(--wall-height) - 2 * var(--plane-depth) - 2.5rem), 38rem);
 	width: auto;
 	max-width: 100%;
 	filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.45)) drop-shadow(0 3px 6px rgba(0, 0, 0, 0.28));
@@ -818,11 +819,11 @@ body:has(.home-page) .page-header {
 	border: none;
 	border-radius: 3px;
 	box-shadow: 0 8px 30px rgba(18, 19, 22, 0.08), 0 2px 8px rgba(18, 19, 22, 0.04);
-	padding: 1.5rem 1.65rem 1.35rem;
+	padding: 0.95rem 1.05rem 0.85rem;
 	text-align: left;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	width: min(100%, 19rem);
-	flex: 0 1 19rem;
+	width: min(100%, 13.5rem);
+	flex: 0 0 13.5rem;
 	transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -840,7 +841,7 @@ body:has(.home-page) .page-header {
 
 .placard h3 {
 	margin: 0 0 0.3rem;
-	font-size: 1.25rem;
+	font-size: 1.05rem;
 	font-weight: 700;
 	letter-spacing: -0.3px;
 	color: #121316;
@@ -848,17 +849,17 @@ body:has(.home-page) .page-header {
 
 .placard .project-year {
 	font-weight: 500;
-	font-size: 0.85rem;
+	font-size: 0.78rem;
 	color: var(--tertiary-text-color);
-	margin-bottom: 1rem;
+	margin-bottom: 0.7rem;
 	text-transform: none;
 	letter-spacing: 0.2px;
 }
 
 .placard h4 {
-	margin: 0 0 0.65rem;
+	margin: 0 0 0.5rem;
 	font-weight: 400;
-	font-size: 0.84rem;
+	font-size: 0.75rem;
 	line-height: 1.5;
 	color: #4A4E57;
 }
@@ -899,7 +900,7 @@ body:has(.home-page) .page-header {
 	justify-content: center;
 	padding: 0;
 	background-color: transparent;
-	border: 1px solid #F7F6F2;
+	border: 0;
 	border-radius: 6px;
 	color: #F7F6F2;
 	cursor: pointer;
@@ -1033,8 +1034,7 @@ body:has(.home-page) .page-header {
 	.gallery {
 		--arrow-size: 2.5rem;
 		--side-wall-width: 3.75rem;
-		--corner-drop: 1.5rem;
-		--floor-depth: 5.5rem;
+		--plane-depth: 1.35rem;
 		--wall-height: auto;
 		margin-top: 0.5rem;
 	}
@@ -1049,7 +1049,7 @@ body:has(.home-page) .page-header {
 	}
 
 	.gallery-artwork {
-		width: min(100%, 15rem);
+		width: min(100%, 19rem);
 	}
 
 	.gallery-artwork img {
@@ -1058,9 +1058,9 @@ body:has(.home-page) .page-header {
 	}
 
 	.placard {
-		width: min(100%, 22rem);
+		width: min(100%, 16rem);
 		flex: 0 0 auto;
-		padding: 1.15rem 1.25rem 1rem;
+		padding: 0.95rem 1.05rem 0.85rem;
 	}
 
 }
