@@ -803,11 +803,12 @@ body:has(.home-page) .page-header {
 }
 
 .gallery-arrow--prev {
-	left: 0;
+	/* Move out into the page gutter; never closer than 1.25rem to the viewport. */
+	left: clamp(calc((100% - 100vw) / 2 + 1.25rem), -4.5rem, 0px);
 }
 
 .gallery-arrow--next {
-	right: 0;
+	right: clamp(calc((100% - 100vw) / 2 + 1.25rem), -4.5rem, 0px);
 }
 
 .gallery-arrow svg {
@@ -911,7 +912,7 @@ body:has(.home-page) .page-header {
 	}
 
 	.project-carousel-row {
-		padding: 0 3.75rem;
+		padding: 0 5.5rem;
 	}
 
 	.project {
