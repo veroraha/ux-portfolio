@@ -10,11 +10,11 @@ URLs are extensionless: `/`, `/about`, `/projects`, `/bah`, `/otw`, `/bttf`, `/f
 
 - `index.html` — `/`: intro headline, current role, and calls to action.
 - `about.html` — `/about`: background at Booz Allen Hamilton and Virginia Tech, plus personal notes.
-- `projects.html` — `/projects`: one framed case study and its placard at a time, with left/right arrows and a `1 of 4` counter.
+- `projects.html` — `/projects`: one framed case study and its placard at a time, with left/right arrows and a `1 of 3` counter. Flixtape is unlisted here.
 - `bah.html` — `/bah`: **My latest work**: designing a mission-critical operating tool.
 - `otw.html` — `/otw`: **On The Way**: route-aware recommendations for smarter pitstops.
 - `bttf.html` — `/bttf`: **Back to the Future**: bringing music sharing back to Spotify.
-- `flix.html` — `/flix`: **Flixtape**: reimagining Netflix’s playlist service.
+- `flix.html` — `/flix`: **Flixtape**: reimagining Netflix’s playlist service. Still reachable by URL; not shown on Projects.
 - `Eroraha Resume.pdf` — resume, linked from the nav on every page.
 
 Case-study images, videos, and the about-page headshot live in `otw/`, `bttf/`, `flix/`, `bah/`, and `me/` next to the HTML. Vite hashes those files into `dist/assets/` on build. `public/` holds files that must keep their names in the built site (`.htaccess`, `.cpanel.yml`, the favicon, and the resume). When the unbundled repo is the docroot, root `.htaccess` maps `/favicon.svg` and `/Eroraha Resume.pdf` to those `public/` copies.
