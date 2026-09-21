@@ -57,36 +57,18 @@
 				</p>
 			</section>
 			<section>
-				<h2>Design problems I faced</h2>
-			</section>
-			<section>
-				<h2>planning</h2>
+				<h2>Design challenges</h2>
 				<p>
-					I redesigned the planning interface to address friction points around data entry. Users had to build a table one row at a time, then open a modal to edit and save each line. I replaced those steps with import/export and auto-population using what the system already knew about the mission set so planners could finish the task faster.
+					The application had to support three different jobs — planning, operations, and crisis management — each with its own workflow, time pressure, and definition of success. The design work was about cutting interaction cost in data entry, making operational status glanceable, and deciding what belonged on a strategic view when users disagreed.
 				</p>
 				<p>
-					To simplify the way users input information from their source material, I mirrored those source documents in the interface so the layout matched what users were used to, leaving no room for error.
+					In planning, the main friction was data entry. Users built a table one row at a time, then opened a modal to edit and save each line. I replaced that pattern with import/export and auto-population from data the system already had about the mission set, so planners could finish the task faster. To reduce input error, I matched the interface to their source documents so the layout followed an existing mental model instead of asking them to reformat their work. I also split planning into distinct pages with status indicators so the shared workspace showed current state and required fields could not be skipped.
 				</p>
 				<p>
-					I also broke the planning section into distinct pages with clear status indicators so the shared workspace always reflected the most up-to-date information and no required field went untouched.
-				</p>
-			</section>
-			<section>
-				<h2>operations</h2>
-				<p>
-					I highlighted at-a-glance operational progress to show what already happened, what's happening now, and what to expect next.
+					In operations, the problem was situational awareness: what already happened, what is happening now, and what comes next. The primary progress visualization was a donut chart that did not make on-ground task status scannable, so I redesigned how those actions were tracked. To keep updates from disappearing, I introduced toast notifications that later became a persistent activity feed, so critical changes stayed in the operational picture.
 				</p>
 				<p>
-					An ineffective donut chart was the main visualization for task progression, so I redesigned how on-ground actions were tracked, making status easy to scan and understand.
-				</p>
-				<p>
-					To keep updates from getting buried, I added a toast notification system, which evolved into a static activity feed, to surface important changes and keep the operational picture up-to-date.
-				</p>
-			</section>
-			<section>
-				<h2>crisis management</h2>
-				<p>
-					In a crisis, senior leaders need to make quick decisions, so the goal was to create a single strategic dashboard to absorb information at a glance. Different users wanted different things from the same tool, so I had to decide what earned a place on the strategic view and what would only slow people down.
+					In a crisis, senior leaders need to decide quickly, which meant a single strategic dashboard they could read at a glance. Different users wanted different things from the same surface, so the challenge was information priority: what earned a place on the strategic view, and what would only add noise.
 				</p>
 			</section>
 			<section>
