@@ -11,7 +11,7 @@ URLs are extensionless: `/`, `/about`, `/projects`, `/bah`, `/otw`, `/bttf`, `/f
 - `index.html` — `/`: intro headline, current role, and calls to action.
 - `about.html` — `/about`: background at Booz Allen Hamilton and Virginia Tech, plus personal notes.
 - `projects.html` — `/projects`: stacked framed case studies you scroll through. Flixtape is unlisted here.
-- `bah.html` — `/bah`: **High-stakes mission support application**: a classified ops tool designed and owned for USEUCOM.
+- `bah.html` — `/bah`: **Mission support application**: a classified ops tool designed and owned for USEUCOM.
 - `otw.html` — `/otw`: **On The Way**: a maps app designed and built for route-aware pit-stop recommendations.
 - `bttf.html` — `/bttf`: **Back to the Future**: a Spotify concept researched and designed to enable in-app music sharing.
 - `flix.html` — `/flix`: **Flixtape**: reimagining Netflix’s playlist service. Still reachable by URL; not shown on Projects.
