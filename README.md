@@ -10,7 +10,7 @@ URLs are extensionless: `/`, `/about`, `/projects`, `/bah`, `/otw`, `/bttf`, `/f
 
 - `index.html` — `/`: intro headline, current role, and calls to action.
 - `about.html` — `/about`: background at Booz Allen Hamilton and Virginia Tech, plus personal notes.
-- `projects.html` — `/projects`: one framed case study and its placard at a time, with left/right arrows and a `1 of 3` counter. Flixtape is unlisted here.
+- `projects.html` — `/projects`: stacked framed case studies you scroll through. Flixtape is unlisted here.
 - `bah.html` — `/bah`: **My latest work**: designing a mission-critical operating tool.
 - `otw.html` — `/otw`: **On The Way**: route-aware recommendations for smarter pitstops.
 - `bttf.html` — `/bttf`: **Back to the Future**: bringing music sharing back to Spotify.

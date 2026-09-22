@@ -33,57 +33,43 @@
 	<main class="content">
 		<h1 id="projects" class="page-header" style="padding-bottom: 1rem;">projects</h1>
 
-		<section class="project-carousel" id="projectGallery" aria-roledescription="carousel" aria-label="Projects">
-			<div class="project-carousel-row">
-				<button class="gallery-arrow gallery-arrow--prev" type="button" data-gallery-prev aria-label="Previous project" aria-controls="galleryStage">
-					<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7"/></svg>
-				</button>
+		<div class="project-grid">
+			<a class="project-link" href="/bah">
+				<article class="project">
+					<img src="./bah/framed-bah.svg" alt="Framed design system screens from latest work at Booz Allen Hamilton"/>
+					<div class="placard">
+						<h3>My latest work</h3>
+						<h4 class="project-year">2022 - Present</h4>
+						<h4><strong>Skills:</strong> UI + interaction design, UX research, usability testing, prototyping, branding + logo design</h4>
+						<h4><strong>Tools:</strong> Adobe XD, HTML + CSS, JavaScript, Angular</h4>
+					</div>
+				</article>
+			</a>
 
-				<div class="project-stage" id="galleryStage" aria-live="polite">
-					<a class="project-link is-active" href="/bah" role="group" aria-roledescription="slide" aria-label="1 of 3">
-						<article class="project">
-							<img src="./bah/framed-bah.svg" alt="Framed design system screens from latest work at Booz Allen Hamilton"/>
-							<div class="placard">
-								<h3>My latest work</h3>
-								<h4 class="project-year">2022 - Present</h4>
-								<h4><strong>Skills:</strong> UI + interaction design, UX research, usability testing, prototyping, branding + logo design</h4>
-								<h4><strong>Tools:</strong> Adobe XD, HTML + CSS, JavaScript, Angular</h4>
-							</div>
-						</article>
-					</a>
+			<a class="project-link" href="/otw">
+				<article class="project">
+					<img src="./otw/framed-otw.png" alt="On The Way - Transit &amp; Route UX Mockup"/>
+					<div class="placard">
+						<h3>On The Way</h3>
+						<h4 class="project-year">c. 2021</h4>
+						<h4><strong>Skills:</strong> UI + interaction design, UX research, prototyping, branding + logo design</h4>
+						<h4><strong>Tools:</strong> Sketch, HTML + CSS, JavaScript, Angular, Google Maps API</h4>
+					</div>
+				</article>
+			</a>
 
-					<a class="project-link" href="/otw" role="group" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true" tabindex="-1">
-						<article class="project">
-							<img src="./otw/framed-otw.png" alt="On The Way - Transit &amp; Route UX Mockup"/>
-							<div class="placard">
-								<h3>On The Way</h3>
-								<h4 class="project-year">c. 2021</h4>
-								<h4><strong>Skills:</strong> UI + interaction design, UX research, prototyping, branding + logo design</h4>
-								<h4><strong>Tools:</strong> Sketch, HTML + CSS, JavaScript, Angular, Google Maps API</h4>
-							</div>
-						</article>
-					</a>
-
-					<a class="project-link" href="/bttf" role="group" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true" tabindex="-1">
-						<article class="project">
-							<img src="./bttf/framed-bttf.png" alt="Back to the Future - Interactive Research Platform Mockup"/>
-							<div class="placard">
-								<h3>Back to the Future</h3>
-								<h4 class="project-year">c. 2021</h4>
-								<h4><strong>Skills:</strong> UI + interaction design, UX research, prototyping</h4>
-								<h4><strong>Tools:</strong> Adobe XD, Google Forms</h4>
-							</div>
-						</article>
-					</a>
-				</div>
-
-				<button class="gallery-arrow gallery-arrow--next" type="button" data-gallery-next aria-label="Next project" aria-controls="galleryStage">
-					<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7"/></svg>
-				</button>
-			</div>
-
-			<div class="project-dots" data-gallery-dots role="tablist" aria-label="Projects"></div>
-		</section>
+			<a class="project-link" href="/bttf">
+				<article class="project">
+					<img src="./bttf/framed-bttf.png" alt="Back to the Future - Interactive Research Platform Mockup"/>
+					<div class="placard">
+						<h3>Back to the Future</h3>
+						<h4 class="project-year">c. 2021</h4>
+						<h4><strong>Skills:</strong> UI + interaction design, UX research, prototyping</h4>
+						<h4><strong>Tools:</strong> Adobe XD, Google Forms</h4>
+					</div>
+				</article>
+			</a>
+		</div>
 	</main>
 
 	<footer class="footer">
