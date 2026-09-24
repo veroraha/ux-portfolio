@@ -554,8 +554,17 @@ body:has(.home-page) .page-header {
 	padding: var(--home-gap) 1.25rem;
 }
 
+.home-intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.25rem;
+	width: 100%;
+}
+
 .home-page .page-header,
-.home-blurb {
+.home-blurb,
+.home-meta {
 	width: 100%;
 	max-width: 100%;
 	margin: 0;
@@ -577,9 +586,11 @@ body:has(.home-page) .page-header {
 	color: #3A3D44;
 }
 
-.home-blurb strong {
-	font-weight: 700;
-	color: var(--primary-text-color);
+.home-meta {
+	font-size: clamp(0.85rem, 1.6vw, 1rem);
+	line-height: 1.7;
+	letter-spacing: 0.02em;
+	color: var(--secondary-text-color);
 }
 
 .home-page .cta-btn {
