@@ -746,7 +746,7 @@ body:has(.home-page) .page-header {
 
 .project img {
 	width: 100%;
-	max-width: 13.5rem;
+	max-width: 17.5rem;
 	height: auto;
 	border-radius: 4px;
 	display: block;
@@ -754,10 +754,6 @@ body:has(.home-page) .page-header {
 	border: none;
 	filter: drop-shadow(0 16px 36px rgba(18, 19, 22, 0.25));
 	transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-.project-link--featured .project img {
-	max-width: 17.5rem;
 }
 
 .project-link:hover img {
@@ -903,9 +899,8 @@ body:has(.home-page) .page-header {
 		gap: 1.15rem;
 	}
 
-	.project img,
-	.project-link--featured .project img {
-		max-width: 18rem;
+	.project img {
+		max-width: 17.5rem;
 		margin: 0 auto;
 	}
 
