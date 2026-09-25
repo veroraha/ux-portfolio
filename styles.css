@@ -713,16 +713,7 @@ body:has(.home-page) .page-header {
 	color: inherit;
 	text-decoration: none;
 	cursor: pointer;
-	transition: opacity 0.25s ease, transform 0.3s ease;
-}
-
-.project-link--side {
-	opacity: 0.5;
-}
-
-.project-link--side:hover,
-.project-link--side:focus-visible {
-	opacity: 1;
+	transition: transform 0.3s ease;
 }
 
 .project-link:focus-visible {
@@ -903,7 +894,6 @@ body:has(.home-page) .page-header {
 	.project-link,
 	.project-link--featured {
 		max-width: 22rem;
-		opacity: 1;
 	}
 
 	.project {
