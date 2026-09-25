@@ -584,7 +584,8 @@ body:has(.home-page) .page-header {
 	text-transform: none;
 }
 
-.home-blurb {
+.home-blurb,
+.project-row-title {
 	font-size: clamp(1.2rem, 2.2vw, 1.45rem);
 	line-height: 1.7;
 	letter-spacing: 0.03em;
@@ -674,17 +675,39 @@ body:has(.home-page) .page-header {
 	transform: translateY(-2px);
 }
 
-/** projects page — gallery hang, featured piece in the center **/
+/** projects page — professional work, then selected earlier work **/
+
+.project-row {
+	width: 100%;
+	margin-top: 2.75rem;
+}
+
+.project-row:first-of-type {
+	margin-top: 1.5rem;
+}
+
+.project-row-title {
+	margin: 0 0 1.35rem;
+	padding: 0;
+	text-align: center;
+	font-weight: 400;
+}
 
 .project-grid {
 	display: grid;
-	grid-template-columns: minmax(0, 14rem) minmax(0, 20rem) minmax(0, 14rem);
 	grid-template-rows: auto auto;
 	justify-content: center;
 	column-gap: clamp(0.75rem, 2vw, 2rem);
 	row-gap: 1.15rem;
 	width: 100%;
-	margin-top: 1.5rem;
+}
+
+.project-grid--featured {
+	grid-template-columns: minmax(0, 20rem);
+}
+
+.project-grid--earlier {
+	grid-template-columns: minmax(0, 16rem) minmax(0, 16rem);
 }
 
 .project-link {
@@ -872,12 +895,17 @@ body:has(.home-page) .page-header {
 		width: 100%;
 	}
 
-	.project-grid {
+	.project-row {
+		margin-top: 2.25rem;
+	}
+
+	.project-grid,
+	.project-grid--featured,
+	.project-grid--earlier {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 2.75rem;
-		margin-top: 1.25rem;
+		gap: 2.25rem;
 	}
 
 	.project-link,
@@ -893,18 +921,6 @@ body:has(.home-page) .page-header {
 		flex-direction: column;
 		align-items: center;
 		gap: 1.15rem;
-	}
-
-	.project-link--featured {
-		order: 1;
-	}
-
-	.project-link--otw {
-		order: 2;
-	}
-
-	.project-link--bttf {
-		order: 3;
 	}
 
 	.project img,
