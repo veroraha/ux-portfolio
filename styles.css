@@ -336,6 +336,11 @@ body:has(.home-page) .page-header {
 	min-height: 2.2rem;
 }
 
+#projects {
+	padding-top: 3.25rem;
+	padding-bottom: 0.5rem;
+}
+
 .case-study-header {
 	padding-top: 1.25rem;
 	padding-bottom: 0.75rem;
@@ -669,21 +674,41 @@ body:has(.home-page) .page-header {
 	transform: translateY(-2px);
 }
 
-/** projects page - stacked hang you scroll through **/
+/** projects page — gallery hang, featured piece in the center **/
 
 .project-grid {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
 	width: 100%;
-	gap: 6rem;
-	margin-top: 3rem;
+	gap: clamp(0.75rem, 2vw, 2rem);
+	margin-top: 1.5rem;
 }
 
 .project-link {
 	display: block;
+	flex: 1 1 0;
+	min-width: 0;
+	max-width: 20rem;
 	color: inherit;
 	text-decoration: none;
 	cursor: pointer;
+	transition: opacity 0.25s ease, transform 0.3s ease;
+}
+
+.project-link--featured {
+	flex: 1.15 1 0;
+	max-width: 22rem;
+}
+
+.project-link--side {
+	opacity: 0.5;
+}
+
+.project-link--side:hover,
+.project-link--side:focus-visible {
+	opacity: 1;
 }
 
 .project-link:focus-visible {
@@ -693,24 +718,23 @@ body:has(.home-page) .page-header {
 }
 
 .project {
-	display: grid;
-	grid-template-columns: 50% 50%;
-	gap: 4rem;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
+	gap: 1.15rem;
 	background-color: transparent;
 	padding: 0;
 	border: none;
 	box-shadow: none;
-	transition: transform 0.3s ease;
 }
 
-.project:hover {
+.project-link:hover {
 	transform: translateY(-4px);
 }
 
 .project img {
 	width: 100%;
-	max-width: 440px;
+	max-width: 15.5rem;
 	height: auto;
 	border-radius: 4px;
 	display: block;
@@ -720,7 +744,11 @@ body:has(.home-page) .page-header {
 	transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-.project:hover img {
+.project-link--featured .project img {
+	max-width: 17.5rem;
+}
+
+.project-link:hover img {
 	filter: drop-shadow(0 24px 48px rgba(18, 19, 22, 0.32));
 	transform: scale(1.01);
 }
@@ -730,15 +758,15 @@ body:has(.home-page) .page-header {
 	border: none;
 	border-radius: 4px;
 	box-shadow: 0 8px 30px rgba(18, 19, 22, 0.08), 0 2px 8px rgba(18, 19, 22, 0.04);
-	padding: 2rem 2.25rem;
-	text-align: left;
+	padding: 1.15rem 1.1rem 1.25rem;
+	text-align: center;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	align-self: center;
-	max-width: 420px;
+	width: 100%;
+	max-width: 17.5rem;
 	transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.project:hover .placard {
+.project-link:hover .placard {
 	box-shadow: 0 14px 40px rgba(18, 19, 22, 0.12), 0 3px 10px rgba(18, 19, 22, 0.06);
 	transform: translateY(-2px);
 }
@@ -751,8 +779,8 @@ body:has(.home-page) .page-header {
 }
 
 .project .placard h3 {
-	margin: 0 0 0.4rem;
-	font-size: 1.45rem;
+	margin: 0 0 0.35rem;
+	font-size: 1.15rem;
 	font-weight: 700;
 	letter-spacing: -0.4px;
 	color: #121316;
@@ -781,7 +809,7 @@ body:has(.home-page) .page-header {
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.project,
+	.project-link,
 	.project img,
 	.project .placard {
 		transition: none;
@@ -801,13 +829,8 @@ body:has(.home-page) .page-header {
 		padding-right: 1.5rem;
 	}
 
-	.project {
-		grid-template-columns: 50% 50%;
-		gap: 2rem;
-	}
-
 	.project .placard {
-		padding: 1.5rem 1.75rem;
+		padding: 1.1rem 1rem 1.2rem;
 	}
 }
 
@@ -847,17 +870,41 @@ body:has(.home-page) .page-header {
 	}
 
 	.project-grid {
-		gap: 3.5rem;
+		flex-direction: column;
+		align-items: center;
+		gap: 2.75rem;
+		margin-top: 1.25rem;
 	}
 
-	.project {
-		grid-template-columns: 100%;
-		gap: 1.75rem;
+	.project-link,
+	.project-link--featured {
+		flex: none;
+		width: min(100%, 22rem);
+		max-width: 22rem;
+		opacity: 1;
+	}
+
+	.project-link--featured {
+		order: 1;
+	}
+
+	.project-link--otw {
+		order: 2;
+	}
+
+	.project-link--bttf {
+		order: 3;
+	}
+
+	.project img,
+	.project-link--featured .project img {
+		max-width: 18rem;
 	}
 
 	.project .placard {
 		max-width: 100%;
-		padding: 1.5rem;
+		padding: 1.35rem 1.25rem;
+		text-align: center;
 	}
 
 }
