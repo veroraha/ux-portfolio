@@ -677,29 +677,25 @@ body:has(.home-page) .page-header {
 /** projects page — gallery hang, featured piece in the center **/
 
 .project-grid {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
+	display: grid;
+	grid-template-columns: minmax(0, 14rem) minmax(0, 20rem) minmax(0, 14rem);
+	grid-template-rows: auto auto;
 	justify-content: center;
+	column-gap: clamp(0.75rem, 2vw, 2rem);
+	row-gap: 1.15rem;
 	width: 100%;
-	gap: clamp(0.75rem, 2vw, 2rem);
 	margin-top: 1.5rem;
 }
 
 .project-link {
-	display: block;
-	flex: 1 1 0;
+	display: grid;
+	grid-template-rows: subgrid;
+	grid-row: span 2;
 	min-width: 0;
-	max-width: 20rem;
 	color: inherit;
 	text-decoration: none;
 	cursor: pointer;
 	transition: opacity 0.25s ease, transform 0.3s ease;
-}
-
-.project-link--featured {
-	flex: 1.15 1 0;
-	max-width: 22rem;
 }
 
 .project-link--side {
@@ -718,14 +714,21 @@ body:has(.home-page) .page-header {
 }
 
 .project {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 1.15rem;
+	display: grid;
+	grid-template-rows: subgrid;
+	grid-row: span 2;
+	justify-items: center;
 	background-color: transparent;
 	padding: 0;
 	border: none;
 	box-shadow: none;
+}
+
+.project-art {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	width: 100%;
 }
 
 .project-link:hover {
@@ -734,7 +737,7 @@ body:has(.home-page) .page-header {
 
 .project img {
 	width: 100%;
-	max-width: 15.5rem;
+	max-width: 11.5rem;
 	height: auto;
 	border-radius: 4px;
 	display: block;
@@ -870,6 +873,7 @@ body:has(.home-page) .page-header {
 	}
 
 	.project-grid {
+		display: flex;
 		flex-direction: column;
 		align-items: center;
 		gap: 2.75rem;
@@ -878,10 +882,17 @@ body:has(.home-page) .page-header {
 
 	.project-link,
 	.project-link--featured {
-		flex: none;
+		display: block;
 		width: min(100%, 22rem);
 		max-width: 22rem;
 		opacity: 1;
+	}
+
+	.project {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.15rem;
 	}
 
 	.project-link--featured {
