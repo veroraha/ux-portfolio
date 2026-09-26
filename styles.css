@@ -385,16 +385,17 @@ body:has(.home-page) .page-header {
 	margin: 0 0 0.75rem;
 }
 
-.case-study-body h3 {
-	font-size: 1.15rem;
-	font-weight: 700;
-	letter-spacing: -0.2px;
-	color: var(--primary-text-color);
-	margin: 2rem 0 0.6rem;
+.secondary-content-header {
+	font-size: 1.05rem;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	line-height: 1.4;
+	color: var(--secondary-text-color);
+	margin: 2.15rem 0 0.55rem;
 }
 
-.case-study-body h2 + h3 {
-	margin-top: 1.15rem;
+.case-study-body h2 + .secondary-content-header {
+	margin-top: 1.25rem;
 }
 
 .case-study-body ul,
