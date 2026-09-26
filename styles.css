@@ -388,6 +388,7 @@ body:has(.home-page) .page-header {
 .secondary-content-header {
 	font-size: 1.05rem;
 	font-weight: 600;
+	font-style: italic;
 	letter-spacing: 0.04em;
 	line-height: inherit;
 	color: var(--secondary-text-color);
