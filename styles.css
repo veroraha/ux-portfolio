@@ -391,7 +391,7 @@ body:has(.home-page) .page-header {
 	font-style: italic;
 	letter-spacing: 0.04em;
 	line-height: inherit;
-	color: var(--secondary-text-color);
+	color: var(--footer-bg-color);
 	margin-top: 2.15rem;
 	margin-right: 0;
 	margin-left: 0;
