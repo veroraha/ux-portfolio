@@ -423,6 +423,29 @@ body:has(.home-page) .page-header {
 	color: #2D3139;
 }
 
+.research-stats {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem 1.25rem;
+	margin: 0 0 2.25rem;
+}
+
+.case-study-body .research-stat-value {
+	font-size: clamp(1.65rem, 3.4vw, 2.35rem);
+	line-height: 1.4;
+	letter-spacing: -0.3px;
+	font-weight: 700;
+	color: var(--primary-text-color);
+	margin: 0 0 0.35rem;
+}
+
+.case-study-body .research-stat-label {
+	font-size: 1rem;
+	line-height: 1.5;
+	color: var(--secondary-text-color);
+	margin: 0;
+}
+
 .case-study-figure {
 	margin: 0.25rem 0 2.25rem;
 	width: 100%;
@@ -484,6 +507,11 @@ body:has(.home-page) .page-header {
 }
 
 @media (max-width: 600px) {
+	.research-stats {
+		grid-template-columns: 1fr;
+		gap: 1.25rem;
+	}
+
 	.case-study-mockup-row {
 		--mockup-cols: 2;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
