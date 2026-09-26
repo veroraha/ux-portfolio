@@ -95,12 +95,22 @@
 					</video>
 					<figcaption>Primary task flow for Erin Wyman via Sketch mockups</figcaption>
 				</figure>
+				<h3>Building the visual system</h3>
+				<p>
+					I created a lightweight visual system to keep the experience consistent across trip planning, active navigation, and temporary detours.
+				</p>
 			</section>
 			<section>
 				<h2>Final design</h2>
 				<p>
-					The final experience focuses on one core principle: Discover what lies ahead without sacrificing the trip you already started. Drivers can add up to three stops to their route, and remove stops without killing their main navigation. I designed the UI around the context of driving, so as not to pull people’s attention from the road for too long. The current build is a functional prototype and differs slightly from the original design due to limitations with the Google Maps API.
+					The final experience focuses on one core principle: Discover what lies ahead without sacrificing the trip you already started.
 				</p>
+				<ol>
+					<li>Discover: Recommendations are surfaced based on their relationship to the existing route.</li>
+					<li>Add: User can add a stop without replacing their original destination.</li>
+					<li>Detour: The temporary stop becomes the immediate navigation target.</li>
+					<li>Continue: Completing or removing stops returns the user to the primary trip.</li>
+				</ol>
 				<figure class="case-study-figure">
 					<video controls playsinline preload="metadata" aria-label="Screen recording of the On The Way Angular prototype using Google Maps to route a trip and add stops">
 						<source src="./otw/otw-app.mp4" type="video/mp4">
