@@ -397,7 +397,8 @@ body:has(.home-page) .page-header {
 	margin-top: 1.15rem;
 }
 
-.case-study-body ul {
+.case-study-body ul,
+.case-study-body ol {
 	margin: 0 0 1.5rem;
 	padding-left: 1.25rem;
 	font-size: 1.15rem;
