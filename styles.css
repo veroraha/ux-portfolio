@@ -385,6 +385,30 @@ body:has(.home-page) .page-header {
 	margin: 0 0 0.75rem;
 }
 
+.case-study-body h3 {
+	font-size: 1.15rem;
+	font-weight: 700;
+	letter-spacing: -0.2px;
+	color: var(--primary-text-color);
+	margin: 2rem 0 0.6rem;
+}
+
+.case-study-body h2 + h3 {
+	margin-top: 1.15rem;
+}
+
+.case-study-body ul {
+	margin: 0 0 1.5rem;
+	padding-left: 1.25rem;
+	font-size: 1.15rem;
+	line-height: 1.7;
+	color: #2D3139;
+}
+
+.case-study-body li + li {
+	margin-top: 0.35rem;
+}
+
 .case-study-body p {
 	font-size: 1.15rem;
 	line-height: 1.7;
