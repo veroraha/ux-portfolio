@@ -385,7 +385,7 @@ body:has(.home-page) .page-header {
 	margin: 0 0 0.75rem;
 }
 
-.secondary-content-header {
+.content h3.secondary-content-header {
 	font-size: 1.05rem;
 	font-weight: 600;
 	font-style: italic;
@@ -395,7 +395,7 @@ body:has(.home-page) .page-header {
 	margin-top: 2.15rem;
 	margin-right: 0;
 	margin-left: 0;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.75rem;
 }
 
 .case-study-body h2 + .secondary-content-header {
