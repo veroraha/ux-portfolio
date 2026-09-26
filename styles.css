@@ -389,9 +389,9 @@ body:has(.home-page) .page-header {
 	font-size: 1.05rem;
 	font-weight: 600;
 	letter-spacing: 0.04em;
-	line-height: 1.4;
+	line-height: inherit;
 	color: var(--secondary-text-color);
-	margin: 2.15rem 0 0.2rem;
+	margin: 2.15rem 0 0.75rem;
 }
 
 .case-study-body h2 + .secondary-content-header {
