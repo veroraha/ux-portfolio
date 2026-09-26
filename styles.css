@@ -446,6 +446,20 @@ body:has(.home-page) .page-header {
 	margin: 0;
 }
 
+.research-stat {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+
+.research-stats .case-study-figure {
+	margin: 0.85rem 0 0;
+}
+
+.research-stats .case-study-figure figcaption {
+	text-align: left;
+}
+
 .case-study-figure {
 	margin: 0.25rem 0 2.25rem;
 	width: 100%;
