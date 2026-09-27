@@ -369,10 +369,6 @@ video {
 	letter-spacing: -0.6px;
 }
 
-body:has(.home-page) .page-header {
-	padding-bottom: 0;
-}
-
 #about, #projects, #bah, #otw, #bttf, #flix {
 	padding-top: 4rem;
 	margin-top: 0;
@@ -659,7 +655,6 @@ body:has(.home-page) .page-header {
 	width: 100%;
 }
 
-.home-page .page-header,
 .home-blurb,
 .home-meta {
 	width: 100%;
@@ -667,13 +662,6 @@ body:has(.home-page) .page-header {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-.home-page .page-header {
-	font-size: clamp(1.65rem, 3.4vw, 2.35rem);
-	line-height: 1.4;
-	letter-spacing: -0.3px;
-	text-transform: none;
 }
 
 .home-blurb,
@@ -949,11 +937,6 @@ body:has(.home-page) .page-header {
 
 	.home-page {
 		--home-gap: 2rem;
-	}
-
-	.home-page .page-header {
-		padding: 0;
-		font-size: clamp(1.4rem, 6vw, 1.7rem);
 	}
 
 	.home-cta-row {
