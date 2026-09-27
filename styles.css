@@ -28,6 +28,10 @@
 	--tertiary-text-color: #5F6A54; /** Museum Olive / Sage */
 	
 	--placard-border: #121316;
+
+	--header-gutter: 4rem;
+	--content-gutter: 2rem;
+	--content-max: 1100px;
 }
 
 * {
@@ -48,8 +52,15 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	overflow-wrap: break-word;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+img,
+video {
+	max-width: 100%;
+	height: auto;
 }
 
 /** site header **/
@@ -65,14 +76,16 @@ body {
 	background-color: rgba(247, 246, 242, 0.94);
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
-	padding: 0 4rem;
+	gap: 1rem;
+	padding: 0 var(--header-gutter);
 	border-bottom: 1px solid var(--border-color);
 }
 
 .header .site-name {
 	color: var(--primary-text-color);
 	margin: 0;
-	font-size: 1.45rem;
+	min-width: 0;
+	font-size: clamp(1.05rem, 3.4vw, 1.45rem);
 	font-weight: 700;
 	letter-spacing: -0.5px;
 }
@@ -99,6 +112,10 @@ body {
 	margin: 0;
 	padding: 0;
 	color: var(--primary-text-color);
+}
+
+.nav .dropdown-links {
+	display: none;
 }
 
 .nav .header-links li,
@@ -168,17 +185,17 @@ body {
 }
 
 @media (max-width: 800px) {
-	.header {
-		padding: 0 1.5rem;
-	}
-
 	.nav .header-links { 
 		display: none; 
 	}
 
 	.nav .dropdown-btn {
-		display: block;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
 		position: relative;
+		min-height: 2.75rem;
 		background-color: transparent;
 		border: 1.5px solid var(--primary-text-color);
 		border-radius: 6px;
@@ -187,17 +204,19 @@ body {
 		font-size: 0.95rem;
 		color: var(--primary-text-color);
 		cursor: pointer;
-		transition: all 0.2s ease;
+		transition: background-color 0.2s ease, color 0.2s ease;
 	}
 
-	.nav .dropdown-btn:hover {
+	.nav .dropdown-btn:hover,
+	.nav.is-open .dropdown-btn {
 		background-color: var(--surface-muted-color);
 	}
 
-	.nav .dropdown-btn h3 {
+	.nav .menu-label {
 		margin: 0;
 		font-size: 1rem;
 		font-weight: 600;
+		line-height: 1;
 		pointer-events: none;
 	}
 
@@ -209,16 +228,14 @@ body {
 		background-color: #FFFFFF;
 		border: 1px solid var(--border-color);
 		border-radius: 8px;
-		padding: 1.25rem 1.5rem;
+		padding: 0.4rem;
 		flex-direction: column;
-		gap: 1.1rem;
-		min-width: 160px;
+		gap: 0.15rem;
+		min-width: 11rem;
 		box-shadow: 0 12px 32px rgba(18, 19, 22, 0.12);
 	}
 
-	.nav .dropdown-btn:hover .dropdown-links,
-	.nav .dropdown-btn:focus .dropdown-links,
-	.nav .dropdown-btn.open .dropdown-links {
+	.nav.is-open .dropdown-links {
 		display: flex;
 	}
 
@@ -232,6 +249,8 @@ body {
 		width: 100%;
 		display: block;
 		color: var(--primary-text-color);
+		padding: 0.7rem 0.85rem;
+		border-radius: 6px;
 	}
 
 	.nav .dropdown-links li:hover a {
@@ -249,7 +268,8 @@ body {
 	align-items: center;
 	background-color: var(--footer-bg-color);
 	color: #FFFFFF;
-	padding: 3.5rem 4rem;
+	gap: 1.5rem;
+	padding: 3.5rem var(--header-gutter);
 	margin-top: auto;
 	border-top: 1px solid rgba(149, 112, 131, 0.28);
 }
@@ -300,24 +320,28 @@ body {
 @media (max-width: 600px) {
 	.footer {
 		flex-direction: column;
-		gap: 1.5rem;
 		text-align: center;
-		padding: 2.5rem 1.5rem;
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
+	}
+
+	.footer .footer-btns {
+		flex-direction: column;
+		width: min(100%, 20rem);
+	}
+
+	.footer .button {
+		justify-content: center;
+		width: 100%;
+		min-height: 2.75rem;
 	}
 }
 
 /** page headers **/
 
-.page-header, .content {
-	margin: 0 auto;
-	max-width: 1100px;
-	padding-left: 2rem;
-	padding-right: 2rem;
-}
-
 .page-header {
-	padding-top: 5.5rem;
-	padding-bottom: 2rem;
+	margin: 0;
+	padding: 5.5rem 0 2rem;
 	text-align: center;
 	color: var(--primary-text-color);
 	font-size: 2.1rem;
@@ -336,9 +360,13 @@ body:has(.home-page) .page-header {
 	min-height: 2.2rem;
 }
 
+#about,
+#projects {
+	padding-bottom: 1rem;
+}
+
 #projects {
 	padding-top: 3.25rem;
-	padding-bottom: 1.25rem;
 }
 
 .case-study-header {
@@ -516,7 +544,7 @@ body:has(.home-page) .page-header {
 	justify-content: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
 	.case-study-mockup-row {
 		--mockup-cols: 2;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -556,8 +584,12 @@ body:has(.home-page) .page-header {
 .content {
 	color: var(--primary-text-color);
 	flex: 1;
-	padding-bottom: 5rem;
 	width: 100%;
+	max-width: var(--content-max);
+	margin: 0 auto;
+	padding-left: var(--content-gutter);
+	padding-right: var(--content-gutter);
+	padding-bottom: 5rem;
 }
 
 .content h3 {
@@ -593,8 +625,8 @@ body:has(.home-page) .page-header {
 	flex: 1;
 	gap: var(--home-gap);
 	width: 100%;
-	max-width: 1100px;
-	padding: var(--home-gap) 1.25rem;
+	max-width: var(--content-max);
+	padding: var(--home-gap) var(--content-gutter);
 }
 
 .home-intro {
@@ -860,17 +892,23 @@ body:has(.home-page) .page-header {
 	}
 }
 
+.nav .dropdown-btn:focus-visible,
+.nav .header-links a:focus-visible,
+.nav .dropdown-links a:focus-visible,
+.footer .button:focus-visible,
+.cta-btn:focus-visible,
+.back-link:focus-visible {
+	outline: 2px solid var(--primary-accent-color);
+	outline-offset: 3px;
+}
+
 /** responsive layout adjustments **/
 
 @media (max-width: 1024px) {
-	.header {
-		padding: 0 2rem;
-	}
-
-	.page-header, .content {
-		max-width: 900px;
-		padding-left: 1.5rem;
-		padding-right: 1.5rem;
+	:root {
+		--header-gutter: 2rem;
+		--content-gutter: 1.5rem;
+		--content-max: 900px;
 	}
 
 	.project .placard {
@@ -879,13 +917,9 @@ body:has(.home-page) .page-header {
 }
 
 @media (max-width: 800px) {
-	.header {
-		padding: 0 1.25rem;
-	}
-
-	.page-header, .content {
-		padding-left: 1.25rem;
-		padding-right: 1.25rem;
+	:root {
+		--header-gutter: 1.25rem;
+		--content-gutter: 1.25rem;
 	}
 
 	.page-header {
@@ -895,8 +929,6 @@ body:has(.home-page) .page-header {
 
 	.home-page {
 		--home-gap: 2rem;
-		padding-left: 1.25rem;
-		padding-right: 1.25rem;
 	}
 
 	.home-page .page-header {

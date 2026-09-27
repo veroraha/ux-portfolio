@@ -15,6 +15,9 @@ function typewriter() {
 	if (titleElement === null) {
 		return;
 	}
+	if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+		return;
+	}
 	if (i === 0) {
 		titleElement.setAttribute("aria-label", titleText);
 		titleElement.textContent = "";
@@ -32,16 +35,38 @@ function typewriter() {
 function setupNavigation() {
 	const menuToggle = document.getElementById('menuToggle');
 	const dropdownLinks = document.getElementById('dropdownLinks');
+	const nav = menuToggle ? menuToggle.closest('.nav') : null;
 
-	if (menuToggle && dropdownLinks) {
+	const setMenuOpen = (open) => {
+		if (!nav || !menuToggle) {
+			return;
+		}
+		nav.classList.toggle('is-open', open);
+		menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+	};
+
+	if (menuToggle && dropdownLinks && nav) {
 		menuToggle.addEventListener('click', (e) => {
 			e.stopPropagation();
-			menuToggle.classList.toggle('open');
+			setMenuOpen(!nav.classList.contains('is-open'));
 		});
 
 		document.addEventListener('click', (e) => {
-			if (!menuToggle.contains(e.target)) {
-				menuToggle.classList.remove('open');
+			if (!nav.contains(e.target)) {
+				setMenuOpen(false);
+			}
+		});
+
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape' && nav.classList.contains('is-open')) {
+				setMenuOpen(false);
+				menuToggle.focus();
+			}
+		});
+
+		dropdownLinks.addEventListener('click', (e) => {
+			if (e.target.closest('a')) {
+				setMenuOpen(false);
 			}
 		});
 	}
@@ -66,6 +91,10 @@ function setupNavigation() {
 			link.classList.add('active');
 		}
 	});
+
+	if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+		return;
+	}
 
 	// Smooth subtle image entrance animations
 	const cards = document.querySelectorAll('.headshot, .home-page');
