@@ -77,17 +77,35 @@
 			</section>
 			<section>
 				<h2>Designing across three operational contexts</h2>
+				<h3 class="secondary-content-header">Planning</h3>
 				<p>
-					I've mentioned the tool's planning, operations, and crisis management workflows, each with its own set of users, constraints, and success metrics. My designs cut interaction cost, made operational status scannable, and framed a strategic view for senior leaders.
+					<strong>The problem:</strong> Planning required users to manually build tables one row at a time and repeatedly open modals to edit and save information. There was an abundance of required fields with constraints keeping users from finishing the task quickly. I also observed the need for an intuitive input process during planning.
 				</p>
 				<p>
-					In planning, the main friction point was data entry. Users had to build tables one row at a time and open a modal to edit and save each row. I replaced those clicks with import/export and auto-population using what the system already knew about the mission set so planners could finish the task faster. I mirrored source material in the interface to match the existing mental model and reduce input errors. I also split the planning section into distinct pages with clear status indicators so the shared workspace always reflected the most up-to-date information, and no required field went untouched.
+					<strong>The design decision:</strong> I looked for opportunities to remove unnecessary data entry by introducing import/export and auto-population, using information the system already knew about the mission set. I mirrored the interface after source material users were already familiar with. I also separated planning into distinct pages with clear status indicators so users could understand what was complete and what still required attention.
 				</p>
 				<p>
-					In operations, the problem was situational awareness. It was not clear to users what had already happened, what was happening now, and what was coming next. The task progression visualization was a donut chart, which proved ineffective for at-a-glance operational progress, so I redesigned how real-world actions were tracked, using a linear progress stepper with icons to make status easy to scan and understand. I also introduced a persistent activity feed to surface important changes and keep the operational picture up-to-date.
+					<strong>The result:</strong> The goal wasn’t simply to reduce clicks, but to make the workflow faster while reducing opportunities for incomplete or incorrect information.
+				</p>
+				<h3 class="secondary-content-header">Operations</h3>
+				<p>
+					<strong>The problem:</strong> Users needed to understand what had already happened, what was happening now, and what was coming next. The existing visualization made operational progress difficult to interpret at a glance.
 				</p>
 				<p>
-					In a crisis, senior leaders need to make quick decisions, so the goal was to create a single strategic dashboard to absorb information at a glance. The challenge here was information priority. Different users wanted different things from the same tool, so I needed to decide what earned a place on the strategic view and what would only slow people down.
+					<strong>The design decision:</strong> I replaced the donut chart visualization with a linear progression model using steps and icons that mapped more directly to the sequence of real-world actions.
+				</p>
+				<p>
+					<strong>The result:</strong> The redesign aligned the interface with the way users understood the operation itself: as a sequence of events unfolding over time.
+				</p>
+				<h3 class="secondary-content-header">Crisis Management</h3>
+				<p>
+					<strong>The problem:</strong> During a crisis, senior leaders needed to quickly scan and understand the operational picture, but different users valued different information from the same system, so information priority was a challenge.
+				</p>
+				<p>
+					<strong>The design decision:</strong> I designed a strategic dashboard around information priority: what leaders needed to understand immediately, what provided useful context, and what could remain available elsewhere in the application.
+				</p>
+				<p>
+					<strong>The result:</strong> The challenge was deciding what information earned attention first, and what information would only slow users down.
 				</p>
 			</section>
 			<section>
