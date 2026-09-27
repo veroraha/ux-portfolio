@@ -945,11 +945,13 @@ body:has(.home-page) .page-header {
 
 	.home-cta-row {
 		flex-direction: column;
-		width: min(100%, 20rem);
+		align-items: stretch;
+		width: max-content;
+		max-width: 100%;
 	}
 
 	.home-page .cta-btn {
-		width: 100%;
+		width: auto;
 	}
 
 	.project-row {
