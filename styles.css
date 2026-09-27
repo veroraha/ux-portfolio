@@ -822,6 +822,12 @@ body:has(.home-page) .page-header {
 	transform: translateY(-2px);
 }
 
+.project .placard h3,
+.project .placard h4 {
+	text-align: center;
+	width: 100%;
+}
+
 .project .placard h3 {
 	margin: 0 0 0.35rem;
 	font-size: 1.15rem;
