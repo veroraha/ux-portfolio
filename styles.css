@@ -581,10 +581,13 @@ body:has(.home-page) .page-header {
 }
 
 .back-link {
-	display: inline-flex;
+	display: flex;
 	align-items: center;
 	gap: 0.4rem;
+	width: 100%;
+	max-width: 42rem;
 	margin-top: 4rem;
+	margin-inline: auto;
 	color: var(--secondary-text-color);
 	text-decoration: none;
 	font-size: 0.98rem;
