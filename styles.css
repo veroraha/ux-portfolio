@@ -132,6 +132,10 @@ video {
 	letter-spacing: 0.2px;
 }
 
+.nav .dropdown-links h3 {
+	font-size: 0.9rem;
+}
+
 .nav .header-links a,
 .nav .dropdown-links a,
 .nav .header-links .nav-current,
@@ -168,6 +172,7 @@ video {
 .nav .dropdown-links .nav-current {
 	color: var(--primary-text-color);
 	font-weight: 700;
+	padding-bottom: 0;
 }
 
 .nav .header-links a.active::after,
@@ -259,6 +264,11 @@ video {
 		display: inline-block;
 		padding: 0.25rem 0;
 		white-space: nowrap;
+	}
+
+	.nav .dropdown-links li a.active,
+	.nav .dropdown-links li .nav-current {
+		padding-bottom: 0;
 	}
 
 	.nav .dropdown-links li:hover a,
