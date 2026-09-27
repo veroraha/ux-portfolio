@@ -171,7 +171,9 @@ video {
 }
 
 .nav .header-links a.active::after,
-.nav .header-links .nav-current::after {
+.nav .header-links .nav-current::after,
+.nav .dropdown-links a.active::after,
+.nav .dropdown-links .nav-current::after {
 	content: '';
 	position: absolute;
 	bottom: -2px;
@@ -244,21 +246,20 @@ video {
 
 	.nav .dropdown-links li {
 		text-align: right;
-		width: 100%;
+		width: auto;
 	}
 
 	.nav .dropdown-links li a,
 	.nav .dropdown-links li .nav-current {
 		width: auto;
-		display: block;
-		color: var(--primary-text-color);
-		padding: 0.55rem 0.7rem;
-		border-radius: 6px;
+		display: inline-block;
+		padding: 0.25rem 0;
 		white-space: nowrap;
 	}
 
-	.nav .dropdown-links li:hover a {
-		color: var(--primary-accent-color);
+	.nav .dropdown-links li:hover a,
+	.nav .dropdown-links li a:focus-visible {
+		color: var(--primary-text-color);
 	}
 }
 
