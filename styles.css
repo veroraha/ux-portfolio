@@ -674,7 +674,7 @@ body:has(.home-page) .page-header {
 	line-height: 1.4;
 	letter-spacing: -0.3px;
 	text-transform: none;
-	color: var(--primary-accent-color);
+	color: var(--footer-bg-color);
 }
 
 .home-blurb,
