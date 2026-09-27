@@ -579,12 +579,6 @@ body:has(.home-page) .page-header {
 	border-radius: 0;
 	background: transparent;
 	filter: drop-shadow(0 16px 36px rgba(18, 19, 22, 0.25));
-	transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.content .headshot:hover {
-	transform: scale(1.02);
-	filter: drop-shadow(0 22px 44px rgba(18, 19, 22, 0.32));
 }
 
 /** home page — centered stack with even gaps **/
