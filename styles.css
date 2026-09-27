@@ -978,6 +978,10 @@ body:has(.home-page) .page-header {
 		gap: 2.25rem;
 	}
 
+	.project-grid--earlier {
+		gap: 2rem;
+	}
+
 	.project-link,
 	.project-link--featured {
 		max-width: 22rem;
