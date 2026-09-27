@@ -1,0 +1,47 @@
+DirectoryIndex index.html
+
+AddType video/mp4 .mp4
+AddType image/svg+xml .svg
+AddType application/pdf .pdf
+
+# MultiViews would pick the otw/ folder over otw.html for /otw.
+Options -MultiViews
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Canonical URLs have no .html extension. THE_REQUEST is the original
+  # browser request, so this 301 does not loop after the internal rewrite.
+  RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+  RewriteRule ^ / [R=301,L]
+
+  RewriteCond %{THE_REQUEST} \s/+([^\s?]+)\.html[\s?] [NC]
+  RewriteRule ^ /%1 [R=301,L]
+
+  # /about/ -> /about even when a same-named asset folder exists (/otw/).
+  RewriteCond %{REQUEST_FILENAME} !-d [OR]
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+  # Real files (videos, hashed assets, the .html pages themselves) pass through.
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^ - [L]
+
+  # /projects -> projects.html. Check DOCUMENT_ROOT so this still wins when a
+  # directory of the same name exists (otw/, bttf/, flix/, bah/). DirectorySlash
+  # Off stops Apache from 403'ing those folder names before the rewrite runs.
+  DirectorySlash Off
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^([^/]+)/?$ $1.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.html$|^(script\.js|styles\.css)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+
+  <FilesMatch "-[A-Za-z0-9_-]{8}\.(js|css|png|jpe?g|svg|mp4|pdf|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>

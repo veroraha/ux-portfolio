@@ -1,0 +1,10 @@
+---
+# Read by Bluehost's cPanel "Git Version Control" when you click Deploy HEAD
+# Commit on the `deploy` branch. $HOME resolves to /home/<cpanel-username>.
+# If the site is served from an addon domain, change DEPLOYPATH to that
+# domain's document root (for example $HOME/example.com/).
+deployment:
+  tasks:
+    - export DEPLOYPATH=$HOME/public_html/
+    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
