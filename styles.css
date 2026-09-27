@@ -28,7 +28,6 @@
 	--tertiary-text-color: #5F6A54; /** Museum Olive / Sage */
 	
 	--placard-border: #121316;
-	--page-gutter: 1.5rem;
 }
 
 * {
@@ -66,7 +65,7 @@ body {
 	background-color: rgba(247, 246, 242, 0.94);
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
-	padding: 0 var(--page-gutter);
+	padding: 0 4rem;
 	border-bottom: 1px solid var(--border-color);
 }
 
@@ -169,8 +168,8 @@ body {
 }
 
 @media (max-width: 800px) {
-	:root {
-		--page-gutter: 0;
+	.header {
+		padding: 0 1.5rem;
 	}
 
 	.nav .header-links { 
@@ -250,7 +249,7 @@ body {
 	align-items: center;
 	background-color: var(--footer-bg-color);
 	color: #FFFFFF;
-	padding: 3.5rem var(--page-gutter);
+	padding: 3.5rem 4rem;
 	margin-top: auto;
 	border-top: 1px solid rgba(149, 112, 131, 0.28);
 }
@@ -303,18 +302,22 @@ body {
 		flex-direction: column;
 		gap: 1.5rem;
 		text-align: center;
-		padding: 2.5rem var(--page-gutter);
+		padding: 2.5rem 1.5rem;
 	}
 }
 
 /** page headers **/
 
+.page-header, .content {
+	margin: 0 auto;
+	max-width: 1100px;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
 .page-header {
-	margin: 0;
 	padding-top: 5.5rem;
 	padding-bottom: 2rem;
-	padding-left: 0;
-	padding-right: 0;
 	text-align: center;
 	color: var(--primary-text-color);
 	font-size: 2.1rem;
@@ -553,12 +556,8 @@ body:has(.home-page) .page-header {
 .content {
 	color: var(--primary-text-color);
 	flex: 1;
-	width: 100%;
-	max-width: none;
-	margin: 0;
-	padding-left: var(--page-gutter);
-	padding-right: var(--page-gutter);
 	padding-bottom: 5rem;
+	width: 100%;
 }
 
 .content h3 {
@@ -594,8 +593,8 @@ body:has(.home-page) .page-header {
 	flex: 1;
 	gap: var(--home-gap);
 	width: 100%;
-	max-width: none;
-	padding: var(--home-gap) var(--page-gutter);
+	max-width: 1100px;
+	padding: var(--home-gap) 1.25rem;
 }
 
 .home-intro {
@@ -864,12 +863,31 @@ body:has(.home-page) .page-header {
 /** responsive layout adjustments **/
 
 @media (max-width: 1024px) {
+	.header {
+		padding: 0 2rem;
+	}
+
+	.page-header, .content {
+		max-width: 900px;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+
 	.project .placard {
 		padding: 1rem 0.85rem;
 	}
 }
 
 @media (max-width: 800px) {
+	.header {
+		padding: 0 1.25rem;
+	}
+
+	.page-header, .content {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+
 	.page-header {
 		font-size: 1.6rem;
 		padding: 3.75rem 0 1.25rem;
@@ -877,6 +895,8 @@ body:has(.home-page) .page-header {
 
 	.home-page {
 		--home-gap: 2rem;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
 	}
 
 	.home-page .page-header {
