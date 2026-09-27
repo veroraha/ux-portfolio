@@ -425,8 +425,8 @@ body:has(.home-page) .page-header {
 
 .research-stats {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 1.5rem 1.25rem;
+	grid-template-columns: 1fr;
+	gap: 2rem;
 	margin: 0 0 2.25rem;
 }
 
@@ -521,11 +521,6 @@ body:has(.home-page) .page-header {
 }
 
 @media (max-width: 600px) {
-	.research-stats {
-		grid-template-columns: 1fr;
-		gap: 1.25rem;
-	}
-
 	.case-study-mockup-row {
 		--mockup-cols: 2;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
