@@ -30,7 +30,8 @@
 	--placard-border: #121316;
 
 	--header-gutter: 4rem;
-	--content-gutter: 2rem;
+	/* Body inset stays at least as large as the header and footer. */
+	--content-gutter: var(--header-gutter);
 	--content-max: 1100px;
 }
 
@@ -907,7 +908,6 @@ body:has(.home-page) .page-header {
 @media (max-width: 1024px) {
 	:root {
 		--header-gutter: 2rem;
-		--content-gutter: 1.5rem;
 		--content-max: 900px;
 	}
 
@@ -919,7 +919,6 @@ body:has(.home-page) .page-header {
 @media (max-width: 800px) {
 	:root {
 		--header-gutter: 1.25rem;
-		--content-gutter: 1.25rem;
 	}
 
 	.page-header {
