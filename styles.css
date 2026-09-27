@@ -205,12 +205,14 @@ video {
 		font-size: 0.95rem;
 		color: var(--primary-text-color);
 		cursor: pointer;
-		transition: background-color 0.2s ease, color 0.2s ease;
+		transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 	}
 
 	.nav .dropdown-btn:hover,
 	.nav.is-open .dropdown-btn {
-		background-color: var(--surface-muted-color);
+		background-color: var(--footer-bg-color);
+		border-color: var(--footer-bg-color);
+		color: #F7F6F2;
 	}
 
 	.nav .menu-label {
@@ -229,10 +231,10 @@ video {
 		background-color: #FFFFFF;
 		border: 1px solid var(--border-color);
 		border-radius: 8px;
-		padding: 0.4rem;
+		padding: 0.35rem;
 		flex-direction: column;
 		gap: 0.15rem;
-		min-width: 11rem;
+		width: max-content;
 		box-shadow: 0 12px 32px rgba(18, 19, 22, 0.12);
 	}
 
@@ -247,11 +249,12 @@ video {
 
 	.nav .dropdown-links li a,
 	.nav .dropdown-links li .nav-current {
-		width: 100%;
+		width: auto;
 		display: block;
 		color: var(--primary-text-color);
-		padding: 0.7rem 0.85rem;
+		padding: 0.55rem 0.7rem;
 		border-radius: 6px;
+		white-space: nowrap;
 	}
 
 	.nav .dropdown-links li:hover a {
