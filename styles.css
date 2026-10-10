@@ -2565,3 +2565,18 @@ body,
   background: #141414 !important;
 }
 
+/* Navbar typography: regular weight by default; emphasize only the current page */
+.site-header .header-links a,
+.site-header .header-links .nav-current,
+.site-header .dropdown-links a,
+.site-header .dropdown-links .nav-current,
+.site-header .dropdown-btn {
+  font-weight: 400 !important;
+}
+.site-header .header-links .nav-current,
+.site-header .header-links a.active,
+.site-header .dropdown-links .nav-current,
+.site-header .dropdown-links a.active {
+  font-weight: 700 !important;
+}
+
