@@ -2428,3 +2428,15 @@ body {
   background-color: #121316 !important;
   background-image: none !important;
 }
+
+
+/* Keep the global site background at the requested near-black */
+html,
+body,
+.home-page,
+.home-page .section,
+.home-page .home-hero-section,
+.home-page .home-projects-section {
+  background-color: #0A0A0A !important;
+  background-image: none !important;
+}
