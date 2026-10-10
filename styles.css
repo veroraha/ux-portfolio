@@ -1943,7 +1943,7 @@ body,
 /* Navigation interaction colors and selected-page emphasis */
 .site-header .header-links a:hover,
 .site-header .dropdown-links a:hover {
-	color: #b8b8b8 !important;
+	color: #7a7a7a !important;
 }
 .site-header .header-links .nav-current,
 .site-header .dropdown-links .nav-current {
