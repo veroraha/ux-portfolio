@@ -2473,3 +2473,18 @@ body,
 .site-header .dropdown-btn {
   color: #D6D6D6 !important;
 }
+
+
+/* Navbar palette: off-white default links, blue hover/focus */
+.site-header .header-links a,
+.site-header .dropdown-links a,
+.site-header .dropdown-btn {
+  color: #FAFAFA !important;
+}
+.site-header .header-links a:hover:not(.nav-current):not(.active),
+.site-header .dropdown-links a:hover:not(.nav-current):not(.active),
+.site-header .dropdown-btn:hover,
+.site-header .header-links a:focus-visible:not(.nav-current):not(.active),
+.site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) {
+  color: #5B7CD7 !important;
+}
