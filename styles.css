@@ -1134,10 +1134,17 @@ body:has(.home-page) .page-header {
 }
 
 .home-page .page-header,
-.home-page .home-blurb,
-.home-page .home-meta,
+.home-page .home-blurb {
+	color: var(--footer-bg-color);
+}
+
 .home-page .home-meta-chip {
-	color: var(--primary-bg-color);
+	color: var(--footer-bg-color);
+	border-color: var(--footer-bg-color);
+}
+
+.home-page .home-meta-chip .chip-icon {
+	color: var(--footer-bg-color);
 }
 
 .home-page .home-blurb {
