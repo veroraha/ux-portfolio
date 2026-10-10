@@ -2519,3 +2519,22 @@ body,
 .site-header .dropdown-links .nav-current {
   text-align: center !important;
 }
+
+/* Simplify the small-screen dropdown and reduce its excess spacing */
+@media (max-width: 540px) {
+  .site-header .dropdown-links .nav-emoji {
+    display: none !important;
+  }
+  .site-header .dropdown-links {
+    gap: 0.5rem !important;
+    padding: 0.55rem 0.8rem !important;
+    min-width: 0 !important;
+  }
+  .site-header .dropdown-links li,
+  .site-header .dropdown-links a,
+  .site-header .dropdown-links .nav-current {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
