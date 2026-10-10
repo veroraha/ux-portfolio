@@ -789,7 +789,7 @@ body:has(.home-page) .page-header {
 }
 
 .home-page .cta-btn.secondary:hover {
-	background-color: var(--primary-bg-color);
+	background-color: transparent;
 	border-color: var(--placard-border);
 }
 
