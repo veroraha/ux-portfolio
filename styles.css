@@ -2408,3 +2408,15 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
     color: #CCCCCC !important;
   }
 }
+
+
+/* Keep the homepage background the same near-black shade at every viewport size */
+html,
+body,
+.home-page,
+.home-page .section,
+.home-page .home-hero-section,
+.home-page .home-projects-section {
+  background-color: #0A0A0A !important;
+  background-image: none !important;
+}
