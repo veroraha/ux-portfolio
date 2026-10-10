@@ -1709,7 +1709,7 @@ body,
 	top: 0;
 	z-index: 100;
 	width: 100%;
-	padding: 1rem var(--content-gutter);
+	padding: 1.25rem var(--content-gutter);
 	background: rgba(254, 250, 224, 0.94);
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
