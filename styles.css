@@ -1295,3 +1295,73 @@ body:has(.home-page) .page-header {
 	}
 }
 
+
+
+/** homepage type scale increase **/
+.home-page .page-header {
+	font-size: 4.2rem;
+	line-height: 1.15;
+}
+
+.home-page .home-blurb {
+	font-size: clamp(2.4rem, 4.4vw, 2.9rem);
+	line-height: 1.45;
+}
+
+.home-page .home-projects-title {
+	font-size: clamp(2.9rem, 5.2vw, 3.8rem);
+}
+
+.home-page .home-project-placard h3 {
+	font-size: 2.4rem;
+}
+
+.home-page .home-project-placard p {
+	font-size: 1.96rem;
+}
+
+.home-page .home-project-placard .home-project-year {
+	font-size: 1.72rem;
+}
+
+.home-page .home-meta-chip {
+	font-size: 1.32rem;
+	min-height: 2.8rem;
+	gap: 0.55rem;
+	padding: 0.45rem 1rem 0.45rem 0.75rem;
+}
+
+.home-page .home-meta-chip .chip-icon {
+	font-size: 1.35rem;
+	width: 1.5rem;
+	flex-basis: 1.5rem;
+}
+
+.home-page .home-cta-row .cta-btn {
+	font-size: 1.5em;
+}
+
+@media (max-width: 800px) {
+	.home-page .page-header {
+		font-size: clamp(2.8rem, 9vw, 3.5rem);
+	}
+	.home-page .home-blurb {
+		font-size: clamp(1.8rem, 5vw, 2.4rem);
+	}
+	.home-page .home-project-placard h3 {
+		font-size: 1.8rem;
+	}
+	.home-page .home-project-placard p {
+		font-size: 1.45rem;
+	}
+	.home-page .home-project-placard .home-project-year {
+		font-size: 1.25rem;
+	}
+	.home-page .home-meta-chip {
+		font-size: 1.15rem;
+	}
+	.home-page .home-cta-row .cta-btn {
+		font-size: 1.5em;
+	}
+}
+
