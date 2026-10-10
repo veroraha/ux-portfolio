@@ -1475,3 +1475,34 @@ body:has(.home-page) .page-header {
 	border-color: var(--secondary-accent-color);
 	color: var(--footer-bg-color);
 }
+
+
+/** homepage hero color refinement: plum chips and mauve calls to action **/
+.home-page .home-meta-chip,
+.home-page .home-meta-chip:hover,
+.home-page .home-meta-chip:focus-visible {
+	color: var(--primary-bg-color);
+	background-color: var(--secondary-accent-color);
+	border-color: var(--primary-bg-color);
+}
+
+.home-page .home-meta-chip .chip-icon,
+.home-page .home-meta-chip:hover .chip-icon,
+.home-page .home-meta-chip:focus-visible .chip-icon {
+	color: var(--primary-bg-color);
+}
+
+.home-page .home-cta-row .cta-btn,
+.home-page .home-cta-row .cta-btn.primary,
+.home-page .home-cta-row .cta-btn.secondary {
+	background-color: var(--secondary-accent-color);
+	border-color: var(--secondary-accent-color);
+	color: var(--footer-bg-color);
+}
+
+.home-page .home-cta-row .cta-btn:hover,
+.home-page .home-cta-row .cta-btn:focus-visible {
+	background-color: var(--primary-bg-color);
+	border-color: var(--primary-bg-color);
+	color: var(--footer-bg-color);
+}
