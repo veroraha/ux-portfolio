@@ -1595,3 +1595,9 @@ body:has(.home-page) .page-header {
 		font-size: clamp(1.55rem, 4.1vw, 1.95rem);
 	}
 }
+
+
+/** tighten the gap between the homepage greeting and lead statement further **/
+.home-page .home-intro .page-header {
+	margin-bottom: 0.2em;
+}
