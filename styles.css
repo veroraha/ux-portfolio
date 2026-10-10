@@ -1943,7 +1943,7 @@ body,
 /* Navigation interaction colors and selected-page emphasis */
 .site-header .header-links a:hover,
 .site-header .dropdown-links a:hover {
-	color: #525252 !important;
+	color: #A3A3B3 !important;
 }
 .site-header .header-links .nav-current,
 .site-header .dropdown-links .nav-current {
@@ -2486,7 +2486,7 @@ body,
 .site-header .dropdown-btn:hover,
 .site-header .header-links a:focus-visible:not(.nav-current):not(.active),
 .site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) {
-  color: #525252 !important;
+  color: #A3A3B3 !important;
 }
 
 
