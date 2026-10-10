@@ -1544,3 +1544,20 @@ body:has(.home-page) .page-header {
 		transform: none;
 	}
 }
+
+
+/** homepage text-only calls to action — mauve labels and more breathing room **/
+.home-page .home-cta-row {
+	column-gap: 2.5rem;
+	gap: 2.5rem;
+}
+
+.home-page .home-cta-row .cta-btn,
+.home-page .home-cta-row .cta-btn.primary,
+.home-page .home-cta-row .cta-btn.secondary,
+.home-page .home-cta-row .cta-btn:hover,
+.home-page .home-cta-row .cta-btn:focus-visible,
+.home-page .home-cta-row .cta-btn.primary:hover,
+.home-page .home-cta-row .cta-btn.secondary:hover {
+	color: var(--secondary-accent-color);
+}
