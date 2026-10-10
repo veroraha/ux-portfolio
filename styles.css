@@ -1561,3 +1561,21 @@ body:has(.home-page) .page-header {
 .home-page .home-cta-row .cta-btn.secondary:hover {
 	color: var(--secondary-accent-color);
 }
+
+
+/** homepage hero spacing: separate greeting, lead statement, skills, and actions **/
+.home-page .home-intro .page-header {
+	margin-bottom: 1.1em;
+}
+
+.home-page .home-blurb {
+	margin-bottom: 1.2em;
+}
+
+.home-page .home-meta {
+	margin-top: 1.8rem;
+}
+
+.home-page .home-cta-row {
+	margin-top: 3.5rem;
+}
