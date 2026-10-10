@@ -2376,3 +2376,35 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
   color: #191308 !important;
   font-weight: 700 !important;
 }
+
+
+/* Mobile Menu trigger should behave like a plain navbar link */
+@media (max-width: 540px) {
+  .site-header .dropdown-btn,
+  .site-header .dropdown-btn:hover,
+  .site-header .dropdown-btn:focus-visible,
+  .site-header .nav.is-open .dropdown-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: #FAFAFA !important;
+    font: 400 inherit !important;
+    font-weight: 400 !important;
+    letter-spacing: normal !important;
+    padding: 0 !important;
+    transform: none !important;
+    transition: color 0.2s ease !important;
+  }
+  .site-header .dropdown-btn > span[aria-hidden="true"] {
+    display: none !important;
+  }
+  .site-header .dropdown-btn:hover,
+  .site-header .dropdown-btn:focus-visible {
+    color: #CCCCCC !important;
+  }
+}
