@@ -2475,7 +2475,7 @@ body,
 }
 
 
-/* Navbar palette: off-white default links, blue hover/focus */
+/* Navbar palette: off-white default links, gray hover/focus */
 .site-header .header-links a,
 .site-header .dropdown-links a,
 .site-header .dropdown-btn {
@@ -2486,7 +2486,7 @@ body,
 .site-header .dropdown-btn:hover,
 .site-header .header-links a:focus-visible:not(.nav-current):not(.active),
 .site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) {
-  color: #5b7cd7 !important;
+  color: #525252 !important;
 }
 
 
