@@ -2062,3 +2062,65 @@ body,
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
 }
+
+
+
+/* Final site-wide refinements: remove the footer and standardize text on light surfaces */
+:root {
+	--primary-text-color: #1b1b1b;
+	--secondary-text-color: #1b1b1b;
+	--tertiary-text-color: #1b1b1b;
+}
+
+.footer {
+	display: none !important;
+}
+
+/* Light-background navigation, headings, and content */
+.site-header .header-links a,
+.site-header .header-links .nav-current,
+.site-header .dropdown-links a,
+.site-header .dropdown-links .nav-current,
+.site-header .dropdown-btn,
+.site-header .nav-emoji,
+.page-header,
+.content,
+.content h3,
+.content h3.secondary-content-header,
+.case-study-subtitle,
+.case-study-body,
+.case-study-body h2,
+.case-study-body h2 strong,
+.case-study-body h3,
+.case-study-body p,
+.case-study-body ul,
+.case-study-body ol,
+.case-study-body li,
+.case-study-body strong,
+.case-study-body .research-stat-value,
+.case-study-body .research-stat-label,
+.case-study-figure figcaption,
+.back-link,
+.project .placard,
+.project .placard h4,
+.project .placard .project-year,
+.home-project-placard,
+.home-project-placard h3,
+.home-project-placard p,
+.home-project-placard .home-project-year,
+.home-page .home-projects-title {
+	color: #1b1b1b;
+}
+
+/* Keep the homepage's dark hero text light for contrast */
+.home-page .home-hero-section .page-header,
+.home-page .home-hero-section .home-blurb {
+	color: var(--primary-bg-color);
+}
+
+/* Keep hover and focus text legible on light surfaces */
+.site-header .header-links a:hover,
+.site-header .dropdown-links a:hover,
+.back-link:hover {
+	color: #1b1b1b !important;
+}
