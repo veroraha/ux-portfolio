@@ -81,11 +81,11 @@ function setupNavigation() {
 			const currentScrollY = window.scrollY;
 			const menuIsOpen = nav && nav.classList.contains('is-open');
 
-			if (menuIsOpen || currentScrollY <= 80) {
+			if (menuIsOpen || currentScrollY <= 0) {
 				siteHeader.classList.remove('header-hidden');
-			} else if (currentScrollY > previousScrollY + 6) {
+			} else if (currentScrollY > previousScrollY) {
 				siteHeader.classList.add('header-hidden');
-			} else if (currentScrollY < previousScrollY - 6) {
+			} else if (currentScrollY < previousScrollY) {
 				siteHeader.classList.remove('header-hidden');
 			}
 
