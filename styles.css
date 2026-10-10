@@ -2270,3 +2270,18 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
 .site-header .dropdown-btn:hover {
   color: #5B7CD7 !important;
 }
+
+/* Navbar states: lavender on hover, off-white and bold when active */
+.site-header .header-links a:hover:not(.nav-current):not(.active),
+.site-header .dropdown-links a:hover:not(.nav-current):not(.active),
+.site-header .header-links a:focus-visible:not(.nav-current):not(.active),
+.site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) {
+  color: #A1A9E2 !important;
+}
+.site-header .header-links .nav-current,
+.site-header .header-links a.active,
+.site-header .dropdown-links .nav-current,
+.site-header .dropdown-links a.active {
+  color: #FAFAFA !important;
+  font-weight: 700 !important;
+}
