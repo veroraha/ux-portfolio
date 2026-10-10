@@ -2285,3 +2285,12 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
   color: #FAFAFA !important;
   font-weight: 700 !important;
 }
+
+/* Email button: lavender by default, transparent on hover */
+.site-header .header-email {
+  background-color: #A1A9E2 !important;
+}
+.site-header .header-email:hover {
+  background-color: transparent !important;
+  border: none !important;
+}
