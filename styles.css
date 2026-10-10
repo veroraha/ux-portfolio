@@ -2310,3 +2310,17 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
 }
 
 
+
+
+/* Lavender dot marks the currently active page in the navbar */
+.site-header .header-links a.nav-current::after,
+.site-header .header-links a.active::after,
+.site-header .dropdown-links a.nav-current::after,
+.site-header .dropdown-links a.active::after {
+  display: inline-block !important;
+  content: "•" !important;
+  color: #A1A9E2 !important;
+  margin-left: 0.45em;
+  font-size: 0.8em;
+  vertical-align: 0.08em;
+}
