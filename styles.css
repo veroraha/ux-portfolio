@@ -1133,6 +1133,13 @@ body:has(.home-page) .page-header {
 	box-sizing: border-box;
 }
 
+.home-page .page-header,
+.home-page .home-blurb,
+.home-page .home-meta,
+.home-page .home-meta-chip {
+	color: var(--primary-bg-color);
+}
+
 .home-page .home-blurb {
 	font-size: clamp(1.2rem, 2.2vw, 1.45rem);
 	line-height: 1.7;
