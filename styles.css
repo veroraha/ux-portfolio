@@ -1367,13 +1367,13 @@ body:has(.home-page) .page-header {
 
 
 
-/** homepage greeting — slow white underline matching the active nav indicator **/
+/** homepage greeting — white underline matching the active nav indicator **/
 .home-page .home-intro .page-header {
 	display: inline-block;
 	width: fit-content;
 	max-width: 100%;
 	position: relative;
-	color: #FFFFFF;
+	color: var(--footer-bg-color);
 	padding-bottom: 0.18em;
 }
 
@@ -1387,7 +1387,7 @@ body:has(.home-page) .page-header {
 	background-color: #FFFFFF;
 	transform: scaleX(0);
 	transform-origin: left center;
-	animation: greeting-underline-draw 1.8s ease-out 0.35s forwards;
+	animation: greeting-underline-draw 0.9s ease-out 0.15s forwards;
 }
 
 @keyframes greeting-underline-draw {
