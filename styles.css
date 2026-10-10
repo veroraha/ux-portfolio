@@ -703,7 +703,7 @@ body:has(.home-page) .page-header {
 	display: block;
 	margin: 0 auto 3.5rem;
 	padding-top: 2rem;
-	max-width: 300px;
+	max-width: 360px;
 	width: 100%;
 	height: auto;
 	border: none;
