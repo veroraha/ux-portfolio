@@ -1579,3 +1579,19 @@ body:has(.home-page) .page-header {
 .home-page .home-cta-row {
 	margin-top: 3.5rem;
 }
+
+
+/** fine-tune homepage lead statement spacing and scale **/
+.home-page .home-intro .page-header {
+	margin-bottom: 0.55em;
+}
+
+.home-page .home-blurb {
+	font-size: clamp(1.95rem, 3.5vw, 2.4rem);
+}
+
+@media (max-width: 800px) {
+	.home-page .home-blurb {
+		font-size: clamp(1.55rem, 4.1vw, 1.95rem);
+	}
+}
