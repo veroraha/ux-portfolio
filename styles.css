@@ -2044,3 +2044,14 @@ body,
 		font-size: clamp(1.1625rem, 3.075vw, 1.4625rem);
 	}
 }
+
+
+/* Balance the homepage lead statement across two lines on larger screens */
+.home-page .home-blurb-break {
+	display: initial;
+}
+@media (max-width: 600px) {
+	.home-page .home-blurb-break {
+		display: none;
+	}
+}
