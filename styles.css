@@ -2339,3 +2339,20 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
   background-color: #141414 !important;
   background: #141414 !important;
 }
+
+
+/* Update navbar and circular button fills to the lighter charcoal */
+.site-header .nav,
+.site-header .dropdown-links {
+  background-color: #1F1F1F !important;
+  background: #1F1F1F !important;
+}
+.site-header .header-linkedin,
+.site-header .header-linkedin:hover,
+.site-header .header-linkedin:focus-visible,
+.site-header .header-email,
+.site-header .header-email:hover,
+.site-header .header-email:focus-visible {
+  background-color: #1F1F1F !important;
+  background: #1F1F1F !important;
+}
