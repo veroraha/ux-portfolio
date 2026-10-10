@@ -1871,3 +1871,17 @@ body,
 	}
 	.site-header .dropdown-links .nav-current { font-weight: 700; }
 }
+
+
+/* VE monogram replaces the LinkedIn glyph while keeping the link */
+.site-header .header-monogram {
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-size: 1.35rem;
+	font-weight: 700;
+	letter-spacing: -0.09em;
+	line-height: 1;
+	color: #1b1b1b;
+}
+.site-header .header-linkedin {
+	text-decoration: none;
+}
