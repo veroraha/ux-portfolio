@@ -2294,3 +2294,17 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
   background-color: transparent !important;
   border: none !important;
 }
+
+
+/* Match the email button to the circular VE home button */
+.site-header .header-email,
+.site-header .header-email:hover,
+.site-header .header-email:focus-visible {
+  background-color: #0A0A0A !important;
+  border: 1px solid #FAFAFA !important;
+  border-color: #FAFAFA !important;
+  color: #FAFAFA !important;
+}
+.site-header .header-email:hover {
+  opacity: 0.85;
+}
