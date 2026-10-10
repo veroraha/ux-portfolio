@@ -2228,7 +2228,7 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
 }
 .site-header .header-email:hover {
   background-color: #A1A9E2 !important;
-  border-color: #FAFAFA !important;
+  border: none !important;
   color: #FAFAFA !important;
 }
 .site-header .header-links a:hover,
