@@ -2310,11 +2310,3 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
 }
 
 
-/* Email icon turns lavender on hover */
-.site-header .header-email:hover,
-.site-header .header-email:hover svg,
-.site-header .header-email:hover i {
-  color: #A1A9E2 !important;
-  fill: #A1A9E2 !important;
-  stroke: #A1A9E2 !important;
-}
