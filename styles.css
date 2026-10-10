@@ -2034,14 +2034,11 @@ body,
 	font-size: 3.15rem;
 }
 .home-page .home-hero-section .home-blurb {
-	font-size: clamp(1.4625rem, 2.625vw, 1.8rem);
+	font-size: 1rem;
 }
 @media (max-width: 800px) {
 	.home-page .home-hero-section .page-header {
 		font-size: clamp(2.1rem, 6.75vw, 2.625rem);
-	}
-	.home-page .home-hero-section .home-blurb {
-		font-size: clamp(1.1625rem, 3.075vw, 1.4625rem);
 	}
 }
 
