@@ -2123,21 +2123,26 @@ body,
 }
 
 
-/* Onyx palette */
+/* Onyx palette: black, white, and three signature accents */
 :root {
   --primary-bg-color: #0A0A0A;
   --surface-muted-color: #0A0A0A;
-  --border-color: #4075B5;
-  --primary-accent-color: #89023E;
-  --secondary-accent-color: #4075B5;
+  --primary-text-color: #FAFAFA;
+  --secondary-text-color: #FAFAFA;
+  --tertiary-text-color: #A8E3A1;
+  --border-color: #5B7CD7;
+  --primary-accent-color: #5B7CD7;
+  --secondary-accent-color: #A1A9E2;
   --footer-bg-color: #0A0A0A;
-  --primary-text-color: #fafafa;
-  --secondary-text-color: #fafafa;
-  --tertiary-text-color: #83A054;
-  --playful-accent-color: #89023E;
-  --cool-accent-color: #4075B5;
-  --berry-accent-color: #89023E;
-  --placard-border: #4075B5;
+  --playful-accent-color: #A1A9E2;
+  --cool-accent-color: #5B7CD7;
+  --berry-accent-color: #A1A9E2;
+  --placard-border: #5B7CD7;
+  --palette-black: #0A0A0A;
+  --palette-white: #FAFAFA;
+  --palette-blue: #5B7CD7;
+  --palette-lavender: #A1A9E2;
+  --palette-green: #A8E3A1;
 }
 html, body, .home-page, .home-hero-section, .home-projects-section,
 .content, .case-study-body, .project .placard, .home-project-placard {
@@ -2157,7 +2162,7 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
 }
 .site-header .nav, .site-header .dropdown-links {
   background: #0A0A0A !important;
-  border-color: #4075B5 !important;
+  border-color: #5B7CD7 !important;
 }
 .site-header .header-links a, .site-header .header-links .nav-current,
 .site-header .dropdown-links a, .site-header .dropdown-links .nav-current,
@@ -2165,18 +2170,18 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
   color: #fafafa !important;
 }
 .site-header .header-links a:hover, .site-header .dropdown-links a:hover,
-.site-header .dropdown-btn:hover { color: #83A054 !important; }
+.site-header .dropdown-btn:hover { color: #A8E3A1 !important; }
 .site-header .header-links .nav-current,
-.site-header .dropdown-links .nav-current { color: #89023E !important; }
+.site-header .dropdown-links .nav-current { color: #A1A9E2 !important; }
 .home-page .home-meta-chip {
   color: #fafafa;
   background-color: #0A0A0A;
-  border-color: #83A054;
+  border-color: #A8E3A1;
 }
-.home-page .home-meta-chip .chip-icon { color: #83A054; }
-.project .placard, .home-project-placard { border-color: #4075B5; }
+.home-page .home-meta-chip .chip-icon { color: #A8E3A1; }
+.project .placard, .home-project-placard { border-color: #5B7CD7; }
 .case-study-body h2, .case-study-body strong, .content h3.secondary-content-header {
-  color: #83A054 !important;
+  color: #A8E3A1 !important;
 }
 
 
@@ -2185,20 +2190,20 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
   border-color: #fafafa !important;
 }
 .site-header .header-linkedin {
-  background-color: #4075B5 !important;
-  border-color: #4075B5 !important;
+  background-color: #5B7CD7 !important;
+  border-color: #5B7CD7 !important;
 }
 .site-header .header-email {
-  background-color: #89023E !important;
-  border-color: #89023E !important;
+  background-color: #A1A9E2 !important;
+  border-color: #A1A9E2 !important;
 }
 .site-header .header-linkedin:hover {
-  background-color: #83A054 !important;
-  border-color: #83A054 !important;
+  background-color: #A8E3A1 !important;
+  border-color: #A8E3A1 !important;
 }
 .site-header .header-email:hover {
-  background-color: #4075B5 !important;
-  border-color: #4075B5 !important;
+  background-color: #5B7CD7 !important;
+  border-color: #5B7CD7 !important;
 }
 
 
@@ -2212,7 +2217,7 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
   color: #FAFAFA !important;
 }
 .site-header .header-email {
-  background-color: #4075B5 !important;
+  background-color: #5B7CD7 !important;
   border: 1px solid #FAFAFA !important;
   color: #FAFAFA !important;
 }
@@ -2222,21 +2227,21 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
   color: #FAFAFA !important;
 }
 .site-header .header-email:hover {
-  background-color: #5A8AC2 !important;
+  background-color: #A1A9E2 !important;
   border-color: #FAFAFA !important;
   color: #FAFAFA !important;
 }
 .site-header .header-links a:hover,
 .site-header .dropdown-links a:hover,
 .site-header .dropdown-btn:hover {
-  color: #4075B5 !important;
+  color: #5B7CD7 !important;
 }
 
 
 /* Remove the outline from the email utility button */
 .site-header .header-email,
 .site-header .header-email:hover {
-  border-color: #4075B5 !important;
+  border-color: #5B7CD7 !important;
 }
 
 
@@ -2263,5 +2268,5 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
 .site-header .header-links a:hover,
 .site-header .dropdown-links a:hover,
 .site-header .dropdown-btn:hover {
-  color: #4075B5 !important;
+  color: #5B7CD7 !important;
 }
