@@ -1861,7 +1861,7 @@ body,
 		background: #fefae0;
 		box-shadow: 0 12px 28px rgba(40, 54, 24, 0.14);
 	}
-	.site-header.is-open .dropdown-links { display: flex; }
+	.site-header .nav.is-open .dropdown-links { display: flex; }
 	.site-header .dropdown-links li { margin: 0; }
 	.site-header .dropdown-links a,
 	.site-header .dropdown-links .nav-current {
