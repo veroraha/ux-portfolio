@@ -2420,3 +2420,11 @@ body,
   background-color: #0A0A0A !important;
   background-image: none !important;
 }
+
+
+/* Use the palette's Deep Obsidian shade as the site-wide background */
+html,
+body {
+  background-color: #121316 !important;
+  background-image: none !important;
+}
