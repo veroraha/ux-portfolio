@@ -2027,3 +2027,13 @@ body,
 .home-page .home-hero-section .home-section-inner {
 	width: 100%;
 }
+
+
+/* Reduce all typography in homepage section 1 by 25% */
+.home-page .home-hero-section .page-header,
+.home-page .home-hero-section .home-blurb,
+.home-page .home-hero-section .home-meta,
+.home-page .home-hero-section .home-meta-chip,
+.home-page .home-hero-section .home-cta-row .cta-btn {
+	font-size: 75%;
+}
