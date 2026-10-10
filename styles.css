@@ -2577,6 +2577,6 @@ body,
 .site-header .header-links a.active,
 .site-header .dropdown-links .nav-current,
 .site-header .dropdown-links a.active {
-  font-weight: 700 !important;
+  font-weight: 400 !important;
 }
 
