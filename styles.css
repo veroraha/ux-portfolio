@@ -1910,3 +1910,23 @@ body,
 .home-page .home-intro .page-header {
 	padding-top: 2.25rem;
 }
+
+
+/* Emoji markers in the navigation; reserve consistent space to the left of labels */
+.site-header .nav-emoji {
+	display: inline-block;
+	width: 1.35em;
+	margin-right: 0.3em;
+	text-align: center;
+	font-family: "Garet", sans-serif;
+	font-size: 0.95em;
+	line-height: 1;
+	vertical-align: -0.04em;
+	color: #1b1b1b;
+}
+.site-header .header-links a,
+.site-header .header-links .nav-current,
+.site-header .dropdown-links a,
+.site-header .dropdown-links .nav-current {
+	white-space: nowrap;
+}
