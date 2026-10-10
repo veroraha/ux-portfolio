@@ -2200,3 +2200,34 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
   background-color: #4075B5 !important;
   border-color: #4075B5 !important;
 }
+
+
+/* Refine utility buttons and navigation hover to the Onyx palette */
+.site-header .header-linkedin {
+  background-color: #0A0A0A !important;
+  border: 1px solid #FAFAFA !important;
+  color: #FAFAFA !important;
+}
+.site-header .header-monogram {
+  color: #FAFAFA !important;
+}
+.site-header .header-email {
+  background-color: #4075B5 !important;
+  border: 1px solid #FAFAFA !important;
+  color: #FAFAFA !important;
+}
+.site-header .header-linkedin:hover {
+  background-color: #0A0A0A !important;
+  border-color: #FAFAFA !important;
+  color: #FAFAFA !important;
+}
+.site-header .header-email:hover {
+  background-color: #5A8AC2 !important;
+  border-color: #FAFAFA !important;
+  color: #FAFAFA !important;
+}
+.site-header .header-links a:hover,
+.site-header .dropdown-links a:hover,
+.site-header .dropdown-btn:hover {
+  color: #4075B5 !important;
+}
