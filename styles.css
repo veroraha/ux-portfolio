@@ -2312,3 +2312,13 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
 
 
 
+
+
+/* Navbar text hover color */
+.site-header .header-links a:hover,
+.site-header .dropdown-links a:hover,
+.site-header .dropdown-btn:hover,
+.site-header .header-links a:focus-visible,
+.site-header .dropdown-links a:focus-visible {
+  color: #CCCCCC !important;
+}
