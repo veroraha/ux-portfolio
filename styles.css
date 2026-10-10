@@ -1897,3 +1897,16 @@ body,
 	display: none !important;
 	content: none !important;
 }
+
+
+/* Keep the selected navigation item clean, without an underline */
+.site-header .header-links .nav-current::after,
+.site-header .dropdown-links .nav-current::after {
+	display: none !important;
+	content: none !important;
+}
+
+/* Increase the breathing room between the navigation and homepage greeting */
+.home-page .home-intro .page-header {
+	padding-top: 2.25rem;
+}
