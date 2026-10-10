@@ -2538,3 +2538,30 @@ body,
   }
 }
 
+/* Final background color rules: page surfaces stay #0A0A0A; header elements use #141414 */
+html,
+body,
+.home-page,
+.home-page .section,
+.home-page .home-hero-section,
+.home-page .home-projects-section,
+.content,
+.case-study-body,
+.project .placard,
+.home-project-placard {
+  background-color: #0A0A0A !important;
+  background-image: none !important;
+}
+
+.site-header .nav,
+.site-header .dropdown-links,
+.site-header .header-linkedin,
+.site-header .header-linkedin:hover,
+.site-header .header-linkedin:focus-visible,
+.site-header .header-email,
+.site-header .header-email:hover,
+.site-header .header-email:focus-visible {
+  background-color: #141414 !important;
+  background: #141414 !important;
+}
+
