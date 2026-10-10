@@ -29,18 +29,22 @@
 :root {
 	font-family: "Libre Caslon Condensed", serif;
 
-	--primary-bg-color: #F7F6F2; /** Gallery Alabaster / Limestone */
-	--surface-muted-color: #EFECE6; /** Warm Linen Surface */
-	--border-color: #E2DFD7; /** Architectural Frame Line */
-	
-	--primary-accent-color: #957083; /** Dusty Mauve / Rosewood */
-	--secondary-accent-color: #E4D5DC; /** Soft Mauve Wash */
-	--footer-bg-color: #281822; /** Deep Plum */
-	
-	--primary-text-color: #121316; /** Gallery Obsidian / Deep Charcoal */
-	--secondary-text-color: #5C6068; /** Muted Slate / Curator Grey */
-	--tertiary-text-color: #5F6A54; /** Museum Olive / Sage */
-	
+	/* Modern, playful palette: black and ivory with earthy, berry, and slate accents */
+	--primary-bg-color: #F7F6F2; /** Ivory */
+	--surface-muted-color: #EFECE6; /** Soft ivory surface */
+	--border-color: #A2ACBC; /** Slate blue-grey */
+
+	--primary-accent-color: #956681; /** Mauve */
+	--secondary-accent-color: #736F86; /** Muted violet slate */
+	--footer-bg-color: #48202B; /** Deep berry plum */
+
+	--primary-text-color: #121316; /** Near-black */
+	--secondary-text-color: #736F86; /** Muted violet slate */
+	--tertiary-text-color: #5D502B; /** Olive bronze */
+
+	--playful-accent-color: #5D502B; /** Earthy olive-brown */
+	--cool-accent-color: #A2ACBC; /** Slate blue-grey */
+	--berry-accent-color: #48202B; /** Deep berry plum */
 	--placard-border: #121316;
 
 	--header-gutter: 4rem;
