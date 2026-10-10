@@ -706,7 +706,7 @@ body:has(.home-page) .page-header {
 	max-width: 360px;
 	width: 100%;
 	height: auto;
-	border: 1px solid #FAFAFA;
+	border: none;
 	border-radius: 0;
 	background: transparent;
 	filter: drop-shadow(0 16px 36px rgba(18, 19, 22, 0.25));
