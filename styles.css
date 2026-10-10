@@ -2121,3 +2121,60 @@ body,
 .back-link:hover {
 	color: #191308 !important;
 }
+
+
+/* Experimental dark palette */
+:root {
+  --primary-bg-color: #191308;
+  --surface-muted-color: #191308;
+  --border-color: #4075B5;
+  --primary-accent-color: #89023E;
+  --secondary-accent-color: #4075B5;
+  --footer-bg-color: #191308;
+  --primary-text-color: #fafafa;
+  --secondary-text-color: #fafafa;
+  --tertiary-text-color: #83A054;
+  --playful-accent-color: #89023E;
+  --cool-accent-color: #4075B5;
+  --berry-accent-color: #89023E;
+  --placard-border: #4075B5;
+}
+html, body, .home-page, .home-hero-section, .home-projects-section,
+.content, .case-study-body, .project .placard, .home-project-placard {
+  background-color: #191308;
+  color: #fafafa;
+}
+.page-header, .content, .content h3, .case-study-subtitle,
+.case-study-body, .case-study-body h2, .case-study-body h3,
+.case-study-body p, .case-study-body li, .case-study-body strong,
+.case-study-figure figcaption, .back-link, .project .placard,
+.project .placard h4, .project .placard .project-year,
+.home-project-placard, .home-project-placard h3, .home-project-placard p,
+.home-project-placard .home-project-year, .home-page .home-projects-title,
+.home-page .home-hero-section .page-header,
+.home-page .home-hero-section .home-blurb {
+  color: #fafafa !important;
+}
+.site-header .nav, .site-header .dropdown-links {
+  background: #191308 !important;
+  border-color: #4075B5 !important;
+}
+.site-header .header-links a, .site-header .header-links .nav-current,
+.site-header .dropdown-links a, .site-header .dropdown-links .nav-current,
+.site-header .dropdown-btn, .site-header .nav-emoji, .site-header .header-monogram {
+  color: #fafafa !important;
+}
+.site-header .header-links a:hover, .site-header .dropdown-links a:hover,
+.site-header .dropdown-btn:hover { color: #83A054 !important; }
+.site-header .header-links .nav-current,
+.site-header .dropdown-links .nav-current { color: #89023E !important; }
+.home-page .home-meta-chip {
+  color: #fafafa;
+  background-color: #191308;
+  border-color: #83A054;
+}
+.home-page .home-meta-chip .chip-icon { color: #83A054; }
+.project .placard, .home-project-placard { border-color: #4075B5; }
+.case-study-body h2, .case-study-body strong, .content h3.secondary-content-header {
+  color: #83A054 !important;
+}
