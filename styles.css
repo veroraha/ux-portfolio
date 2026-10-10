@@ -18,8 +18,8 @@
 /** 
  * Modern Museum & Gallery Color System 
  * Inspired by modern art institutions (MoMA, Tate Modern, Whitney) & UX design standards:
- * - Gallery Wall / Alabaster background (#F7F6F2)
- * - Archival Canvas / Pure Off-White (#FFFFFF)
+ * - Gallery Wall / Alabaster background (#fefae0)
+ * - Archival Canvas / Pure Off-White (#fefae0)
  * - Deep Obsidian / Gallery Charcoal (#121316) for crisp, readable typography
  * - Dusty Mauve / Rosewood (#957083) for curated, striking accents
  * - Curator Sage / Warm Olive (#5F6A54) for subdued metadata and dates
@@ -27,25 +27,25 @@
  **/
 
 :root {
-	font-family: "Libre Caslon Condensed", serif;
+	font-family: "Garet", sans-serif;
 
-	/* Warm, earthy palette: cream, sand, sage, olive, and deep browns */
-	--primary-bg-color: #f0eacf; /** Warm cream */
-	--surface-muted-color: #d3ccab; /** Muted sand */
-	--border-color: #7c7b50; /** Olive: stronger contrast for component boundaries */ /** Soft sage */
+	/* Olive-and-cream palette */
+	--primary-bg-color: #fefae0; /** Warm cream */
+	--surface-muted-color: #fefae0; /** Cream surface */
+	--border-color: #606c38; /** Olive */
 
-	--primary-accent-color: #543f2b; /** Accessible warm brown for links and focus indicators */ /** Olive */
-	--secondary-accent-color: #543f2b; /** Warm brown */
-	--footer-bg-color: #352e2a; /** Deep espresso */
+	--primary-accent-color: #283618; /** Deep olive for links and focus indicators */
+	--secondary-accent-color: #606c38; /** Olive */
+	--footer-bg-color: #283618; /** Deep olive */
 
-	--primary-text-color: #352e2a; /** Deep espresso */
-	--secondary-text-color: #543f2b; /** Warm brown */
-	--tertiary-text-color: #543f2b; /** Warm brown for readable small metadata */ /** Olive */
+	--primary-text-color: #283618; /** Deep olive */
+	--secondary-text-color: #283618; /** Deep olive */
+	--tertiary-text-color: #283618; /** Deep olive for readable metadata */
 
-	--playful-accent-color: #7c7b50; /** Olive */
-	--cool-accent-color: #93ada8; /** Soft sage, reserved for decorative or large-area use */ /** Soft sage */
-	--berry-accent-color: #543f2b; /** Warm brown */
-	--placard-border: #352e2a;
+	--playful-accent-color: #606c38; /** Olive */
+	--cool-accent-color: #606c38; /** Olive */
+	--berry-accent-color: #283618; /** Deep olive */
+	--placard-border: #283618;
 
 	--header-gutter: 4rem;
 	/* Body inset stays at least as large as the header and footer. */
@@ -312,7 +312,7 @@ video {
 		position: absolute;
 		right: 0;
 		top: calc(100% + 0.6rem);
-		background-color: #FFFFFF;
+		background-color: #fefae0;
 		border: 1px solid var(--border-color);
 		border-radius: 8px;
 		padding: 0.5rem 1rem 0.5rem 1.5rem;
@@ -359,7 +359,7 @@ video {
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--footer-bg-color);
-	color: #FFFFFF;
+	color: #fefae0;
 	gap: 1.5rem;
 	padding: 3.5rem var(--header-gutter);
 	margin-top: auto;
@@ -370,7 +370,7 @@ video {
 	margin: 0;
 	font-size: 1.15rem;
 	letter-spacing: -0.2px;
-	color: #ECEAE4;
+	color: #fefae0;
 }
 
 .footer .footer-btns { 
@@ -383,10 +383,10 @@ video {
 	margin: 0;
 	padding: 0.7rem 1.35rem;
 	background-color: transparent;
-	border: 1px solid #F7F6F2;
+	border: 1px solid #fefae0;
 	border-radius: 6px;
 	text-decoration: none;
-	color: #F7F6F2;
+	color: #fefae0;
 	letter-spacing: 0.06em;
 	transition: all 0.2s ease;
 	display: inline-flex;
@@ -395,7 +395,7 @@ video {
 
 .footer .button:hover {
 	cursor: pointer;
-	background-color: #F7F6F2;
+	background-color: #fefae0;
 	border-color: var(--placard-border);
 	color: var(--footer-bg-color);
 	transform: translateY(-2px);
@@ -528,7 +528,7 @@ body:has(.home-page) .page-header {
 	padding-left: 1.25rem;
 	font-size: 1.15rem;
 	line-height: 1.7;
-	color: #2D3139;
+	color: #283618;
 }
 
 .case-study-body li + li {
@@ -540,7 +540,7 @@ body:has(.home-page) .page-header {
 	line-height: 1.7;
 	font-weight: 400;
 	margin: 0 0 1.5rem;
-	color: #2D3139;
+	color: #283618;
 }
 
 .case-study-body strong {
@@ -592,7 +592,7 @@ body:has(.home-page) .page-header {
 	height: auto;
 	border-radius: 8px;
 	box-shadow: 0 8px 30px rgba(18, 19, 22, 0.08), 0 2px 8px rgba(18, 19, 22, 0.04);
-	background-color: #fff;
+	background-color: #fefae0;
 }
 
 .case-study-figure--portrait video {
@@ -696,7 +696,7 @@ body:has(.home-page) .page-header {
 	line-height: 1.7;
 	font-weight: 400;
 	margin-bottom: 1.75rem;
-	color: #2D3139;
+	color: #283618;
 }
 
 .content .headshot {
@@ -759,7 +759,7 @@ body:has(.home-page) .page-header {
 	font-size: clamp(1.2rem, 2.2vw, 1.45rem);
 	line-height: 1.7;
 	letter-spacing: 0.03em;
-	color: #3A3D44;
+	color: #283618;
 }
 
 .home-meta {
@@ -780,7 +780,7 @@ body:has(.home-page) .page-header {
 .home-page .cta-btn.primary {
 	background-color: var(--footer-bg-color);
 	border-color: var(--footer-bg-color);
-	color: #FFFFFF;
+	color: #fefae0;
 }
 
 .home-page .cta-btn.primary:hover {
@@ -821,14 +821,14 @@ body:has(.home-page) .page-header {
 
 .cta-btn.primary {
 	background-color: var(--primary-text-color);
-	color: #FFFFFF;
+	color: #fefae0;
 	border: 1px solid var(--primary-text-color);
 }
 
 .cta-btn.primary:hover {
 	background-color: var(--primary-accent-color);
 	border-color: var(--primary-accent-color);
-	color: #FFFFFF;
+	color: #fefae0;
 	transform: translateY(-2px);
 	box-shadow: 0 6px 18px rgba(149, 112, 131, 0.28);
 }
@@ -932,7 +932,7 @@ body:has(.home-page) .page-header {
 }
 
 .project .placard {
-	background-color: #FFFFFF;
+	background-color: #fefae0;
 	border: none;
 	border-radius: 4px;
 	box-shadow: 0 8px 30px rgba(18, 19, 22, 0.08), 0 2px 8px rgba(18, 19, 22, 0.04);
@@ -976,7 +976,7 @@ body:has(.home-page) .page-header {
 	font-weight: 400;
 	font-size: 0.94rem;
 	line-height: 1.55;
-	color: #4A4E57;
+	color: #283618;
 }
 
 .project .placard h4 strong {
@@ -1179,7 +1179,7 @@ body:has(.home-page) .page-header {
 	font-size: clamp(1.2rem, 2.2vw, 1.45rem);
 	line-height: 1.7;
 	letter-spacing: 0.03em;
-	color: #3A3D44;
+	color: #283618;
 }
 
 .home-page .home-meta {
@@ -1234,7 +1234,7 @@ body:has(.home-page) .page-header {
 	aspect-ratio: 4 / 3;
 	padding: 0.6rem;
 	box-sizing: border-box;
-	background: #EFECE6;
+	background: #fefae0;
 	border: 1px solid var(--border-color);
 	border-radius: 4px;
 	box-shadow: 0 10px 24px rgba(18, 19, 22, 0.12);
@@ -1253,7 +1253,7 @@ body:has(.home-page) .page-header {
 	width: 100%;
 	box-sizing: border-box;
 	padding: 1.1rem 1rem 1.2rem;
-	background: #FFFFFF;
+	background: #fefae0;
 	border: 1px solid var(--border-color);
 	border-radius: 4px;
 	box-shadow: 0 5px 18px rgba(18, 19, 22, 0.06);
@@ -1272,7 +1272,7 @@ body:has(.home-page) .page-header {
 	margin: 0;
 	font-size: 0.98rem;
 	line-height: 1.5;
-	color: #4A4E57;
+	color: #283618;
 	text-align: left;
 }
 
@@ -1391,7 +1391,7 @@ body:has(.home-page) .page-header {
 	bottom: 0;
 	width: 100%;
 	height: 2px;
-	background-color: #FFFFFF;
+	background-color: #fefae0;
 	transform: scaleX(0);
 	transform-origin: left center;
 	animation: greeting-underline-draw 0.9s ease-out 0.15s forwards;
