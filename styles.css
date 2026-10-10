@@ -2015,3 +2015,15 @@ body,
 	text-align: center;
 	margin-inline: auto;
 }
+
+
+/* Vertically center the homepage hero content within section 1 */
+.home-page .home-hero-section {
+	display: flex;
+	align-items: center;
+	min-height: 65vh;
+	box-sizing: border-box;
+}
+.home-page .home-hero-section .home-section-inner {
+	width: 100%;
+}
