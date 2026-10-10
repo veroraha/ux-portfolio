@@ -1506,3 +1506,41 @@ body:has(.home-page) .page-header {
 	border-color: var(--primary-bg-color);
 	color: var(--footer-bg-color);
 }
+
+
+/** homepage calls to action — text-only with a subtle lift on hover **/
+.home-page .home-cta-row .cta-btn,
+.home-page .home-cta-row .cta-btn.primary,
+.home-page .home-cta-row .cta-btn.secondary {
+	background: transparent;
+	background-color: transparent;
+	border-color: transparent;
+	box-shadow: none;
+	color: var(--primary-bg-color);
+	transform: translateY(0);
+	transition: transform 180ms ease, color 180ms ease;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.home-page .home-cta-row .cta-btn:hover,
+.home-page .home-cta-row .cta-btn:focus-visible,
+.home-page .home-cta-row .cta-btn.primary:hover,
+.home-page .home-cta-row .cta-btn.secondary:hover {
+	background: transparent;
+	background-color: transparent;
+	border-color: transparent;
+	box-shadow: none;
+	color: var(--primary-bg-color);
+	transform: translateY(-4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.home-page .home-cta-row .cta-btn {
+		transition: none;
+	}
+	.home-page .home-cta-row .cta-btn:hover,
+	.home-page .home-cta-row .cta-btn:focus-visible {
+		transform: none;
+	}
+}
