@@ -1148,6 +1148,26 @@ body:has(.home-page) .page-header {
 	color: var(--primary-bg-color);
 }
 
+.home-page .home-meta-chip {
+	position: relative;
+	isolation: isolate;
+	transition: box-shadow 220ms ease, transform 220ms ease, background-color 220ms ease;
+}
+
+.home-page .home-meta-chip:hover,
+.home-page .home-meta-chip:focus-visible {
+	background-color: var(--footer-bg-color);
+	box-shadow: 0 0 0 1px rgba(255, 250, 240, 0.22), 0 0 12px rgba(255, 250, 240, 0.32), 0 0 24px rgba(255, 250, 240, 0.2);
+	transform: translateY(-1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.home-page .home-meta-chip {
+		transition: none;
+	}
+}
+
+
 .home-page .home-blurb {
 	font-size: clamp(1.2rem, 2.2vw, 1.45rem);
 	line-height: 1.7;
