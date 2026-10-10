@@ -2451,12 +2451,12 @@ body,
 }
 
 
-/* Navbar active/current page stays white; hover links use medium gray */
+/* Navbar active/current page uses off-white; hover links use medium gray */
 .site-header .header-links .nav-current,
 .site-header .header-links a.active,
 .site-header .dropdown-links .nav-current,
 .site-header .dropdown-links a.active {
-  color: #FFFFFF !important;
+  color: #FAFAFA !important;
 }
 .site-header .header-links a:hover:not(.nav-current):not(.active),
 .site-header .dropdown-links a:hover:not(.nav-current):not(.active),
