@@ -12,27 +12,31 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div class="header">
-		<h3 class="site-name"><a href="/">Vanessa Eroraha</a></h3>
-		<nav class="nav">
-			<ul class="header-links">
-				<li><a href="/"><h3>Home</h3></a></li>
-				<li><a href="/about"><h3>About</h3></a></li>
-				<li><a href="/projects"><h3>Projects</h3></a></li>
-				<li><a href="Eroraha Resume.pdf" target="_blank" rel="noopener noreferrer"><h3>Resume</h3></a></li>
-			</ul>
-			<button class="dropdown-btn" type="button" id="menuToggle" aria-expanded="false" aria-controls="dropdownLinks">
-				<span class="menu-label">Menu</span>
-			</button>
-			<ul class="dropdown-links" id="dropdownLinks">
-					<li><a href="/"><h3>Home</h3></a></li>
-					<li><a href="/about"><h3>About</h3></a></li>
-					<li><a href="/projects"><h3>Projects</h3></a></li>
-					<li><a href="Eroraha Resume.pdf" target="_blank" rel="noopener noreferrer"><h3>Resume</h3></a></li>
+	<header class="site-header">
+		<div class="header-shell">
+			<a class="header-social header-linkedin" href="https://www.linkedin.com/in/vanessa-eroraha" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+				<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 8.5H2.5V21h2.7V8.5ZM3.85 2.8a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2ZM21.5 13.8c0-3.75-2-5.5-4.65-5.5a4.02 4.02 0 0 0-3.62 1.98V8.5h-2.7V21h2.7v-6.2c0-1.63.3-3.2 2.32-3.2 2 0 2.03 1.86 2.03 3.3V21h2.7l1.22-7.2Z"/></svg>
+			</a>
+			<nav class="nav" aria-label="Main navigation">
+				<ul class="header-links">
+					<li><a href="/">Home</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/projects">Projects</a></li>
+					<li><a href="Eroraha Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
 				</ul>
-		</nav>
-	</div>
-
+				<button class="dropdown-btn" type="button" id="menuToggle" aria-expanded="false" aria-controls="dropdownLinks"><span class="menu-label">Menu</span><span aria-hidden="true">☰</span></button>
+				<ul class="dropdown-links" id="dropdownLinks">
+					<li><a href="/">Home</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/projects">Projects</a></li>
+					<li><a href="Eroraha Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+				</ul>
+			</nav>
+			<a class="header-social header-email" href="mailto:vanessaeroraha@gmail.com" aria-label="Send Vanessa an email">
+				<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
+			</a>
+		</div>
+	</header>
 	<main class="content">
 		<a class="back-link" href="/projects">← Back to projects</a>
 		<h1 id="flix" class="page-header case-study-header" data-title="Flixtape">Flixtape</h1>
@@ -91,14 +95,6 @@
 
 	<footer class="footer">
 		<h4>Let's connect.</h4>
-		<div class="footer-btns">
-			<a class="button" href="https://www.linkedin.com/in/vanessa-eroraha" target="_blank" rel="noopener noreferrer">
-				<h4>LinkedIn</h4>
-			</a>
-			<a class="button" href="mailto:vanessaeroraha@gmail.com">
-				<h4>Email</h4>
-			</a>
-		</div>
 	</footer>
 
 	<script type="module" src="script.js"></script>
