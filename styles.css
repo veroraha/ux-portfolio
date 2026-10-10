@@ -2021,7 +2021,7 @@ body,
 .home-page .home-hero-section {
 	display: flex;
 	align-items: center;
-	min-height: 65vh;
+	min-height: 45vh;
 	box-sizing: border-box;
 }
 .home-page .home-hero-section .home-section-inner {
@@ -2057,10 +2057,10 @@ body,
 }
 
 
-/* Section 1: use 1.5rem of vertical padding around the hero text */
+/* Remove vertical padding from the homepage hero */
 .home-page .home-hero-section {
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 
