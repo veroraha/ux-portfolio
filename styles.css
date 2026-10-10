@@ -2465,3 +2465,11 @@ body,
 .site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) {
   color: #999999 !important;
 }
+
+
+/* Set default navbar link text to light gray */
+.site-header .header-links a,
+.site-header .dropdown-links a,
+.site-header .dropdown-btn {
+  color: #D6D6D6 !important;
+}
