@@ -1548,8 +1548,8 @@ body:has(.home-page) .page-header {
 
 /** homepage text-only calls to action — mauve labels and more breathing room **/
 .home-page .home-cta-row {
-	column-gap: 2.5rem;
-	gap: 2.5rem;
+	column-gap: 5rem;
+	gap: 5rem;
 }
 
 .home-page .home-cta-row .cta-btn,
