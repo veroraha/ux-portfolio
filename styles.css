@@ -1426,3 +1426,52 @@ body:has(.home-page) .page-header {
 		flex-basis: 1rem;
 	}
 }
+
+
+/** homepage hero — dark plum palette with inverted chips and calls to action **/
+.home-hero-section {
+	background-color: var(--footer-bg-color);
+}
+
+.home-page .home-intro .page-header {
+	color: var(--primary-bg-color);
+}
+
+.home-page .home-blurb {
+	color: var(--primary-bg-color);
+}
+
+.home-page .home-meta-chip {
+	color: var(--footer-bg-color);
+	background-color: var(--primary-bg-color);
+	border-color: var(--primary-bg-color);
+}
+
+.home-page .home-meta-chip .chip-icon {
+	color: var(--footer-bg-color);
+}
+
+.home-page .home-meta-chip:hover,
+.home-page .home-meta-chip:focus-visible {
+	color: var(--footer-bg-color);
+	background-color: var(--primary-bg-color);
+	border-color: var(--primary-bg-color);
+	box-shadow: 0 0 0 1px rgba(247, 246, 242, 0.28), 0 0 12px rgba(247, 246, 242, 0.32), 0 0 24px rgba(247, 246, 242, 0.2);
+}
+
+.home-page .home-meta-chip:hover .chip-icon,
+.home-page .home-meta-chip:focus-visible .chip-icon {
+	color: var(--footer-bg-color);
+}
+
+.home-page .home-cta-row .cta-btn.secondary {
+	background-color: var(--primary-bg-color);
+	border-color: var(--primary-bg-color);
+	color: var(--footer-bg-color);
+}
+
+.home-page .home-cta-row .cta-btn.secondary:hover {
+	background-color: var(--secondary-accent-color);
+	border-color: var(--secondary-accent-color);
+	color: var(--footer-bg-color);
+}
