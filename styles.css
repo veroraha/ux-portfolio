@@ -2178,3 +2178,25 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
 .case-study-body h2, .case-study-body strong, .content h3.secondary-content-header {
   color: #83A054 !important;
 }
+
+
+/* Onyx palette: white nav outline and palette-matched circular utility buttons */
+.site-header .nav {
+  border-color: #fafafa !important;
+}
+.site-header .header-linkedin {
+  background-color: #4075B5 !important;
+  border-color: #4075B5 !important;
+}
+.site-header .header-email {
+  background-color: #89023E !important;
+  border-color: #89023E !important;
+}
+.site-header .header-linkedin:hover {
+  background-color: #83A054 !important;
+  border-color: #83A054 !important;
+}
+.site-header .header-email:hover {
+  background-color: #4075B5 !important;
+  border-color: #4075B5 !important;
+}
