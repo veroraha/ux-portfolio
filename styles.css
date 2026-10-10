@@ -2504,3 +2504,8 @@ body,
   align-items: center;
   justify-content: center;
 }
+
+/* Give the dropdown menu a white outline */
+.site-header .dropdown-links {
+  border: 1px solid #FAFAFA !important;
+}
