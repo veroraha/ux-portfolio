@@ -2254,3 +2254,11 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
     transition: none;
   }
 }
+
+
+/* Keep navigation hover text aligned with the palette blue */
+.site-header .header-links a:hover,
+.site-header .dropdown-links a:hover,
+.site-header .dropdown-btn:hover {
+  color: #4075B5 !important;
+}
