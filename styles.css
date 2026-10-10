@@ -2509,3 +2509,13 @@ body,
 .site-header .dropdown-links {
   border: 1px solid #FAFAFA !important;
 }
+
+/* Center dropdown menu link labels */
+.site-header .dropdown-links {
+  align-items: center !important;
+}
+.site-header .dropdown-links li,
+.site-header .dropdown-links a,
+.site-header .dropdown-links .nav-current {
+  text-align: center !important;
+}
