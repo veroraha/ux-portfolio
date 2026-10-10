@@ -2449,3 +2449,19 @@ body,
 .site-header .dropdown-links a.active {
   color: #7A7A7A !important;
 }
+
+
+/* Navbar active/current page stays white; hover links use medium gray */
+.site-header .header-links .nav-current,
+.site-header .header-links a.active,
+.site-header .dropdown-links .nav-current,
+.site-header .dropdown-links a.active {
+  color: #FFFFFF !important;
+}
+.site-header .header-links a:hover:not(.nav-current):not(.active),
+.site-header .dropdown-links a:hover:not(.nav-current):not(.active),
+.site-header .dropdown-btn:hover,
+.site-header .header-links a:focus-visible:not(.nav-current):not(.active),
+.site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) {
+  color: #999999 !important;
+}
