@@ -1880,7 +1880,7 @@ body,
 	font-weight: 700;
 	letter-spacing: -0.09em;
 	line-height: 1;
-	color: #1b1b1b;
+	color: #0A0A0A;
 }
 .site-header .header-linkedin {
 	text-decoration: none;
@@ -1922,7 +1922,7 @@ body,
 	font-size: 0.95em;
 	line-height: 1;
 	vertical-align: -0.04em;
-	color: #1b1b1b;
+	color: #0A0A0A;
 }
 .site-header .header-links a,
 .site-header .header-links .nav-current,
@@ -1947,7 +1947,7 @@ body,
 }
 .site-header .header-links .nav-current,
 .site-header .dropdown-links .nav-current {
-	color: #1b1b1b !important;
+	color: #0A0A0A !important;
 	font-weight: 700 !important;
 }
 
@@ -2064,9 +2064,9 @@ body,
 
 /* Final site-wide refinements: remove the footer and standardize text on light surfaces */
 :root {
-	--primary-text-color: #1b1b1b;
-	--secondary-text-color: #1b1b1b;
-	--tertiary-text-color: #1b1b1b;
+	--primary-text-color: #0A0A0A;
+	--secondary-text-color: #0A0A0A;
+	--tertiary-text-color: #0A0A0A;
 }
 
 .footer {
@@ -2106,7 +2106,7 @@ body,
 .home-project-placard p,
 .home-project-placard .home-project-year,
 .home-page .home-projects-title {
-	color: #1b1b1b;
+	color: #0A0A0A;
 }
 
 /* Keep the homepage's dark hero text light for contrast */
@@ -2119,18 +2119,18 @@ body,
 .site-header .header-links a:hover,
 .site-header .dropdown-links a:hover,
 .back-link:hover {
-	color: #1b1b1b !important;
+	color: #0A0A0A !important;
 }
 
 
-/* Experimental dark palette */
+/* Onyx palette */
 :root {
-  --primary-bg-color: #1b1b1b;
-  --surface-muted-color: #1b1b1b;
+  --primary-bg-color: #0A0A0A;
+  --surface-muted-color: #0A0A0A;
   --border-color: #4075B5;
   --primary-accent-color: #89023E;
   --secondary-accent-color: #4075B5;
-  --footer-bg-color: #1b1b1b;
+  --footer-bg-color: #0A0A0A;
   --primary-text-color: #fafafa;
   --secondary-text-color: #fafafa;
   --tertiary-text-color: #83A054;
@@ -2141,7 +2141,7 @@ body,
 }
 html, body, .home-page, .home-hero-section, .home-projects-section,
 .content, .case-study-body, .project .placard, .home-project-placard {
-  background-color: #1b1b1b;
+  background-color: #0A0A0A;
   color: #fafafa;
 }
 .page-header, .content, .content h3, .case-study-subtitle,
@@ -2156,7 +2156,7 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
   color: #fafafa !important;
 }
 .site-header .nav, .site-header .dropdown-links {
-  background: #1b1b1b !important;
+  background: #0A0A0A !important;
   border-color: #4075B5 !important;
 }
 .site-header .header-links a, .site-header .header-links .nav-current,
@@ -2170,7 +2170,7 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
 .site-header .dropdown-links .nav-current { color: #89023E !important; }
 .home-page .home-meta-chip {
   color: #fafafa;
-  background-color: #1b1b1b;
+  background-color: #0A0A0A;
   border-color: #83A054;
 }
 .home-page .home-meta-chip .chip-icon { color: #83A054; }
