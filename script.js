@@ -71,6 +71,36 @@ function setupNavigation() {
 		});
 	}
 
+	// Hide the sticky header on downward scroll and reveal it on upward scroll.
+	const siteHeader = document.querySelector('.site-header');
+	if (siteHeader) {
+		let previousScrollY = window.scrollY;
+		let scrollTicking = false;
+
+		const updateHeaderOnScroll = () => {
+			const currentScrollY = window.scrollY;
+			const menuIsOpen = nav && nav.classList.contains('is-open');
+
+			if (menuIsOpen || currentScrollY <= 80) {
+				siteHeader.classList.remove('header-hidden');
+			} else if (currentScrollY > previousScrollY + 6) {
+				siteHeader.classList.add('header-hidden');
+			} else if (currentScrollY < previousScrollY - 6) {
+				siteHeader.classList.remove('header-hidden');
+			}
+
+			previousScrollY = currentScrollY;
+			scrollTicking = false;
+		};
+
+		window.addEventListener('scroll', () => {
+			if (!scrollTicking) {
+				window.requestAnimationFrame(updateHeaderOnScroll);
+				scrollTicking = true;
+			}
+		}, { passive: true });
+	}
+
 	// Active link highlight based on current path
 	// URLs are extensionless (/about); normalise so /about, /about.html, and
 	// /about/ all count as the same page, with / and index collapsing to "".
