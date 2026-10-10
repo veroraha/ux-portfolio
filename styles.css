@@ -2356,3 +2356,13 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
   background-color: #141414 !important;
   background: #141414 !important;
 }
+
+
+/* Ensure navbar text hover and keyboard focus use #CCCCCC */
+.site-header .header-links a:hover,
+.site-header .dropdown-links a:hover,
+.site-header .dropdown-btn:hover,
+.site-header .header-links a:focus-visible,
+.site-header .dropdown-links a:focus-visible {
+  color: #CCCCCC !important;
+}
