@@ -1365,3 +1365,40 @@ body:has(.home-page) .page-header {
 	}
 }
 
+
+
+/** homepage greeting — slow white underline matching the active nav indicator **/
+.home-page .home-intro .page-header {
+	display: inline-block;
+	width: fit-content;
+	max-width: 100%;
+	position: relative;
+	color: #FFFFFF;
+	padding-bottom: 0.18em;
+}
+
+.home-page .home-intro .page-header::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #FFFFFF;
+	transform: scaleX(0);
+	transform-origin: left center;
+	animation: greeting-underline-draw 1.8s ease-out 0.35s forwards;
+}
+
+@keyframes greeting-underline-draw {
+	to {
+		transform: scaleX(1);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.home-page .home-intro .page-header::after {
+		transform: scaleX(1);
+		animation: none;
+	}
+}
