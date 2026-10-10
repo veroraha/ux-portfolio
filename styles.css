@@ -1601,3 +1601,9 @@ body:has(.home-page) .page-header {
 .home-page .home-intro .page-header {
 	margin-bottom: 0.2em;
 }
+
+
+/** match the lead-to-chips gap to the greeting-to-lead gap **/
+.home-page .home-meta {
+	margin-top: 0.2em;
+}
