@@ -2488,3 +2488,19 @@ body,
 .site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) {
   color: #5b7cd7 !important;
 }
+
+
+/* Homepage now uses a single full-viewport hero section */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  min-height: 0;
+}
+.home-page .home-hero-section {
+  flex: 1 0 auto;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
