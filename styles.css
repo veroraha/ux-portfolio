@@ -1885,3 +1885,15 @@ body,
 .site-header .header-linkedin {
 	text-decoration: none;
 }
+
+
+/* Homepage greeting: remove decorative underline and add breathing room below navigation */
+.home-page .home-intro .page-header {
+	text-decoration: none !important;
+	padding-top: 1.1rem;
+	padding-bottom: 0;
+}
+.home-page .home-intro .page-header::after {
+	display: none !important;
+	content: none !important;
+}
