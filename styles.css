@@ -2231,3 +2231,10 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
 .site-header .dropdown-btn:hover {
   color: #4075B5 !important;
 }
+
+
+/* Remove the outline from the email utility button */
+.site-header .header-email,
+.site-header .header-email:hover {
+  border-color: #4075B5 !important;
+}
