@@ -2055,3 +2055,10 @@ body,
 		display: none;
 	}
 }
+
+
+/* Section 1: use 1.5rem of vertical padding around the hero text */
+.home-page .home-hero-section {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
