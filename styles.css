@@ -2322,3 +2322,20 @@ html, body, .home-page, .home-hero-section, .home-projects-section,
 .site-header .dropdown-links a:focus-visible {
   color: #CCCCCC !important;
 }
+
+
+/* Set the navbar and both circular utility buttons to charcoal */
+.site-header .nav,
+.site-header .dropdown-links {
+  background-color: #141414 !important;
+  background: #141414 !important;
+}
+.site-header .header-linkedin,
+.site-header .header-linkedin:hover,
+.site-header .header-linkedin:focus-visible,
+.site-header .header-email,
+.site-header .header-email:hover,
+.site-header .header-email:focus-visible {
+  background-color: #141414 !important;
+  background: #141414 !important;
+}
