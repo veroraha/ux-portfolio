@@ -55,14 +55,17 @@
 
 * {
 	box-sizing: border-box;
-	font-family: "Libre Caslon Condensed", serif;
+	font-family: "Garet", sans-serif;
 }
 
-/** display typography — Libre Caslon Condensed for headings and site name **/
+/** Display typography: Bricolage Grotesque for headings, site name, and navigation **/
 h1, h2, h3, h4, h5, h6,
 .header .site-name,
+.header .site-name a,
+.nav a,
+.nav .nav-current,
 .page-header {
-	font-family: "Libre Caslon Condensed", serif;
+	font-family: "Bricolage Grotesque", sans-serif;
 }
 
 
