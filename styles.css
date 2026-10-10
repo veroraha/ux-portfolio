@@ -32,18 +32,18 @@
 	/* Warm, earthy palette: cream, sand, sage, olive, and deep browns */
 	--primary-bg-color: #f0eacf; /** Warm cream */
 	--surface-muted-color: #d3ccab; /** Muted sand */
-	--border-color: #93ada8; /** Soft sage */
+	--border-color: #7c7b50; /** Olive: stronger contrast for component boundaries */ /** Soft sage */
 
-	--primary-accent-color: #7c7b50; /** Olive */
+	--primary-accent-color: #543f2b; /** Accessible warm brown for links and focus indicators */ /** Olive */
 	--secondary-accent-color: #543f2b; /** Warm brown */
 	--footer-bg-color: #352e2a; /** Deep espresso */
 
 	--primary-text-color: #352e2a; /** Deep espresso */
 	--secondary-text-color: #543f2b; /** Warm brown */
-	--tertiary-text-color: #7c7b50; /** Olive */
+	--tertiary-text-color: #543f2b; /** Warm brown for readable small metadata */ /** Olive */
 
 	--playful-accent-color: #7c7b50; /** Olive */
-	--cool-accent-color: #93ada8; /** Soft sage */
+	--cool-accent-color: #93ada8; /** Soft sage, reserved for decorative or large-area use */ /** Soft sage */
 	--berry-accent-color: #543f2b; /** Warm brown */
 	--placard-border: #352e2a;
 
@@ -1624,4 +1624,77 @@ body:has(.home-page) .page-header {
 
 .home-page .home-intro .home-meta {
 	margin-block-start: 0.2em !important;
+}
+
+
+/**
+ * Accessibility contrast refinements
+ * Use dark brown text on light surfaces and cream text on dark surfaces.
+ * Olive and sage remain available for decorative surfaces, not low-contrast body text.
+ */
+body,
+.content,
+.case-study-body,
+.case-study-body p,
+.case-study-body ul,
+.case-study-body ol,
+.content h3,
+.project .placard h4,
+.home-project-placard p {
+	color: var(--primary-text-color);
+}
+
+.content h3.secondary-content-header,
+.header .site-name a:hover,
+.back-link:hover,
+.project .placard .project-year,
+.home-project-placard .home-project-year {
+	color: var(--secondary-text-color);
+}
+
+.home-page .home-cta-row .cta-btn,
+.home-page .home-cta-row .cta-btn.primary,
+.home-page .home-cta-row .cta-btn.secondary,
+.home-page .home-cta-row .cta-btn:hover,
+.home-page .home-cta-row .cta-btn:focus-visible,
+.home-page .home-cta-row .cta-btn.primary:hover,
+.home-page .home-cta-row .cta-btn.secondary:hover {
+	color: var(--primary-bg-color);
+}
+
+.home-page .home-cta-row .cta-btn:focus-visible,
+.home-page .home-cta-row .cta-btn.primary:focus-visible,
+.home-page .home-cta-row .cta-btn.secondary:focus-visible {
+	outline: 3px solid var(--primary-bg-color);
+	outline-offset: 5px;
+}
+
+.nav .dropdown-btn:focus-visible,
+.nav .header-links a:focus-visible,
+.nav .dropdown-links a:focus-visible,
+.footer .button:focus-visible,
+.cta-btn:focus-visible,
+.back-link:focus-visible,
+.project-link:focus-visible,
+.home-project-link:focus-visible {
+	outline-color: var(--secondary-accent-color);
+}
+
+.home-page .home-project-placard,
+.project .placard {
+	color: var(--primary-text-color);
+}
+
+.home-page .home-meta-chip,
+.home-page .home-meta-chip:hover,
+.home-page .home-meta-chip:focus-visible {
+	color: var(--primary-bg-color);
+	background-color: var(--footer-bg-color);
+	border-color: var(--primary-bg-color);
+}
+
+.home-page .home-meta-chip .chip-icon,
+.home-page .home-meta-chip:hover .chip-icon,
+.home-page .home-meta-chip:focus-visible .chip-icon {
+	color: var(--primary-bg-color);
 }
