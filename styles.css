@@ -1139,12 +1139,13 @@ body:has(.home-page) .page-header {
 }
 
 .home-page .home-meta-chip {
-	color: var(--footer-bg-color);
+	color: var(--primary-bg-color);
+	background-color: var(--footer-bg-color);
 	border-color: var(--footer-bg-color);
 }
 
 .home-page .home-meta-chip .chip-icon {
-	color: var(--footer-bg-color);
+	color: var(--primary-bg-color);
 }
 
 .home-page .home-blurb {
@@ -1160,7 +1161,7 @@ body:has(.home-page) .page-header {
 
 .home-page .home-cta-row {
 	justify-content: flex-start;
-	margin-top: 1.75rem;
+	margin-top: 4.5rem;
 }
 
 .home-projects-title {
