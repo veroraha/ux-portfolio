@@ -1880,7 +1880,7 @@ body,
 	font-weight: 700;
 	letter-spacing: -0.09em;
 	line-height: 1;
-	color: #1b1b1b;
+	color: #191308;
 }
 .site-header .header-linkedin {
 	text-decoration: none;
@@ -1922,7 +1922,7 @@ body,
 	font-size: 0.95em;
 	line-height: 1;
 	vertical-align: -0.04em;
-	color: #1b1b1b;
+	color: #191308;
 }
 .site-header .header-links a,
 .site-header .header-links .nav-current,
@@ -1947,7 +1947,7 @@ body,
 }
 .site-header .header-links .nav-current,
 .site-header .dropdown-links .nav-current {
-	color: #1b1b1b !important;
+	color: #191308 !important;
 	font-weight: 700 !important;
 }
 
@@ -2067,9 +2067,9 @@ body,
 
 /* Final site-wide refinements: remove the footer and standardize text on light surfaces */
 :root {
-	--primary-text-color: #1b1b1b;
-	--secondary-text-color: #1b1b1b;
-	--tertiary-text-color: #1b1b1b;
+	--primary-text-color: #191308;
+	--secondary-text-color: #191308;
+	--tertiary-text-color: #191308;
 }
 
 .footer {
@@ -2109,7 +2109,7 @@ body,
 .home-project-placard p,
 .home-project-placard .home-project-year,
 .home-page .home-projects-title {
-	color: #1b1b1b;
+	color: #191308;
 }
 
 /* Keep the homepage's dark hero text light for contrast */
@@ -2122,5 +2122,5 @@ body,
 .site-header .header-links a:hover,
 .site-header .dropdown-links a:hover,
 .back-link:hover {
-	color: #1b1b1b !important;
+	color: #191308 !important;
 }
