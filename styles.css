@@ -3614,3 +3614,9 @@ body:has(.headshot) .content {
     transition: none;
   }
 }
+
+
+/* Use consistent 1.5rem padding on every side of the Projects right pane. */
+.content.ios-files-page .finder-right-pane {
+  padding: 1.5rem !important;
+}
