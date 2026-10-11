@@ -3305,6 +3305,9 @@ body,
   font-weight: 400;
   line-height: 1.4;
 }
+.content.ios-files-page .finder-modified-row[hidden] {
+  display: none !important;
+}
 .content.ios-files-page .finder-information-row {
   display: flex;
   align-items: baseline;
