@@ -3137,3 +3137,10 @@ body,
   background: #303030 !important;
   border-color: #484848 !important;
 }
+
+
+/* Give the selected project icon highlight a little more horizontal breathing room */
+.ios-files-page .finder-project-pane button.ios-file-item[aria-pressed="true"] {
+  padding-right: 0.55rem;
+  padding-left: 0.55rem;
+}
