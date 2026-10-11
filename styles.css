@@ -3710,22 +3710,3 @@ body:has(.headshot) .content {
   color: #fafafa;
 }
 
-
-/* Match the Projects page .content wrapper structure to the About page. */
-.content.ios-files-page {
-  box-sizing: border-box;
-  width: 100% !important;
-  max-width: var(--content-max) !important;
-  margin: 0 auto !important;
-  padding: 0 !important;
-  border: 0 !important;
-}
-.content.ios-files-page > .finder-layout {
-  border: 1px solid #666666;
-}
-@media (max-width: 600px) {
-  .content.ios-files-page {
-    width: calc(100% - 1.25rem) !important;
-    margin: 1rem auto 2rem !important;
-  }
-}
