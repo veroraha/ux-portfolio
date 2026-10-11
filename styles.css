@@ -3049,3 +3049,12 @@ body,
   opacity: 1;
   transform: translate(-50%, 0);
 }
+
+
+/* Restore the original light-grey hover treatment for selected project icons */
+.ios-files-page .finder-project-pane button.ios-file-item[aria-pressed="true"],
+.ios-files-page .finder-project-pane button.ios-file-item:hover,
+.ios-files-page .finder-project-pane button.ios-file-item:focus-visible {
+  background: #303030;
+  border-color: #484848;
+}
