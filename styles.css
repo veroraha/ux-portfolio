@@ -3403,3 +3403,45 @@ body,
   right: 0;
   background: linear-gradient(270deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.08) 35%, transparent 100%);
 }
+
+
+/* Stronger Frutiger Aero-inspired glass gradients: glossy, luminous edges with cool aqua highlights. */
+.content.ios-files-page > .finder-layout {
+  isolation: isolate;
+  background: #232323;
+}
+.content.ios-files-page > .finder-layout::before,
+.content.ios-files-page > .finder-layout::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: clamp(5rem, 10vw, 9rem);
+  z-index: 4;
+  pointer-events: none;
+}
+.content.ios-files-page > .finder-layout::before {
+  left: 0;
+  background:
+    linear-gradient(115deg, rgba(160, 255, 239, 0.3) 0%, rgba(85, 218, 235, 0.13) 18%, transparent 52%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.48) 0%, rgba(0, 0, 0, 0.2) 28%, transparent 100%);
+  box-shadow: inset 1px 0 0 rgba(190, 255, 250, 0.45);
+}
+.content.ios-files-page > .finder-layout::after {
+  right: 0;
+  background:
+    linear-gradient(245deg, rgba(111, 226, 255, 0.28) 0%, rgba(95, 175, 255, 0.13) 20%, transparent 55%),
+    linear-gradient(270deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.16) 30%, transparent 100%);
+  box-shadow: inset -1px 0 0 rgba(176, 238, 255, 0.4);
+}
+.content.ios-files-page > .finder-layout > .finder-left-pane {
+  background:
+    linear-gradient(135deg, rgba(125, 255, 228, 0.09) 0%, transparent 34%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.14) 0%, transparent 30%);
+}
+.content.ios-files-page > .finder-layout > .finder-right-pane {
+  background:
+    linear-gradient(135deg, rgba(71, 202, 231, 0.2) 0%, transparent 42%),
+    linear-gradient(315deg, rgba(92, 144, 255, 0.12) 0%, transparent 48%),
+    #2E2D2D;
+}
