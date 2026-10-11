@@ -3370,3 +3370,22 @@ body,
 .content.ios-files-page .finder-left-pane {
   grid-template-rows: 3fr 1fr;
 }
+
+/* Center the About page content vertically and inset its three paragraphs. */
+body:has(.headshot) .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  box-sizing: border-box;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+body:has(.headshot) .content > #about {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+body:has(.headshot) .content > h3 {
+  margin: 0 5rem;
+}
+
