@@ -68,7 +68,7 @@
 					</div>
 				</section>
 			</div>
-			<aside class="finder-right-pane" aria-label="Selected project"><div class="finder-project-copy"><span class="finder-selected-label" aria-live="polite">Mission-support application</span><p class="finder-selected-description" aria-live="polite">UX design and product ownership for a complex operational tool</p><span class="finder-work-tag finder-work-tag--professional" aria-live="polite">Professional work</span><section class="finder-information" aria-label="Project information"><h2>Information</h2><div class="finder-information-row"><span>Created</span><span>2021</span></div><div class="finder-information-row finder-modified-row"><span>Modified</span><span>Present</span></div></section></div></aside>
+			<aside class="finder-right-pane" aria-label="Selected project"><div class="finder-project-copy"><span class="finder-selected-label" aria-live="polite">Mission-support application</span><p class="finder-selected-description" aria-live="polite">UX design and product ownership for a complex operational tool</p><span class="finder-work-tag finder-work-tag--professional" aria-live="polite">Professional work</span><section class="finder-information" aria-label="Project information"><h2>Information</h2><div class="finder-information-row"><span>Created</span><span>2021</span></div><div class="finder-information-row finder-modified-row" hidden><span>Modified</span><span>Present</span></div></section></div></aside>
 		</div>
 	</main>
 	<script>
@@ -77,6 +77,8 @@
 			const previewIcon = preview?.querySelector('.ios-file-icon');
 			const projectButtons = document.querySelectorAll('.finder-project-pane .ios-file-item');
 			if (!preview || !previewIcon || !projectButtons.length) return;
+			const modifiedRow = document.querySelector('.finder-modified-row');
+			if (modifiedRow) modifiedRow.hidden = !document.querySelector('.finder-project-pane .ios-file-item[data-project="bah"][aria-pressed="true"]');
 			projectButtons.forEach((button) => {
 				button.addEventListener('click', () => {
 					const selectedIcon = button.querySelector('.ios-file-icon');
