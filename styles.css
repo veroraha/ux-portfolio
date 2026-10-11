@@ -3410,3 +3410,12 @@ body:has(#bttf) .case-study-body p {
   text-align: justify;
   text-justify: inter-word;
 }
+
+
+/* Use blue for primary case-study section headers and lavender for italicized subheaders. */
+.case-study-body h2 {
+  color: #5B7CD7 !important;
+}
+.case-study-body h3.secondary-content-header {
+  color: #A1A9E2 !important;
+}
