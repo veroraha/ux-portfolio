@@ -27,7 +27,7 @@
  **/
 
 :root {
-	font-family: "Garet", sans-serif;
+	font-family: "Bricolage Grotesque", sans-serif;
 
 	/* Olive-and-cream palette */
 	--primary-bg-color: #fefae0; /** Warm cream */
@@ -55,7 +55,7 @@
 
 * {
 	box-sizing: border-box;
-	font-family: "Garet", sans-serif;
+	font-family: "Bricolage Grotesque", sans-serif;
 }
 
 /** Display typography: Bricolage Grotesque for headings, site name, and navigation **/
@@ -1648,7 +1648,7 @@ body:has(.home-page) .page-header {
 	width: 1.35em;
 	margin-right: 0.3em;
 	text-align: center;
-	font-family: "Garet", sans-serif;
+	font-family: "Bricolage Grotesque", sans-serif;
 	font-size: 0.95em;
 	line-height: 1;
 	vertical-align: -0.04em;
