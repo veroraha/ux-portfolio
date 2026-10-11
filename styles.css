@@ -3591,3 +3591,14 @@ body:has(.headshot) .content {
     margin-top: 0;
   }
 }
+
+
+/* Pull the About headshot upward to remove the SVG's excess top whitespace. */
+.about-finder-window .headshot {
+  margin-top: -1.5rem;
+}
+@media (max-width: 600px) {
+  .about-finder-window .headshot {
+    margin-top: -1.25rem;
+  }
+}
