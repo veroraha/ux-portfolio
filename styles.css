@@ -3703,3 +3703,9 @@ body:has(.headshot) .content {
     margin: 1rem auto 2rem !important;
   }
 }
+
+
+/* Set the Projects and About Finder header labels to near-white. */
+.about-finder-title {
+  color: #fafafa;
+}
