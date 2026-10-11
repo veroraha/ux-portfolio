@@ -3432,6 +3432,9 @@ body:has(#bttf) .case-study-body p {
   min-height: 0;
   margin-top: 1rem;
   border: 1px solid #666666;
+  border-radius: 3rem;
+  background: #0A0A0A;
+  overflow: hidden;
 }
 .about-finder-window .finder-window-controls {
   position: absolute;
