@@ -3370,3 +3370,12 @@ body,
 .content.ios-files-page .finder-left-pane {
   grid-template-rows: 3fr 1fr;
 }
+
+
+/* Subtle edge shading inspired by Apple's soft, layered interface surfaces. */
+.content.ios-files-page > .finder-layout > .finder-left-pane {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.035) 0%, rgba(255, 255, 255, 0) 14%, rgba(255, 255, 255, 0) 100%);
+}
+.content.ios-files-page > .finder-layout > .finder-right-pane {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.045) 0%, rgba(255, 255, 255, 0) 22%), #2E2D2D;
+}
