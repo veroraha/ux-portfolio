@@ -50,17 +50,17 @@
 				</section>
 				<section class="finder-project-pane" aria-label="Choose a project preview">
 					<div class="ios-file-grid">
-						<button class="ios-file-item" type="button" data-project="bah" data-href="/bah" data-label="Mission-support application" data-description="UX design and product ownership for a complex operational tool" aria-label="Preview Mission Support project" aria-pressed="true">
+						<button class="ios-file-item" type="button" data-project="bah" data-href="/bah" data-label="Mission-support application" data-description="UX design and product ownership for a complex operational tool" data-work-type="Professional work" data-work-type-class="professional" aria-label="Preview Mission Support project" aria-pressed="true">
 							<span class="ios-file-icon ios-file-icon--blue" aria-hidden="true">
 								<svg viewBox="0 0 84 100"><path class="file-sheet" d="M13 3h39l20 20v70a4 4 0 0 1-4 4H13a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Z"/><path class="file-fold" d="M52 3v16a4 4 0 0 0 4 4h16Z"/><rect x="20" y="37" width="42" height="5" rx="2.5"/><rect x="20" y="49" width="35" height="4" rx="2"/><rect x="20" y="59" width="39" height="4" rx="2"/><rect x="20" y="69" width="27" height="4" rx="2"/></svg>
 							</span>
 						</button>
-						<button class="ios-file-item" type="button" data-project="otw" data-href="/otw" data-label="On The Way" data-description="End-to-end product design for a route-aware navigation experience" aria-label="Preview On The Way project" aria-pressed="false">
+						<button class="ios-file-item" type="button" data-project="otw" data-href="/otw" data-label="On The Way" data-description="End-to-end product design for a route-aware navigation experience" data-work-type="Selected earlier work" data-work-type-class="earlier" aria-label="Preview On The Way project" aria-pressed="false">
 							<span class="ios-file-icon ios-file-icon--cyan" aria-hidden="true">
 								<svg viewBox="0 0 84 100"><path class="file-sheet" d="M13 3h39l20 20v70a4 4 0 0 1-4 4H13a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Z"/><path class="file-fold" d="M52 3v16a4 4 0 0 0 4 4h16Z"/><path d="M22 67c8-2 8-20 17-20s8 18 17 16" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><circle cx="22" cy="67" r="4"/><circle cx="39" cy="47" r="4"/><circle cx="56" cy="63" r="4"/><rect x="20" y="32" width="36" height="4" rx="2"/></svg>
 							</span>
 						</button>
-						<button class="ios-file-item" type="button" data-project="bttf" data-href="/bttf" data-label="Back to the Future" data-description="UX research and interaction design to enable music sharing in Spotify" aria-label="Preview Back to the Future project" aria-pressed="false">
+						<button class="ios-file-item" type="button" data-project="bttf" data-href="/bttf" data-label="Back to the Future" data-description="UX research and interaction design to enable music sharing in Spotify" data-work-type="Selected earlier work" data-work-type-class="earlier" aria-label="Preview Back to the Future project" aria-pressed="false">
 							<span class="ios-file-icon ios-file-icon--purple" aria-hidden="true">
 								<svg viewBox="0 0 84 100"><path class="file-sheet" d="M13 3h39l20 20v70a4 4 0 0 1-4 4H13a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Z"/><path class="file-fold" d="M52 3v16a4 4 0 0 0 4 4h16Z"/><circle cx="41" cy="55" r="17" fill="none" stroke="currentColor" stroke-width="4"/><path d="M31 55h20M41 45v20" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><rect x="20" y="31" width="28" height="4" rx="2"/></svg>
 							</span>
@@ -68,7 +68,7 @@
 					</div>
 				</section>
 			</div>
-			<aside class="finder-right-pane" aria-label="Selected project"><div class="finder-project-copy"><span class="finder-selected-label" aria-live="polite">Mission-support application</span><p class="finder-selected-description" aria-live="polite">UX design and product ownership for a complex operational tool</p></div></aside>
+			<aside class="finder-right-pane" aria-label="Selected project"><div class="finder-project-copy"><span class="finder-selected-label" aria-live="polite">Mission-support application</span><p class="finder-selected-description" aria-live="polite">UX design and product ownership for a complex operational tool</p><span class="finder-work-tag finder-work-tag--professional" aria-live="polite">Professional work</span></div></aside>
 		</div>
 	</main>
 	<script>
@@ -89,6 +89,11 @@
 					if (selectedLabel) selectedLabel.textContent = button.dataset.label;
 					const selectedDescription = document.querySelector('.finder-selected-description');
 					if (selectedDescription) selectedDescription.textContent = button.dataset.description || 'UX design and product ownership for a complex operational tool';
+					const workTag = document.querySelector('.finder-work-tag');
+					if (workTag) {
+						workTag.textContent = button.dataset.workType || 'Professional work';
+						workTag.className = 'finder-work-tag finder-work-tag--' + (button.dataset.workTypeClass || 'professional');
+					}
 					projectButtons.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
 				});
 			});
