@@ -2754,3 +2754,101 @@ body,
     border-radius: 3rem !important;
   }
 }
+
+
+/* Finder window split panes: two-thirds left, one-third right */
+.ios-files-page {
+  padding: 0 !important;
+}
+.ios-files-page .finder-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  min-height: calc(100vh - 230px);
+  width: 100%;
+}
+.ios-files-page .finder-left-pane {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  min-width: 0;
+  min-height: inherit;
+}
+.ios-files-page .finder-upper-pane,
+.ios-files-page .finder-project-pane,
+.ios-files-page .finder-right-pane {
+  min-width: 0;
+  min-height: 0;
+}
+.ios-files-page .finder-upper-pane {
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+  border-right: 1px solid #666666;
+  border-bottom: 1px solid #666666;
+}
+.ios-files-page .finder-project-pane {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem clamp(1rem, 2vw, 2rem);
+  border-right: 1px solid #666666;
+}
+.ios-files-page .finder-right-pane {
+  background: #232323;
+}
+.ios-files-page .files-toolbar {
+  padding: 0;
+  border: 0;
+}
+.ios-files-page .ios-file-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: clamp(0.5rem, 2vw, 1.5rem);
+  width: 100%;
+  padding: 0;
+}
+.ios-files-page .ios-file-item {
+  flex: 0 1 auto;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+}
+.ios-files-page .ios-file-icon {
+  width: clamp(42px, 5vw, 68px);
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .ios-files-page {
+    padding: 0 !important;
+  }
+  .ios-files-page .finder-layout {
+    grid-template-columns: 2fr 1fr;
+    min-height: calc(100vh - 150px);
+  }
+  .ios-files-page .finder-left-pane {
+    grid-template-rows: 4fr 1fr;
+  }
+  .ios-files-page .finder-upper-pane {
+    padding: 1rem 0.75rem;
+  }
+  .ios-files-page .files-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .ios-files-page .files-toolbar h1 {
+    font-size: 1.1rem;
+  }
+  .ios-files-page .files-breadcrumb {
+    font-size: 0.75rem;
+  }
+  .ios-files-page .finder-project-pane {
+    padding: 0.5rem 0.25rem;
+  }
+  .ios-files-page .ios-file-grid {
+    gap: 0.1rem;
+  }
+  .ios-files-page .ios-file-item {
+    padding: 0.25rem;
+  }
+  .ios-files-page .ios-file-icon {
+    width: clamp(28px, 8vw, 46px);
+  }
+}
