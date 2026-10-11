@@ -3651,13 +3651,17 @@ body:has(.headshot) .content {
   }
 }
 
-/* Give the BAH case study the same Finder-style window treatment as About. */
+/* Match the BAH Finder window placement and traffic-light alignment to About. */
 body:has(.project-finder-window) .content.project-finder-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   width: 100%;
   max-width: var(--content-max);
   margin: 0 auto;
-  padding: 0;
+  padding: 2rem 0;
 }
 .project-finder-window {
   position: relative;
@@ -3668,7 +3672,7 @@ body:has(.project-finder-window) .content.project-finder-page {
   height: 75vh;
   min-height: 0;
   margin: 0;
-  padding: 5rem 2rem 2rem;
+  padding: 0 4rem 2rem;
   gap: 1.25rem;
   border: 1px solid #666666;
   border-radius: 3rem;
@@ -3676,14 +3680,19 @@ body:has(.project-finder-window) .content.project-finder-page {
   overflow: auto;
 }
 .project-finder-window .finder-window-controls {
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
+  position: sticky;
+  top: 0;
+  align-self: stretch;
+  box-sizing: border-box;
+  width: calc(100% + 2.5rem);
+  margin-left: -2.5rem;
+  padding: 1.5rem 0 1rem 1.5rem;
+  background: #0A0A0A;
   z-index: 5;
   display: flex;
   align-items: center;
   gap: 0.625rem;
-  padding-left: 0.5rem;
+  flex: 0 0 auto;
 }
 .project-finder-window .finder-window-control {
   display: block;
@@ -3720,14 +3729,16 @@ body:has(.project-finder-window) .content.project-finder-page {
   body:has(.project-finder-window) .content.project-finder-page {
     width: calc(100% - 1.25rem);
     margin: 1rem auto 2rem;
+    padding: 0;
   }
   .project-finder-window {
     height: min(620px, calc(100vh - 150px));
-    padding: 4rem 0.75rem 1.25rem;
+    padding: 0 0.75rem 1.25rem;
     gap: 1rem;
   }
   .project-finder-window .finder-window-controls {
-    top: 1rem;
-    left: 1rem;
+    width: calc(100% + 1.5rem);
+    margin-left: -0.75rem;
+    padding: 1rem 0 0.75rem 1rem;
   }
 }
