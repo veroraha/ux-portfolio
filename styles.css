@@ -3379,3 +3379,27 @@ body,
 .content.ios-files-page > .finder-layout > .finder-right-pane {
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.045) 0%, rgba(255, 255, 255, 0) 22%), #2E2D2D;
 }
+
+
+/* Visible but restrained edge ombré overlays for the Finder window. */
+.content.ios-files-page > .finder-layout {
+  isolation: isolate;
+}
+.content.ios-files-page > .finder-layout::before,
+.content.ios-files-page > .finder-layout::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3rem;
+  z-index: 4;
+  pointer-events: none;
+}
+.content.ios-files-page > .finder-layout::before {
+  left: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0.09) 35%, transparent 100%);
+}
+.content.ios-files-page > .finder-layout::after {
+  right: 0;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.08) 35%, transparent 100%);
+}
