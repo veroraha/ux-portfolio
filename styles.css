@@ -3389,3 +3389,9 @@ body:has(.headshot) .content > h3 {
   margin: 0 5rem;
 }
 
+/* Fully justify the About page paragraphs. */
+body:has(.headshot) .content > h3 {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
