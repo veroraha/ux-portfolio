@@ -3158,3 +3158,10 @@ body,
 .ios-files-page .finder-project-pane button.ios-file-item[aria-pressed="true"]:not(:hover)::before {
   opacity: 0 !important;
 }
+
+
+/* Add a little more vertical breathing room to the selected project icon */
+.ios-files-page .finder-project-pane button.ios-file-item[aria-pressed="true"] {
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+}
