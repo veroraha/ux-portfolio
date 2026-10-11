@@ -3424,6 +3424,18 @@ body:has(.headshot) .content {
 }
 
 
+/* Match the Projects Finder header control placement to the About window. */
+.content.ios-files-page .finder-window-controls {
+  padding-left: 0.5rem;
+  padding-bottom: 0;
+}
+@media (max-width: 600px) {
+  .content.ios-files-page .finder-window-controls {
+    top: 1rem;
+    left: 1rem;
+  }
+}
+
 /* Set the Projects and About Finder header labels to near-white. */
 .about-finder-title {
   color: #fafafa;
