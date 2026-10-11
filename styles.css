@@ -3355,6 +3355,6 @@ body,
 
 /* Green emphasis for key phrases on the About page */
 .emphasis {
-	color: var(--secondary-accent-color);
+	color: #A8E3A1;
 	font-weight: 500;
 }
