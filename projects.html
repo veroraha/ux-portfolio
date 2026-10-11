@@ -51,29 +51,48 @@
 						</span>
 					</a>
 				</section>
-				<section class="finder-project-pane" aria-label="Project links">
+				<section class="finder-project-pane" aria-label="Choose a project preview">
 					<div class="ios-file-grid">
-						<a class="ios-file-item" href="/bah" aria-label="Open Mission Support project">
+						<button class="ios-file-item" type="button" data-project="bah" data-href="/bah" data-label="Mission Support" aria-label="Preview Mission Support project" aria-pressed="true">
 							<span class="ios-file-icon ios-file-icon--blue" aria-hidden="true">
 								<svg viewBox="0 0 84 100"><path class="file-sheet" d="M13 3h39l20 20v70a4 4 0 0 1-4 4H13a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Z"/><path class="file-fold" d="M52 3v16a4 4 0 0 0 4 4h16Z"/><rect x="20" y="37" width="42" height="5" rx="2.5"/><rect x="20" y="49" width="35" height="4" rx="2"/><rect x="20" y="59" width="39" height="4" rx="2"/><rect x="20" y="69" width="27" height="4" rx="2"/></svg>
 							</span>
-						</a>
-						<a class="ios-file-item" href="/otw" aria-label="Open On The Way project">
+						</button>
+						<button class="ios-file-item" type="button" data-project="otw" data-href="/otw" data-label="On The Way" aria-label="Preview On The Way project" aria-pressed="false">
 							<span class="ios-file-icon ios-file-icon--cyan" aria-hidden="true">
 								<svg viewBox="0 0 84 100"><path class="file-sheet" d="M13 3h39l20 20v70a4 4 0 0 1-4 4H13a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Z"/><path class="file-fold" d="M52 3v16a4 4 0 0 0 4 4h16Z"/><path d="M22 67c8-2 8-20 17-20s8 18 17 16" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><circle cx="22" cy="67" r="4"/><circle cx="39" cy="47" r="4"/><circle cx="56" cy="63" r="4"/><rect x="20" y="32" width="36" height="4" rx="2"/></svg>
 							</span>
-						</a>
-						<a class="ios-file-item" href="/bttf" aria-label="Open Back to the Future project">
+						</button>
+						<button class="ios-file-item" type="button" data-project="bttf" data-href="/bttf" data-label="Back to the Future" aria-label="Preview Back to the Future project" aria-pressed="false">
 							<span class="ios-file-icon ios-file-icon--purple" aria-hidden="true">
 								<svg viewBox="0 0 84 100"><path class="file-sheet" d="M13 3h39l20 20v70a4 4 0 0 1-4 4H13a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Z"/><path class="file-fold" d="M52 3v16a4 4 0 0 0 4 4h16Z"/><circle cx="41" cy="55" r="17" fill="none" stroke="currentColor" stroke-width="4"/><path d="M31 55h20M41 45v20" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><rect x="20" y="31" width="28" height="4" rx="2"/></svg>
 							</span>
-						</a>
+						</button>
 					</div>
 				</section>
 			</div>
 			<aside class="finder-right-pane" aria-label="Empty Finder sidebar"></aside>
 		</div>
 	</main>
+	<script>
+		(() => {
+			const preview = document.querySelector('.finder-preview');
+			const previewIcon = preview?.querySelector('.ios-file-icon');
+			const projectButtons = document.querySelectorAll('.finder-project-pane .ios-file-item');
+			if (!preview || !previewIcon || !projectButtons.length) return;
+			projectButtons.forEach((button) => {
+				button.addEventListener('click', () => {
+					const selectedIcon = button.querySelector('.ios-file-icon');
+					if (!selectedIcon) return;
+					previewIcon.className = selectedIcon.className;
+					previewIcon.innerHTML = selectedIcon.innerHTML;
+					preview.href = button.dataset.href;
+					preview.setAttribute('aria-label', 'Open ' + button.dataset.label + ' project');
+					projectButtons.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+				});
+			});
+		})();
+	</script>
 	<script type="module" src="script.js"></script>
 </body>
 </html>
