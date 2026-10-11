@@ -3599,3 +3599,18 @@ body:has(.headshot) .content {
   outline: 2px solid #FAFAFA;
   outline-offset: 3px;
 }
+
+
+/* Give the three Projects file icons the same subtle lift as the homepage folders. */
+.content.ios-files-page .finder-project-pane button.ios-file-item .ios-file-icon {
+  transition: transform 180ms ease;
+}
+.content.ios-files-page .finder-project-pane button.ios-file-item:hover .ios-file-icon,
+.content.ios-files-page .finder-project-pane button.ios-file-item:focus-visible .ios-file-icon {
+  transform: translateY(-3px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .content.ios-files-page .finder-project-pane button.ios-file-item .ios-file-icon {
+    transition: none;
+  }
+}
