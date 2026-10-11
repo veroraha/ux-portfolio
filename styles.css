@@ -3075,3 +3075,21 @@ body,
 .ios-files-page .ios-file-grid {
   overflow: visible;
 }
+
+
+/* Keep icon hover/selected states clean and visually merge the tooltip caret */
+.ios-files-page .finder-project-pane button.ios-file-item[aria-pressed="true"],
+.ios-files-page .finder-project-pane button.ios-file-item:hover,
+.ios-files-page .finder-project-pane button.ios-file-item:focus-visible {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+.ios-files-page .finder-project-pane button.ios-file-item::after {
+  background: #262626;
+  border-color: #686868;
+}
+.ios-files-page .finder-project-pane button.ios-file-item::before {
+  z-index: 4;
+  border-top-color: #262626;
+  bottom: calc(100% + 2px);
+}
