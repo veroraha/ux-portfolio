@@ -3232,3 +3232,20 @@ body,
   min-width: 0;
 }
 
+
+
+/* Show the currently selected project title in the right Finder pane. */
+.content.ios-files-page .finder-right-pane {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 3vw, 2.5rem);
+}
+.content.ios-files-page .finder-selected-label {
+  color: #EAE9E9;
+  font-size: clamp(1rem, 1.8vw, 1.4rem);
+  line-height: 1.35;
+  text-align: center;
+  overflow-wrap: normal;
+  word-break: normal;
+}
