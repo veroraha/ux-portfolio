@@ -3395,3 +3395,10 @@ body:has(.headshot) .content > h3 {
   text-justify: inter-word;
 }
 
+
+
+/* Fully justify body paragraphs on the BAH mission support case study only. */
+body:has(#bah) .case-study-body p {
+  text-align: justify;
+  text-justify: inter-word;
+}
