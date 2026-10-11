@@ -3194,3 +3194,16 @@ body,
   border: 1px solid transparent;
   background: transparent;
 }
+
+
+
+/* Keep the Mission-support tooltip to at most two natural lines with tighter side padding */
+.ios-files-page .finder-project-pane button.ios-file-item[data-project="bah"]::after {
+  width: max-content;
+  max-width: min(220px, 75vw);
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  overflow-wrap: normal;
+  word-break: keep-all;
+  text-align: center;
+}
