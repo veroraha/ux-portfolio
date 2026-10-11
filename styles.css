@@ -3119,3 +3119,21 @@ body,
   border-left: 10px solid transparent;
   filter: drop-shadow(0 2px 0 #686868);
 }
+
+
+/* Tooltips appear only while hovering; selected icons retain the original grey hover treatment */
+.ios-files-page .finder-project-pane button.ios-file-item::after,
+.ios-files-page .finder-project-pane button.ios-file-item::before {
+  opacity: 0;
+}
+.ios-files-page .finder-project-pane button.ios-file-item:hover::after,
+.ios-files-page .finder-project-pane button.ios-file-item:hover::before {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.ios-files-page .finder-project-pane button.ios-file-item[aria-pressed="true"],
+.ios-files-page .finder-project-pane button.ios-file-item:hover,
+.ios-files-page .finder-project-pane button.ios-file-item:focus-visible {
+  background: #303030 !important;
+  border-color: #484848 !important;
+}
