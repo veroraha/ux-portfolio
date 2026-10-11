@@ -3255,7 +3255,7 @@ body,
 .content.ios-files-page .finder-right-pane {
   align-items: flex-start;
   justify-content: flex-start;
-  padding-top: 0;
+  padding-top: clamp(1rem, 3vw, 2.5rem);
 }
 .content.ios-files-page .finder-project-copy {
   width: 100%;
