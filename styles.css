@@ -3428,3 +3428,12 @@ body:has(.headshot) .content {
   color: #fafafa;
 }
 
+/* Match the vertical gap below the navigation on the Projects and About pages. */
+.content.ios-files-page {
+  margin-top: 9.5rem !important;
+}
+@media (max-width: 600px) {
+  .content.ios-files-page {
+    margin-top: 9.5rem !important;
+  }
+}
