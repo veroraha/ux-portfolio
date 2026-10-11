@@ -3144,3 +3144,10 @@ body,
   padding-right: 0.55rem;
   padding-left: 0.55rem;
 }
+
+
+/* Add a touch more horizontal padding to the selected icon highlight */
+.ios-files-page .finder-project-pane button.ios-file-item[aria-pressed="true"] {
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
+}
