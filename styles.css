@@ -3177,11 +3177,10 @@ body,
   border-color: transparent !important;
 }
 
-/* Keep the Mission-support application tooltip compact enough for the Finder layout */
+/* Restore the Mission-support application tooltip width and reduce its text-to-border spacing */
 .ios-files-page .finder-project-pane button.ios-file-item[data-project="bah"]::after {
-  box-sizing: border-box;
-  max-width: 150px;
+  max-width: min(220px, 75vw);
+  padding: 0.25rem 0.55rem;
   white-space: normal;
-  overflow-wrap: anywhere;
   text-align: center;
 }
