@@ -3333,8 +3333,8 @@ body,
 }
 .content.ios-files-page .finder-window-controls {
   position: absolute;
-  top: 2rem;
-  left: 2rem;
+  top: 1.5rem;
+  left: 1.5rem;
   z-index: 5;
   display: flex;
   align-items: center;
