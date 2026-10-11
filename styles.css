@@ -3551,3 +3551,43 @@ body:has(.headshot) .content {
     line-height: 1.55;
   }
 }
+
+
+/* Keep the About window controls pinned while its contents scroll. */
+.about-finder-window {
+  padding-top: 0;
+}
+.about-finder-window .finder-window-controls {
+  position: sticky;
+  top: 0;
+  align-self: stretch;
+  box-sizing: border-box;
+  width: calc(100% + 2.5rem);
+  margin-left: -2.5rem;
+  padding: 1.5rem 0 1rem 1.5rem;
+  background: #0A0A0A;
+}
+.about-finder-window .headshot {
+  width: clamp(10rem, 16vw, 12rem);
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.about-finder-window > h3 {
+  text-align: justify;
+  text-justify: inter-word;
+}
+@media (max-width: 600px) {
+  .about-finder-window {
+    padding-top: 0;
+  }
+  .about-finder-window .finder-window-controls {
+    width: calc(100% + 3rem);
+    margin-left: -1.5rem;
+    padding: 1rem 0 0.75rem 1rem;
+  }
+  .about-finder-window .headshot {
+    width: 9rem;
+    margin-top: 0;
+  }
+}
