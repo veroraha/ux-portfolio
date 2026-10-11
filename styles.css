@@ -3237,6 +3237,7 @@ body,
 /* Show the currently selected project title in the right Finder pane. */
 .content.ios-files-page .finder-right-pane {
   display: flex;
+  background: #2E2D2D;
   align-items: center;
   justify-content: center;
   padding: clamp(1rem, 3vw, 2.5rem);
