@@ -3185,23 +3185,28 @@ body,
   background: transparent;
 }
 
-/* Keep the Projects page wrapper and Finder split layout on the same dimensions. */
+/* Keep the Projects wrapper exactly as tall as its Finder layout. */
 .content.ios-files-page {
   box-sizing: border-box;
+  display: block !important;
+  flex: 0 0 auto !important;
+  align-self: auto;
   width: min(1200px, calc(100% - 3rem)) !important;
   max-width: none !important;
   height: auto !important;
   min-height: 0 !important;
   margin: 2.5rem auto 0 !important;
+  margin-bottom: 0 !important;
   padding: 0 !important;
   border: 0 !important;
 }
 .content.ios-files-page > .finder-layout {
   box-sizing: border-box;
+  display: block;
   width: 100%;
   height: auto;
   min-height: min(680px, calc(100vh - 230px));
-  margin: 0;
+  margin: 0 !important;
 }
 @media (max-width: 600px) {
   .content.ios-files-page {
