@@ -3430,6 +3430,9 @@ body:has(.headshot) .content {
 
 /* Match the Projects content wrapper to the About page layout. */
 .content.ios-files-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   box-sizing: border-box;
   width: 100% !important;
   max-width: var(--content-max) !important;
