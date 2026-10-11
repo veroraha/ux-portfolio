@@ -3419,3 +3419,47 @@ body:has(#bttf) .case-study-body p {
 .case-study-body h3.secondary-content-header {
   color: #A1A9E2 !important;
 }
+
+
+/* Empty Finder-style window beneath the About page text. */
+.about-finder-window {
+  position: relative;
+  align-self: center;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  width: min(1200px, calc(100vw - 3rem));
+  height: 75vh;
+  min-height: 0;
+  margin-top: 1rem;
+  border: 1px solid #666666;
+}
+.about-finder-window .finder-window-controls {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+.about-finder-window .finder-window-control {
+  display: block;
+  box-sizing: border-box;
+  width: 0.875rem;
+  height: 0.875rem;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 50%;
+}
+.about-finder-window .finder-window-control--close { background: #ff5f57; }
+.about-finder-window .finder-window-control--minimize { background: #febc2e; }
+.about-finder-window .finder-window-control--maximize { background: #28c840; }
+@media (max-width: 600px) {
+  .about-finder-window {
+    width: calc(100vw - 1.25rem);
+    height: min(620px, calc(100vh - 150px));
+  }
+  .about-finder-window .finder-window-controls {
+    top: 1rem;
+    left: 1rem;
+  }
+}
