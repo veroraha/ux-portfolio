@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+	<title>Vanessa Eroraha | Back to the Future</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap">
+	<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/garet">
+	<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="header-shell">
+			<a class="header-social header-linkedin" href="/" aria-label="Go to homepage">
+				<span class="header-monogram" aria-hidden="true">ve</span>
+			</a>
+			<nav class="nav" aria-label="Main navigation">
+				<ul class="header-links">
+					<li><span class="nav-current" aria-current="page"><span class="nav-emoji" aria-hidden="true">👩🏾‍💻</span>Projects</span></li>
+					<li><a href="/about"><span class="nav-emoji" aria-hidden="true">🤓</span>About</a></li>
+					<li><a href="/Eroraha Resume.pdf" target="_blank" rel="noopener noreferrer"><span class="nav-emoji" aria-hidden="true">📄</span>Resume</a></li>
+				</ul>
+				<button class="dropdown-btn" type="button" id="menuToggle" aria-expanded="false" aria-controls="dropdownLinks"><span class="menu-label">Menu</span><span aria-hidden="true">☰</span></button>
+				<ul class="dropdown-links" id="dropdownLinks">
+					<li><span class="nav-current" aria-current="page"><span class="nav-emoji" aria-hidden="true">👩🏾‍💻</span>Projects</span></li>
+					<li><a href="/about"><span class="nav-emoji" aria-hidden="true">🤓</span>About</a></li>
+					<li><a href="/Eroraha Resume.pdf" target="_blank" rel="noopener noreferrer"><span class="nav-emoji" aria-hidden="true">📄</span>Resume</a></li>
+				</ul>
+			</nav>
+			<a class="header-social header-email" href="mailto:vanessaeroraha@gmail.com" aria-label="Send Vanessa an email">
+				<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
+			</a>
+		</div>
+	</header>
+	<main class="content">
+		<a class="back-link" href="/projects">← Back to projects</a>
+		<h1 id="bttf" class="page-header case-study-header" data-title="Back to the Future">Back to the Future</h1>
+		<p class="case-study-subtitle case-study-subtitle--plain">UX research and interaction design to enable music sharing in Spotify</p>
+		<div class="case-study-body">
+			<section>
+				<h2>Overview</h2>
+				<p>
+					Spotify makes it easy to listen to music, but discovery often happens outside of the app, through friends and social feeds. For the 2021 D&amp;AD New Blood Awards, my partner and I explored how to keep music sharing in Spotify. We conducted research with 82 college-aged Spotify users and translated the findings into three complementary concepts - Boombox, Best Buds, and Anthems - all of which turn one’s music library into a social experience through public stories, private sharing, and personal anthems.
+				</p>
+			</section>
+			<section>
+				<h2>Understanding social media discovery</h2>
+				<div class="research-stats">
+					<div class="research-stat">
+						<p class="research-stat-value">82</p>
+						<p class="research-stat-label">college-aged Spotify users surveyed</p>
+					</div>
+					<div class="research-stat">
+						<p class="research-stat-value">80%</p>
+						<p class="research-stat-label">were at least somewhat interested in knowing what their friends were currently listening to</p>
+						<figure class="case-study-figure">
+							<img src="/bttf/survey-q1.png" alt="Bar chart of 82 responses to how interested people are in knowing what music their friends are currently listening to, on a 1 to 5 scale"/>
+							<figcaption>Interest existed, but Spotify didn’t necessarily provide a dedicated social context for it.</figcaption>
+						</figure>
+					</div>
+					<div class="research-stat">
+						<p class="research-stat-value">67%</p>
+						<p class="research-stat-label">regularly received song recommendations outside Spotify.</p>
+						<figure class="case-study-figure">
+							<img src="/bttf/survey-q2.png" alt="Pie chart of 82 responses to whether people have go-to friends for music recommendations"/>
+							<figcaption>Music discovery was already happening socially - it was just happening beyond the product.</figcaption>
+						</figure>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h2>From behaviors to concepts</h2>
+				<p>
+					Ideation started from behaviors we could already observe.
+				</p>
+				<h3 class="secondary-content-header">Boombox</h3>
+				<p>
+					Existing behavior: posting Spotify links on social media so friends can see what they’re listening to<br>
+					→ Opportunity: keep music suggestions in the app
+				</p>
+				<h3 class="secondary-content-header">Best Buds</h3>
+				<p>
+					Existing behavior: watch parties on streaming platforms<br>
+					→ Opportunity: create shared listening sessions for connection, regardless of physical proximity
+				</p>
+				<h3 class="secondary-content-header">Anthems</h3>
+				<p>
+					Existing behavior: expressing personal identity through music<br>
+					→ Opportunity: make music taste part of your profile
+				</p>
+			</section>
+			<section>
+				<h2>Three social listening experiences</h2>
+				<p>
+					The final concept is composed of three complementary interfaces, each with a different social job. Together, these features evolve Spotify from a streaming utility to a new form of social media.
+				</p>
+				<p>
+					Boombox offers a temporary, curated glimpse into what someone is listening to right now. Friends can discover recommendations through someone’s current rotation, then revisit the session after it ends.
+				</p>
+				<figure class="case-study-mockup-row">
+					<img src="/bttf/boombox-1.png" alt="View a friend's Boombox to see what they're listening to"/>
+					<img src="/bttf/boombox-2.png" alt="Get song recommendations from people you follow"/>
+					<img src="/bttf/boombox-3.png" alt="Boomboxes are visible for 24 hours, so even though Erika has stopped listening to music, her rotation is still available for her followers to see"/>
+					<img src="/bttf/boombox-4.png" alt="View a recap of songs from a Boombox session that has ended"/>
+				</figure>
+				<p>
+					Best Buds offers a shared listening mode for discovering what friends are listening to in real time. Users can start a listening session, invite friends to join, and see who is listening alongside them.
+				</p>
+				<figure class="case-study-mockup-row">
+					<img src="/bttf/bestbuds-listening.png" alt="Listen to your favorite songs on Spotify"/>
+					<img src="/bttf/bestbuds-mode.png" alt="Join a friend's listening session or start your own"/>
+					<img src="/bttf/bestbuds-live-listening.png" alt="See which of your friends are listening in"/>
+					<img src="/bttf/bestbuds-live-listeners.png" alt="Attention-grabbing green bar signifies whether Best Buds mode is toggled on or off"/>
+				</figure>
+				<p>
+					Anthems allows for songs to be pinned to Spotify profiles to let the music do the talking, rather than a bio.
+				</p>
+				<figure class="case-study-mockup-row case-study-mockup-row--centered">
+					<img src="/bttf/anthems-listening.png" alt="Listen to the music you love"/>
+					<img src="/bttf/anthems-popup.png" alt="Spotify detects songs you enjoy and will prompt you to set an anthem"/>
+					<img src="/bttf/anthems-profile.png" alt="Add up to three anthems that reflect your music taste"/>
+				</figure>
+			</section>
+			<section>
+				<h2>Takeaway</h2>
+				<p>
+					This project reinforced the value of using research to identify the behavior behind a product opportunity before designing the interface.
+				</p>
+				<p>
+					The research showed that social music discovery was already happening outside of Spotify. The design challenge became less about adding social features and more about deciding which social behaviors belonged inside the listening experience and how they could feel native to the product. The result was three complementary concepts exploring sharing, shared listening, and musical identity.
+				</p>
+			</section>
+			<section>
+				<h2>What I’d do next</h2>
+				<p>
+					Prototype and test the three concepts to understand which social behaviors provide the most value without disrupting Spotify’s core listening experience.
+				</p>
+			</section>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<h4>Let's connect.</h4>
+	</footer>
+
+	<script type="module" src="/script.js"></script>
+</body>
+</html>
