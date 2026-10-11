@@ -2331,8 +2331,8 @@ body,
 }
 .home-page .home-folder-link:hover,
 .home-page .home-folder-link:focus-visible {
-  background: #171719;
-  border-color: #343438;
+  background: transparent;
+  border-color: transparent;
   outline: none;
 }
 .home-page .home-folder-link:hover .home-folder-icon,
