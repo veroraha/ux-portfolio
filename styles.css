@@ -3669,3 +3669,15 @@ body:has(.headshot) .content {
 .about-finder-window .headshot {
   padding-top: 0;
 }
+
+
+/* Match the Projects file explorer width to the About page window. */
+.content.ios-files-page {
+  width: 100% !important;
+  max-width: var(--content-max) !important;
+}
+@media (max-width: 600px) {
+  .content.ios-files-page {
+    width: calc(100% - 1.25rem) !important;
+  }
+}
