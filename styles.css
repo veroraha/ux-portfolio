@@ -3098,3 +3098,24 @@ body,
 .ios-files-page .finder-project-pane button.ios-file-item::before {
   bottom: calc(100% + 1px);
 }
+
+
+/* Give project tooltips the larger, outlined speech-bubble treatment */
+.ios-files-page .finder-project-pane button.ios-file-item::after {
+  bottom: calc(100% + 8px);
+  padding: 0.45rem 0.9rem;
+  border: 2px solid #686868;
+  border-radius: 1.1rem;
+  background: #262626;
+  color: #f9f9f9;
+  font-size: 1rem;
+  line-height: 1.2;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 35%);
+}
+.ios-files-page .finder-project-pane button.ios-file-item::before {
+  bottom: calc(100% + 1px);
+  border-top: 10px solid #262626;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  filter: drop-shadow(0 2px 0 #686868);
+}
