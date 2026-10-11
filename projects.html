@@ -68,7 +68,7 @@
 					</div>
 				</section>
 			</div>
-			<aside class="finder-right-pane" aria-label="Empty Finder sidebar"></aside>
+			<aside class="finder-right-pane" aria-label="Selected project"><span class="finder-selected-label" aria-live="polite">Mission-support application</span></aside>
 		</div>
 	</main>
 	<script>
@@ -85,6 +85,8 @@
 					previewIcon.innerHTML = selectedIcon.innerHTML;
 					preview.href = button.dataset.href;
 					preview.setAttribute('aria-label', 'Open ' + button.dataset.label + ' project');
+					const selectedLabel = document.querySelector('.finder-selected-label');
+					if (selectedLabel) selectedLabel.textContent = button.dataset.label;
 					projectButtons.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
 				});
 			});
