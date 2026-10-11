@@ -3358,3 +3358,10 @@ body,
 	color: #A8E3A1;
 	font-weight: 400;
 }
+
+
+/* Keep the Projects Finder window at 75% of the viewport height. */
+.content.ios-files-page > .finder-layout {
+  height: 75vh;
+  min-height: 0;
+}
