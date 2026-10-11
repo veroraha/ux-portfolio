@@ -2913,3 +2913,20 @@ body,
     width: clamp(64px, 18vw, 100px);
   }
 }
+
+
+/* Project icons select the large Finder preview instead of navigating directly */
+.ios-files-page .finder-project-pane button.ios-file-item {
+  width: 100%;
+  appearance: none;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+.ios-files-page .finder-project-pane button.ios-file-item[aria-pressed="true"] {
+  background: #171719;
+  border-color: #343438;
+}
+.ios-files-page .finder-project-pane button.ios-file-item .ios-file-icon {
+  margin-bottom: 0;
+}
