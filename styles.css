@@ -3424,6 +3424,16 @@ body:has(.headshot) .content {
 }
 
 
+/* Set the Projects Finder pane backgrounds. */
+.content.ios-files-page .finder-left-pane,
+.content.ios-files-page .finder-upper-pane,
+.content.ios-files-page .finder-project-pane {
+  background-color: #232323 !important;
+}
+.content.ios-files-page .finder-right-pane {
+  background-color: #2E2D2D !important;
+}
+
 /* Match the Projects Finder header control placement to the About window. */
 .content.ios-files-page .finder-window-controls {
   padding-left: 0.5rem;
