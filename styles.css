@@ -3681,3 +3681,14 @@ body:has(.headshot) .content {
     width: calc(100% - 1.25rem) !important;
   }
 }
+
+
+/* Align the Projects explorer's starting position with the About page window. */
+.content.ios-files-page {
+  margin-top: 0 !important;
+}
+@media (max-width: 600px) {
+  .content.ios-files-page {
+    margin: 1rem auto 2rem !important;
+  }
+}
