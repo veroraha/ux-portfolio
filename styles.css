@@ -3351,3 +3351,10 @@ body,
 .content.ios-files-page .finder-window-control--close { background: #ff5f57; }
 .content.ios-files-page .finder-window-control--minimize { background: #febc2e; }
 .content.ios-files-page .finder-window-control--maximize { background: #28c840; }
+
+
+/* Green emphasis for key phrases on the About page */
+.emphasis {
+	color: var(--secondary-accent-color);
+	font-weight: 500;
+}
