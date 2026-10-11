@@ -3066,3 +3066,12 @@ body,
   padding-right: 0.35rem;
   padding-left: 0.35rem;
 }
+
+
+/* Let project tooltips extend beyond the Finder pane without being clipped */
+.ios-files-page .finder-layout,
+.ios-files-page .finder-left-pane,
+.ios-files-page .finder-project-pane,
+.ios-files-page .ios-file-grid {
+  overflow: visible;
+}
