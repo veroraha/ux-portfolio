@@ -3428,12 +3428,12 @@ body:has(.headshot) .content {
   color: #fafafa;
 }
 
-/* Match the vertical gap below the navigation on the Projects and About pages. */
+/* Align Projects window controls with the About window controls. */
 .content.ios-files-page {
-  margin-top: 9.5rem !important;
+  margin-top: 7.5rem !important;
 }
 @media (max-width: 600px) {
   .content.ios-files-page {
-    margin-top: 9.5rem !important;
+    margin-top: 7.5rem !important;
   }
 }
