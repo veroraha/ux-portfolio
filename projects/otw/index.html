@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+	<title>Vanessa Eroraha | On The Way</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap">
+	<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/garet">
+	<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="header-shell">
+			<a class="header-social header-linkedin" href="/" aria-label="Go to homepage">
+				<span class="header-monogram" aria-hidden="true">ve</span>
+			</a>
+			<nav class="nav" aria-label="Main navigation">
+				<ul class="header-links">
+					<li><span class="nav-current" aria-current="page"><span class="nav-emoji" aria-hidden="true">👩🏾‍💻</span>Projects</span></li>
+					<li><a href="/about"><span class="nav-emoji" aria-hidden="true">🤓</span>About</a></li>
+					<li><a href="/Eroraha Resume.pdf" target="_blank" rel="noopener noreferrer"><span class="nav-emoji" aria-hidden="true">📄</span>Resume</a></li>
+				</ul>
+				<button class="dropdown-btn" type="button" id="menuToggle" aria-expanded="false" aria-controls="dropdownLinks"><span class="menu-label">Menu</span><span aria-hidden="true">☰</span></button>
+				<ul class="dropdown-links" id="dropdownLinks">
+					<li><span class="nav-current" aria-current="page"><span class="nav-emoji" aria-hidden="true">👩🏾‍💻</span>Projects</span></li>
+					<li><a href="/about"><span class="nav-emoji" aria-hidden="true">🤓</span>About</a></li>
+					<li><a href="/Eroraha Resume.pdf" target="_blank" rel="noopener noreferrer"><span class="nav-emoji" aria-hidden="true">📄</span>Resume</a></li>
+				</ul>
+			</nav>
+			<a class="header-social header-email" href="mailto:vanessaeroraha@gmail.com" aria-label="Send Vanessa an email">
+				<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
+			</a>
+		</div>
+	</header>
+	<main class="content">
+		<a class="back-link" href="/projects">← Back to projects</a>
+		<h1 id="otw" class="page-header case-study-header" data-title="On The Way">On The Way</h1>
+		<p class="case-study-subtitle case-study-subtitle--plain">End-to-end product design for a route-aware navigation experience</p>
+		<div class="case-study-body">
+			<section>
+				<h2>Overview</h2>
+				<p>
+					On The Way is a wayfinding product that helps drivers discover and add stops along their existing route while keeping their main trip intact.
+				</p>
+				<p>
+					I designed and built the app end-to-end, from competitive research and requirements gathering through interaction design, UI, and building an Angular prototype using the Google Maps API.
+				</p>
+				<p>
+					The core concept is simple: Help drivers get from point A to point B, and add stops without straying from the original route.
+				</p>
+			</section>
+			<section>
+				<h2>The opportunity</h2>
+				<p>
+					The idea was born from a real pain point. On a trip to the beach, my family used one phone for directions to our hotel, and a different phone to find stops like gas, convenience stores, and dessert shops. Various GPS apps recommended places behind us, which meant turning around and adding time to our journey.
+				</p>
+				<p>
+					I framed this experience as a design problem: Recommend only upcoming stops, and keep every stop close to the primary route. I later had the opportunity to turn the concept into a working product while building an Angular application that incorporated maps.
+				</p>
+			</section>
+			<section>
+				<h2>Understanding the problem</h2>
+				<h3 class="secondary-content-header">Competitive analysis</h3>
+				<p>
+					I started with a competitive analysis of Apple Maps, Google Maps, and Waze to find where market-leading GPS products were lacking. Apple Maps and Waze only allow one added stop. Apple Maps blocks address search when adding a stop, limiting people to categories like cafes, gas, and banks. Across all three apps, “end navigation” ends the entire trip instead of removing only detours.
+				</p>
+				<p>
+					Those observations revealed the need for more flexibility when choosing stops, and a need to preserve the user’s original trip despite temporary detours.
+				</p>
+				<h3 class="secondary-content-header">Contextual use scenarios</h3>
+				<p>
+					To define potential users, I wrote contextual use scenarios and built three personas: a student heading to campus, a father on a family road trip, and a professional driving to a meeting. Although the contexts differed, the underlying need was consistent: people wanted to accomplish something along the way without compromising the trip they had already planned.
+				</p>
+				<figure class="case-study-figure">
+					<img src="/otw/erin-wyman.svg" alt="Persona card for Erin Wyman, a Virginia Tech sophomore driving from Greenville, North Carolina to Blacksburg, with a use scenario about finding Shaky's on the way"/>
+					<figcaption>Erin Wyman persona and use scenario</figcaption>
+				</figure>
+				<h3 class="secondary-content-header">Product requirements</h3>
+				<p>
+					My competitive analysis observations made it clear why adding an extra stop still forces users into workarounds like opening a second phone to get a separate set of directions. The contextual use scenarios revealed shared needs, which I synthesized into four product requirements:
+				</p>
+				<ol>
+					<li>Preserve the primary trip: Adding or removing a stop shouldn’t restart navigation.</li>
+					<li>Support multiple stops: Drivers should be able to make several stops without rebuilding the trip.</li>
+					<li>Make search flexible: Users should be able to search for a specific place, not just choose from predefined categories.</li>
+					<li>Route-aware recommendations: Proximity isn’t useful if the stop is behind the driver.</li>
+				</ol>
+			</section>
+			<section>
+				<h2>Shaping the experience</h2>
+				<p>
+					I used Erin’s scenario to test the requirements against a complete trip: entering a destination, saving it to favorites, adding multiple stops along the route, and continuing to the original destination when stops were removed.
+				</p>
+				<figure class="case-study-figure">
+					<video controls playsinline preload="metadata" aria-label="Screen recording of the On The Way prototype showing Erin routing to Blacksburg, saving a favorite place, and adding Shaky's and gas stops">
+						<source src="/otw/otw-prototype.mp4" type="video/mp4">
+					</video>
+					<figcaption>Primary task flow for Erin Wyman via Sketch mockups</figcaption>
+				</figure>
+				<h3 class="secondary-content-header">Building the visual system</h3>
+				<p>
+					I created a lightweight visual system to keep the experience consistent across trip planning, active navigation, and temporary detours.
+				</p>
+				<figure class="case-study-figure case-study-figure--plain">
+					<img src="/otw/logos.svg" alt="Two On The Way logo concepts: an early shark-fin mark and the final road mark"/>
+					<figcaption>Early logo exploration and final design</figcaption>
+				</figure>
+				<figure class="case-study-figure">
+					<img src="/otw/style-guide.svg" alt="On The Way style guide showing the color palette and typefaces"/>
+					<figcaption>On The Way style guide</figcaption>
+				</figure>
+			</section>
+			<section>
+				<h2>On The Way: Discover what lies ahead</h2>
+				<p>
+					The final experience focuses on one core principle: Discover what lies ahead without sacrificing the trip you already started.
+				</p>
+				<ul>
+					<li>Discover: Recommendations are surfaced based on their relationship to the existing route.</li>
+					<li>Add: User can add a stop without replacing their original destination.</li>
+					<li>Detour: The temporary stop becomes the immediate navigation target.</li>
+					<li>Continue: Completing or removing stops returns the user to the primary trip.</li>
+				</ul>
+				<figure class="case-study-figure">
+					<video controls playsinline preload="metadata" aria-label="Screen recording of the On The Way Angular prototype using Google Maps to route a trip and add stops">
+						<source src="/otw/otw-app.mp4" type="video/mp4">
+					</video>
+					<figcaption>Functional prototype of On The Way via Angular build</figcaption>
+				</figure>
+			</section>
+			<section>
+				<h2>Designing with constraints</h2>
+				<p>
+					The implementation differs slightly from the original design because of limitations with the Google Maps API. The search experience required additional interaction to complete a search, and the search bar could not be integrated directly into the interface as intended, it needed to live within the map itself. Styling the stop-overview tooltips also presented technical constraints.
+				</p>
+				<p>
+					The resulting product isn’t a perfect replica of the original design, but it preserves the underlying user goal of flexible, route-aware recommendations.
+				</p>
+			</section>
+			<section>
+				<h2>Reflection</h2>
+				<p>
+					On The Way gave me the opportunity to own a product end-to-end. I turned a messy, real-world frustration into a problem statement, justified requirements via competitive analysis and use case scenarios, prototyped a critical user flow, and adapted the design when engineering constraints revealed themselves.
+				</p>
+				<p>
+					The project reinforced an important lesson: constraints are often opportunities to reconsider the design instead of changing the requirements.
+				</p>
+			</section>
+			<section>
+				<h2>What I’d do next</h2>
+				<ul>
+					<li>Validate the route recommendation model with drivers in realistic contexts.</li>
+					<li>Investigate accessibility and hands-free interaction.</li>
+					<li>Measure whether route-aware recommendations actually reduce detour time.</li>
+					<li>Revisit the information architecture after observing real-world use.</li>
+				</ul>
+			</section>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<h4>Let's connect.</h4>
+	</footer>
+
+	<script type="module" src="/script.js"></script>
+</body>
+</html>
