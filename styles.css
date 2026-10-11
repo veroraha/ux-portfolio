@@ -3058,3 +3058,11 @@ body,
   background: #303030;
   border-color: #484848;
 }
+
+
+/* Narrow the selected icon highlight to fit more closely around the icon */
+.ios-files-page .finder-project-pane button.ios-file-item {
+  width: auto;
+  padding-right: 0.35rem;
+  padding-left: 0.35rem;
+}
