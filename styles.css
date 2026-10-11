@@ -2762,6 +2762,7 @@ body,
 }
 .ios-files-page .finder-layout {
   display: grid;
+  border: 1px solid #666666;
   grid-template-columns: 2fr 1fr;
   min-height: calc(100vh - 230px);
   width: 100%;
