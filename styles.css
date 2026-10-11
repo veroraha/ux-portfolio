@@ -3249,3 +3249,25 @@ body,
   overflow-wrap: normal;
   word-break: normal;
 }
+
+
+/* Align the selected project title and description at the top of the right pane. */
+.content.ios-files-page .finder-right-pane {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.content.ios-files-page .finder-project-copy {
+  width: 100%;
+  padding-top: clamp(1.5rem, 4vw, 3rem);
+}
+.content.ios-files-page .finder-selected-label {
+  display: block;
+  text-align: left;
+}
+.content.ios-files-page .finder-selected-description {
+  margin: 0.8rem 0 0;
+  color: #7B7B7B;
+  font-size: clamp(0.9rem, 1.3vw, 1.05rem);
+  line-height: 1.55;
+  text-align: left;
+}
