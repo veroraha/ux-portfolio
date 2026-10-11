@@ -3030,3 +3030,22 @@ body,
     padding-bottom: 0 !important;
   }
 }
+
+
+/* Keep the page wrapper fitted to the Finder layout and show selected state like hover */
+.ios-files-page {
+  display: block !important;
+  height: fit-content !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+.ios-files-page .finder-layout {
+  height: auto;
+  margin: 0 !important;
+}
+.ios-files-page .finder-project-pane button.ios-file-item[aria-pressed="true"]::after,
+.ios-files-page .finder-project-pane button.ios-file-item[aria-pressed="true"]::before {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
