@@ -2852,3 +2852,24 @@ body,
     width: clamp(28px, 8vw, 46px);
   }
 }
+
+
+/* Let the Finder window end directly at the bottom of its split layout */
+.ios-files-page {
+  min-height: 0 !important;
+  height: auto !important;
+  margin-bottom: 2.5rem !important;
+  padding-bottom: 0 !important;
+}
+.ios-files-page .finder-layout {
+  min-height: min(680px, calc(100vh - 230px));
+}
+@media (max-width: 600px) {
+  .ios-files-page {
+    min-height: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+  .ios-files-page .finder-layout {
+    min-height: min(620px, calc(100vh - 150px));
+  }
+}
