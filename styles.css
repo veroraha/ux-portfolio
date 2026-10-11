@@ -3184,3 +3184,13 @@ body,
   white-space: normal;
   text-align: center;
 }
+
+
+
+/* Keep all project icons the same size so selection never shifts the row */
+.ios-files-page .finder-project-pane button.ios-file-item {
+  box-sizing: border-box;
+  padding: 1.3rem 1.4rem;
+  border: 1px solid transparent;
+  background: transparent;
+}
