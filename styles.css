@@ -2873,3 +2873,43 @@ body,
     min-height: min(620px, calc(100vh - 150px));
   }
 }
+
+
+/* Center the default Mission Support file preview in the upper-left Finder pane */
+.ios-files-page .finder-upper-pane {
+  display: flex;
+  flex-direction: column;
+}
+.ios-files-page .finder-upper-pane .files-toolbar {
+  flex: 0 0 auto;
+  width: 100%;
+}
+.ios-files-page .finder-preview {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+.ios-files-page .finder-preview .ios-file-icon {
+  width: clamp(90px, 12vw, 160px);
+  margin: 0;
+  transition: transform 180ms ease;
+}
+.ios-files-page .finder-preview:hover .ios-file-icon,
+.ios-files-page .finder-preview:focus-visible .ios-file-icon {
+  transform: scale(1.04);
+}
+.ios-files-page .finder-preview:focus-visible {
+  outline: 1px solid #666666;
+  outline-offset: 4px;
+}
+@media (max-width: 600px) {
+  .ios-files-page .finder-preview .ios-file-icon {
+    width: clamp(64px, 18vw, 100px);
+  }
+}
