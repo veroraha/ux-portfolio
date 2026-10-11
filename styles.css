@@ -3093,3 +3093,8 @@ body,
   border-top-color: #262626;
   bottom: calc(100% + 2px);
 }
+
+/* Slightly overlap the caret over the tooltip border to eliminate the join seam */
+.ios-files-page .finder-project-pane button.ios-file-item::before {
+  bottom: calc(100% + 1px);
+}
