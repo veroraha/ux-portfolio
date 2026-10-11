@@ -3428,12 +3428,17 @@ body:has(.headshot) .content {
   color: #fafafa;
 }
 
-/* Align Projects window controls with the About window controls. */
+/* Match the Projects content wrapper to the About page layout. */
 .content.ios-files-page {
-  margin-top: 7.5rem !important;
+  box-sizing: border-box;
+  width: 100% !important;
+  max-width: var(--content-max) !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
 }
 @media (max-width: 600px) {
   .content.ios-files-page {
-    margin-top: 7.5rem !important;
+    width: calc(100% - 1.25rem) !important;
+    margin: 1rem auto 2rem !important;
   }
 }
