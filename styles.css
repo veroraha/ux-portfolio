@@ -3217,3 +3217,18 @@ body,
     min-height: min(620px, calc(100vh - 150px));
   }
 }
+
+/* Keep the Projects file browser split into a two-thirds icon area and one-third empty pane. */
+.content.ios-files-page > .finder-layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) !important;
+}
+.content.ios-files-page > .finder-layout > .finder-left-pane {
+  grid-column: 1;
+  min-width: 0;
+}
+.content.ios-files-page > .finder-layout > .finder-right-pane {
+  grid-column: 2;
+  min-width: 0;
+}
+
