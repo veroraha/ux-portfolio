@@ -2859,11 +2859,11 @@ body,
 .ios-files-page {
   min-height: 0 !important;
   height: auto !important;
-  margin-bottom: 2.5rem !important;
+  margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
 .ios-files-page .finder-layout {
-  min-height: min(680px, calc(100vh - 230px));
+  min-height: min(620px, calc(100vh - 230px));
 }
 @media (max-width: 600px) {
   .ios-files-page {
@@ -2871,7 +2871,7 @@ body,
     margin-bottom: 1rem !important;
   }
   .ios-files-page .finder-layout {
-    min-height: min(620px, calc(100vh - 150px));
+    min-height: min(560px, calc(100vh - 150px));
   }
 }
 
