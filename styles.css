@@ -3160,8 +3160,10 @@ body,
 }
 
 
-/* Add a little more vertical breathing room to the selected project icon */
+/* Double the selected project icon highlight padding */
 .ios-files-page .finder-project-pane button.ios-file-item[aria-pressed="true"] {
-  padding-top: 0.65rem;
-  padding-bottom: 0.65rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
 }
