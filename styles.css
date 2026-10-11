@@ -3151,3 +3151,10 @@ body,
   padding-right: 0.7rem;
   padding-left: 0.7rem;
 }
+
+
+/* Never show the selected icon tooltip unless the pointer is over that icon */
+.ios-files-page .finder-project-pane button.ios-file-item[aria-pressed="true"]:not(:hover)::after,
+.ios-files-page .finder-project-pane button.ios-file-item[aria-pressed="true"]:not(:hover)::before {
+  opacity: 0 !important;
+}
