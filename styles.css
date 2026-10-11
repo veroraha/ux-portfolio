@@ -3626,3 +3626,27 @@ body:has(.headshot) .content {
 .ios-files-page .finder-project-pane button.ios-file-item::after {
   border-radius: 0.5rem;
 }
+
+/* Add a blinking typewriter cursor to animated project page headings. */
+.page-header[id]::after {
+  content: "";
+  display: inline-block;
+  width: 0.075em;
+  height: 0.9em;
+  margin-left: 0.12em;
+  vertical-align: -0.08em;
+  background-color: currentColor;
+  animation: page-header-cursor-blink 1s steps(2, start) infinite;
+}
+
+@keyframes page-header-cursor-blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-header[id]::after {
+    animation: none;
+  }
+}
