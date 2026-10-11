@@ -3405,7 +3405,7 @@ body,
 }
 
 
-/* Stronger Frutiger Aero-inspired glass gradients: glossy, luminous edges with cool aqua highlights. */
+/* Soft monochrome glass shading: broad, feathered grey gradients without visible bands. */
 .content.ios-files-page > .finder-layout {
   isolation: isolate;
   background: #232323;
@@ -3414,34 +3414,31 @@ body,
 .content.ios-files-page > .finder-layout::after {
   content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
-  width: clamp(5rem, 10vw, 9rem);
+  inset-block: 0;
+  width: clamp(7rem, 16vw, 15rem);
   z-index: 4;
   pointer-events: none;
 }
 .content.ios-files-page > .finder-layout::before {
   left: 0;
   background:
-    linear-gradient(115deg, rgba(160, 255, 239, 0.3) 0%, rgba(85, 218, 235, 0.13) 18%, transparent 52%),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.48) 0%, rgba(0, 0, 0, 0.2) 28%, transparent 100%);
-  box-shadow: inset 1px 0 0 rgba(190, 255, 250, 0.45);
+    linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.19) 20%, rgba(0, 0, 0, 0.08) 48%, rgba(0, 0, 0, 0.025) 72%, transparent 100%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.11) 0%, rgba(255, 255, 255, 0.045) 24%, transparent 62%);
 }
 .content.ios-files-page > .finder-layout::after {
   right: 0;
   background:
-    linear-gradient(245deg, rgba(111, 226, 255, 0.28) 0%, rgba(95, 175, 255, 0.13) 20%, transparent 55%),
-    linear-gradient(270deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.16) 30%, transparent 100%);
-  box-shadow: inset -1px 0 0 rgba(176, 238, 255, 0.4);
+    linear-gradient(270deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.17) 22%, rgba(0, 0, 0, 0.07) 50%, rgba(0, 0, 0, 0.02) 74%, transparent 100%),
+    linear-gradient(225deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.04) 26%, transparent 64%);
 }
 .content.ios-files-page > .finder-layout > .finder-left-pane {
   background:
-    linear-gradient(135deg, rgba(125, 255, 228, 0.09) 0%, transparent 34%),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.14) 0%, transparent 30%);
+    radial-gradient(ellipse at 0% 0%, rgba(255, 255, 255, 0.055) 0%, transparent 58%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.08) 0%, transparent 48%);
 }
 .content.ios-files-page > .finder-layout > .finder-right-pane {
   background:
-    linear-gradient(135deg, rgba(71, 202, 231, 0.2) 0%, transparent 42%),
-    linear-gradient(315deg, rgba(92, 144, 255, 0.12) 0%, transparent 48%),
+    radial-gradient(ellipse at 100% 0%, rgba(255, 255, 255, 0.075) 0%, transparent 60%),
+    linear-gradient(270deg, rgba(0, 0, 0, 0.11) 0%, transparent 55%),
     #2E2D2D;
 }
