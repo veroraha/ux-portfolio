@@ -3692,3 +3692,14 @@ body:has(.headshot) .content {
     margin: 1rem auto 2rem !important;
   }
 }
+
+
+/* Precisely align the Projects explorer's top-left start with the About window. */
+.content.ios-files-page {
+  margin: 0 auto !important;
+}
+@media (max-width: 600px) {
+  .content.ios-files-page {
+    margin: 1rem auto 2rem !important;
+  }
+}
