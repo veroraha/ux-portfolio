@@ -3602,3 +3602,19 @@ body:has(.headshot) .content {
     margin-top: -1.25rem;
   }
 }
+
+
+/* Set the About headshot SVG to the requested dimensions. */
+.about-finder-window .headshot {
+  width: 22.5rem;
+  height: 22.5rem;
+  max-width: 100%;
+  object-fit: contain;
+}
+@media (max-width: 600px) {
+  .about-finder-window .headshot {
+    width: 22.5rem;
+    height: 22.5rem;
+    max-width: 100%;
+  }
+}
