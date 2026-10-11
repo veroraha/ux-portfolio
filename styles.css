@@ -3429,7 +3429,7 @@ body:has(.headshot) .content {
   color: #fafafa;
 }
 
-/* Match the About page's flex-filling content area and Finder window frame. */
+/* Match the About page's flex-filling content area without a visible wrapper rectangle. */
 .content.ios-files-page {
   box-sizing: border-box;
   display: flex !important;
@@ -3444,6 +3444,7 @@ body:has(.headshot) .content {
   margin: 0 auto !important;
   padding: 0 !important;
   border: 0 !important;
+  background: #0a0a0a !important;
 }
 .content.ios-files-page > .finder-layout {
   box-sizing: border-box;
