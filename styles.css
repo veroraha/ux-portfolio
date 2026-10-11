@@ -3586,3 +3586,16 @@ body:has(.headshot) .content {
     height: min(620px, calc(100vh - 150px)) !important;
   }
 }
+
+
+/* Make the Finder close control a clickable homepage link without changing its appearance. */
+.finder-window-close-link {
+  display: inline-flex;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.finder-window-close-link:focus-visible {
+  outline: 2px solid #FAFAFA;
+  outline-offset: 3px;
+}
