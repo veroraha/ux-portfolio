@@ -3714,7 +3714,7 @@ body:has(.project-finder-window) .content.project-finder-page {
 }
 .project-finder-window > .case-study-header {
   margin-top: 0;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.125rem;
 }
 .project-finder-window > .case-study-subtitle {
   margin-top: 0;
