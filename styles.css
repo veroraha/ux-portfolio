@@ -3713,6 +3713,8 @@ body:has(.project-finder-window) .content.project-finder-page {
 .project-finder-window .case-study-body {
   flex: 0 0 auto;
   width: 100%;
+  max-width: none;
+  margin: 0;
 }
 @media (max-width: 600px) {
   body:has(.project-finder-window) .content.project-finder-page {
