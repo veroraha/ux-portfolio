@@ -3624,5 +3624,5 @@ body:has(.headshot) .content {
 
 /* Give Projects tooltips a squarer shape with softly rounded corners. */
 .ios-files-page .finder-project-pane button.ios-file-item::after {
-  border-radius: 0.35rem;
+  border-radius: 0.5rem;
 }
