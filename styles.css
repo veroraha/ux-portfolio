@@ -3177,16 +3177,6 @@ body,
   border-color: transparent !important;
 }
 
-/* Restore the Mission-support application tooltip width and reduce its text-to-border spacing */
-.ios-files-page .finder-project-pane button.ios-file-item[data-project="bah"]::after {
-  max-width: min(220px, 75vw);
-  padding: 0.25rem 0.55rem;
-  white-space: normal;
-  text-align: center;
-}
-
-
-
 /* Keep all project icons the same size so selection never shifts the row */
 .ios-files-page .finder-project-pane button.ios-file-item {
   box-sizing: border-box;
@@ -3197,13 +3187,4 @@ body,
 
 
 
-/* Keep the Mission-support tooltip to at most two natural lines with tighter side padding */
-.ios-files-page .finder-project-pane button.ios-file-item[data-project="bah"]::after {
-  width: max-content;
-  max-width: min(220px, 75vw);
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  overflow-wrap: normal;
-  word-break: keep-all;
-  text-align: center;
-}
+
