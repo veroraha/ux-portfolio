@@ -3167,3 +3167,21 @@ body,
   padding-left: 1.4rem;
   padding-right: 1.4rem;
 }
+
+
+
+/* Only the selected project icon gets the grey background/border treatment */
+.ios-files-page .finder-project-pane button.ios-file-item:not([aria-pressed="true"]):hover,
+.ios-files-page .finder-project-pane button.ios-file-item:not([aria-pressed="true"]):focus-visible {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+
+/* Keep the Mission-support application tooltip compact enough for the Finder layout */
+.ios-files-page .finder-project-pane button.ios-file-item[data-project="bah"]::after {
+  box-sizing: border-box;
+  max-width: 150px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
