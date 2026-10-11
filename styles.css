@@ -3428,20 +3428,23 @@ body:has(.headshot) .content {
   color: #fafafa;
 }
 
-/* Match the Projects content wrapper to the About page layout. */
+/* Match the Projects content wrapper and vertical placement to the About page. */
 .content.ios-files-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-self: center;
   box-sizing: border-box;
   width: 100% !important;
   max-width: var(--content-max) !important;
+  min-height: calc(100vh - 5.5rem);
   margin: 0 auto !important;
   padding: 0 !important;
 }
 @media (max-width: 600px) {
   .content.ios-files-page {
     width: calc(100% - 1.25rem) !important;
-    margin: 1rem auto 2rem !important;
+    min-height: calc(100vh - 5.5rem);
+    margin: 0 auto 2rem !important;
   }
 }
