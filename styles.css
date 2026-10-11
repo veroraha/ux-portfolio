@@ -2930,3 +2930,19 @@ body,
 .ios-files-page .finder-project-pane button.ios-file-item .ios-file-icon {
   margin-bottom: 0;
 }
+
+
+/* Only the centered project icon is a link; surrounding preview space is not */
+.ios-files-page .finder-preview-stage {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  width: 100%;
+}
+.ios-files-page .finder-preview {
+  flex: 0 0 auto;
+  width: auto;
+  margin: 0;
+}
