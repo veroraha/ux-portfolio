@@ -3365,3 +3365,8 @@ body,
   height: 75vh;
   min-height: 0;
 }
+
+/* Give the project icon strip 25% of the left Finder pane height. */
+.content.ios-files-page .finder-left-pane {
+  grid-template-rows: 3fr 1fr;
+}
