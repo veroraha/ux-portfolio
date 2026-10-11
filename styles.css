@@ -3402,3 +3402,11 @@ body:has(#bah) .case-study-body p {
   text-align: justify;
   text-justify: inter-word;
 }
+
+
+/* Fully justify body paragraphs on the OTW and BTTF case study pages. */
+body:has(#otw) .case-study-body p,
+body:has(#bttf) .case-study-body p {
+  text-align: justify;
+  text-justify: inter-word;
+}
