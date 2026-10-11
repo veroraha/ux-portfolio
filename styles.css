@@ -1014,3 +1014,10 @@ body:has(.home-page) .page-header {
 	}
 
 }
+
+
+/* Home page folder labels use the native system UI font stack. */
+.home-folder-links,
+.home-folder-links * {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
