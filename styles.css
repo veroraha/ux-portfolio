@@ -2987,3 +2987,46 @@ body,
   opacity: 1;
   transform: translate(-50%, 0);
 }
+
+
+/* Tooltip palette, downward caret, and remove all trailing page gap */
+.ios-files-page .finder-project-pane button.ios-file-item::after {
+  bottom: calc(100% + 8px);
+  border-color: #686868;
+  background: #262626;
+  color: #f9f9f9;
+}
+.ios-files-page .finder-project-pane button.ios-file-item::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: calc(100% + 2px);
+  width: 0;
+  height: 0;
+  border-top: 6px solid #686868;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 4px);
+  transition: opacity 140ms ease, transform 140ms ease;
+}
+.ios-files-page .finder-project-pane button.ios-file-item:hover::before,
+.ios-files-page .finder-project-pane button.ios-file-item:focus-visible::before {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.ios-files-page {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.ios-files-page .finder-layout {
+  margin-bottom: 0 !important;
+}
+@media (max-width: 600px) {
+  .ios-files-page {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
