@@ -3466,3 +3466,12 @@ body:has(#bttf) .case-study-body p {
     left: 1rem;
   }
 }
+
+
+/* Label the About Finder window beside its traffic-light controls. */
+.about-finder-title {
+  margin-left: 0.35rem;
+  color: #9E9E9E;
+  font-size: 0.875rem;
+  line-height: 1;
+}
