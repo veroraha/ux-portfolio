@@ -3429,23 +3429,40 @@ body:has(.headshot) .content {
   color: #fafafa;
 }
 
-/* Match the Projects content wrapper and vertical placement to the About page. */
+/* Match the About page's flex-filling content area and Finder window frame. */
 .content.ios-files-page {
-  display: flex;
+  box-sizing: border-box;
+  display: flex !important;
+  flex: 1 0 auto !important;
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  box-sizing: border-box;
   width: 100% !important;
   max-width: var(--content-max) !important;
+  height: auto !important;
   min-height: calc(100vh - 5.5rem);
   margin: 0 auto !important;
   padding: 0 !important;
+  border: 0 !important;
+}
+.content.ios-files-page > .finder-layout {
+  box-sizing: border-box;
+  flex: 0 0 75vh;
+  height: 75vh !important;
+  min-height: 0 !important;
+  border: 1px solid #666666;
+  border-radius: 3rem;
+  background: #0A0A0A;
+  overflow: hidden;
 }
 @media (max-width: 600px) {
   .content.ios-files-page {
     width: calc(100% - 1.25rem) !important;
     min-height: calc(100vh - 5.5rem);
     margin: 0 auto 2rem !important;
+  }
+  .content.ios-files-page > .finder-layout {
+    flex-basis: min(620px, calc(100vh - 150px));
+    height: min(620px, calc(100vh - 150px)) !important;
   }
 }
