@@ -3654,3 +3654,12 @@ body:has(.headshot) .content {
     margin: 0;
   }
 }
+
+
+/* Remove excess space below the About window controls and above the headshot. */
+.about-finder-window .finder-window-controls {
+  padding-bottom: 0;
+}
+.about-finder-window .headshot {
+  margin-top: 0;
+}
