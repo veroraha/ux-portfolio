@@ -3505,3 +3505,49 @@ body:has(#bttf) .case-study-body p {
     line-height: 1.55;
   }
 }
+
+
+/* Center the About profile and copy inside the Finder window. */
+body:has(.headshot) .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.about-finder-window {
+  align-items: center;
+  gap: 1.25rem;
+  padding: 5rem 4rem 2rem;
+}
+.about-finder-window .headshot {
+  display: block;
+  flex: 0 0 auto;
+  width: clamp(6rem, 10vw, 8rem);
+  height: auto;
+  margin: 0 auto 0.5rem;
+}
+.about-finder-window > h3 {
+  width: 100%;
+  max-width: 58rem;
+  margin: 0;
+  font-size: clamp(1.1rem, 1.45vw, 1.3rem);
+  line-height: 1.65;
+  text-align: center;
+  text-justify: auto;
+}
+@media (max-width: 600px) {
+  .about-finder-window {
+    gap: 1rem;
+    padding: 4rem 1.5rem 1.5rem;
+  }
+  .about-finder-window .headshot {
+    width: 6rem;
+  }
+  .about-finder-window > h3 {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+}
