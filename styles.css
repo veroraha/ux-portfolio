@@ -2383,6 +2383,13 @@ body,
   background-image: none !important;
 }
 
+/* Let the BAH case-study content reveal the Finder window's gradient. */
+.project-finder-window .case-study-body,
+.project-finder-window .case-study-body section {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
 .site-header .nav,
 .site-header .dropdown-links,
 .site-header .header-linkedin,
