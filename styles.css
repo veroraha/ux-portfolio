@@ -4313,5 +4313,5 @@ body:has(.headshot) .headshot.headshot-entered {
 
 /* Move the iOS Files page up slightly. */
 .ios-files-page {
-  margin-top: -1.25rem;
+  margin-top: -1.25rem !important;
 }
