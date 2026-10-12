@@ -151,7 +151,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		if (homeIntro) {
 			requestAnimationFrame(() => homeIntro.classList.add('home-intro-entered'));
 		}
-		setTimeout(typewriter, 1000);
+		// Keep the greeting and emoji hidden while the cursor blinks.
+		if (homeIntro) {
+			titleElement.classList.remove('typing-started');
+		}
+		setTimeout(() => {
+			if (homeIntro) {
+				titleElement.classList.add('typing-started');
+			}
+			typewriter();
+		}, 1000);
 	} else {
 		typewriter();
 	}
