@@ -1520,6 +1520,7 @@ body:has(.home-page) .page-header {
 	stroke-linejoin: round;
 }
 .site-header .header-linkedin svg { fill: currentColor; stroke: none; }
+.site-header .header-email svg { stroke-width: 1.7; }
 .site-header .header-social:hover {
 	transform: translateY(-2px);
 	background: #283618;
