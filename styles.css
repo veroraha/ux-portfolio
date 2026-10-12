@@ -3024,7 +3024,7 @@ body,
 }
 
 /* Keep the Projects wrapper exactly as tall as its Finder layout. */
-.content.ios-files-page {
+.ios-files-page {
   box-sizing: border-box;
   display: block !important;
   flex: 0 0 auto !important;
@@ -3037,7 +3037,7 @@ body,
   padding: 0 !important;
   border: 1px solid #666666 !important;
 }
-.content.ios-files-page > .finder-layout {
+.ios-files-page > .finder-layout {
   box-sizing: border-box;
   display: block;
   width: 100%;
@@ -3046,25 +3046,25 @@ body,
   margin: 0 !important;
 }
 @media (max-width: 600px) {
-  .content.ios-files-page {
+  .ios-files-page {
     width: calc(100% - 1.25rem) !important;
     margin-top: 1rem !important;
   }
-  .content.ios-files-page > .finder-layout {
+  .ios-files-page > .finder-layout {
     min-height: min(620px, calc(100vh - 150px));
   }
 }
 
 /* Keep the Projects file browser split into a two-thirds icon area and one-third empty pane. */
-.content.ios-files-page > .finder-layout {
+.ios-files-page > .finder-layout {
   display: grid !important;
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) !important;
 }
-.content.ios-files-page > .finder-layout > .finder-left-pane {
+.ios-files-page > .finder-layout > .finder-left-pane {
   grid-column: 1;
   min-width: 0;
 }
-.content.ios-files-page > .finder-layout > .finder-right-pane {
+.ios-files-page > .finder-layout > .finder-right-pane {
   grid-column: 2;
   min-width: 0;
 }
@@ -3072,14 +3072,14 @@ body,
 
 
 /* Show the currently selected project title in the right Finder pane. */
-.content.ios-files-page .finder-right-pane {
+.ios-files-page .finder-right-pane {
   display: flex;
   background: #2E2D2D;
   align-items: center;
   justify-content: center;
   padding: clamp(1rem, 3vw, 2.5rem);
 }
-.content.ios-files-page .finder-selected-label {
+.ios-files-page .finder-selected-label {
   color: #EAE9E9;
   font-size: clamp(1rem, 1.8vw, 1.4rem);
   line-height: 1.35;
@@ -3090,20 +3090,20 @@ body,
 
 
 /* Align the selected project title and description at the top of the right pane. */
-.content.ios-files-page .finder-right-pane {
+.ios-files-page .finder-right-pane {
   align-items: flex-start;
   justify-content: flex-start;
   padding-top: clamp(1rem, 3vw, 2.5rem);
 }
-.content.ios-files-page .finder-project-copy {
+.ios-files-page .finder-project-copy {
   width: 100%;
   padding-top: 0;
 }
-.content.ios-files-page .finder-selected-label {
+.ios-files-page .finder-selected-label {
   display: block;
   text-align: left;
 }
-.content.ios-files-page .finder-selected-description {
+.ios-files-page .finder-selected-description {
   margin: 0.5rem 0 0;
   color: #7B7B7B;
   font-size: clamp(0.9rem, 1.3vw, 1.05rem);
@@ -3113,7 +3113,7 @@ body,
 
 
 /* Distinguish professional work from selected earlier portfolio projects. */
-.content.ios-files-page .finder-work-tag {
+.ios-files-page .finder-work-tag {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.35rem 0.65rem;
@@ -3123,30 +3123,30 @@ body,
   font-weight: 400;
   line-height: 1.2;
 }
-.content.ios-files-page .finder-work-tag--professional {
+.ios-files-page .finder-work-tag--professional {
   background: #A1A9E2;
 }
-.content.ios-files-page .finder-work-tag--earlier {
+.ios-files-page .finder-work-tag--earlier {
   background: #E7774B;
 }
 
 
 /* Project metadata beneath the selected project summary. */
-.content.ios-files-page .finder-information {
+.ios-files-page .finder-information {
   margin-top: 2rem;
   width: 100%;
 }
-.content.ios-files-page .finder-information h2 {
+.ios-files-page .finder-information h2 {
   margin: 0 0 0.25rem;
   color: #e9e9e9;
   font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.4;
 }
-.content.ios-files-page .finder-modified-row[hidden] {
+.ios-files-page .finder-modified-row[hidden] {
   display: none !important;
 }
-.content.ios-files-page .finder-information-row {
+.ios-files-page .finder-information-row {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -3154,21 +3154,21 @@ body,
   font-size: 0.875rem;
   line-height: 1.5;
 }
-.content.ios-files-page .finder-information-row span:first-child {
+.ios-files-page .finder-information-row span:first-child {
   color: #7b7b7b;
   text-align: left;
 }
-.content.ios-files-page .finder-information-row span:last-child {
+.ios-files-page .finder-information-row span:last-child {
   color: #e9e9e9;
   text-align: right;
 }
 
 
 /* macOS-style window controls in the top-left corner of the Projects window */
-.content.ios-files-page > .finder-layout {
+.ios-files-page > .finder-layout {
   position: relative;
 }
-.content.ios-files-page .finder-window-controls {
+.ios-files-page .finder-window-controls {
   position: absolute;
   top: 1.5rem;
   left: 1.5rem;
@@ -3177,7 +3177,7 @@ body,
   align-items: center;
   gap: 0.625rem;
 }
-.content.ios-files-page .finder-window-control {
+.ios-files-page .finder-window-control {
   display: block;
   width: 0.875rem;
   height: 0.875rem;
@@ -3185,9 +3185,9 @@ body,
   border: 1px solid rgba(0, 0, 0, 0.18);
   box-sizing: border-box;
 }
-.content.ios-files-page .finder-window-control--close { background: #ff5f57; }
-.content.ios-files-page .finder-window-control--minimize { background: #febc2e; }
-.content.ios-files-page .finder-window-control--maximize { background: #28c840; }
+.ios-files-page .finder-window-control--close { background: #ff5f57; }
+.ios-files-page .finder-window-control--minimize { background: #febc2e; }
+.ios-files-page .finder-window-control--maximize { background: #28c840; }
 
 
 /* Green emphasis for key phrases on the About page */
@@ -3199,13 +3199,13 @@ body,
 
 
 /* Keep the Projects Finder window at 75% of the viewport height. */
-.content.ios-files-page > .finder-layout {
+.ios-files-page > .finder-layout {
   height: 75vh;
   min-height: 0;
 }
 
 /* Give the project icon strip 25% of the left Finder pane height. */
-.content.ios-files-page .finder-left-pane {
+.ios-files-page .finder-left-pane {
   grid-template-rows: 3fr 1fr;
 }
 
@@ -3511,58 +3511,58 @@ body:has(.headshot) .content {
 
 
 /* Match the Projects file explorer width to the About page window. */
-.content.ios-files-page {
+.ios-files-page {
   width: 100% !important;
   max-width: var(--content-max) !important;
 }
 @media (max-width: 600px) {
-  .content.ios-files-page {
+  .ios-files-page {
     width: calc(100% - 1.25rem) !important;
   }
 }
 
 
 /* Align the Projects explorer's starting position with the About page window. */
-.content.ios-files-page {
+.ios-files-page {
   margin-top: 0 !important;
 }
 @media (max-width: 600px) {
-  .content.ios-files-page {
+  .ios-files-page {
     margin: 1rem auto 2rem !important;
   }
 }
 
 
 /* Precisely align the Projects explorer's top-left start with the About window. */
-.content.ios-files-page {
+.ios-files-page {
   margin: 0 auto !important;
 }
 @media (max-width: 600px) {
-  .content.ios-files-page {
+  .ios-files-page {
     margin: 1rem auto 2rem !important;
   }
 }
 
 
 /* Add subtle vertical depth to the Projects Finder's left pane. */
-.content.ios-files-page .finder-left-pane {
+.ios-files-page .finder-left-pane {
   background: linear-gradient(to bottom, #232323 0%, #191919 100%) !important;
 }
-.content.ios-files-page .finder-upper-pane,
-.content.ios-files-page .finder-project-pane {
+.ios-files-page .finder-upper-pane,
+.ios-files-page .finder-project-pane {
   background: transparent !important;
 }
-.content.ios-files-page .finder-right-pane {
+.ios-files-page .finder-right-pane {
   background: linear-gradient(to bottom, #1B1B1B 0%, #131313 100%) !important;
 }
 
 /* Match the Projects Finder header control placement to the About window. */
-.content.ios-files-page .finder-window-controls {
+.ios-files-page .finder-window-controls {
   padding-left: 0.5rem;
   padding-bottom: 0;
 }
 @media (max-width: 600px) {
-  .content.ios-files-page .finder-window-controls {
+  .ios-files-page .finder-window-controls {
     top: 1rem;
     left: 1rem;
   }
@@ -3574,7 +3574,7 @@ body:has(.headshot) .content {
 }
 
 /* Match the About page's flex-filling content area without a visible wrapper rectangle. */
-.content.ios-files-page {
+.ios-files-page {
   box-sizing: border-box;
   display: flex !important;
   flex: 1 0 auto !important;
@@ -3590,7 +3590,7 @@ body:has(.headshot) .content {
   border: 0 !important;
   background: #0a0a0a !important;
 }
-.content.ios-files-page > .finder-layout {
+.ios-files-page > .finder-layout {
   box-sizing: border-box;
   flex: 0 0 75vh;
   height: 75vh !important;
@@ -3601,12 +3601,12 @@ body:has(.headshot) .content {
   overflow: hidden;
 }
 @media (max-width: 600px) {
-  .content.ios-files-page {
+  .ios-files-page {
     width: calc(100% - 1.25rem) !important;
     min-height: calc(100vh - 5.5rem);
     margin: 0 auto 2rem !important;
   }
-  .content.ios-files-page > .finder-layout {
+  .ios-files-page > .finder-layout {
     flex-basis: min(620px, calc(100vh - 150px));
     height: min(620px, calc(100vh - 150px)) !important;
   }
@@ -3627,22 +3627,22 @@ body:has(.headshot) .content {
 
 
 /* Give the three Projects file icons the same subtle lift as the homepage folders. */
-.content.ios-files-page .finder-project-pane button.ios-file-item .ios-file-icon {
+.ios-files-page .finder-project-pane button.ios-file-item .ios-file-icon {
   transition: transform 180ms ease;
 }
-.content.ios-files-page .finder-project-pane button.ios-file-item:hover .ios-file-icon,
-.content.ios-files-page .finder-project-pane button.ios-file-item:focus-visible .ios-file-icon {
+.ios-files-page .finder-project-pane button.ios-file-item:hover .ios-file-icon,
+.ios-files-page .finder-project-pane button.ios-file-item:focus-visible .ios-file-icon {
   transform: translateY(-3px);
 }
 @media (prefers-reduced-motion: reduce) {
-  .content.ios-files-page .finder-project-pane button.ios-file-item .ios-file-icon {
+  .ios-files-page .finder-project-pane button.ios-file-item .ios-file-icon {
     transition: none;
   }
 }
 
 
 /* Use consistent 1.5rem padding on every side of the Projects right pane. */
-.content.ios-files-page .finder-right-pane {
+.ios-files-page .finder-right-pane {
   padding: 2rem 1.5rem !important;
 }
 
@@ -3841,7 +3841,7 @@ body:has(.project-finder-window) .content.project-finder-page {
 
 
 /* Full-height View project action styled to match the navbar. */
-.content.ios-files-page .finder-view-project {
+.ios-files-page .finder-view-project {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -3866,15 +3866,15 @@ body:has(.project-finder-window) .content.project-finder-page {
   white-space: nowrap;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
-.content.ios-files-page .finder-view-project:hover {
+.ios-files-page .finder-view-project:hover {
   background: #0A0A0A;
   color: #F5F5F7;
 }
-.content.ios-files-page .finder-view-project:focus-visible {
+.ios-files-page .finder-view-project:focus-visible {
   outline: 2px solid #A1A9E2;
   outline-offset: 3px;
 }
-.content.ios-files-page .finder-view-project-icon {
+.ios-files-page .finder-view-project-icon {
   display: block;
   width: 1.2em;
   height: 1.2em;
@@ -3886,7 +3886,7 @@ body:has(.project-finder-window) .content.project-finder-page {
   flex: 0 0 auto;
 }
 @media (max-width: 600px) {
-  .content.ios-files-page .finder-view-project {
+  .ios-files-page .finder-view-project {
     height: 56px;
     padding: 0 1.25rem;
   }
