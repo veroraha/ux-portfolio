@@ -4246,11 +4246,3 @@ body:has(.headshot) .about-finder-window {
   }
 }
 
-/* Give the dotted page background depth: charcoal at the top fading to black below. */
-html {
-  background: #000 !important;
-}
-body {
-  background: linear-gradient(to bottom, #0a0a0a 0%, #000 100%) fixed !important;
-  background-color: #000 !important;
-}
