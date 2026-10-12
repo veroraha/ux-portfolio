@@ -4309,3 +4309,9 @@ body:has(.headshot) .headshot.headshot-entered {
     transition: none;
   }
 }
+
+
+/* Move the iOS Files page up slightly. */
+.ios-files-page {
+  margin-top: -1.25rem;
+}
