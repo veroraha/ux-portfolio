@@ -1461,21 +1461,7 @@ body:has(.home-page) .page-header {
 }
 
 
-/* Keep navbar and circular button fills at charcoal */
-.site-header .nav,
-.site-header .dropdown-links {
-  background-color: #141414 !important;
-  background: #141414 !important;
-}
-.site-header .header-linkedin,
-.site-header .header-linkedin:hover,
-.site-header .header-linkedin:focus-visible,
-.site-header .header-email,
-.site-header .header-email:hover,
-.site-header .header-email:focus-visible {
-  background-color: #141414 !important;
-  background: #141414 !important;
-}
+
 
 
 /* Ensure navbar text hover and keyboard focus use #CCCCCC */
