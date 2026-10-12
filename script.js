@@ -8,6 +8,8 @@ var titleText = titleElement
 	? (titleElement.dataset.title || titleElement.textContent.trim() || titleElement.id)
 	: "";
 
+// Iterate by Unicode code point so emoji aren't briefly split into surrogate halves.
+var titleCharacters = Array.from(titleText);
 var i = 0;
 var speed = 120;
 
@@ -22,8 +24,8 @@ function typewriter() {
 		titleElement.setAttribute("aria-label", titleText);
 		titleElement.textContent = "";
 	}
-	if (i < titleText.length) {
-		titleElement.textContent += titleText.charAt(i);
+	if (i < titleCharacters.length) {
+		titleElement.textContent += titleCharacters[i];
 		i++;
 		setTimeout(typewriter, speed);
 	} else {
