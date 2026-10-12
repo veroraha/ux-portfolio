@@ -3271,7 +3271,7 @@ body:has(#bttf) .case-study-body p {
   margin-top: 1rem;
   border: 1px solid #666666;
   border-radius: 3rem;
-  background: linear-gradient(to bottom, #1B1B1B 0%, #161616 100%);
+  background: linear-gradient(to bottom, #1B1B1B 0%, #131313 100%);
   overflow: hidden;
 }
 .about-finder-window .finder-window-controls {
@@ -3546,14 +3546,14 @@ body:has(.headshot) .content {
 
 /* Add subtle vertical depth to the Projects Finder's left pane. */
 .content.ios-files-page .finder-left-pane {
-  background: linear-gradient(to bottom, #232323 0%, #1C1C1C 100%) !important;
+  background: linear-gradient(to bottom, #232323 0%, #191919 100%) !important;
 }
 .content.ios-files-page .finder-upper-pane,
 .content.ios-files-page .finder-project-pane {
   background: transparent !important;
 }
 .content.ios-files-page .finder-right-pane {
-  background: linear-gradient(to bottom, #1B1B1B 0%, #161616 100%) !important;
+  background: linear-gradient(to bottom, #1B1B1B 0%, #131313 100%) !important;
 }
 
 /* Match the Projects Finder header control placement to the About window. */
@@ -3700,7 +3700,7 @@ body:has(.project-finder-window) .content.project-finder-page {
   gap: 1.25rem;
   border: 1px solid #666666;
   border-radius: 3rem;
-  background: linear-gradient(to bottom, #141414 0%, #101010 100%);
+  background: linear-gradient(to bottom, #141414 0%, #0E0E0E 100%);
   overflow: auto;
 }
 .project-finder-window .finder-window-controls {
