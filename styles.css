@@ -4272,3 +4272,21 @@ body:has(.headshot) .about-finder-window {
 .home-page .home-intro .page-header[id]:not(.typing-started)::after {
   background-color: #e0e0e0 !important;
 }
+
+/* During the initial pause, place the cursor at the centered start of the greeting. */
+.home-page .home-intro .page-header[id]:not(.typing-started)::after {
+  position: absolute !important;
+  left: 50% !important;
+  top: 0 !important;
+  margin-left: 0 !important;
+  transform: translateX(-50%) !important;
+}
+.home-page .home-intro .page-header[id] {
+  position: relative;
+}
+.home-page .home-intro .page-header[id].typing-started::after {
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+  transform: none !important;
+}
