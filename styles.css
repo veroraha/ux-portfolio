@@ -3969,3 +3969,46 @@ body:has(.project-finder-window) .content.project-finder-page {
   background-color: transparent !important;
   background-image: none !important;
 }
+
+
+/* Homepage content sits directly on the dotted page background, without a hero surface. */
+.home-page {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  display: flex !important;
+  flex: 1 1 0 !important;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  min-height: 0 !important;
+}
+.home-page > .home-section-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding: clamp(3rem, 7vw, 6rem) var(--content-gutter);
+  box-sizing: border-box;
+}
+.home-page > .home-section-inner .home-intro {
+  margin-block: 0.75em;
+}
+.home-page > .home-section-inner .home-folder-links {
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+@media (max-width: 800px) {
+  .home-page > .home-section-inner {
+    padding: 2rem var(--content-gutter);
+  }
+}
+@media (max-width: 600px) {
+  .home-page > .home-section-inner {
+    padding: 2rem 1.25rem;
+  }
+}
