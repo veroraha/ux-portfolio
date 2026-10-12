@@ -4080,3 +4080,9 @@ body:has(.project-finder-window) .content.project-finder-page {
   .home-page > .home-section-inner .home-blurb-break { display: none; }
   .home-page > .home-section-inner .home-folder-links { margin-top: 2.5rem !important; }
 }
+
+
+/* Keep the homepage lead statement at the requested size across breakpoints. */
+.home-page > .home-section-inner .home-blurb {
+  font-size: 1.8rem !important;
+}
