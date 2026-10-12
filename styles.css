@@ -4152,3 +4152,11 @@ body:has(.headshot) .about-finder-window {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
+
+/* Leave 2rem of dotted background below the BAH, OTW, and BTTF project windows. */
+body:has(#bah) .project-finder-window,
+body:has(#otw) .project-finder-window,
+body:has(#bttf) .project-finder-window {
+  margin-bottom: 2rem;
+}
