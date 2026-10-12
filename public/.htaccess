@@ -28,6 +28,11 @@ Options -MultiViews
   RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^ - [L]
 
+  # Nested project URLs such as /projects/bah should serve the matching
+  # top-level HTML page (bah.html), not look for projects/bah/index.html.
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^projects/([^/]+)/?$ $1.html [L]
+
   # /projects -> projects.html. Check DOCUMENT_ROOT so this still wins when a
   # directory of the same name exists (otw/, bttf/, flix/, bah/). DirectorySlash
   # Off stops Apache from 403'ing those folder names before the rewrite runs.
