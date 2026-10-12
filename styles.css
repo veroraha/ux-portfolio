@@ -3693,7 +3693,7 @@ body:has(.project-finder-window) .content.project-finder-page {
   gap: 1.25rem;
   border: 1px solid #666666;
   border-radius: 3rem;
-  background: linear-gradient(to bottom, #0A0A0A 0%, #080808 100%);
+  background: linear-gradient(to bottom, #141414 0%, #101010 100%);
   overflow: auto;
 }
 .project-finder-window .finder-window-controls {
