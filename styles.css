@@ -3537,11 +3537,13 @@ body:has(.headshot) .content {
 }
 
 
-/* Set the Projects Finder pane backgrounds. */
-.content.ios-files-page .finder-left-pane,
+/* Add subtle vertical depth to the Projects Finder's left pane. */
+.content.ios-files-page .finder-left-pane {
+  background: linear-gradient(to bottom, #232323 0%, #1C1C1C 100%) !important;
+}
 .content.ios-files-page .finder-upper-pane,
 .content.ios-files-page .finder-project-pane {
-  background-color: #232323 !important;
+  background: transparent !important;
 }
 .content.ios-files-page .finder-right-pane {
   background-color: #2E2D2D !important;
