@@ -4219,3 +4219,24 @@ body:has(.headshot) .about-finder-window {
   .about-contact-button svg { width: 1.15rem; height: 1.15rem; }
 }
 
+/* Custom burger icon beside the Menu label on small screens. */
+@media (max-width: 800px) {
+  .site-header .dropdown-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.45rem !important;
+  }
+  .site-header .dropdown-btn .menu-icon-wrap {
+    display: inline-flex !important;
+    align-items: center !important;
+    flex: 0 0 auto;
+  }
+  .site-header .dropdown-btn .menu-burger-icon {
+    display: block !important;
+    width: 1.15rem;
+    height: 1.15rem;
+    fill: currentColor;
+  }
+}
+
