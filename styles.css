@@ -3961,3 +3961,11 @@ body:has(.project-finder-window) .content.project-finder-page {
   background-color: transparent !important;
   background-image: none !important;
 }
+
+
+/* Override the shared homepage section fill so the hero reveals the dotted page texture. */
+.home-page .section.home-hero-section {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
