@@ -1623,7 +1623,7 @@ body:has(.home-page) .page-header {
 	font-weight: 400;
 	letter-spacing: -0.09em;
 	line-height: 1;
-	color: #121212;
+	color: #0a0a0a;
 }
 .site-header .header-linkedin {
 	text-decoration: none;
@@ -1705,7 +1705,7 @@ body:has(.home-page) .page-header {
 }
 .site-header .header-links .nav-current,
 .site-header .dropdown-links .nav-current {
-	color: #121212 !important;
+	color: #0a0a0a !important;
 	font-weight: 700 !important;
 }
 
@@ -1822,9 +1822,9 @@ body:has(.home-page) .page-header {
 
 /* Final site-wide refinements: remove the footer and standardize text on light surfaces */
 :root {
-	--primary-text-color: #121212;
-	--secondary-text-color: #121212;
-	--tertiary-text-color: #121212;
+	--primary-text-color: #0a0a0a;
+	--secondary-text-color: #0a0a0a;
+	--tertiary-text-color: #0a0a0a;
 }
 
 .footer {
@@ -1857,7 +1857,7 @@ body:has(.home-page) .page-header {
 .project .placard h4, 
 .project .placard .project-year, 
 .home-page .home-projects-title{
-	color: #121212;
+	color: #0a0a0a;
 }
 
 /* Keep the homepage's dark hero text light for contrast */
@@ -1870,33 +1870,33 @@ body:has(.home-page) .page-header {
 .site-header .header-links a:hover,
 .site-header .dropdown-links a:hover,
 .back-link:hover {
-	color: #121212 !important;
+	color: #0a0a0a !important;
 }
 
 
 /* Onyx palette: black, white, and three signature accents */
 :root {
-  --primary-bg-color: #121212;
-  --surface-muted-color: #121212;
+  --primary-bg-color: #0a0a0a;
+  --surface-muted-color: #0a0a0a;
   --primary-text-color: #e0e0e0;
   --secondary-text-color: #e0e0e0;
   --tertiary-text-color: #A8E3A1;
   --border-color: #5B7CD7;
   --primary-accent-color: #5B7CD7;
   --secondary-accent-color: #A1A9E2;
-  --footer-bg-color: #121212;
+  --footer-bg-color: #0a0a0a;
   --playful-accent-color: #A1A9E2;
   --cool-accent-color: #5B7CD7;
   --berry-accent-color: #A1A9E2;
   --placard-border: #5B7CD7;
-  --palette-black: #121212;
+  --palette-black: #0a0a0a;
   --palette-white: #FAFAFA;
   --palette-blue: #5B7CD7;
   --palette-lavender: #A1A9E2;
   --palette-green: #A8E3A1;
 }html,  body,  .home-page,  .home-hero-section, 
 .content,  .case-study-body,  .project .placard{
-  background-color: #121212;
+  background-color: #0a0a0a;
   color: #e0e0e0;
 }.page-header,  .content,  .content h3,  .case-study-subtitle, 
 .case-study-body,  .case-study-body h2,  .case-study-body h3, 
@@ -1908,7 +1908,7 @@ body:has(.home-page) .page-header {
   color: #e0e0e0 !important;
 }
 .site-header .nav, .site-header .dropdown-links {
-  background: #121212 !important;
+  background: #0a0a0a !important;
   border-color: #5B7CD7 !important;
 }
 .site-header .header-links a, .site-header .header-links .nav-current,
@@ -1922,7 +1922,7 @@ body:has(.home-page) .page-header {
 .site-header .dropdown-links .nav-current { color: #A1A9E2 !important; }
 .home-page .home-meta-chip {
   color: #e0e0e0;
-  background-color: #121212;
+  background-color: #0a0a0a;
   border-color: #A8E3A1;
 }
 .home-page .home-meta-chip .chip-icon { color: #A8E3A1; }.project .placard{ border-color: #5B7CD7; }
@@ -1955,7 +1955,7 @@ body:has(.home-page) .page-header {
 
 /* Refine utility buttons and navigation hover to the Onyx palette */
 .site-header .header-linkedin {
-  background-color: #121212 !important;
+  background-color: #0a0a0a !important;
   border: 1px solid #FAFAFA !important;
   color: #e0e0e0 !important;
 }
@@ -1968,7 +1968,7 @@ body:has(.home-page) .page-header {
   color: #e0e0e0 !important;
 }
 .site-header .header-linkedin:hover {
-  background-color: #121212 !important;
+  background-color: #0a0a0a !important;
   border-color: #e0e0e0 !important;
   color: #e0e0e0 !important;
 }
@@ -2046,7 +2046,7 @@ body:has(.home-page) .page-header {
 .site-header .header-email,
 .site-header .header-email:hover,
 .site-header .header-email:focus-visible {
-  background-color: #121212 !important;
+  background-color: #0a0a0a !important;
   border: 1px solid #FAFAFA !important;
   border-color: #e0e0e0 !important;
   color: #e0e0e0 !important;
@@ -2163,7 +2163,7 @@ body,
 .home-page .section,
 .home-page .home-hero-section,
 .home-page .home-projects-section {
-  background-color: #121212 !important;
+  background-color: #0a0a0a !important;
   background-image: none !important;
 }
 
@@ -2183,7 +2183,7 @@ body,
 .home-page .section,
 .home-page .home-hero-section,
 .home-page .home-projects-section {
-  background-color: #121212 !important;
+  background-color: #0a0a0a !important;
   background-image: none !important;
 }
 
@@ -2381,7 +2381,7 @@ body,
   }
 }
 
-/* Final background color rules: page surfaces stay #121212;header elements use #141414 */
+/* Final background color rules: page surfaces stay #0a0a0a;header elements use #141414 */
 html, 
 body, 
 .home-page, 
@@ -2391,7 +2391,7 @@ body,
 .content, 
 .case-study-body, 
 .project .placard{
-  background-color: #121212 !important;
+  background-color: #0a0a0a !important;
   background-image: none !important;
 }
 
@@ -2438,7 +2438,7 @@ body,
   min-height: calc(100vh - 90px);
   margin: 0 auto !important;
   padding: clamp(1.5rem, 5vw, 4rem) clamp(1.25rem, 6vw, 5.5rem) 5rem !important;
-  background: #121212 !important;
+  background: #0a0a0a !important;
   color: #F5F5F7;
 }
 .ios-files-page .files-toolbar {
@@ -3130,7 +3130,7 @@ body,
   margin-top: 1rem;
   padding: 0.35rem 0.65rem;
   border-radius: 999px;
-  color: #121212;
+  color: #0a0a0a;
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.2;
@@ -3600,7 +3600,7 @@ body:has(.headshot) .content {
   margin: 0 auto !important;
   padding: 0 !important;
   border: 0 !important;
-  background: #121212 !important;
+  background: #0a0a0a !important;
 }
 .ios-files-page > .finder-layout {
   box-sizing: border-box;
@@ -3609,7 +3609,7 @@ body:has(.headshot) .content {
   min-height: 0 !important;
   border: 1px solid #666666;
   border-radius: 3rem;
-  background: #121212;
+  background: #0a0a0a;
   overflow: hidden;
 }
 @media (max-width: 600px) {
@@ -3886,7 +3886,7 @@ body:has(#bttf) .project-finder-window .finder-window-close-link {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 .ios-files-page .finder-view-project:hover {
-  background: #121212;
+  background: #0a0a0a;
   color: #F5F5F7;
 }
 .ios-files-page .finder-view-project:focus-visible {
