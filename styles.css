@@ -1188,15 +1188,12 @@ body:has(.home-page) .page-header {
 }
 @media (max-width: 800px) {
 	.site-header .nav { height: 3.1rem; }
-	.site-header .header-social { width: 3.1rem; height: 3.1rem; }
 }
 @media (max-width: 540px) {
 	.site-header .nav { height: 2.65rem; }
-	.site-header .header-social { width: 2.65rem; height: 2.65rem; }
 }
 @media (max-width: 390px) {
 	.site-header .nav { height: 2.35rem; }
-	.site-header .header-social { width: 2.35rem; height: 2.35rem; }
 }
 
 
@@ -2778,9 +2775,6 @@ body:has(.headshot) .content {
   margin: 0 auto !important;
 }
 @media (max-width: 600px) {
-  .ios-files-page {
-    margin: 1rem auto 2rem !important;
-  }
 }
 
 
