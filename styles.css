@@ -3742,8 +3742,10 @@ body:has(.project-finder-window) .content.project-finder-page {
 .project-finder-window .finder-window-control--minimize { background: #febc2e; }
 .project-finder-window .finder-window-control--maximize { background: #28c840; }
 
-/* Keep the red BAH control in the former yellow-control position. */
-.project-finder-window .finder-window-close-link {
+/* Keep the red control in the former yellow-control position across all case-study headers. */
+.project-finder-window .finder-window-close-link,
+body:has(#otw) .project-finder-window .finder-window-close-link,
+body:has(#bttf) .project-finder-window .finder-window-close-link {
   margin-left: 1.5rem;
 }
 .project-finder-window > .back-link,
