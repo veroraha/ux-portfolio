@@ -69,7 +69,7 @@
 					</div>
 				</section>
 			</div>
-			<aside class="finder-right-pane" aria-label="Selected project"><div class="finder-project-copy"><span class="finder-selected-label" aria-live="polite">Mission-support application</span><p class="finder-selected-description" aria-live="polite">UX design and product ownership for a complex operational tool</p><span class="finder-work-tag finder-work-tag--professional" aria-live="polite">Professional work</span><section class="finder-information" aria-label="Project information"><h2>Information</h2><div class="finder-information-row"><span>Created</span><span>2021</span></div><div class="finder-information-row finder-modified-row" hidden><span>Modified</span><span>Present</span></div></section></div></aside>
+			<aside class="finder-right-pane" aria-label="Selected project"><div class="finder-project-copy"><span class="finder-selected-label" aria-live="polite">Mission-support application</span><p class="finder-selected-description" aria-live="polite">UX design and product ownership for a complex operational tool</p><span class="finder-work-tag finder-work-tag--professional" aria-live="polite">Professional work</span><section class="finder-information" aria-label="Project information"><h2>Information</h2><div class="finder-information-row"><span>Created</span><span>2021</span></div><div class="finder-information-row finder-modified-row" hidden><span>Modified</span><span>Present</span></div></section><a class="finder-view-project" href="/projects/bah"><span>View project</span><svg class="nav-icon finder-view-project-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 12h14M12 5.5l6.5 6.5-6.5 6.5"/></svg></a></div></aside>
 		</div>
 	</main>
 	<script>
@@ -87,6 +87,8 @@
 					previewIcon.className = selectedIcon.className;
 					previewIcon.innerHTML = selectedIcon.innerHTML;
 					preview.href = button.dataset.href;
+					const viewProject = document.querySelector('.finder-view-project');
+					if (viewProject) viewProject.href = button.dataset.href;
 					preview.setAttribute('aria-label', 'Open ' + button.dataset.label + ' project');
 					const selectedLabel = document.querySelector('.finder-selected-label');
 					if (selectedLabel) selectedLabel.textContent = button.dataset.label;
