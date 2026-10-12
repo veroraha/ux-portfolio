@@ -129,16 +129,9 @@ function setupNavigation() {
 	}
 
 	// Smooth subtle image entrance animations
-	const cards = document.querySelectorAll('.headshot');
-	cards.forEach((card, index) => {
-		card.style.opacity = '0';
-		card.style.transform = 'translateY(15px)';
-		card.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
-		
-		setTimeout(() => {
-			card.style.opacity = '1';
-			card.style.transform = 'translateY(0)';
-		}, 50);
+	const headshots = document.querySelectorAll('.headshot');
+	headshots.forEach((headshot) => {
+		requestAnimationFrame(() => headshot.classList.add('headshot-entered'));
 	});
 }
 
