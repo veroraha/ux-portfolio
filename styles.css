@@ -4246,3 +4246,8 @@ body:has(.headshot) .about-finder-window {
   }
 }
 
+/* Use cyan for headers within the Projects page Finder window. */
+.ios-files-page .about-finder-title,
+.ios-files-page .finder-information h2 {
+  color: #7DCADE !important;
+}
