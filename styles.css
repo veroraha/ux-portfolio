@@ -4114,3 +4114,8 @@ body:has(.headshot) .content {
   padding-top: 0 !important;
   background: transparent !important;
 }
+
+/* Keep the Projects page content wrapper transparent as well. */
+body:has(.project-finder-window) .content.project-finder-page {
+  background: transparent !important;
+}
