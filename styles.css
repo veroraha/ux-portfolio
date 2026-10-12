@@ -3847,8 +3847,8 @@ body:has(.project-finder-window) .content.project-finder-page {
   border: 0;
   border-radius: 999px;
   outline: none;
-  background: #606c38;
-  color: #fefae0;
+  background: #141414;
+  color: #F5F5F7;
   font: inherit;
   font-size: 1rem;
   font-weight: 600;
@@ -3858,8 +3858,8 @@ body:has(.project-finder-window) .content.project-finder-page {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 .content.ios-files-page .finder-view-project:hover {
-  background: #283618;
-  color: #fefae0;
+  background: #0A0A0A;
+  color: #F5F5F7;
 }
 .content.ios-files-page .finder-view-project:focus-visible {
   outline: 2px solid #A1A9E2;
