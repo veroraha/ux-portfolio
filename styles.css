@@ -4109,7 +4109,8 @@ body:has(.project-finder-window) .content.project-finder-page {
 }
 
 
-/* Extend the About Finder window to the very top of its content pane. */
+/* Keep the About content wrapper transparent so the dotted page background remains visible. */
 body:has(.headshot) .content {
   padding-top: 0 !important;
+  background: transparent !important;
 }
