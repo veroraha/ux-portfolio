@@ -1,4 +1,4 @@
-import { existsSync } from 'node:fs';
+import { cpSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
 
@@ -46,9 +46,24 @@ function cleanUrls() {
   };
 }
 
+// Vite only builds the top-level HTML entry points listed below. Preserve the
+// nested, extensionless case-study routes in the production output as well.
+function copyNestedProjectRoutes() {
+  return {
+    name: 'copy-nested-project-routes',
+    apply: 'build',
+    closeBundle() {
+      const source = resolve(process.cwd(), 'projects');
+      if (existsSync(source)) {
+        cpSync(source, resolve(process.cwd(), 'dist/projects'), { recursive: true });
+      }
+    }
+  };
+}
+
 export default defineConfig({
   appType: 'mpa',
-  plugins: [cleanUrls()],
+  plugins: [cleanUrls(), copyNestedProjectRoutes()],
   server: {
     port: 43123,
     host: true
