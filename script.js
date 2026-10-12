@@ -150,9 +150,15 @@ document.addEventListener('DOMContentLoaded', () => {
 				typewriter();
 			}, 1500);
 		} else {
+			// Reveal non-homepage headings only when their typing animation starts.
+			titleElement.classList.add('typing-started');
 			typewriter();
 		}
 	} else {
+		// Reduced-motion users see the complete heading without an animation.
+		if (titleElement) {
+			titleElement.classList.add('typing-started');
+		}
 		typewriter();
 	}
 });
