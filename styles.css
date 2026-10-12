@@ -3758,3 +3758,13 @@ body:has(.project-finder-window) .content.project-finder-page {
     padding: 1rem 0 0.75rem 1rem;
   }
 }
+
+/* Match navbar icon outlines to the gray text hover and focus color */
+.site-header .header-links a:hover .nav-icon,
+.site-header .dropdown-links a:hover .nav-icon,
+.site-header .header-links a:focus-visible .nav-icon,
+.site-header .dropdown-links a:focus-visible .nav-icon,
+.site-header .dropdown-btn:hover .nav-icon,
+.site-header .dropdown-btn:focus-visible .nav-icon {
+  stroke: currentColor !important;
+}
