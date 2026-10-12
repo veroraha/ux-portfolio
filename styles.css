@@ -4290,3 +4290,22 @@ body:has(.headshot) .about-finder-window {
   top: auto !important;
   transform: none !important;
 }
+
+
+/* Give the About-page headshot the same rise-in entrance as the homepage greeting. */
+body:has(.headshot) .headshot {
+  opacity: 0;
+  transform: translateY(48px);
+  transition: opacity 800ms ease, transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+body:has(.headshot) .headshot.headshot-entered {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  body:has(.headshot) .headshot {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
