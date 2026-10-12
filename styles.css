@@ -68,8 +68,6 @@ h1, h2, h3, h4, h5, h6,
 	font-family: "Host Grotesk", sans-serif;
 }
 
-@media (max-width: 600px) {
-}
 
 /** global pages **/
 
@@ -685,8 +683,8 @@ body:has(.home-page) .page-header {
 	color: #283618;
 }
 
-@media (prefers-reduced-motion: reduce) {
-}.nav .dropdown-btn:focus-visible, 
+
+.nav .dropdown-btn:focus-visible, 
 .nav .header-links a:focus-visible, 
 .nav .dropdown-links a:focus-visible, 
 .footer .button:focus-visible, 
@@ -773,9 +771,6 @@ body:has(.home-page) .page-header {
 	color: var(--footer-bg-color);
 }
 
-@media (prefers-reduced-motion: reduce) {
-}
-
 
 .home-page .home-blurb {
 	font-size: clamp(1.2rem, 2.2vw, 1.45rem);
@@ -784,11 +779,6 @@ body:has(.home-page) .page-header {
 	color: #283618;
 }
 
-@media (max-width: 800px) {
-}
-
-@media (prefers-reduced-motion: reduce) {
-}
 
 
 
@@ -857,9 +847,6 @@ body:has(.home-page) .page-header {
 
 .home-page .home-blurb {
 	color: var(--primary-bg-color);
-}
-
-@media (prefers-reduced-motion: reduce) {
 }
 
 
@@ -1212,9 +1199,6 @@ body:has(.home-page) .page-header {
 	.site-header .header-social { width: 2.35rem; height: 2.35rem; }
 }
 
-
-@media (max-width: 800px) {
-}
 
 
 /* Balance the homepage lead statement across two lines on larger screens */
