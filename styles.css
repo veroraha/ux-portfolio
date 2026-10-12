@@ -4169,7 +4169,7 @@ body:has(.headshot) .about-finder-window {
 /* Keep the About and case-study scrollbars inset within their Finder windows. */
 body:has(.headshot) .about-finder-window::-webkit-scrollbar-track,
 .project-finder-window::-webkit-scrollbar-track {
-  margin-block: 0.75rem;
+  margin-block: 1.5rem;
 }
 body:has(.headshot) .about-finder-window,
 .project-finder-window {
