@@ -4246,3 +4246,20 @@ body:has(.headshot) .about-finder-window {
   }
 }
 
+/* Raise the homepage greeting into place as the page loads. */
+.home-page .home-intro {
+  opacity: 0;
+  transform: translateY(48px);
+  transition: opacity 800ms ease, transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.home-page .home-intro.home-intro-entered {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-page .home-intro {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
