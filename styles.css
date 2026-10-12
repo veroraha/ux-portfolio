@@ -4165,11 +4165,11 @@ body:has(.headshot) .about-finder-window {
 }
 
 
-/* Update the navbar surfaces to charcoal and remove the white outlines. */
+/* Add a restrained vertical gradient to the navbar, brightest at the top. */
 .site-header .nav,
 .site-header .dropdown-links {
   background-color: #232323 !important;
-  background: #232323 !important;
+  background: linear-gradient(to bottom, #2E2E2E 0%, #232323 100%) !important;
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
