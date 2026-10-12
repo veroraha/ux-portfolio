@@ -3568,9 +3568,9 @@ body:has(.headshot) .content {
   }
 }
 
-/* Match Finder window labels to the navbar hover gray. */
+/* Set the Projects and About Finder header labels to near-white. */
 .about-finder-title {
-  color: #A3A3B3;
+  color: #fafafa;
 }
 
 /* Match the About page's flex-filling content area without a visible wrapper rectangle. */
