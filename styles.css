@@ -4160,3 +4160,14 @@ body:has(#otw),
 body:has(#bttf) {
   margin-bottom: 2rem;
 }
+
+
+/* Update the navbar surfaces to charcoal and remove the white outlines. */
+.site-header .nav,
+.site-header .dropdown-links {
+  background-color: #292929 !important;
+  background: #292929 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
