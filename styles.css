@@ -62,7 +62,6 @@
 
 /** Display typography: Host Grotesk for headings, site name, and navigation **/
 h1, h2, h3, h4, h5, h6,
-.header .site-name,
 .header .site-name a,
 .nav a,
 .nav .nav-current,
@@ -120,25 +119,6 @@ video {
 	gap: 1rem;
 	padding: 0 var(--header-gutter);
 	border-bottom: 1px solid var(--border-color);
-}
-
-.header .site-name {
-	color: var(--footer-bg-color);
-	margin: 0;
-	min-width: 0;
-	font-size: clamp(1.05rem, 3.4vw, 1.45rem);
-	font-weight: 700;
-	letter-spacing: -0.5px;
-}
-
-.header .site-name a {
-	color: inherit;
-	text-decoration: none;
-	transition: color 0.2s ease;
-}
-
-.header .site-name a:hover {
-	color: var(--primary-accent-color);
 }
 
 .nav {
@@ -340,12 +320,6 @@ video {
 	color: #fefae0;
 }
 
-.footer .footer-btns { 
-	display: flex; 
-	gap: 1rem;
-	flex-wrap: wrap;
-}
-
 .footer .button {
 	margin: 0;
 	padding: 0.7rem 1.35rem;
@@ -382,11 +356,6 @@ video {
 		text-align: center;
 		padding-top: 2.5rem;
 		padding-bottom: 2.5rem;
-	}
-
-	.footer .footer-btns {
-		flex-direction: column;
-		width: min(100%, 20rem);
 	}
 
 	.footer .button {
@@ -1396,7 +1365,6 @@ body:has(.home-page) .page-header {
 .project .placard h4{
 	color: var(--primary-text-color);
 }.content h3.secondary-content-header, 
-.header .site-name a:hover, 
 .back-link:hover, 
 .project .placard .project-year{
 	color: var(--secondary-text-color);
