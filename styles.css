@@ -3704,7 +3704,7 @@ body:has(.project-finder-window) .content.project-finder-page {
   width: calc(100% + 2.5rem);
   margin-left: -2.5rem;
   padding: 1.5rem 0 1rem 1.5rem;
-  background: #0A0A0A;
+  background: #141414;
   z-index: 5;
   display: flex;
   align-items: center;
