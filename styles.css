@@ -3546,7 +3546,7 @@ body:has(.headshot) .content {
   background: transparent !important;
 }
 .content.ios-files-page .finder-right-pane {
-  background-color: #2E2D2D !important;
+  background: linear-gradient(to bottom, #1B1B1B 0%, #161616 100%) !important;
 }
 
 /* Match the Projects Finder header control placement to the About window. */
