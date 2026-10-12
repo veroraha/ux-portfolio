@@ -28,6 +28,13 @@ function cleanUrls() {
       return;
     }
 
+    const projectMatch = path.match(/^\/projects\/([^/.]+)$/);
+    if (projectMatch && existsSync(resolve(root, `${projectMatch[1]}.html`))) {
+      req.url = `/${projectMatch[1]}.html${url.search}`;
+      next();
+      return;
+    }
+
     const slugMatch = path.match(/^\/([^/.]+)$/);
     if (slugMatch && existsSync(resolve(root, `${slugMatch[1]}.html`))) {
       req.url = `/${slugMatch[1]}.html${url.search}`;
