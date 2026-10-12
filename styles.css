@@ -4130,10 +4130,13 @@ body:has(.headshot) .content {
   background: transparent !important;
 }
 
-/* Match the About page's bottom breathing room beneath project Finder windows. */
+/* Match the About page's bottom breathing room and reveal the dotted texture. */
 body:has(.project-finder-window) .content.project-finder-page {
   padding-top: 0 !important;
   padding-bottom: 2rem !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
 }
 @media (max-width: 800px) {
   body:has(.project-finder-window) .content.project-finder-page {
