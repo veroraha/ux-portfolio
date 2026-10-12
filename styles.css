@@ -3708,7 +3708,7 @@ body:has(.project-finder-window) .content.project-finder-page {
   height: 75vh;
   min-height: 0;
   margin: 0;
-  padding: 5rem 4rem 2rem;
+  padding: 0 4rem 2rem;
   gap: 1.25rem;
   border: 1px solid #666666;
   border-radius: 3rem;
@@ -3716,13 +3716,19 @@ body:has(.project-finder-window) .content.project-finder-page {
   overflow: auto;
 }
 .project-finder-window .finder-window-controls {
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
+  position: sticky;
+  top: 0;
+  align-self: stretch;
+  box-sizing: border-box;
+  width: calc(100% + 4rem);
+  margin-left: -4rem;
+  padding: 1.5rem 0 0 0.5rem;
+  background: #141414;
   z-index: 5;
   display: flex;
   align-items: center;
   gap: 0.625rem;
+  flex: 0 0 auto;
 }
 .project-finder-window .finder-window-control {
   display: block;
@@ -3764,12 +3770,13 @@ body:has(.project-finder-window) .content.project-finder-page {
   }
   .project-finder-window {
     height: min(620px, calc(100vh - 150px));
-    padding: 4rem 0.75rem 1.25rem;
+    padding: 0 0.75rem 1.25rem;
     gap: 1rem;
   }
   .project-finder-window .finder-window-controls {
-    top: 1rem;
-    left: 1rem;
+    width: calc(100% + 3rem);
+    margin-left: -1.5rem;
+    padding: 1rem 0 0.75rem 1rem;
   }
 }
 
