@@ -4166,3 +4166,58 @@ body:has(.headshot) .about-finder-window {
   box-shadow: none !important;
 }
 
+/* Center matching circular contact links beneath the About page's final paragraph. */
+.about-contact-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto 0.5rem;
+}
+.about-contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: clamp(3.5rem, 7vw, 5rem);
+  height: clamp(3.5rem, 7vw, 5rem);
+  box-sizing: border-box;
+  border: 1px solid #FAFAFA;
+  border-radius: 50%;
+  background: #141414;
+  color: #FAFAFA;
+  text-decoration: none;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+.about-contact-button svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.about-contact-button .linkedin-icon {
+  fill: currentColor;
+  stroke: none;
+}
+.about-contact-button:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+.about-contact-button:focus-visible {
+  outline: 3px solid #CCCCCC;
+  outline-offset: 4px;
+}
+@media (max-width: 800px) {
+  .about-contact-buttons { gap: 0.75rem; }
+  .about-contact-button { width: 3.1rem; height: 3.1rem; }
+  .about-contact-button svg { width: 1.35rem; height: 1.35rem; }
+}
+@media (max-width: 540px) {
+  .about-contact-button { width: 2.65rem; height: 2.65rem; }
+  .about-contact-button svg { width: 1.15rem; height: 1.15rem; }
+}
+
