@@ -4119,3 +4119,15 @@ body:has(.headshot) .content {
 .ios-files-page {
   background: transparent !important;
 }
+
+/* Match the BAH page's outer spacing to About so both Finder windows occupy the same area. */
+body:has(.project-finder-window) .content.project-finder-page {
+  padding-top: 0 !important;
+  padding-bottom: 2rem !important;
+}
+@media (max-width: 800px) {
+  body:has(.project-finder-window) .content.project-finder-page {
+    padding-top: 0 !important;
+    padding-bottom: 1rem !important;
+  }
+}
