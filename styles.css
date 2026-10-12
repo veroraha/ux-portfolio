@@ -3885,14 +3885,21 @@ body:has(.project-finder-window) .content.project-finder-page {
   }
 }
 
-/* Subtle site-wide dotted texture for a restrained technical feel. */
-body::after {
+/* Subtle dotted texture stays behind the page content and window surfaces. */
+body::before {
   content: "";
   position: fixed;
   inset: 0;
-  z-index: 9999;
+  z-index: 0;
   pointer-events: none;
   background-image: radial-gradient(rgba(255, 255, 255, 0.28) 0.75px, transparent 0.9px);
   background-size: 24px 24px;
   opacity: 0.55;
 }
+
+/* Keep site content and Finder/file-explorer windows above the texture. */
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
