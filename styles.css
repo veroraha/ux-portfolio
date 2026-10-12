@@ -4166,10 +4166,11 @@ body:has(.headshot) .about-finder-window {
   box-shadow: none !important;
 }
 
-/* Keep the About and case-study scrollbars inset within their Finder windows. */
+/* Visually shorten the scrollbar track at both ends inside Finder windows. */
 body:has(.headshot) .about-finder-window::-webkit-scrollbar-track,
 .project-finder-window::-webkit-scrollbar-track {
-  margin-block: 1.5rem;
+  border-block: 1.5rem solid transparent;
+  background-clip: content-box;
 }
 body:has(.headshot) .about-finder-window,
 .project-finder-window {
