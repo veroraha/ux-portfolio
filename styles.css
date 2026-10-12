@@ -3953,3 +3953,11 @@ body:has(.project-finder-window) .content.project-finder-page {
     height: calc(100vh - 5.95rem);
   }
 }
+
+
+/* Let the site-wide dotted texture show through the homepage hero. */
+.home-hero-section {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
