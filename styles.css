@@ -3264,7 +3264,7 @@ body:has(#bttf) .case-study-body p {
   margin-top: 1rem;
   border: 1px solid #666666;
   border-radius: 3rem;
-  background: #0A0A0A;
+  background: linear-gradient(to bottom, #232323 0%, #1C1C1C 100%);
   overflow: hidden;
 }
 .about-finder-window .finder-window-controls {
