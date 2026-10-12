@@ -4263,3 +4263,12 @@ body:has(.headshot) .about-finder-window {
     transition: none;
   }
 }
+
+/* Hide the homepage greeting text until the typewriter animation begins,
+   while keeping its blinking cursor visible during the one-second pause. */
+.home-page .home-intro .page-header[id]:not(.typing-started) {
+  -webkit-text-fill-color: transparent !important;
+}
+.home-page .home-intro .page-header[id]:not(.typing-started)::after {
+  background-color: #e0e0e0 !important;
+}
