@@ -3606,3 +3606,14 @@ body:has(.headshot) .headshot.headshot-entered {
 .ios-files-page {
   margin-top: -1.25rem !important;
 }
+
+
+/* Hide case-study heading text before its typewriter animation starts. */
+@media (prefers-reduced-motion: no-preference) {
+  body:not(:has(.home-intro)) .page-header[id]:not(.typing-started) {
+    -webkit-text-fill-color: transparent !important;
+  }
+  body:not(:has(.home-intro)) .page-header[id]:not(.typing-started)::after {
+    background-color: currentColor !important;
+  }
+}
