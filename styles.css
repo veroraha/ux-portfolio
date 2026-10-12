@@ -4107,3 +4107,9 @@ body:has(.project-finder-window) .content.project-finder-page {
     animation: none !important;
   }
 }
+
+
+/* Extend the About Finder window to the very top of its content pane. */
+body:has(.headshot) .content {
+  padding-top: 0 !important;
+}
