@@ -4154,9 +4154,9 @@ body:has(.headshot) .about-finder-window {
 }
 
 
-/* Leave 2rem of dotted background below the BAH, OTW, and BTTF project windows. */
-body:has(#bah) .project-finder-window,
-body:has(#otw) .project-finder-window,
-body:has(#bttf) .project-finder-window {
+/* Keep a 2rem gap at the bottom of the page body, not inside the Finder window. */
+body:has(#bah),
+body:has(#otw),
+body:has(#bttf) {
   margin-bottom: 2rem;
 }
