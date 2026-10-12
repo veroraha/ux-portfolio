@@ -1642,17 +1642,27 @@ body:has(.home-page) .page-header {
 }
 
 
-/* Emoji markers in the navigation; reserve consistent space to the left of labels */
+/* Monochrome outline icons in the navigation */
 .site-header .nav-emoji {
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	width: 1.35em;
 	margin-right: 0.3em;
-	text-align: center;
-	font-family: "Bricolage Grotesque", sans-serif;
-	font-size: 0.95em;
-	line-height: 1;
-	vertical-align: -0.04em;
-	color: #0A0A0A;
+	vertical-align: -0.12em;
+	color: currentColor;
+	transition: color 180ms ease;
+}
+.site-header .nav-icon {
+	display: block;
+	width: 1.05em;
+	height: 1.05em;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 1.7;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	transition: stroke 180ms ease;
 }
 .site-header .header-links a,
 .site-header .header-links .nav-current,
