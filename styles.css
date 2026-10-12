@@ -3766,3 +3766,14 @@ body:has(.project-finder-window) .content.project-finder-page {
 .site-header .dropdown-links a:focus-visible .nav-emoji .nav-icon {
   stroke: #A3A3B3 !important;
 }
+
+/* Keep each navbar icon-and-label pair centered consistently across every page. */
+.site-header .header-links,
+.site-header .dropdown-links {
+  justify-content: center !important;
+}
+.site-header .header-links a,
+.site-header .dropdown-links a {
+  justify-content: center !important;
+  text-align: center !important;
+}
