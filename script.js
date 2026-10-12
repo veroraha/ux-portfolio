@@ -138,22 +138,20 @@ function setupNavigation() {
 document.addEventListener('DOMContentLoaded', () => {
 	setupNavigation();
 
-	// Let the cursor blink for one second before the greeting begins typing.
+	// Delay the homepage greeting by 1.5 seconds; case-study titles type immediately.
 	if (titleElement && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 		const homeIntro = titleElement.closest('.home-intro');
 		if (homeIntro) {
 			requestAnimationFrame(() => homeIntro.classList.add('home-intro-entered'));
-		}
-		// Keep the greeting and emoji hidden while the cursor blinks.
-		if (homeIntro) {
+			// Keep the greeting and emoji hidden while the cursor blinks.
 			titleElement.classList.remove('typing-started');
-		}
-		setTimeout(() => {
-			if (homeIntro) {
+			setTimeout(() => {
 				titleElement.classList.add('typing-started');
-			}
+				typewriter();
+			}, 1500);
+		} else {
 			typewriter();
-		}, 1000);
+		}
 	} else {
 		typewriter();
 	}
