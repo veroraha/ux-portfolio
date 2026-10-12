@@ -4086,3 +4086,24 @@ body:has(.project-finder-window) .content.project-finder-page {
 .home-page > .home-section-inner .home-blurb {
   font-size: 1.8rem !important;
 }
+
+
+/* The homepage greeting uses its ::after pseudo-element for the blinking typewriter cursor. */
+.home-page .home-intro .page-header[id]::after {
+  content: "" !important;
+  display: inline-block !important;
+  position: static !important;
+  width: 0.075em !important;
+  height: 0.9em !important;
+  margin-left: 0.12em;
+  vertical-align: -0.08em;
+  background-color: currentColor !important;
+  transform: none !important;
+  animation: page-header-cursor-blink 1s steps(2, start) infinite !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-page .home-intro .page-header[id]::after {
+    animation: none !important;
+  }
+}
