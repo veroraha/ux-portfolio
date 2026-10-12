@@ -4130,16 +4130,15 @@ body:has(.headshot) .content {
   background: transparent !important;
 }
 
-/* Remove the extra space below project Finder windows so the dotted page background
-   remains visible only in the space directly surrounding the window. */
+/* Match the About page's bottom breathing room beneath project Finder windows. */
 body:has(.project-finder-window) .content.project-finder-page {
   padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding-bottom: 2rem !important;
 }
 @media (max-width: 800px) {
   body:has(.project-finder-window) .content.project-finder-page {
     padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-bottom: 1rem !important;
   }
 }
 
