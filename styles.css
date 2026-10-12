@@ -4166,14 +4166,3 @@ body:has(.headshot) .about-finder-window {
   box-shadow: none !important;
 }
 
-/* Visually shorten the scrollbar track at both ends inside Finder windows. */
-body:has(.headshot) .about-finder-window::-webkit-scrollbar-track,
-.project-finder-window::-webkit-scrollbar-track {
-  border-block: 1.5rem solid transparent;
-  background-clip: content-box;
-}
-body:has(.headshot) .about-finder-window,
-.project-finder-window {
-  scrollbar-gutter: stable;
-}
-
