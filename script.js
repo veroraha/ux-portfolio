@@ -129,7 +129,7 @@ function setupNavigation() {
 	}
 
 	// Smooth subtle image entrance animations
-	const cards = document.querySelectorAll('.headshot, .home-page');
+	const cards = document.querySelectorAll('.headshot');
 	cards.forEach((card, index) => {
 		card.style.opacity = '0';
 		card.style.transform = 'translateY(15px)';
