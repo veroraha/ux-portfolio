@@ -3777,3 +3777,55 @@ body:has(.project-finder-window) .content.project-finder-page {
   justify-content: center !important;
   text-align: center !important;
 }
+
+
+/* Keep navbar icons locked in place when a link is current, hovered, focused, or pressed. */
+.site-header .nav .header-links a,
+.site-header .nav .dropdown-links a,
+.site-header .nav .header-links .nav-current,
+.site-header .nav .dropdown-links .nav-current {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.3em;
+  box-sizing: border-box;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+.site-header .nav .nav-emoji {
+  display: inline-flex !important;
+  flex: 0 0 1.2em;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 1.2em;
+  height: 1.2em;
+  line-height: 0;
+}
+
+.site-header .nav .nav-icon {
+  display: block !important;
+  flex: 0 0 1.2em;
+  width: 1.2em !important;
+  height: 1.2em !important;
+  margin: 0 !important;
+  vertical-align: middle !important;
+  transform: none !important;
+}
+
+/* Preserve the same icon/text alignment for the selected item and all interaction states. */
+.site-header .nav .header-links a:hover .nav-emoji,
+.site-header .nav .header-links a:focus-visible .nav-emoji,
+.site-header .nav .header-links a:active .nav-emoji,
+.site-header .nav .header-links a.active .nav-emoji,
+.site-header .nav .dropdown-links a:hover .nav-emoji,
+.site-header .nav .dropdown-links a:focus-visible .nav-emoji,
+.site-header .nav .dropdown-links a:active .nav-emoji,
+.site-header .nav .dropdown-links a.active .nav-emoji,
+.site-header .nav .header-links .nav-current .nav-emoji,
+.site-header .nav .dropdown-links .nav-current .nav-emoji {
+  align-self: center !important;
+  transform: none !important;
+}
