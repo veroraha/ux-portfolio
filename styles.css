@@ -4169,7 +4169,7 @@ body:has(.headshot) .about-finder-window {
 .site-header .nav,
 .site-header .dropdown-links {
   background-color: #232323 !important;
-  background: linear-gradient(to bottom, #2E2E2E 0%, #232323 100%) !important;
+  background: #232323 !important;
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
