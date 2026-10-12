@@ -4115,7 +4115,7 @@ body:has(.headshot) .content {
   background: transparent !important;
 }
 
-/* Keep the Projects page content wrapper transparent as well. */
-body:has(.project-finder-window) .content.project-finder-page {
+/* Remove the opaque page-wrapper background; flex remains for Finder-window positioning. */
+.ios-files-page {
   background: transparent !important;
 }
