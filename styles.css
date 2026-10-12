@@ -3892,7 +3892,7 @@ body::after {
   inset: 0;
   z-index: 9999;
   pointer-events: none;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.18) 0.75px, transparent 0.9px);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.28) 0.75px, transparent 0.9px);
   background-size: 24px 24px;
-  opacity: 0.4;
+  opacity: 0.55;
 }
