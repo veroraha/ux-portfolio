@@ -144,5 +144,15 @@ function setupNavigation() {
 
 document.addEventListener('DOMContentLoaded', () => {
 	setupNavigation();
-	typewriter();
+
+	// Let the cursor blink for one second before the greeting begins typing.
+	if (titleElement && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+		const homeIntro = titleElement.closest('.home-intro');
+		if (homeIntro) {
+			requestAnimationFrame(() => homeIntro.classList.add('home-intro-entered'));
+		}
+		setTimeout(typewriter, 1000);
+	} else {
+		typewriter();
+	}
 });
