@@ -4131,3 +4131,13 @@ body:has(.project-finder-window) .content.project-finder-page {
     padding-bottom: 1rem !important;
   }
 }
+
+
+/* Keep About-page scrolling contained within the Finder window instead of the full page. */
+body:has(.headshot) {
+  overflow: hidden;
+}
+body:has(.headshot) .about-finder-window {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
