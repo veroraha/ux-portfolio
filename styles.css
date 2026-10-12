@@ -3831,7 +3831,7 @@ body:has(.project-finder-window) .content.project-finder-page {
 }
 
 
-/* Full-height View project action in the Projects Finder pane. */
+/* Full-height View project action styled to match the navbar. */
 .content.ios-files-page .finder-view-project {
   display: inline-flex;
   align-items: center;
@@ -3845,7 +3845,7 @@ body:has(.project-finder-window) .content.project-finder-page {
   margin-top: 2rem;
   padding: 0 1.5rem;
   border: 0;
-  border-radius: 0;
+  border-radius: 6px;
   outline: none;
   background: rgba(247, 246, 242, 0.94);
   color: #283618;
@@ -3858,7 +3858,7 @@ body:has(.project-finder-window) .content.project-finder-page {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 .content.ios-files-page .finder-view-project:hover {
-  background: #fefae0;
+  background: rgba(247, 246, 242, 0.94);
   color: #283618;
 }
 .content.ios-files-page .finder-view-project:focus-visible {
