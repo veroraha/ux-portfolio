@@ -3900,7 +3900,7 @@ body::before {
   z-index: 0;
   pointer-events: none;
   background-image: radial-gradient(rgba(255, 255, 255, 0.28) 0.75px, transparent 0.9px);
-  background-size: 24px 24px;
+  background-size: 30px 30px;
   opacity: 0.75;
 }
 
@@ -3910,3 +3910,46 @@ body > * {
   z-index: 1;
 }
 
+/* Give the About and BAH windows balanced space above and below within the page area. */
+body:has(.headshot),
+body:has(.project-finder-window) {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+body:has(.headshot) .content,
+body:has(.project-finder-window) .content.project-finder-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 0;
+  padding: 2rem 0;
+}
+
+.about-finder-window,
+.project-finder-window {
+  flex: 1 1 auto;
+  height: calc(100vh - clamp(3.5rem, 7vw, 5rem) - 6.5rem);
+  min-height: 0;
+}
+
+@media (max-width: 800px) {
+  body:has(.headshot) .content,
+  body:has(.project-finder-window) .content.project-finder-page {
+    padding: 1rem 0;
+  }
+
+  .about-finder-window,
+  .project-finder-window {
+    height: calc(100vh - 6.6rem);
+  }
+}
+
+@media (max-width: 540px) {
+  .about-finder-window,
+  .project-finder-window {
+    height: calc(100vh - 5.95rem);
+  }
+}
