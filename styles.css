@@ -4012,3 +4012,71 @@ body:has(.project-finder-window) .content.project-finder-page {
     padding: 2rem 1.25rem;
   }
 }
+
+
+/* Center the homepage greeting, lead statement, and shortcuts as one group on the dotted background. */
+.home-page {
+  display: flex !important;
+  flex: 1 1 auto !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100%;
+  min-height: calc(100vh - 5rem);
+  padding: 0 !important;
+  margin: 0;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  text-align: center !important;
+}
+.home-page > .home-section-inner {
+  display: flex !important;
+  flex: 1 1 auto;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100%;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 2rem var(--content-gutter);
+  box-sizing: border-box;
+  text-align: center !important;
+}
+.home-page > .home-section-inner .home-intro {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center;
+  width: 100%;
+  margin: 0 !important;
+  text-align: center !important;
+  gap: 1rem;
+}
+.home-page > .home-section-inner .page-header,
+.home-page > .home-section-inner .home-blurb {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #FAFAFA !important;
+  text-align: center !important;
+}
+.home-page > .home-section-inner .home-folder-links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin: 3rem 0 0 !important;
+  padding: 0 1.25rem;
+}
+@media (max-width: 800px) {
+  .home-page { min-height: calc(100vh - 4.25rem); }
+  .home-page > .home-section-inner { padding: 2rem 1.5rem; }
+}
+@media (max-width: 600px) {
+  .home-page > .home-section-inner { padding: 1.5rem 1.25rem; }
+  .home-page > .home-section-inner .home-blurb { font-size: clamp(1.2rem, 4.5vw, 1.6rem); }
+  .home-page > .home-section-inner .home-blurb-break { display: none; }
+  .home-page > .home-section-inner .home-folder-links { margin-top: 2.5rem !important; }
+}
