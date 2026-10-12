@@ -3396,7 +3396,7 @@ body:has(.headshot) .content {
   width: calc(100% + 2.5rem);
   margin-left: -2.5rem;
   padding: 1.5rem 0 1rem 1.5rem;
-  background: #0A0A0A;
+  background: #1B1B1B;
 }
 .about-finder-window .headshot {
   width: clamp(10rem, 16vw, 12rem);
