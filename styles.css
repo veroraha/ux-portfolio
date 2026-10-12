@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300;400;500;600;700;800&display=swap');
+
 /** font imports **/
 @font-face {
 	font-family: "Libre Caslon Condensed";
@@ -27,7 +29,7 @@
  **/
 
 :root {
-	font-family: "Bricolage Grotesque", sans-serif;
+	font-family: "Host Grotesk", sans-serif;
 
 	/* Olive-and-cream palette */
 	--primary-bg-color: #fefae0; /** Warm cream */
@@ -55,17 +57,17 @@
 
 * {
 	box-sizing: border-box;
-	font-family: "Bricolage Grotesque", sans-serif;
+	font-family: "Host Grotesk", sans-serif;
 }
 
-/** Display typography: Bricolage Grotesque for headings, site name, and navigation **/
+/** Display typography: Host Grotesk for headings, site name, and navigation **/
 h1, h2, h3, h4, h5, h6,
 .header .site-name,
 .header .site-name a,
 .nav a,
 .nav .nav-current,
 .page-header {
-	font-family: "Bricolage Grotesque", sans-serif;
+	font-family: "Host Grotesk", sans-serif;
 }
 
 @media (max-width: 600px) {
@@ -1485,7 +1487,7 @@ body:has(.home-page) .page-header {
 .site-header .header-links li { margin: 0; }
 .site-header .header-links a,
 .site-header .header-links .nav-current {
-	font-family: "Bricolage Grotesque", sans-serif;
+	font-family: "Host Grotesk", sans-serif;
 	font-size: clamp(0.95rem, 1.4vw, 1.2rem);
 	font-weight: 500;
 	color: #283618;
@@ -1580,7 +1582,7 @@ body:has(.home-page) .page-header {
 		border: 0;
 		background: transparent;
 		color: #283618;
-		font: 600 0.95rem "Bricolage Grotesque", sans-serif;
+		font: 600 0.95rem "Host Grotesk", sans-serif;
 		cursor: pointer;
 		padding: 0.2rem 0.3rem;
 	}
@@ -1606,7 +1608,7 @@ body:has(.home-page) .page-header {
 	.site-header .dropdown-links li { margin: 0; }
 	.site-header .dropdown-links a,
 	.site-header .dropdown-links .nav-current {
-		font: 500 1rem "Bricolage Grotesque", sans-serif;
+		font: 500 1rem "Host Grotesk", sans-serif;
 		color: #283618;
 		text-decoration: none;
 	}
@@ -1616,7 +1618,7 @@ body:has(.home-page) .page-header {
 
 /* VE monogram replaces the LinkedIn glyph while keeping the link */
 .site-header .header-monogram {
-	font-family: "Bricolage Grotesque", sans-serif;
+	font-family: "Host Grotesk", sans-serif;
 	font-size: 1.35rem;
 	font-weight: 400;
 	letter-spacing: -0.09em;
