@@ -548,6 +548,11 @@ body:has(.home-page) .page-header {
 	width: 100%;
 }
 
+.case-study-figure img.case-study-image--centered {
+	width: 75%;
+	margin: 0 auto;
+}
+
 .case-study-figure img,
 .case-study-figure video {
 	display: block;
