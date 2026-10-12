@@ -3841,7 +3841,7 @@ body:has(.project-finder-window) .content.project-finder-page {
   box-sizing: border-box;
   width: max-content;
   max-width: 100%;
-  height: 5.5rem;
+  height: 56px;
   margin-top: 2rem;
   padding: 0 1.5rem;
   border: 0;
@@ -3878,7 +3878,7 @@ body:has(.project-finder-window) .content.project-finder-page {
 }
 @media (max-width: 600px) {
   .content.ios-files-page .finder-view-project {
-    height: 5.5rem;
+    height: 56px;
     padding: 0 1.25rem;
   }
 }
