@@ -3670,3 +3670,11 @@ body:has(.headshot) .about-finder-window::-webkit-scrollbar-track {
 .about-finder-window .emphasis {
   color: #45A8F8 !important;
 }
+
+
+/* Keep the circular home button typography in Nunito. */
+.site-header .header-home,
+.site-header .header-home:hover,
+.site-header .header-home:focus-visible {
+  font-family: "Nunito", sans-serif !important;
+}
