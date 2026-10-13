@@ -1280,7 +1280,7 @@ body:has(.home-page) .page-header {
 .site-header .dropdown-btn:hover { color: #A8E3A1 !important; }
 .site-header .header-links .nav-current,
 .site-header .dropdown-links .nav-current { color: #A1A9E2 !important; }
-.case-study-body h2, .case-study-body strong, .content h3.secondary-content-header {
+.case-study-body strong {
   color: #A8E3A1 !important;
 }
 
@@ -2475,12 +2475,12 @@ body:has(#bttf) .case-study-body p {
 }
 
 
-/* Use blue for primary case-study section headers and lavender for italicized subheaders. */
-.case-study-body h2 {
-  color: #5B7CD7 !important;
+/* Project page primary headers are blue; italicized subheaders remain light gray. */
+.project-finder-window .case-study-body h2 {
+  color: #45A8F8 !important;
 }
-.case-study-body h3.secondary-content-header {
-  color: #A1A9E2 !important;
+.project-finder-window .case-study-body h3.secondary-content-header {
+  color: #e0e0e0 !important;
 }
 
 
