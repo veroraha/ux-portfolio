@@ -3724,3 +3724,56 @@ body:has(.headshot) .headshot.headshot-entered {
   color: var(--nav-and-button-hover-color) !important;
   stroke: var(--nav-and-button-hover-color) !important;
 }
+
+/* Hover and keyboard-focus tooltips for the circular utility and contact buttons. */
+.site-header .header-social[data-tooltip],
+.about-contact-button[data-tooltip] {
+  position: relative;
+}
+
+.site-header .header-social[data-tooltip]::before,
+.about-contact-button[data-tooltip]::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  z-index: 1100;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #4a4a4a;
+  border-radius: 0.5rem;
+  background: #232323;
+  color: #e0e0e0;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.2;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -0.2rem);
+  transition: opacity 150ms ease, transform 150ms ease, visibility 150ms ease;
+}
+
+.site-header .header-social[data-tooltip]::before {
+  top: calc(100% + 0.65rem);
+}
+
+.about-contact-button[data-tooltip]::before {
+  bottom: calc(100% + 0.65rem);
+  transform: translate(-50%, 0.2rem);
+}
+
+.site-header .header-social[data-tooltip]:hover::before,
+.site-header .header-social[data-tooltip]:focus-visible::before,
+.about-contact-button[data-tooltip]:hover::before,
+.about-contact-button[data-tooltip]:focus-visible::before {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header .header-social[data-tooltip]::before,
+  .about-contact-button[data-tooltip]::before {
+    transition: none;
+  }
+}
