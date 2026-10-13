@@ -2649,6 +2649,7 @@ body:has(.headshot) .content {
   margin-bottom: 0.5rem;
 }
 .about-finder-window > h3 {
+  font-size: 1rem;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -2990,6 +2991,13 @@ body:has(#bttf) .project-finder-window .finder-window-close-link {
   width: 100%;
   max-width: none;
   margin: 0;
+}
+
+/* Set non-heading copy across the case-study pages to a consistent 1rem. */
+.project-finder-window .case-study-subtitle,
+.project-finder-window .case-study-body p,
+.project-finder-window .case-study-body li {
+  font-size: 1rem !important;
 }
 @media (max-width: 600px) {
   body:has(.project-finder-window) .content.project-finder-page {
