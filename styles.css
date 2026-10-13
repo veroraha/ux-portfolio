@@ -2155,6 +2155,7 @@ body,
 
 /* Distinguish professional work from selected earlier portfolio projects. */
 .ios-files-page .finder-work-tag {
+  color: #e0e0e0;
   display: inline-block;
   margin-top: 1rem;
   padding: 0.35rem 0.65rem;
