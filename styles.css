@@ -3830,3 +3830,12 @@ body:has(#otw) .project-finder-window strong {
 body:has(#otw) .case-study-body h3.secondary-content-header {
   color: #e0e0e0 !important;
 }
+
+/* Consistent heading sizes across site content; preserve compact navigation labels. */
+h2:not(.nav h2) {
+  font-size: 1.5rem !important;
+}
+
+h3:not(.nav .header-links h3):not(.nav .dropdown-links h3) {
+  font-size: 1.25rem !important;
+}
