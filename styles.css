@@ -988,7 +988,7 @@ body:has(.home-page) .page-header {
 	stroke-linecap: round;
 	stroke-linejoin: round;
 }
-.site-header .header-linkedin svg { fill: currentColor; stroke: none; }
+.site-header .header-home svg { fill: currentColor; stroke: none; }
 .site-header .header-email svg { stroke-width: 1.7; }
 .site-header .header-social:hover {
 	transform: translateY(-2px);
@@ -1082,7 +1082,7 @@ body:has(.home-page) .page-header {
 	line-height: 1;
 	color: #0a0a0a;
 }
-.site-header .header-linkedin {
+.site-header .header-home {
 	text-decoration: none;
 }
 
@@ -1288,7 +1288,7 @@ body:has(.home-page) .page-header {
 .site-header .nav {
   border-color: #e0e0e0 !important;
 }
-.site-header .header-linkedin {
+.site-header .header-home {
   background-color: #5B7CD7 !important;
   border-color: #5B7CD7 !important;
 }
@@ -1296,7 +1296,7 @@ body:has(.home-page) .page-header {
   background-color: #A1A9E2 !important;
   border-color: #A1A9E2 !important;
 }
-.site-header .header-linkedin:hover {
+.site-header .header-home:hover {
   background-color: #A8E3A1 !important;
   border-color: #A8E3A1 !important;
 }
@@ -1307,7 +1307,7 @@ body:has(.home-page) .page-header {
 
 
 /* Refine utility buttons and navigation hover to the Onyx palette */
-.site-header .header-linkedin {
+.site-header .header-home {
   background-color: #0a0a0a !important;
   border: 1px solid #FAFAFA !important;
   color: #e0e0e0 !important;
@@ -1320,7 +1320,7 @@ body:has(.home-page) .page-header {
   border: 1px solid #FAFAFA !important;
   color: #e0e0e0 !important;
 }
-.site-header .header-linkedin:hover {
+.site-header .header-home:hover {
   background-color: #0a0a0a !important;
   border-color: #e0e0e0 !important;
   color: #e0e0e0 !important;
@@ -1429,9 +1429,9 @@ body:has(.home-page) .page-header {
   background-color: #141414 !important;
   background: #141414 !important;
 }
-.site-header .header-linkedin,
-.site-header .header-linkedin:hover,
-.site-header .header-linkedin:focus-visible,
+.site-header .header-home,
+.site-header .header-home:hover,
+.site-header .header-home:focus-visible,
 .site-header .header-email,
 .site-header .header-email:hover,
 .site-header .header-email:focus-visible {
@@ -1701,9 +1701,9 @@ body,
 
 .site-header .nav,
 .site-header .dropdown-links,
-.site-header .header-linkedin,
-.site-header .header-linkedin:hover,
-.site-header .header-linkedin:focus-visible,
+.site-header .header-home,
+.site-header .header-home:hover,
+.site-header .header-home:focus-visible,
 .site-header .header-email,
 .site-header .header-email:hover,
 .site-header .header-email:focus-visible {
@@ -3546,4 +3546,43 @@ body:has(.headshot) .headshot.headshot-entered {
 .site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) .nav-emoji .nav-icon {
   color: #e16be6 !important;
   stroke: #e16be6 !important;
+}
+
+
+/* Header utility buttons: charcoal surfaces, no white border, accent-color icons on hover. */
+.site-header .header-home,
+.site-header .header-home:hover,
+.site-header .header-home:focus-visible,
+.site-header .header-email,
+.site-header .header-email:hover,
+.site-header .header-email:focus-visible {
+  background: #232323 !important;
+  background-color: #232323 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: #e0e0e0 !important;
+}
+
+.site-header .header-home,
+.site-header .header-email {
+  transition: transform 180ms ease, color 180ms ease;
+}
+
+.site-header .header-home:hover,
+.site-header .header-email:hover {
+  background: #232323 !important;
+  background-color: #232323 !important;
+  transform: translateY(-2px);
+}
+
+.site-header .header-home:hover .header-monogram,
+.site-header .header-home:focus-visible .header-monogram {
+  color: #E16BE6 !important;
+}
+
+.site-header .header-email:hover .email-icon,
+.site-header .header-email:focus-visible .email-icon {
+  color: #E16BE6 !important;
+  stroke: #E16BE6 !important;
 }
