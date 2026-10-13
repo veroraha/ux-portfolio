@@ -2790,7 +2790,7 @@ body:has(#bttf) .project-finder-window .finder-window-close-link {
   padding-bottom: 0;
 }
 .project-finder-window > .case-study-subtitle {
-  margin-top: -0.5rem;
+  margin-top: -1rem;
 }
 .project-finder-window .case-study-body {
   flex: 0 0 auto;
