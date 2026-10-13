@@ -3600,6 +3600,11 @@ body:has(.headshot) .headshot.headshot-entered {
   font-size: 1.125rem !important;
 }
 
+/* Keep research statistic values larger than surrounding case-study copy. */
+.project-finder-window .case-study-body p.research-stat-value {
+  font-size: 2rem !important;
+}
+
 
 
 
