@@ -3670,3 +3670,33 @@ body:has(.headshot) .headshot.headshot-entered {
 		transition: none;
 	}
 }
+
+/* Match Projects hover tooltips to the Email copied confirmation tooltip. */
+.ios-files-page .finder-project-pane button.ios-file-item::after {
+  bottom: calc(100% + 0.65rem);
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #4a4a4a;
+  border-radius: 0.5rem;
+  background: #232323;
+  color: #e0e0e0;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.2;
+  box-shadow: none;
+  transition: opacity 150ms ease, transform 150ms ease;
+}
+.ios-files-page .finder-project-pane button.ios-file-item::before {
+  bottom: calc(100% + 1px);
+  border-top: 6px solid #232323;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  filter: drop-shadow(0 -1px 0 #4a4a4a);
+  transition: opacity 150ms ease, transform 150ms ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ios-files-page .finder-project-pane button.ios-file-item::after,
+  .ios-files-page .finder-project-pane button.ios-file-item::before {
+    transition: none;
+  }
+}
+
