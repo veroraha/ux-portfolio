@@ -3099,7 +3099,7 @@ body:has(#bttf) .project-finder-window .finder-window-close-link {
   border: none;
   border-radius: 999px;
   outline: none;
-  background: #232323;
+  background: #3d3d3d;
   color: #F5F5F7;
   font: inherit;
   font-size: 1rem;
@@ -3110,7 +3110,7 @@ body:has(#bttf) .project-finder-window .finder-window-close-link {
   transition: transform 180ms ease;
 }
 .ios-files-page .finder-view-project:hover {
-  background: #232323;
+  background: #666666;
   color: #F5F5F7;
   transform: translateY(-2px);
 }
