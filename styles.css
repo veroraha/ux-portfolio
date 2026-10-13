@@ -3826,4 +3826,7 @@ body:has(#bttf) .project-finder-window strong,
 body:has(#otw) .project-finder-window strong {
   color: var(--nav-and-button-hover-color) !important;
 }
-
+/* Use the navigation/button hover color for italicized OTW subheaders. */
+body:has(#otw) .case-study-body h3.secondary-content-header {
+  color: var(--nav-and-button-hover-color) !important;
+}
