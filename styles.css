@@ -40,9 +40,6 @@
 	--secondary-accent-color: #606c38; /** Olive */
 	--footer-bg-color: #283618; /** Deep olive */
 
-	--primary-text-color: #e0e0e0; /** Deep olive */
-	--secondary-text-color: #e0e0e0; /** Deep olive */
-
 	--placard-border: #283618;
 
 	--header-gutter: 4rem;
@@ -74,7 +71,6 @@ html {
 body {
 	margin: 0;
 	background-color: var(--primary-bg-color);
-	color: #e0e0e0;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -118,7 +114,6 @@ video {
 	gap: 2.5rem;
 	margin: 0;
 	padding: 0;
-	color: #e0e0e0;
 }
 
 .nav .dropdown-links {
@@ -146,7 +141,6 @@ video {
 .nav .dropdown-links a,
 .nav .header-links .nav-current,
 .nav .dropdown-links .nav-current {
-	color: #e0e0e0;
 	text-decoration: none;
 	display: inline-block;
 	position: relative;
@@ -161,13 +155,11 @@ video {
 
 .nav .header-links a:hover,
 .nav .dropdown-links a:hover {
-	color: #e0e0e0;
 	text-decoration: none;
 }
 
 .nav .header-links .nav-current,
 .nav .dropdown-links .nav-current {
-	color: #e0e0e0;
 	font-weight: 700;
 	cursor: pointer;
 }
@@ -176,7 +168,6 @@ video {
 .nav .dropdown-links a.active,
 .nav .header-links .nav-current,
 .nav .dropdown-links .nav-current {
-	color: #e0e0e0;
 	font-weight: 700;
 	padding-bottom: 0;
 }
@@ -218,7 +209,6 @@ video {
 		font-weight: 600;
 		letter-spacing: 0.06em;
 		line-height: 1;
-		color: #e0e0e0;
 		cursor: pointer;
 		transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 	}
@@ -227,7 +217,6 @@ video {
 	.nav.is-open .dropdown-btn {
 		background-color: var(--primary-bg-color);
 		border-color: var(--placard-border);
-		color: #e0e0e0;
 		transform: translateY(-2px);
 	}
 
@@ -277,10 +266,7 @@ video {
 		padding-bottom: 0;
 	}
 
-	.nav .dropdown-links li:hover a,
-	.nav .dropdown-links li a:focus-visible {
-		color: #e0e0e0;
-	}
+
 }
 
 /** site footer **/
@@ -292,7 +278,6 @@ video {
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--footer-bg-color);
-	color: #e0e0e0;
 	gap: 1.5rem;
 	padding: 3.5rem var(--header-gutter);
 	margin-top: auto;
@@ -303,7 +288,6 @@ video {
 	margin: 0;
 	font-size: 1.15rem;
 	letter-spacing: -0.2px;
-	color: #e0e0e0;
 }
 
 .footer .button {
@@ -313,7 +297,6 @@ video {
 	border: 1px solid #fefae0;
 	border-radius: 6px;
 	text-decoration: none;
-	color: #e0e0e0;
 	letter-spacing: 0.06em;
 	transition: all 0.2s ease;
 	display: inline-flex;
@@ -324,7 +307,6 @@ video {
 	cursor: pointer;
 	background-color: #fefae0;
 	border-color: var(--placard-border);
-	color: #e0e0e0;
 	transform: translateY(-2px);
 }
 
@@ -332,7 +314,6 @@ video {
 	margin: 0; 
 	font-size: 0.88rem;
 	font-weight: 600;
-	color: #e0e0e0;
 	letter-spacing: inherit;
 }
 
@@ -357,7 +338,6 @@ video {
 	margin: 0;
 	padding: 5.5rem 0 2rem;
 	text-align: center;
-	color: #e0e0e0;
 	font-size: 2.1rem;
 	line-height: 1.35;
 	font-weight: 700;
@@ -391,7 +371,6 @@ body:has(.home-page) .page-header {
 	font-size: 1.15rem;
 	font-weight: 400;
 	line-height: 1.5;
-	color: #e0e0e0;
 	margin: 0 auto 2.5rem;
 	padding-bottom: 0;
 	max-width: 36rem;
@@ -448,7 +427,6 @@ body:has(.home-page) .page-header {
 	padding-left: 1.25rem;
 	font-size: 1.15rem;
 	line-height: 1.7;
-	color: #e0e0e0;
 }
 
 .case-study-body li + li {
@@ -460,12 +438,9 @@ body:has(.home-page) .page-header {
 	line-height: 1.7;
 	font-weight: 400;
 	margin: 0 0 1.5rem;
-	color: #e0e0e0;
 }
 
-.case-study-body strong {
-	color: #e0e0e0;
-}
+
 
 .research-stats {
 	display: grid;
@@ -479,14 +454,12 @@ body:has(.home-page) .page-header {
 	line-height: 1.4;
 	letter-spacing: -0.3px;
 	font-weight: 700;
-	color: #e0e0e0;
 	margin: 0 0 0.35rem;
 }
 
 .case-study-body .research-stat-label {
 	font-size: 1rem;
 	line-height: 1.5;
-	color: #e0e0e0;
 	margin: 0;
 }
 
@@ -535,7 +508,6 @@ body:has(.home-page) .page-header {
 	font-size: 0.95rem;
 	line-height: 1.45;
 	font-style: italic;
-	color: #e0e0e0;
 	text-align: center;
 }
 
@@ -586,7 +558,6 @@ body:has(.home-page) .page-header {
 	max-width: 42rem;
 	margin-top: 4rem;
 	margin-inline: auto;
-	color: #e0e0e0;
 	text-decoration: none;
 	font-size: 0.98rem;
 	font-weight: 600;
@@ -595,14 +566,12 @@ body:has(.home-page) .page-header {
 }
 
 .back-link:hover {
-	color: #e0e0e0;
 	transform: translateX(-3px);
 }	
 
 /** page content **/
 
 .content {
-	color: #e0e0e0;
 	flex: 1;
 	width: 100%;
 	max-width: var(--content-max);
@@ -617,7 +586,6 @@ body:has(.home-page) .page-header {
 	line-height: 1.7;
 	font-weight: 400;
 	margin-bottom: 1.75rem;
-	color: #e0e0e0;
 }
 
 .content .headshot {
@@ -669,12 +637,10 @@ body:has(.home-page) .page-header {
 	line-height: 1.4;
 	letter-spacing: -0.3px;
 	text-transform: none;
-	color: #e0e0e0;
 }.home-blurb{
 	font-size: clamp(1.2rem, 2.2vw, 1.45rem);
 	line-height: 1.7;
 	letter-spacing: 0.03em;
-	color: #e0e0e0;
 }
 
 
@@ -760,17 +726,13 @@ body:has(.home-page) .page-header {
 	box-sizing: border-box;
 }
 
-.home-page .page-header,
-.home-page .home-blurb {
-	color: #e0e0e0;
-}
+
 
 
 .home-page .home-blurb {
 	font-size: clamp(1.2rem, 2.2vw, 1.45rem);
 	line-height: 1.7;
 	letter-spacing: 0.03em;
-	color: #e0e0e0;
 }
 
 
@@ -804,7 +766,6 @@ body:has(.home-page) .page-header {
 	width: fit-content;
 	max-width: 100%;
 	position: relative;
-	color: #e0e0e0;
 	padding-bottom: 0.18em;
 }
 
@@ -835,13 +796,9 @@ body:has(.home-page) .page-header {
 }
 
 
-.home-page .home-intro .page-header {
-	color: #e0e0e0;
-}
 
-.home-page .home-blurb {
-	color: #e0e0e0;
-}
+
+
 
 
 /** homepage hero spacing: separate greeting, lead statement, skills, and actions **/
@@ -890,10 +847,8 @@ body:has(.home-page) .page-header {
 .case-study-body ul, 
 .case-study-body ol, 
 .content h3{
-	color: #e0e0e0;
 }.content h3.secondary-content-header, 
 .back-link:hover{
-	color: #e0e0e0;
 }.nav .dropdown-btn:focus-visible, 
 .nav .header-links a:focus-visible, 
 .nav .dropdown-links a:focus-visible, 
@@ -948,7 +903,6 @@ body:has(.home-page) .page-header {
 	font-family: "Host Grotesk", sans-serif;
 	font-size: clamp(0.95rem, 1.4vw, 1.2rem);
 	font-weight: 500;
-	color: #e0e0e0;
 	text-decoration: none;
 	padding: 0.1rem 0;
 	position: relative;
@@ -975,7 +929,6 @@ body:has(.home-page) .page-header {
 	border: 1px solid rgba(40, 54, 24, 0.13);
 	border-radius: 50%;
 	background: #606c38;
-	color: #e0e0e0;
 	text-decoration: none;
 	transition: transform 180ms ease, background-color 180ms ease, color 180ms ease;
 }
@@ -994,7 +947,6 @@ body:has(.home-page) .page-header {
 .site-header .header-social:hover {
 	transform: translateY(-2px);
 	background: #283618;
-	color: #e0e0e0;
 }
 .site-header .header-email:hover { background: #606c38; }
 .site-header .dropdown-btn { display: none; }
@@ -1039,7 +991,6 @@ body:has(.home-page) .page-header {
 		gap: 0.5rem;
 		border: 0;
 		background: transparent;
-		color: #e0e0e0;
 		font: 600 0.95rem "Host Grotesk", sans-serif;
 		cursor: pointer;
 		padding: 0.2rem 0.3rem;
@@ -1067,7 +1018,6 @@ body:has(.home-page) .page-header {
 	.site-header .dropdown-links a,
 	.site-header .dropdown-links .nav-current {
 		font: 500 1rem "Host Grotesk", sans-serif;
-		color: #e0e0e0;
 		text-decoration: none;
 	}
 	.site-header .dropdown-links .nav-current { font-weight: 700; }
@@ -1081,7 +1031,6 @@ body:has(.home-page) .page-header {
 	font-weight: 400;
 	letter-spacing: -0.09em;
 	line-height: 1;
-	color: #e0e0e0;
 }
 .site-header .header-home {
 	text-decoration: none;
@@ -1126,7 +1075,6 @@ body:has(.home-page) .page-header {
 	justify-content: center;
 	flex: 0 0 auto;
 	margin: 0;
-	color: #e0e0e0;
 	transition: color 180ms ease;
 }
 .site-header .nav-icon {
@@ -1156,14 +1104,9 @@ body:has(.home-page) .page-header {
 }
 
 
-/* Navigation interaction colors and selected-page emphasis */
-.site-header .header-links a:hover,
-.site-header .dropdown-links a:hover {
-	color: #e0e0e0 !important;
-}
+
 .site-header .header-links .nav-current,
 .site-header .dropdown-links .nav-current {
-	color: #e0e0e0 !important;
 	font-weight: 700 !important;
 }
 
@@ -1204,54 +1147,19 @@ body:has(.home-page) .page-header {
 
 
 
-/* Final site-wide refinements: remove the footer and standardize text on light surfaces */
-:root {
-	--primary-text-color: #e0e0e0;
-	--secondary-text-color: #e0e0e0;
-}
+
 
 .footer {
 	display: none !important;
 }.site-header .header-links a, 
-.site-header .header-links .nav-current, 
-.site-header .dropdown-links a, 
-.site-header .dropdown-links .nav-current, 
-.site-header .dropdown-btn, 
-.site-header .nav-emoji, 
-.page-header, 
-.content, 
-.content h3, 
-.content h3.secondary-content-header, 
-.case-study-subtitle, 
-.case-study-body, 
-.case-study-body h2, 
-.case-study-body h2 strong, 
-.case-study-body h3, 
-.case-study-body p, 
-.case-study-body ul, 
-.case-study-body ol, 
-.case-study-body li, 
-.case-study-body strong, 
-.case-study-body .research-stat-value, 
-.case-study-body .research-stat-label, 
-.case-study-figure figcaption, 
-.back-link{
-	color: #e0e0e0;
-}
 
-/* Keep hover and focus text legible on light surfaces */
-.site-header .header-links a:hover,
-.site-header .dropdown-links a:hover,
-.back-link:hover {
-	color: #e0e0e0 !important;
-}
+
+
 
 
 /* Onyx palette: black, white, and three signature accents */
 :root {
   --primary-bg-color: #0a0a0a;
-  --primary-text-color: #e0e0e0;
-  --secondary-text-color: #e0e0e0;
   --border-color: #5B7CD7;
   --primary-accent-color: #D20F73;
   --secondary-accent-color: #5555DD;
@@ -1260,29 +1168,18 @@ body:has(.home-page) .page-header {
 }html,  body,  .home-page, 
 .content,  .case-study-body{
   background-color: #0a0a0a;
-  color: #e0e0e0;
 }.page-header,  .content,  .content h3,  .case-study-subtitle, 
-.case-study-body,  .case-study-body h2,  .case-study-body h3, 
-.case-study-body p,  .case-study-body li,  .case-study-body strong, 
-.case-study-figure figcaption,  .back-link{
-  color: #e0e0e0 !important;
-}
+
 .site-header .nav, .site-header .dropdown-links {
   background: #0a0a0a !important;
   border-color: #5B7CD7 !important;
 }
-.site-header .header-links a, .site-header .header-links .nav-current,
-.site-header .dropdown-links a, .site-header .dropdown-links .nav-current,
-.site-header .dropdown-btn, .site-header .nav-emoji, .site-header .header-monogram {
-  color: #e0e0e0 !important;
-}
+
 .site-header .header-links a:hover, .site-header .dropdown-links a:hover,
 .site-header .dropdown-btn:hover { color: #A8E3A1 !important; }
 .site-header .header-links .nav-current,
 .site-header .dropdown-links .nav-current { color: #A1A9E2 !important; }
-.case-study-body strong {
-  color: #e0e0e0 !important;
-}
+
 
 
 /* Onyx palette: white nav outline and palette-matched circular utility buttons */
@@ -1311,31 +1208,21 @@ body:has(.home-page) .page-header {
 .site-header .header-home {
   background-color: #0a0a0a !important;
   border: 1px solid #FAFAFA !important;
-  color: #e0e0e0 !important;
 }
-.site-header .header-monogram {
-  color: #e0e0e0 !important;
-}
+
 .site-header .header-email {
   background-color: #5B7CD7 !important;
   border: 1px solid #FAFAFA !important;
-  color: #e0e0e0 !important;
 }
 .site-header .header-home:hover {
   background-color: #0a0a0a !important;
   border-color: #e0e0e0 !important;
-  color: #e0e0e0 !important;
 }
 .site-header .header-email:hover {
   background-color: #A1A9E2 !important;
   border: none !important;
-  color: #e0e0e0 !important;
 }
-.site-header .header-links a:hover,
-.site-header .dropdown-links a:hover,
-.site-header .dropdown-btn:hover {
-  color: #e0e0e0 !important;
-}
+
 
 
 /* Remove the outline from the email utility button */
@@ -1364,25 +1251,13 @@ body:has(.home-page) .page-header {
 }
 
 
-/* Keep navigation hover text aligned with the palette blue */
-.site-header .header-links a:hover,
-.site-header .dropdown-links a:hover,
-.site-header .dropdown-btn:hover {
-  color: #e0e0e0 !important;
-}
 
-/* Navbar states: lavender on hover, off-white and bold when active */
-.site-header .header-links a:hover:not(.nav-current):not(.active),
-.site-header .dropdown-links a:hover:not(.nav-current):not(.active),
-.site-header .header-links a:focus-visible:not(.nav-current):not(.active),
-.site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) {
-  color: #e0e0e0 !important;
-}
+
+
 .site-header .header-links .nav-current,
 .site-header .header-links a.active,
 .site-header .dropdown-links .nav-current,
 .site-header .dropdown-links a.active {
-  color: #e0e0e0 !important;
   font-weight: 700 !important;
 }
 
@@ -1403,7 +1278,6 @@ body:has(.home-page) .page-header {
   background-color: #0a0a0a !important;
   border: 1px solid #FAFAFA !important;
   border-color: #e0e0e0 !important;
-  color: #e0e0e0 !important;
 }
 .site-header .header-email,
 .site-header .header-email:hover,
@@ -1416,14 +1290,7 @@ body:has(.home-page) .page-header {
 
 
 
-/* Navbar text hover color */
-.site-header .header-links a:hover,
-.site-header .dropdown-links a:hover,
-.site-header .dropdown-btn:hover,
-.site-header .header-links a:focus-visible,
-.site-header .dropdown-links a:focus-visible {
-  color: #e0e0e0 !important;
-}
+
 
 
 /* Set the navbar and both circular utility buttons to charcoal */
@@ -1446,14 +1313,7 @@ body:has(.home-page) .page-header {
 
 
 
-/* Ensure navbar text hover and keyboard focus use #CCCCCC */
-.site-header .header-links a:hover,
-.site-header .dropdown-links a:hover,
-.site-header .dropdown-btn:hover,
-.site-header .header-links a:focus-visible,
-.site-header .dropdown-links a:focus-visible {
-  color: #e0e0e0 !important;
-}
+
 
 
 /* Keep the current page label consistent across every navbar */
@@ -1461,7 +1321,6 @@ body:has(.home-page) .page-header {
 .site-header .header-links a.active,
 .site-header .dropdown-links .nav-current,
 .site-header .dropdown-links a.active {
-  color: #e0e0e0 !important;
   font-weight: 700 !important;
 }
 
@@ -1480,7 +1339,6 @@ body:has(.home-page) .page-header {
     background: transparent !important;
     background-color: transparent !important;
     box-shadow: none !important;
-    color: #e0e0e0 !important;
     font: 400 inherit !important;
     font-weight: 400 !important;
     letter-spacing: normal !important;
@@ -1491,10 +1349,7 @@ body:has(.home-page) .page-header {
   .site-header .dropdown-btn > span[aria-hidden="true"] {
     display: none !important;
   }
-  .site-header .dropdown-btn:hover,
-  .site-header .dropdown-btn:focus-visible {
-    color: #e0e0e0 !important;
-  }
+
 }
 
 
@@ -1526,52 +1381,18 @@ body,
 }
 
 
-/* Current page label in the navbar */
-.site-header .header-links .nav-current,
-.site-header .header-links a.active,
-.site-header .dropdown-links .nav-current,
-.site-header .dropdown-links a.active {
-  color: #e0e0e0 !important;
-}
 
 
-/* Navbar active/current page uses off-white; hover links use medium gray */
-.site-header .header-links .nav-current,
-.site-header .header-links a.active,
-.site-header .dropdown-links .nav-current,
-.site-header .dropdown-links a.active {
-  color: #e0e0e0 !important;
-}
-.site-header .header-links a:hover:not(.nav-current):not(.active),
-.site-header .dropdown-links a:hover:not(.nav-current):not(.active),
-.site-header .dropdown-btn:hover,
-.site-header .header-links a:focus-visible:not(.nav-current):not(.active),
-.site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) {
-  color: #e0e0e0 !important;
-}
 
 
-/* Set default navbar link text to light gray */
-.site-header .header-links a,
-.site-header .dropdown-links a,
-.site-header .dropdown-btn {
-  color: #e0e0e0 !important;
-}
 
 
-/* Navbar palette: off-white default links, gray hover/focus */
-.site-header .header-links a,
-.site-header .dropdown-links a,
-.site-header .dropdown-btn {
-  color: #e0e0e0 !important;
-}
-.site-header .header-links a:hover:not(.nav-current):not(.active),
-.site-header .dropdown-links a:hover:not(.nav-current):not(.active),
-.site-header .dropdown-btn:hover,
-.site-header .header-links a:focus-visible:not(.nav-current):not(.active),
-.site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) {
-  color: #e0e0e0 !important;
-}
+
+
+
+
+
+
 
 
 /* Homepage now uses a single full-viewport hero section */
@@ -1647,7 +1468,6 @@ body,
   padding: 0.5rem 0.75rem;
   border: 1px solid transparent;
   border-radius: 1rem;
-  color: #e0e0e0;
   font-size: 0.95rem;
   line-height: 1.3;
   text-decoration: none;
@@ -1739,7 +1559,6 @@ body,
   margin: 0 auto !important;
   padding: clamp(1.5rem, 5vw, 4rem) clamp(1.25rem, 6vw, 5.5rem) 5rem !important;
   background: #0a0a0a !important;
-  color: #e0e0e0;
 }
 .ios-files-page .ios-file-grid {
   display: grid;
@@ -1757,7 +1576,6 @@ body,
   padding: clamp(1rem, 2.5vw, 2rem) 0.75rem 1.25rem;
   border: 1px solid transparent;
   border-radius: 18px;
-  color: #e0e0e0;
   text-decoration: none;
   text-align: center;
   transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
@@ -2035,7 +1853,6 @@ body,
   border: 1px solid #444444;
   border-radius: 0.45rem;
   background: #242424;
-  color: #e0e0e0;
   content: attr(data-label);
   font-size: 0.75rem;
   font-weight: 400;
@@ -2059,7 +1876,6 @@ body,
   bottom: calc(100% + 8px);
   border-color: #686868;
   background: #262626;
-  color: #e0e0e0;
 }
 .ios-files-page .finder-project-pane button.ios-file-item::before {
   content: "";
@@ -2172,7 +1988,6 @@ body,
   border: 2px solid #686868;
   border-radius: 1.1rem;
   background: #262626;
-  color: #e0e0e0;
   font-size: 1rem;
   line-height: 1.2;
   box-shadow: 0 2px 5px rgb(0 0 0 / 35%);
@@ -2307,7 +2122,6 @@ body,
   padding: clamp(1rem, 3vw, 2.5rem);
 }
 .ios-files-page .finder-selected-label {
-  color: #e0e0e0;
   font-size: clamp(1rem, 1.8vw, 1.4rem);
   line-height: 1.35;
   text-align: center;
@@ -2332,7 +2146,6 @@ body,
 }
 .ios-files-page .finder-selected-description {
   margin: 0.5rem 0 0;
-  color: #e0e0e0;
   font-size: clamp(0.9rem, 1.3vw, 1.05rem);
   line-height: 1.55;
   text-align: left;
@@ -2345,7 +2158,6 @@ body,
   margin-top: 1rem;
   padding: 0.35rem 0.65rem;
   border-radius: 0.25rem;
-  color: #e0e0e0;
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.2;
@@ -2363,7 +2175,6 @@ body,
 }
 .ios-files-page .finder-information h2 {
   margin: 0 0 0.25rem;
-  color: #e0e0e0;
   font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.4;
@@ -2380,11 +2191,9 @@ body,
   line-height: 1.5;
 }
 .ios-files-page .finder-information-row span:first-child {
-  color: #e0e0e0;
   text-align: left;
 }
 .ios-files-page .finder-information-row span:last-child {
-  color: #e0e0e0;
   text-align: right;
 }
 
@@ -2418,7 +2227,6 @@ body,
 /* Green emphasis for key phrases on the About page */
 .emphasis {
 	font-family: inherit;
-	color: #e0e0e0;
 	font-weight: 400;
 }
 
@@ -2534,7 +2342,6 @@ body:has(#bttf) .case-study-body p {
 /* Label the About Finder window beside its traffic-light controls. */
 .about-finder-title {
   margin-left: 0.35rem;
-  color: #e0e0e0;
   font-size: 0.875rem;
   line-height: 1;
 }
@@ -2550,7 +2357,6 @@ body:has(#bttf) .case-study-body p {
 }
 .about-finder-window > h3 {
   margin: 0 3rem;
-  color: #e0e0e0;
   font-size: clamp(0.95rem, 1.2vw, 1.12rem);
   font-weight: 400;
   line-height: 1.65;
@@ -2763,8 +2569,7 @@ body:has(.headshot) .content {
 .ios-files-page {
   margin: 0 auto !important;
 }
-@media (max-width: 600px) {
-}
+
 
 
 /* Add subtle vertical depth to the Projects Finder's left pane. */
@@ -2791,10 +2596,7 @@ body:has(.headshot) .content {
   }
 }
 
-/* Set the Projects and About Finder header labels to near-white. */
-.about-finder-title {
-  color: #e0e0e0;
-}
+
 
 /* Match the About page's flex-filling content area without a visible wrapper rectangle. */
 .ios-files-page {
@@ -3100,7 +2902,6 @@ body:has(#bttf) .project-finder-window .finder-window-close-link {
   border-radius: 999px;
   outline: none;
   background: #3d3d3d;
-  color: #e0e0e0;
   font: inherit;
   font-size: 1rem;
   font-weight: 600;
@@ -3111,7 +2912,6 @@ body:has(#bttf) .project-finder-window .finder-window-close-link {
 }
 .ios-files-page .finder-view-project:hover {
   background: #333333;
-  color: #e0e0e0;
   transform: translateY(-2px);
 }
 .ios-files-page .finder-view-project:focus-visible {
@@ -3287,7 +3087,6 @@ body:has(.project-finder-window) .content.project-finder-page {
   max-width: 100%;
   margin: 0 !important;
   padding: 0 !important;
-  color: #e0e0e0 !important;
   text-align: center !important;
 }
 .home-page > .home-section-inner .home-folder-links {
@@ -3404,7 +3203,6 @@ body:has(.headshot) .about-finder-window {
   border: none;
   border-radius: 50%;
   background: #232323;
-  color: #e0e0e0;
   text-decoration: none;
   transition: transform 180ms ease, color 180ms ease;
 }
@@ -3423,7 +3221,6 @@ body:has(.headshot) .about-finder-window {
 }
 .about-contact-button:hover {
   background: #232323;
-  color: #e0e0e0;
   transform: translateY(-2px);
 }
 .about-contact-button:hover .email-icon,
@@ -3432,7 +3229,6 @@ body:has(.headshot) .about-finder-window {
 .about-contact-button:focus-visible .email-icon,
 .about-contact-button:focus-visible .resume-icon,
 .about-contact-button:focus-visible .linkedin-icon {
-  color: #e0e0e0;
   stroke: var(--nav-and-button-hover-color);
 }
 .about-contact-button:focus-visible {
@@ -3556,18 +3352,11 @@ body:has(.headshot) .headshot.headshot-entered {
 .site-header .dropdown-links a .nav-emoji .nav-icon {
   transition: none !important;
 }
-.site-header .header-links a:hover:not(.nav-current):not(.active),
-.site-header .dropdown-links a:hover:not(.nav-current):not(.active),
-.site-header .dropdown-btn:hover,
-.site-header .header-links a:focus-visible:not(.nav-current):not(.active),
-.site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) {
-  color: #e0e0e0 !important;
-}
+
 .site-header .header-links a:hover:not(.nav-current):not(.active) .nav-emoji .nav-icon,
 .site-header .dropdown-links a:hover:not(.nav-current):not(.active) .nav-emoji .nav-icon,
 .site-header .header-links a:focus-visible:not(.nav-current):not(.active) .nav-emoji .nav-icon,
 .site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) .nav-emoji .nav-icon {
-  color: #e0e0e0 !important;
   stroke: var(--nav-and-button-hover-color) !important;
 }
 
@@ -3584,7 +3373,6 @@ body:has(.headshot) .headshot.headshot-entered {
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
-  color: #e0e0e0 !important;
 }
 
 .site-header .header-home,
@@ -3599,14 +3387,10 @@ body:has(.headshot) .headshot.headshot-entered {
   transform: translateY(-2px);
 }
 
-.site-header .header-home:hover .header-monogram,
-.site-header .header-home:focus-visible .header-monogram {
-  color: #e0e0e0 !important;
-}
+
 
 .site-header .header-email:hover .email-icon,
 .site-header .header-email:focus-visible .email-icon {
-  color: #e0e0e0 !important;
   stroke: var(--nav-and-button-hover-color) !important;
 }
 
@@ -3648,7 +3432,6 @@ body:has(.headshot) .headshot.headshot-entered {
 	border: 1px solid #e0e0e0;
 	border-radius: 0.5rem;
 	background: #333333;
-	color: #e0e0e0;
 	font-size: 0.8rem;
 	font-weight: 400;
 	line-height: 1.2;
@@ -3688,7 +3471,6 @@ body:has(.headshot) .headshot.headshot-entered {
   border: 1px solid #4a4a4a;
   border-radius: 0.5rem;
   background: #232323;
-  color: #e0e0e0;
   font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.2;
@@ -3710,18 +3492,11 @@ body:has(.headshot) .headshot.headshot-entered {
   }
 }
 
-/* Let the current-page navbar link use the same hover and focus treatment as other links. */
-.site-header .header-links a.nav-current:hover,
-.site-header .dropdown-links a.nav-current:hover,
-.site-header .header-links a.nav-current:focus-visible,
-.site-header .dropdown-links a.nav-current:focus-visible {
-  color: #e0e0e0 !important;
-}
+
 .site-header .header-links a.nav-current:hover .nav-emoji .nav-icon,
 .site-header .dropdown-links a.nav-current:hover .nav-emoji .nav-icon,
 .site-header .header-links a.nav-current:focus-visible .nav-emoji .nav-icon,
 .site-header .dropdown-links a.nav-current:focus-visible .nav-emoji .nav-icon {
-  color: #e0e0e0 !important;
   stroke: var(--nav-and-button-hover-color) !important;
 }
 
@@ -3741,7 +3516,6 @@ body:has(.headshot) .headshot.headshot-entered {
   border: 1px solid #4a4a4a;
   border-radius: 0.5rem;
   background: #232323;
-  color: #e0e0e0;
   font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.2;
@@ -3814,18 +3588,9 @@ body:has(.headshot) .headshot.headshot-entered {
   font-size: 1.125rem !important;
 }
 
-/* Case-study text colors for BAH, BTTF, and OTW. */
-body:has(#bah) .project-finder-window :is(h1, h2, h3, h4, h5, h6, p, li, figcaption, span, a),
-body:has(#bttf) .project-finder-window :is(h1, h2, h3, h4, h5, h6, p, li, figcaption, span, a),
-body:has(#otw) .project-finder-window :is(h1, h2, h3, h4, h5, h6, p, li, figcaption, span, a) {
-  color: #e0e0e0 !important;
-}
 
-body:has(#bah) .project-finder-window strong,
-body:has(#bttf) .project-finder-window strong,
-body:has(#otw) .project-finder-window strong {
-  color: #e0e0e0 !important;
-}
+
+
 /* Use the navigation/button hover color for italicized OTW subheaders. */
 body:has(#otw) .case-study-body h3.secondary-content-header {
   color: var(--nav-and-button-hover-color) !important;
