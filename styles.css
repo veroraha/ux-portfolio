@@ -2340,6 +2340,13 @@ body:has(#bttf) .case-study-body p {
 }
 
 
+/* Keep Finder and file-explorer window titles light gray. */
+.about-finder-title,
+.project-finder-window > .case-study-header,
+.ios-files-page .finder-information h2 {
+  color: #e0e0e0 !important;
+}
+
 /* Label the About Finder window beside its traffic-light controls. */
 .about-finder-title {
   margin-left: 0.35rem;
