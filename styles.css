@@ -426,7 +426,7 @@ body:has(.home-page) .page-header {
 }
 
 .content h3.secondary-content-header {
-	font-size: 1.05rem;
+	font-size: 1.125rem;
 	font-weight: 600;
 	font-style: italic;
 	letter-spacing: 0.04em;
