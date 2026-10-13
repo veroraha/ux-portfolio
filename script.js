@@ -34,6 +34,39 @@ function typewriter() {
 }
 
 // Mobile navigation and page active state handling
+function setupEmailCopy() {
+	const emailButton = document.querySelector('.site-header .header-email');
+	if (!emailButton) {
+		return;
+	}
+
+	let tooltipTimeout;
+	emailButton.addEventListener('click', async () => {
+		try {
+			await navigator.clipboard.writeText('vanessaeroraha@gmail.com');
+		} catch (error) {
+			const fallback = document.createElement('textarea');
+			fallback.value = 'vanessaeroraha@gmail.com';
+			fallback.setAttribute('readonly', '');
+			fallback.style.position = 'fixed';
+			fallback.style.opacity = '0';
+			document.body.appendChild(fallback);
+			fallback.select();
+			const copied = document.execCommand('copy');
+			fallback.remove();
+			if (!copied) {
+				return;
+			}
+		}
+
+		emailButton.classList.add('email-copied');
+		window.clearTimeout(tooltipTimeout);
+		tooltipTimeout = window.setTimeout(() => {
+			emailButton.classList.remove('email-copied');
+		}, 2000);
+	});
+}
+
 function setupNavigation() {
 	const menuToggle = document.getElementById('menuToggle');
 	const dropdownLinks = document.getElementById('dropdownLinks');
@@ -137,6 +170,7 @@ function setupNavigation() {
 
 document.addEventListener('DOMContentLoaded', () => {
 	setupNavigation();
+	setupEmailCopy();
 
 	// Delay the homepage greeting by 1.5 seconds; case-study titles type immediately.
 	if (titleElement && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
