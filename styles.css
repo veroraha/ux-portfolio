@@ -3111,7 +3111,7 @@ body:has(#bttf) .project-finder-window .finder-window-close-link {
 }
 .ios-files-page .finder-view-project:hover {
   background: #232323;
-  color: #F5F5F7;
+  color: var(--nav-and-button-hover-color);
   transform: translateY(-2px);
 }
 .ios-files-page .finder-view-project:focus-visible {
