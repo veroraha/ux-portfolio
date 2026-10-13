@@ -1253,8 +1253,8 @@ body:has(.home-page) .page-header {
   --primary-text-color: #e0e0e0;
   --secondary-text-color: #e0e0e0;
   --border-color: #5B7CD7;
-  --primary-accent-color: #5B7CD7;
-  --secondary-accent-color: #A1A9E2;
+  --primary-accent-color: #D20F73;
+  --secondary-accent-color: #5555DD;
   --footer-bg-color: #0a0a0a;
   --placard-border: #5B7CD7;
 }html,  body,  .home-page, 
@@ -2347,11 +2347,14 @@ body,
   border-radius: 999px;
   color: #0a0a0a;
   font-size: 0.75rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.2;
 }
 .ios-files-page .finder-work-tag--professional {
-  background: #A1A9E2;
+  background: var(--primary-accent-color);
+}
+.ios-files-page .finder-work-tag--earlier {
+  background: var(--secondary-accent-color);
 }
 /* Project metadata beneath the selected project summary. */
 .ios-files-page .finder-information {
