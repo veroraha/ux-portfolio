@@ -2035,7 +2035,7 @@ body,
   border: 1px solid #444444;
   border-radius: 0.45rem;
   background: #242424;
-  color: #F5F5F7;
+  color: #e0e0e0;
   content: attr(data-label);
   font-size: 0.75rem;
   font-weight: 400;
@@ -2059,7 +2059,7 @@ body,
   bottom: calc(100% + 8px);
   border-color: #686868;
   background: #262626;
-  color: #f9f9f9;
+  color: #e0e0e0;
 }
 .ios-files-page .finder-project-pane button.ios-file-item::before {
   content: "";
@@ -3645,9 +3645,9 @@ body:has(.headshot) .headshot.headshot-entered {
 	left: 50%;
 	z-index: 1000;
 	padding: 0.45rem 0.7rem;
-	border: 1px solid #4a4a4a;
+	border: 1px solid #e0e0e0;
 	border-radius: 0.5rem;
-	background: #232323;
+	background: #333333;
 	color: #e0e0e0;
 	font-size: 0.8rem;
 	font-weight: 400;
