@@ -1404,8 +1404,10 @@ body:has(.home-page) .page-header {
   border-color: #e0e0e0 !important;
   color: #e0e0e0 !important;
 }
-.site-header .header-email:hover {
-  opacity: 0.85;
+.site-header .header-email,
+.site-header .header-email:hover,
+.site-header .header-email:focus-visible {
+  opacity: 1 !important;
 }
 
 
