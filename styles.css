@@ -1843,7 +1843,7 @@ body,
 /* Finder window split panes: two-thirds left, one-third right */
 .ios-files-page {
   padding: 0 !important;
-  border: 1px solid #666666;
+  border: none;
 }
 .ios-files-page .finder-layout {
   display: grid;
