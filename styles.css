@@ -368,6 +368,7 @@ body:has(.home-page) .page-header {
 }
 
 .case-study-subtitle {
+	color: #7B7B7B;
 	text-align: center;
 	font-size: 1.15rem;
 	font-weight: 400;
