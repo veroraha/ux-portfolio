@@ -3605,3 +3605,38 @@ h2:not(.nav h2) {
 h3:not(.nav .header-links h3):not(.nav .dropdown-links h3) {
   font-size: 1.25rem !important;
 }
+
+/* Consistent navbar, tooltip, and icon-button text colors. */
+.site-header .header-links a,
+.site-header .header-links .nav-current,
+.site-header .dropdown-links a,
+.site-header .dropdown-links .nav-current,
+.site-header .dropdown-btn,
+.site-header .header-social,
+.about-contact-button {
+  color: #e0e0e0 !important;
+}
+
+.site-header .header-links a:hover,
+.site-header .header-links a:focus-visible,
+.site-header .header-links .nav-current:hover,
+.site-header .header-links .nav-current:focus-visible,
+.site-header .dropdown-links a:hover,
+.site-header .dropdown-links a:focus-visible,
+.site-header .dropdown-links .nav-current:hover,
+.site-header .dropdown-links .nav-current:focus-visible,
+.site-header .dropdown-btn:hover,
+.site-header .dropdown-btn:focus-visible,
+.site-header .header-social:hover,
+.site-header .header-social:focus-visible,
+.about-contact-button:hover,
+.about-contact-button:focus-visible {
+  color: var(--nav-and-button-hover-color) !important;
+}
+
+.email-copied-tooltip,
+.site-header .header-social[data-tooltip]::before,
+.about-contact-button[data-tooltip]::before,
+.ios-files-page .finder-project-pane button.ios-file-item::after {
+  color: #e0e0e0 !important;
+}
