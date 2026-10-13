@@ -1256,15 +1256,15 @@ body:has(.home-page) .page-header {
 
 /* Onyx palette: black, white, and three signature accents */
 :root {
-  --primary-bg-color: #11001c;
-  --surface-muted-color: #11001c;
+  --primary-bg-color: #0a0a0a;
+  --surface-muted-color: #0a0a0a;
   --primary-text-color: #e0e0e0;
   --secondary-text-color: #e0e0e0;
   --tertiary-text-color: #A8E3A1;
   --border-color: #5B7CD7;
   --primary-accent-color: #5B7CD7;
   --secondary-accent-color: #A1A9E2;
-  --footer-bg-color: #11001c;
+  --footer-bg-color: #0a0a0a;
   --playful-accent-color: #A1A9E2;
   --cool-accent-color: #5B7CD7;
   --berry-accent-color: #A1A9E2;
@@ -1276,7 +1276,7 @@ body:has(.home-page) .page-header {
   --palette-green: #A8E3A1;
 }html,  body,  .home-page, 
 .content,  .case-study-body{
-  background-color: #11001c;
+  background-color: #0a0a0a;
   color: #e0e0e0;
 }.page-header,  .content,  .content h3,  .case-study-subtitle, 
 .case-study-body,  .case-study-body h2,  .case-study-body h3, 
@@ -1285,7 +1285,7 @@ body:has(.home-page) .page-header {
   color: #e0e0e0 !important;
 }
 .site-header .nav, .site-header .dropdown-links {
-  background: #11001c !important;
+  background: #0a0a0a !important;
   border-color: #5B7CD7 !important;
 }
 .site-header .header-links a, .site-header .header-links .nav-current,
@@ -1326,7 +1326,7 @@ body:has(.home-page) .page-header {
 
 /* Refine utility buttons and navigation hover to the Onyx palette */
 .site-header .header-linkedin {
-  background-color: #11001c !important;
+  background-color: #0a0a0a !important;
   border: 1px solid #FAFAFA !important;
   color: #e0e0e0 !important;
 }
@@ -1339,7 +1339,7 @@ body:has(.home-page) .page-header {
   color: #e0e0e0 !important;
 }
 .site-header .header-linkedin:hover {
-  background-color: #11001c !important;
+  background-color: #0a0a0a !important;
   border-color: #e0e0e0 !important;
   color: #e0e0e0 !important;
 }
@@ -1417,7 +1417,7 @@ body:has(.home-page) .page-header {
 .site-header .header-email,
 .site-header .header-email:hover,
 .site-header .header-email:focus-visible {
-  background-color: #11001c !important;
+  background-color: #0a0a0a !important;
   border: 1px solid #FAFAFA !important;
   border-color: #e0e0e0 !important;
   color: #e0e0e0 !important;
@@ -1518,7 +1518,7 @@ html,
 body,
 .home-page,
 .home-page .section{
-  background-color: #11001c !important;
+  background-color: #0a0a0a !important;
   background-image: none !important;
 }
 
@@ -1536,7 +1536,7 @@ html,
 body,
 .home-page,
 .home-page .section{
-  background-color: #11001c !important;
+  background-color: #0a0a0a !important;
   background-image: none !important;
 }
 
@@ -1699,14 +1699,14 @@ body,
   }
 }
 
-/* Final background color rules: page surfaces stay #11001c;header elements use #141414 */
+/* Final background color rules: page surfaces stay #0a0a0a;header elements use #141414 */
 html, 
 body, 
 .home-page, 
 .home-page .section, 
 .content, 
 .case-study-body{
-  background-color: #11001c !important;
+  background-color: #0a0a0a !important;
   background-image: none !important;
 }
 
@@ -1753,7 +1753,7 @@ body,
   min-height: calc(100vh - 90px);
   margin: 0 auto !important;
   padding: clamp(1.5rem, 5vw, 4rem) clamp(1.25rem, 6vw, 5.5rem) 5rem !important;
-  background: #11001c !important;
+  background: #0a0a0a !important;
   color: #F5F5F7;
 }
 .ios-files-page .ios-file-grid {
@@ -2823,7 +2823,7 @@ body:has(.headshot) .content {
   margin: 0 auto !important;
   padding: 0 !important;
   border: 0 !important;
-  background: #11001c !important;
+  background: #0a0a0a !important;
 }
 .ios-files-page > .finder-layout {
   box-sizing: border-box;
@@ -2832,7 +2832,7 @@ body:has(.headshot) .content {
   min-height: 0 !important;
   border: 1px solid #666666;
   border-radius: 3rem;
-  background: #11001c;
+  background: #0a0a0a;
   overflow: hidden;
 }
 @media (max-width: 600px) {
@@ -3116,7 +3116,7 @@ body:has(#bttf) .project-finder-window .finder-window-close-link {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 .ios-files-page .finder-view-project:hover {
-  background: #11001c;
+  background: #0a0a0a;
   color: #F5F5F7;
 }
 .ios-files-page .finder-view-project:focus-visible {
