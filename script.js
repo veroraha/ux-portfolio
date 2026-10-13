@@ -35,35 +35,38 @@ function typewriter() {
 
 // Mobile navigation and page active state handling
 function setupEmailCopy() {
-	const emailButton = document.querySelector('.site-header .header-email');
-	if (!emailButton) {
+	const emailButtons = document.querySelectorAll('.header-email, .about-contact-button:has(.email-icon)');
+	if (!emailButtons.length) {
 		return;
 	}
 
-	let tooltipTimeout;
-	emailButton.addEventListener('click', async () => {
-		try {
-			await navigator.clipboard.writeText('vanessaeroraha@gmail.com');
-		} catch (error) {
-			const fallback = document.createElement('textarea');
-			fallback.value = 'vanessaeroraha@gmail.com';
-			fallback.setAttribute('readonly', '');
-			fallback.style.position = 'fixed';
-			fallback.style.opacity = '0';
-			document.body.appendChild(fallback);
-			fallback.select();
-			const copied = document.execCommand('copy');
-			fallback.remove();
-			if (!copied) {
-				return;
+	emailButtons.forEach((emailButton) => {
+		let tooltipTimeout;
+		emailButton.addEventListener('click', async (event) => {
+			event.preventDefault();
+			try {
+				await navigator.clipboard.writeText('vanessaeroraha@gmail.com');
+			} catch (error) {
+				const fallback = document.createElement('textarea');
+				fallback.value = 'vanessaeroraha@gmail.com';
+				fallback.setAttribute('readonly', '');
+				fallback.style.position = 'fixed';
+				fallback.style.opacity = '0';
+				document.body.appendChild(fallback);
+				fallback.select();
+				const copied = document.execCommand('copy');
+				fallback.remove();
+				if (!copied) {
+					return;
+				}
 			}
-		}
 
-		emailButton.classList.add('email-copied');
-		window.clearTimeout(tooltipTimeout);
-		tooltipTimeout = window.setTimeout(() => {
-			emailButton.classList.remove('email-copied');
-		}, 2000);
+			emailButton.classList.add('email-copied');
+			window.clearTimeout(tooltipTimeout);
+			tooltipTimeout = window.setTimeout(() => {
+				emailButton.classList.remove('email-copied');
+			}, 2000);
+		});
 	});
 }
 
