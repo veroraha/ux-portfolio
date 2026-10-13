@@ -3619,16 +3619,19 @@ body:has(.headshot) .headshot.headshot-entered {
 
 
 /* Email-copy confirmation tooltip */
-.site-header .header-email {
+.site-header .header-email,
+.about-contact-button:has(.email-icon) {
 	position: relative;
 	cursor: pointer;
+}
+
+.site-header .header-email {
 	font: inherit;
 	padding: 0;
 }
 
-.site-header .email-copied-tooltip {
+.email-copied-tooltip {
 	position: absolute;
-	top: calc(100% + 0.65rem);
 	left: 50%;
 	z-index: 1000;
 	padding: 0.45rem 0.7rem;
@@ -3647,16 +3650,24 @@ body:has(.headshot) .headshot.headshot-entered {
 	transition: opacity 150ms ease, transform 150ms ease, visibility 150ms ease;
 }
 
-.site-header .header-email.email-copied .email-copied-tooltip {
+.site-header .email-copied-tooltip {
+	top: calc(100% + 0.65rem);
+}
+
+.about-contact-button .email-copied-tooltip {
+	bottom: calc(100% + 0.65rem);
+}
+
+.header-email.email-copied .email-copied-tooltip,
+.about-contact-button.email-copied .email-copied-tooltip {
 	opacity: 1;
 	visibility: visible;
 	transform: translate(-50%, 0);
 }
 
-.site-header .email-copied-tooltip::before {
+.email-copied-tooltip::before {
 	content: "";
 	position: absolute;
-	bottom: 100%;
 	left: 50%;
 	width: 0.45rem;
 	height: 0.45rem;
@@ -3666,8 +3677,17 @@ body:has(.headshot) .headshot.headshot-entered {
 	transform: translate(-50%, 50%) rotate(45deg);
 }
 
+.site-header .email-copied-tooltip::before {
+	bottom: 100%;
+}
+
+.about-contact-button .email-copied-tooltip::before {
+	top: 100%;
+	transform: translate(-50%, -50%) rotate(225deg);
+}
+
 @media (prefers-reduced-motion: reduce) {
-	.site-header .email-copied-tooltip {
+	.email-copied-tooltip {
 		transition: none;
 	}
 }
