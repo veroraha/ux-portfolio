@@ -3388,12 +3388,12 @@ body:has(.headshot) .about-finder-window {
   width: 56px;
   height: 56px;
   box-sizing: border-box;
-  border: 1px solid #FAFAFA;
+  border: none;
   border-radius: 50%;
-  background: #141414;
+  background: #232323;
   color: #e0e0e0;
   text-decoration: none;
-  transition: opacity 180ms ease, transform 180ms ease;
+  transition: transform 180ms ease, color 180ms ease;
 }
 .about-contact-button svg {
   width: 1.6rem;
@@ -3409,8 +3409,18 @@ body:has(.headshot) .about-finder-window {
   stroke: none;
 }
 .about-contact-button:hover {
-  opacity: 0.85;
+  background: #232323;
+  color: #E16BE6;
   transform: translateY(-2px);
+}
+.about-contact-button:hover .email-icon,
+.about-contact-button:hover .resume-icon,
+.about-contact-button:hover .linkedin-icon,
+.about-contact-button:focus-visible .email-icon,
+.about-contact-button:focus-visible .resume-icon,
+.about-contact-button:focus-visible .linkedin-icon {
+  color: #E16BE6;
+  stroke: #E16BE6;
 }
 .about-contact-button:focus-visible {
   outline: 3px solid #CCCCCC;
