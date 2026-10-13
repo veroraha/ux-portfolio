@@ -65,7 +65,7 @@ function setupEmailCopy() {
 			window.clearTimeout(tooltipTimeout);
 			tooltipTimeout = window.setTimeout(() => {
 				emailButton.classList.remove('email-copied');
-			}, 2000);
+			}, 1500);
 		});
 	});
 }
