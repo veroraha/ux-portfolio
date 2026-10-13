@@ -3710,3 +3710,17 @@ body:has(.headshot) .headshot.headshot-entered {
   }
 }
 
+/* Let the current-page navbar link use the same hover and focus treatment as other links. */
+.site-header .header-links a.nav-current:hover,
+.site-header .dropdown-links a.nav-current:hover,
+.site-header .header-links a.nav-current:focus-visible,
+.site-header .dropdown-links a.nav-current:focus-visible {
+  color: var(--nav-and-button-hover-color) !important;
+}
+.site-header .header-links a.nav-current:hover .nav-emoji .nav-icon,
+.site-header .dropdown-links a.nav-current:hover .nav-emoji .nav-icon,
+.site-header .header-links a.nav-current:focus-visible .nav-emoji .nav-icon,
+.site-header .dropdown-links a.nav-current:focus-visible .nav-emoji .nav-icon {
+  color: var(--nav-and-button-hover-color) !important;
+  stroke: var(--nav-and-button-hover-color) !important;
+}
