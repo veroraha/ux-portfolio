@@ -3598,3 +3598,20 @@ body:has(.headshot) .headshot.headshot-entered {
   color: #E16BE6 !important;
   stroke: #E16BE6 !important;
 }
+
+/* Keep the circular Finder window controls fully opaque in every interaction state. */
+.ios-files-page .finder-window-control,
+.ios-files-page .finder-window-control:hover,
+.ios-files-page .finder-window-control:focus,
+.ios-files-page .finder-window-control:focus-visible,
+.about-finder-window .finder-window-control,
+.about-finder-window .finder-window-control:hover,
+.about-finder-window .finder-window-control:focus,
+.about-finder-window .finder-window-control:focus-visible,
+.project-finder-window .finder-window-control,
+.project-finder-window .finder-window-control:hover,
+.project-finder-window .finder-window-control:focus,
+.project-finder-window .finder-window-control:focus-visible {
+  opacity: 1 !important;
+}
+
