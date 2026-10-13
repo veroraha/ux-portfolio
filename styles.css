@@ -33,7 +33,7 @@
 
 	/* Olive-and-cream palette */
 	--primary-bg-color: #fefae0; /** Warm cream */
-	--navbar-hover-color: #8A8A93;
+	--nav-and-button-hover-color: #8A8A93;
 	--border-color: #606c38; /** Olive */
 
 	--primary-accent-color: #283618; /** Deep olive for links and focus indicators */
@@ -3413,7 +3413,7 @@ body:has(.headshot) .about-finder-window {
 }
 .about-contact-button:hover {
   background: #232323;
-  color: #E16BE6;
+  color: var(--nav-and-button-hover-color);
   transform: translateY(-2px);
 }
 .about-contact-button:hover .email-icon,
@@ -3422,8 +3422,8 @@ body:has(.headshot) .about-finder-window {
 .about-contact-button:focus-visible .email-icon,
 .about-contact-button:focus-visible .resume-icon,
 .about-contact-button:focus-visible .linkedin-icon {
-  color: #E16BE6;
-  stroke: #E16BE6;
+  color: var(--nav-and-button-hover-color);
+  stroke: var(--nav-and-button-hover-color);
 }
 .about-contact-button:focus-visible {
   outline: 3px solid #CCCCCC;
@@ -3551,14 +3551,14 @@ body:has(.headshot) .headshot.headshot-entered {
 .site-header .dropdown-btn:hover,
 .site-header .header-links a:focus-visible:not(.nav-current):not(.active),
 .site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) {
-  color: var(--navbar-hover-color) !important;
+  color: var(--nav-and-button-hover-color) !important;
 }
 .site-header .header-links a:hover:not(.nav-current):not(.active) .nav-emoji .nav-icon,
 .site-header .dropdown-links a:hover:not(.nav-current):not(.active) .nav-emoji .nav-icon,
 .site-header .header-links a:focus-visible:not(.nav-current):not(.active) .nav-emoji .nav-icon,
 .site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) .nav-emoji .nav-icon {
-  color: var(--navbar-hover-color) !important;
-  stroke: var(--navbar-hover-color) !important;
+  color: var(--nav-and-button-hover-color) !important;
+  stroke: var(--nav-and-button-hover-color) !important;
 }
 
 
@@ -3591,13 +3591,13 @@ body:has(.headshot) .headshot.headshot-entered {
 
 .site-header .header-home:hover .header-monogram,
 .site-header .header-home:focus-visible .header-monogram {
-  color: #E16BE6 !important;
+  color: var(--nav-and-button-hover-color) !important;
 }
 
 .site-header .header-email:hover .email-icon,
 .site-header .header-email:focus-visible .email-icon {
-  color: #E16BE6 !important;
-  stroke: #E16BE6 !important;
+  color: var(--nav-and-button-hover-color) !important;
+  stroke: var(--nav-and-button-hover-color) !important;
 }
 
 /* Keep the circular Finder window controls fully opaque in every interaction state. */
