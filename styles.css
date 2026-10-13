@@ -3813,3 +3813,17 @@ body:has(.headshot) .headshot.headshot-entered {
 .project-finder-window .case-study-body .research-stat-label {
   font-size: 1.125rem !important;
 }
+
+/* Case-study text colors for BAH, BTTF, and OTW. */
+body:has(#bah) .project-finder-window :is(h1, h2, h3, h4, h5, h6, p, li, figcaption, span, a),
+body:has(#bttf) .project-finder-window :is(h1, h2, h3, h4, h5, h6, p, li, figcaption, span, a),
+body:has(#otw) .project-finder-window :is(h1, h2, h3, h4, h5, h6, p, li, figcaption, span, a) {
+  color: #e0e0e0 !important;
+}
+
+body:has(#bah) .project-finder-window strong,
+body:has(#bttf) .project-finder-window strong,
+body:has(#otw) .project-finder-window strong {
+  color: var(--nav-and-button-hover-color) !important;
+}
+
