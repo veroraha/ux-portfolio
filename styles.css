@@ -33,7 +33,6 @@
 
 	/* Olive-and-cream palette */
 	--primary-bg-color: #fefae0; /** Warm cream */
-	--surface-muted-color: #fefae0; /** Cream surface */
 	--border-color: #606c38; /** Olive */
 
 	--primary-accent-color: #283618; /** Deep olive for links and focus indicators */
@@ -42,11 +41,7 @@
 
 	--primary-text-color: #283618; /** Deep olive */
 	--secondary-text-color: #283618; /** Deep olive */
-	--tertiary-text-color: #283618; /** Deep olive for readable metadata */
 
-	--playful-accent-color: #606c38; /** Olive */
-	--cool-accent-color: #606c38; /** Olive */
-	--berry-accent-color: #283618; /** Deep olive */
 	--placard-border: #283618;
 
 	--header-gutter: 4rem;
@@ -545,7 +540,6 @@ body:has(.home-page) .page-header {
 
 .case-study-mockup-row {
 	--mockup-gap: 0.65rem;
-	--mockup-cols: 4;
 	display: grid;
 	grid-template-columns: repeat(4, minmax(0, 1fr));
 	align-items: start;
@@ -569,7 +563,6 @@ body:has(.home-page) .page-header {
 
 @media (max-width: 720px) {
 	.case-study-mockup-row {
-		--mockup-cols: 2;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 
@@ -1214,7 +1207,6 @@ body:has(.home-page) .page-header {
 :root {
 	--primary-text-color: #0a0a0a;
 	--secondary-text-color: #0a0a0a;
-	--tertiary-text-color: #0a0a0a;
 }
 
 .footer {
@@ -1257,23 +1249,13 @@ body:has(.home-page) .page-header {
 /* Onyx palette: black, white, and three signature accents */
 :root {
   --primary-bg-color: #0a0a0a;
-  --surface-muted-color: #0a0a0a;
   --primary-text-color: #e0e0e0;
   --secondary-text-color: #e0e0e0;
-  --tertiary-text-color: #A8E3A1;
   --border-color: #5B7CD7;
   --primary-accent-color: #5B7CD7;
   --secondary-accent-color: #A1A9E2;
   --footer-bg-color: #0a0a0a;
-  --playful-accent-color: #A1A9E2;
-  --cool-accent-color: #5B7CD7;
-  --berry-accent-color: #A1A9E2;
   --placard-border: #5B7CD7;
-  --palette-black: #0a0a0a;
-  --palette-white: #FAFAFA;
-  --palette-blue: #5B7CD7;
-  --palette-lavender: #A1A9E2;
-  --palette-green: #A8E3A1;
 }html,  body,  .home-page, 
 .content,  .case-study-body{
   background-color: #0a0a0a;
