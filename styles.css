@@ -3651,3 +3651,8 @@ h3:not(.nav .header-links h3):not(.nav .dropdown-links h3) {
 .ios-files-page .finder-project-pane button.ios-file-item::after {
   color: #e0e0e0 !important;
 }
+
+/* Keep the About window scrollbar inset from the top and bottom edges. */
+body:has(.headshot) .about-finder-window::-webkit-scrollbar-track {
+  margin-block: 1.5rem;
+}
