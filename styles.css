@@ -2344,7 +2344,7 @@ body,
   display: inline-block;
   margin-top: 1rem;
   padding: 0.35rem 0.65rem;
-  border-radius: 999px;
+  border-radius: 0.25rem;
   color: #e0e0e0;
   font-size: 0.875rem;
   font-weight: 700;
