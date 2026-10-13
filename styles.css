@@ -3665,27 +3665,6 @@ body:has(.headshot) .headshot.headshot-entered {
 	transform: translate(-50%, 0);
 }
 
-.email-copied-tooltip::before {
-	content: "";
-	position: absolute;
-	left: 50%;
-	width: 0.45rem;
-	height: 0.45rem;
-	border-top: 1px solid #4a4a4a;
-	border-left: 1px solid #4a4a4a;
-	background: #232323;
-	transform: translate(-50%, 50%) rotate(45deg);
-}
-
-.site-header .email-copied-tooltip::before {
-	bottom: 100%;
-}
-
-.about-contact-button .email-copied-tooltip::before {
-	top: 100%;
-	transform: translate(-50%, -50%) rotate(225deg);
-}
-
 @media (prefers-reduced-motion: reduce) {
 	.email-copied-tooltip {
 		transition: none;
