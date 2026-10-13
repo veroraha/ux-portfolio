@@ -3616,3 +3616,58 @@ body:has(.headshot) .headshot.headshot-entered {
   opacity: 1 !important;
 }
 
+
+
+/* Email-copy confirmation tooltip */
+.site-header .header-email {
+	position: relative;
+	cursor: pointer;
+	font: inherit;
+	padding: 0;
+}
+
+.site-header .email-copied-tooltip {
+	position: absolute;
+	top: calc(100% + 0.65rem);
+	left: 50%;
+	z-index: 1000;
+	padding: 0.45rem 0.7rem;
+	border: 1px solid #4a4a4a;
+	border-radius: 0.5rem;
+	background: #232323;
+	color: #e0e0e0;
+	font-size: 0.8rem;
+	font-weight: 400;
+	line-height: 1.2;
+	white-space: nowrap;
+	pointer-events: none;
+	opacity: 0;
+	visibility: hidden;
+	transform: translate(-50%, -0.2rem);
+	transition: opacity 150ms ease, transform 150ms ease, visibility 150ms ease;
+}
+
+.site-header .header-email.email-copied .email-copied-tooltip {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(-50%, 0);
+}
+
+.site-header .email-copied-tooltip::before {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	width: 0.45rem;
+	height: 0.45rem;
+	border-top: 1px solid #4a4a4a;
+	border-left: 1px solid #4a4a4a;
+	background: #232323;
+	transform: translate(-50%, 50%) rotate(45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.site-header .email-copied-tooltip {
+		transition: none;
+	}
+}
