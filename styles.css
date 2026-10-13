@@ -3618,7 +3618,7 @@ body:has(#otw) .case-study-body h3.secondary-content-header {
 
 /* Consistent heading sizes across site content; preserve compact navigation labels. */
 h2:not(.nav h2) {
-  font-size: 1.8rem !important;
+  font-size: 1.65rem !important;
 }
 
 h3:not(.nav .header-links h3):not(.nav .dropdown-links h3) {
