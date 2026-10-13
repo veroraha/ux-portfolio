@@ -451,7 +451,7 @@ body:has(.home-page) .page-header {
 }
 
 .case-study-body .research-stat-value {
-	font-size: clamp(1.65rem, 3.4vw, 2.35rem);
+	font-size: 2rem;
 	line-height: 1.4;
 	letter-spacing: -0.3px;
 	font-weight: 700;
