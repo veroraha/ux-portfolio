@@ -3110,7 +3110,7 @@ body:has(#bttf) .project-finder-window .finder-window-close-link {
   transition: transform 180ms ease;
 }
 .ios-files-page .finder-view-project:hover {
-  background: #666666;
+  background: #333333;
   color: #F5F5F7;
   transform: translateY(-2px);
 }
