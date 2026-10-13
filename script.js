@@ -44,6 +44,7 @@ function setupEmailCopy() {
 		let tooltipTimeout;
 		emailButton.addEventListener('click', async (event) => {
 			event.preventDefault();
+			emailButton.classList.add('email-tooltip-dismissed');
 			try {
 				await navigator.clipboard.writeText('vanessaeroraha@gmail.com');
 			} catch (error) {
@@ -66,6 +67,12 @@ function setupEmailCopy() {
 			tooltipTimeout = window.setTimeout(() => {
 				emailButton.classList.remove('email-copied');
 			}, 1500);
+		});
+		emailButton.addEventListener('mouseleave', () => {
+			emailButton.classList.remove('email-tooltip-dismissed');
+		});
+		emailButton.addEventListener('blur', () => {
+			emailButton.classList.remove('email-tooltip-dismissed');
 		});
 	});
 }
