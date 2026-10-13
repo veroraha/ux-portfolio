@@ -169,7 +169,7 @@ video {
 .nav .dropdown-links .nav-current {
 	color: var(--footer-bg-color);
 	font-weight: 700;
-	cursor: default;
+	cursor: pointer;
 }
 
 .nav .header-links a.active,
