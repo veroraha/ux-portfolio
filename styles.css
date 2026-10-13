@@ -421,7 +421,7 @@ body:has(.home-page) .page-header {
 	font-size: 1.35rem;
 	font-weight: 700;
 	letter-spacing: -0.3px;
-	color: #e0e0e0;
+	color: #45A8F8;
 	margin: 0 0 0.75rem;
 }
 
@@ -431,7 +431,7 @@ body:has(.home-page) .page-header {
 	font-style: italic;
 	letter-spacing: 0.04em;
 	line-height: inherit;
-	color: #e0e0e0;
+	color: var(--nav-and-button-hover-color);
 	margin-top: 2.15rem;
 	margin-right: 0;
 	margin-left: 0;
@@ -2477,10 +2477,10 @@ body:has(#bttf) .case-study-body p {
 
 /* Project page primary headers are blue; italicized subheaders remain light gray. */
 .project-finder-window .case-study-body h2 {
-  color: #e0e0e0 !important;
+  color: #45A8F8 !important;
 }
 .project-finder-window .case-study-body h3.secondary-content-header {
-  color: #e0e0e0 !important;
+  color: var(--nav-and-button-hover-color) !important;
 }
 
 
@@ -3828,7 +3828,7 @@ body:has(#otw) .project-finder-window strong {
 }
 /* Use the navigation/button hover color for italicized OTW subheaders. */
 body:has(#otw) .case-study-body h3.secondary-content-header {
-  color: #e0e0e0 !important;
+  color: var(--nav-and-button-hover-color) !important;
 }
 
 /* Consistent heading sizes across site content; preserve compact navigation labels. */
