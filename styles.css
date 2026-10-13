@@ -3762,6 +3762,12 @@ body:has(.headshot) .headshot.headshot-entered {
   transform: translate(-50%, 0.2rem);
 }
 
+.site-header .header-social.email-tooltip-dismissed[data-tooltip]::before,
+.about-contact-button.email-tooltip-dismissed[data-tooltip]::before {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
 .site-header .header-social[data-tooltip]:hover::before,
 .site-header .header-social[data-tooltip]:focus-visible::before,
 .about-contact-button[data-tooltip]:hover::before,
