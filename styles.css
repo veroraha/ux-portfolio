@@ -3522,3 +3522,17 @@ body:has(.headshot) .headshot.headshot-entered {
     background-color: currentColor !important;
   }
 }
+
+/* Navbar hover and focus color */
+.site-header .header-links a:hover:not(.nav-current):not(.active),
+.site-header .dropdown-links a:hover:not(.nav-current):not(.active),
+.site-header .dropdown-btn:hover,
+.site-header .header-links a:focus-visible:not(.nav-current):not(.active),
+.site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active),
+.site-header .header-links a:hover:not(.nav-current):not(.active) .nav-emoji .nav-icon,
+.site-header .dropdown-links a:hover:not(.nav-current):not(.active) .nav-emoji .nav-icon,
+.site-header .header-links a:focus-visible:not(.nav-current):not(.active) .nav-emoji .nav-icon,
+.site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) .nav-emoji .nav-icon {
+  color: #6A30FE !important;
+  stroke: #6A30FE !important;
+}
