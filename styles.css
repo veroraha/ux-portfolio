@@ -30,6 +30,7 @@
 
 :root {
 	font-family: "Host Grotesk", sans-serif;
+	color: #e0e0e0;
 
 	/* Olive-and-cream palette */
 	--primary-bg-color: #fefae0; /** Warm cream */
