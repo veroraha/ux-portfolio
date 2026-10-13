@@ -2867,6 +2867,12 @@ body:has(.headshot) .content {
 }
 
 
+/* Remove the caret from Projects page tooltips. */
+.ios-files-page .finder-project-pane button.ios-file-item::before {
+  content: none !important;
+  display: none !important;
+}
+
 /* Give Projects tooltips a squarer shape with softly rounded corners. */
 .ios-files-page .finder-project-pane button.ios-file-item::after {
   border-radius: 0.5rem;
