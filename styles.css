@@ -2610,7 +2610,7 @@ body:has(.headshot) .content {
     width: 6rem;
   }
   .about-finder-window > h3 {
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.55;
   }
 }
@@ -2637,7 +2637,7 @@ body:has(.headshot) .content {
   margin-bottom: 0.5rem;
 }
 .about-finder-window > h3 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -2991,7 +2991,7 @@ body:has(#bttf) .project-finder-window .finder-window-close-link {
 .project-finder-window .case-study-subtitle,
 .project-finder-window .case-study-body p,
 .project-finder-window .case-study-body li {
-  font-size: 1rem !important;
+  font-size: 1.125rem !important;
 }
 @media (max-width: 600px) {
   body:has(.project-finder-window) .content.project-finder-page {
@@ -3811,5 +3811,5 @@ body:has(.headshot) .headshot.headshot-entered {
 .project-finder-window .case-study-body li,
 .project-finder-window .case-study-body figcaption,
 .project-finder-window .case-study-body .research-stat-label {
-  font-size: 1rem !important;
+  font-size: 1.125rem !important;
 }
