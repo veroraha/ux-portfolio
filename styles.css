@@ -2149,6 +2149,7 @@ body,
   font-size: clamp(0.9rem, 1.3vw, 1.05rem);
   line-height: 1.55;
   text-align: left;
+  color: #7B7B7B;
 }
 
 
@@ -2193,6 +2194,7 @@ body,
 }
 .ios-files-page .finder-information-row span:first-child {
   text-align: left;
+  color: #7B7B7B;
 }
 .ios-files-page .finder-information-row span:last-child {
   text-align: right;
