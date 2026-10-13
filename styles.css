@@ -981,8 +981,8 @@ body:has(.home-page) .page-header {
 }
 .site-header .header-email { background: #f4c900; color: #283618; }
 .site-header .header-social svg {
-	width: 1.6rem;
-	height: 1.6rem;
+	width: 1.5rem;
+	height: 1.5rem;
 	fill: none;
 	stroke: currentColor;
 	stroke-width: 1.8;
@@ -1007,7 +1007,7 @@ body:has(.home-page) .page-header {
 	.site-header { padding: 0.75rem 1rem; }
 	.header-shell { gap: 0.6rem; }
 	.site-header .header-social { width: 3.1rem; height: 3.1rem; }
-	.site-header .header-social svg { width: 1.35rem; height: 1.35rem; }
+	.site-header .header-social svg { width: 1.5rem; height: 1.5rem; }
 	.site-header .nav { padding: 0.65rem 1rem; }
 	.site-header .header-links { gap: clamp(0.65rem, 2.5vw, 1.2rem); }
 	.site-header .header-links a,
@@ -1017,7 +1017,7 @@ body:has(.home-page) .page-header {
 	.site-header { padding: 0.65rem 0.75rem; }
 	.site-header .header-shell { gap: 0.45rem; }
 	.site-header .header-social { width: 2.65rem; height: 2.65rem; }
-	.site-header .header-social svg { width: 1.15rem; height: 1.15rem; }
+	.site-header .header-social svg { width: 1.5rem; height: 1.5rem; }
 	.site-header .nav { padding: 0.55rem 0.8rem; }
 	.site-header .header-links { gap: 0.65rem; }
 	.site-header .header-links a,
@@ -3441,10 +3441,10 @@ body:has(.headshot) .about-finder-window {
 }
 @media (max-width: 800px) {
   .about-contact-buttons { gap: 0.75rem; }
-  .about-contact-button svg { width: 1.35rem; height: 1.35rem; }
+  .about-contact-button svg { width: 1.5rem; height: 1.5rem; }
 }
 @media (max-width: 540px) {
-  .about-contact-button svg { width: 1.15rem; height: 1.15rem; }
+  .about-contact-button svg { width: 1.5rem; height: 1.5rem; }
 }
 
 /* Show the custom burger icon only when the navbar collapses to Menu alone. */
