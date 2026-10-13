@@ -3523,16 +3523,27 @@ body:has(.headshot) .headshot.headshot-entered {
   }
 }
 
-/* Navbar hover and focus color */
+/* Navbar hover/focus: change the label and outline icon together without staggered transitions. */
+.site-header .header-links a,
+.site-header .dropdown-links a,
+.site-header .dropdown-btn,
+.site-header .header-links a .nav-emoji,
+.site-header .dropdown-links a .nav-emoji,
+.site-header .header-links a .nav-emoji .nav-icon,
+.site-header .dropdown-links a .nav-emoji .nav-icon {
+  transition: none !important;
+}
 .site-header .header-links a:hover:not(.nav-current):not(.active),
 .site-header .dropdown-links a:hover:not(.nav-current):not(.active),
 .site-header .dropdown-btn:hover,
 .site-header .header-links a:focus-visible:not(.nav-current):not(.active),
-.site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active),
+.site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) {
+  color: #e16be6 !important;
+}
 .site-header .header-links a:hover:not(.nav-current):not(.active) .nav-emoji .nav-icon,
 .site-header .dropdown-links a:hover:not(.nav-current):not(.active) .nav-emoji .nav-icon,
 .site-header .header-links a:focus-visible:not(.nav-current):not(.active) .nav-emoji .nav-icon,
 .site-header .dropdown-links a:focus-visible:not(.nav-current):not(.active) .nav-emoji .nav-icon {
-  color: #6A30FE !important;
-  stroke: #6A30FE !important;
+  color: #e16be6 !important;
+  stroke: #e16be6 !important;
 }
