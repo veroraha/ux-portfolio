@@ -86,24 +86,6 @@ video {
 	height: auto;
 }
 
-/** site header **/
-
-.header {
-	display: flex;
-	position: sticky;
-	top: 0;
-	z-index: 100;
-	justify-content: space-between;
-	align-items: center;
-	min-height: 5.5rem;
-	background-color: rgba(247, 246, 242, 0.94);
-	backdrop-filter: blur(12px);
-	-webkit-backdrop-filter: blur(12px);
-	gap: 1rem;
-	padding: 0 var(--header-gutter);
-	border-bottom: 1px solid var(--border-color);
-}
-
 .nav {
 	position: relative;
 }
