@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Tomorrow:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Titillium+Web:wght@200;300;400;600;700;900&family=Tomorrow:wght@300;400;500;600;700&display=swap');
 
 /** font imports **/
 @font-face {
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6,
 .nav a,
 .nav .nav-current,
 .page-header {
-	font-family: "Tomorrow", sans-serif !important;
+	font-family: "Titillium Web", sans-serif !important;
 }
 
 
