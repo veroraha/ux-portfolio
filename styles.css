@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /** font imports **/
 @font-face {
@@ -29,7 +29,7 @@
  **/
 
 :root {
-	font-family: "Biryani", sans-serif;
+	font-family: "Be Vietnam Pro", sans-serif;
 	color: #e0e0e0;
 
 	/* Olive-and-cream palette */
@@ -51,7 +51,7 @@
 
 * {
 	box-sizing: border-box;
-	font-family: "Biryani", sans-serif;
+	font-family: "Be Vietnam Pro", sans-serif;
 }
 
 /** Display typography: Titillium Web for headings, site name, and navigation **/
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6,
 .nav a,
 .nav .nav-current,
 .page-header {
-	font-family: "Biryani", sans-serif;
+	font-family: "Be Vietnam Pro", sans-serif;
 }
 
 
@@ -902,7 +902,7 @@ body:has(.home-page) .page-header {
 .site-header .header-links li { margin: 0; }
 .site-header .header-links a,
 .site-header .header-links .nav-current {
-	font-family: "Biryani", sans-serif;
+	font-family: "Be Vietnam Pro", sans-serif;
 	font-size: clamp(0.95rem, 1.4vw, 1.2rem);
 	font-weight: 500;
 	text-decoration: none;
@@ -993,7 +993,7 @@ body:has(.home-page) .page-header {
 		gap: 0.5rem;
 		border: 0;
 		background: transparent;
-		font: 600 0.95rem "Biryani", sans-serif;
+		font: 600 0.95rem "Be Vietnam Pro", sans-serif;
 		cursor: pointer;
 		padding: 0.2rem 0.3rem;
 	}
@@ -1019,7 +1019,7 @@ body:has(.home-page) .page-header {
 	.site-header .dropdown-links li { margin: 0; }
 	.site-header .dropdown-links a,
 	.site-header .dropdown-links .nav-current {
-		font: 500 1rem "Biryani", sans-serif;
+		font: 500 1rem "Be Vietnam Pro", sans-serif;
 		text-decoration: none;
 	}
 	.site-header .dropdown-links .nav-current { font-weight: 700; }
@@ -1028,7 +1028,7 @@ body:has(.home-page) .page-header {
 
 /* VE monogram replaces the LinkedIn glyph while keeping the link */
 .site-header .header-monogram {
-	font-family: "Biryani", sans-serif;
+	font-family: "Be Vietnam Pro", sans-serif;
 	font-size: 1.35rem;
 	font-weight: 400;
 	letter-spacing: -0.09em;
@@ -3679,7 +3679,7 @@ body:has(.headshot) .about-finder-window::-webkit-scrollbar-track {
 .site-header .header-home,
 .site-header .header-home:hover,
 .site-header .header-home:focus-visible {
-  font-family: "Biryani", sans-serif !important;
+  font-family: "Be Vietnam Pro", sans-serif !important;
 }
 
 /* Keep secondary content headers in regular text rather than italics. */
