@@ -2330,12 +2330,13 @@ body:has(#bttf) .case-study-body p {
 }
 
 
-/* Keep Finder and file-explorer window titles light gray and use Roboto. */
+/* Use Titillium Web for Finder and file-explorer window headings. */
 .about-finder-title,
 .project-finder-window > .case-study-header,
-.ios-files-page .finder-information h2 {
+.ios-files-page .finder-information h2,
+.ios-files-page .finder-information h3 {
   color: #e0e0e0 !important;
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
 }
 
 /* Label the About Finder window beside its traffic-light controls. */
