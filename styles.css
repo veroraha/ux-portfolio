@@ -3690,3 +3690,12 @@ h1, h2, h3, h4, h5, h6,
 .ios-files-page .finder-information h3 {
   font-weight: 600 !important;
 }
+
+
+/* Finder Information uses h4 to avoid the global h3 weight; keep it regular. */
+.ios-files-page .finder-information h4 {
+  font-size: 1.125rem !important;
+  font-weight: 400 !important;
+  line-height: 1.4;
+  margin: 0 0 0.25rem;
+}
