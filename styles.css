@@ -3667,7 +3667,7 @@ body:has(.headshot) .about-finder-window::-webkit-scrollbar-track {
 
 /* Extra spacing above the Planning secondary content header only. */
 .content h3.secondary-content-header.planning-header {
-	margin-top: 2.65rem;
+	margin-top: 2rem;
 }
 
 
