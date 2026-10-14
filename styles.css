@@ -409,7 +409,7 @@ body:has(.home-page) .page-header {
 .content h3.secondary-content-header {
 	font-size: 1.125rem;
 	font-weight: 600;
-	font-style: italic;
+	font-style: normal;
 	letter-spacing: 0.04em;
 	line-height: inherit;
 	color: var(--nav-and-button-hover-color);
@@ -3682,7 +3682,3 @@ body:has(.headshot) .about-finder-window::-webkit-scrollbar-track {
   font-family: "Epilogue", sans-serif !important;
 }
 
-/* Keep secondary content headers in regular text rather than italics. */
-.secondary-content-headers {
-  font-style: normal;
-}
