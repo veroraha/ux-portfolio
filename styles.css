@@ -3682,3 +3682,8 @@ body:has(.headshot) .about-finder-window::-webkit-scrollbar-track {
   font-family: "Epilogue", sans-serif !important;
 }
 
+
+/* Extra spacing above the Planning secondary content header only. */
+.content h3.secondary-content-header.planning-header {
+	margin-top: 2.9rem;
+}
