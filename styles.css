@@ -3681,3 +3681,8 @@ body:has(.headshot) .about-finder-window::-webkit-scrollbar-track {
 .site-header .header-home:focus-visible {
   font-family: "Titillium Web", sans-serif !important;
 }
+
+/* Keep secondary content headers in regular text rather than italics. */
+.secondary-content-headers {
+  font-style: normal;
+}
