@@ -3678,3 +3678,15 @@ body:has(.headshot) .about-finder-window::-webkit-scrollbar-track {
 #home-greeting {
 	font-family: "Tomorrow", sans-serif !important;
 }
+
+/* Set all site heading typography to a consistent 600 weight. */
+h1, h2, h3, h4, h5, h6,
+.page-header,
+.case-study-header,
+.about-finder-title,
+.about-finder-window > h3,
+.project-finder-window > .case-study-header,
+.ios-files-page .finder-information h2,
+.ios-files-page .finder-information h3 {
+  font-weight: 600 !important;
+}
