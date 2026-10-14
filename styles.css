@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&family=Syne:wght@400..800&display=swap');
 
 /** font imports **/
 @font-face {
@@ -3691,5 +3691,5 @@ body:has(.headshot) .about-finder-window::-webkit-scrollbar-track {
 
 /* Use Space Mono for the homepage greeting only. */
 #home-greeting {
-	font-family: "DotGothic16", sans-serif !important;
+	font-family: "Syne", sans-serif !important;
 }
