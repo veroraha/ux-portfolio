@@ -3801,3 +3801,11 @@ h1, h2, h3, h4, h5, h6,
   align-items: center;
   gap: 0;
 }
+
+
+/* Keep the three project items locked to a single horizontal row. */
+.ios-files-page .finder-project-pane .ios-file-grid {
+  grid-auto-flow: column;
+  grid-template-rows: minmax(0, 1fr);
+  align-content: center;
+}
