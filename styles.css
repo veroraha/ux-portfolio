@@ -3802,14 +3802,3 @@ h1, h2, h3, h4, h5, h6,
   gap: 0;
 }
 
-
-/* Keep the three project items in one centered horizontal row. */
-.ios-files-page .finder-project-pane .ios-file-grid {
-  width: max-content;
-  max-width: 100%;
-  margin-inline: auto;
-  grid-template-columns: repeat(3, var(--finder-project-item-size));
-  grid-auto-flow: column;
-  grid-template-rows: minmax(0, 1fr);
-  align-content: center;
-}
