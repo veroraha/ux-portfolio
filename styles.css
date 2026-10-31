@@ -3794,12 +3794,3 @@ h1, h2, h3, h4, h5, h6,
 }
 
 
-/* Keep project icons horizontally centered in the bottom-left Finder panel. */
-.ios-files-page .finder-project-pane .ios-file-grid {
-  display: flex;
-  justify-content: center;
-}
-.ios-files-page .finder-project-pane button.ios-file-item {
-  display: flex;
-  justify-content: center;
-}
