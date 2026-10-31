@@ -3807,30 +3807,3 @@ h1, h2, h3, h4, h5, h6,
   justify-content: center;
 }
 
-
-/* Blue rounded backplates sit behind OTW and BTTF artwork in the upper preview only. */
-.ios-files-page .finder-upper-pane .finder-preview .ios-file-icon {
-  position: relative;
-  isolation: isolate;
-}
-.ios-files-page .finder-upper-pane .finder-preview .ios-file-icon--otw::before,
-.ios-files-page .finder-upper-pane .finder-preview .ios-file-icon--bttf::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  width: 60%;
-  aspect-ratio: 1;
-  border-radius: 1rem;
-  background: #45A8F8;
-  pointer-events: none;
-  cursor: inherit;
-  transition: none;
-}
-.ios-files-page .finder-upper-pane .finder-preview .ios-file-icon--otw::before {
-  transform: translate(-50%, -50%) rotate(10deg);
-}
-.ios-files-page .finder-upper-pane .finder-preview .ios-file-icon--bttf::before {
-  transform: translate(-50%, -50%) rotate(-10deg);
-}
