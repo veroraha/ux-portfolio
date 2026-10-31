@@ -3802,3 +3802,9 @@ h1, h2, h3, h4, h5, h6,
   gap: 0;
 }
 
+
+/* Center the contents of each project button in the Finder grid. */
+.ios-files-page .finder-project-pane .ios-file-grid button {
+  display: flex;
+  justify-content: center;
+}
