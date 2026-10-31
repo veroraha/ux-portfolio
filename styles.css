@@ -1589,7 +1589,6 @@ body,
 .ios-files-page .ios-file-icon .file-sheet { fill: #E8EAF0; }
 .ios-files-page .ios-file-icon .file-fold { fill: #C8CDD8; }
 .ios-files-page .ios-file-icon--blue svg { color: #2878E8; }
-.ios-files-page .ios-file-icon--cyan svg { color: #139CB8; }
 .ios-files-page .ios-file-icon--purple svg { color: #8B5CF6; }
 .ios-files-page .ios-file-icon svg rect:not(.file-sheet) { fill: currentColor; }
 @media (max-width: 600px) {
@@ -3745,7 +3744,7 @@ h1, h2, h3, h4, h5, h6,
 
 
 /* Keep the OTW and BTTF mockups at 80% width in the large Finder preview. */
-.ios-files-page .finder-upper-pane .ios-file-icon--cyan img,
+.ios-files-page .finder-upper-pane .ios-file-icon--otw img,
 .ios-files-page .finder-upper-pane .ios-file-icon--purple img {
   width: 80%;
   height: 100%;
@@ -3807,4 +3806,31 @@ h1, h2, h3, h4, h5, h6,
 .ios-files-page .finder-project-pane .ios-file-grid button {
   display: flex;
   justify-content: center;
+}
+
+
+/* Blue rounded backplates sit behind OTW and BTTF artwork in the upper preview only. */
+.ios-files-page .finder-upper-pane .finder-preview .ios-file-icon {
+  position: relative;
+  isolation: isolate;
+}
+.ios-files-page .finder-upper-pane .finder-preview .ios-file-icon--otw::before,
+.ios-files-page .finder-upper-pane .finder-preview .ios-file-icon--purple::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 82%;
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  background: #45A8F8;
+  pointer-events: none;
+  transition: none;
+}
+.ios-files-page .finder-upper-pane .finder-preview .ios-file-icon--otw::before {
+  transform: translate(-50%, -50%) rotate(10deg);
+}
+.ios-files-page .finder-upper-pane .finder-preview .ios-file-icon--purple::before {
+  transform: translate(-50%, -50%) rotate(-10deg);
 }
