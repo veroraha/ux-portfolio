@@ -1669,9 +1669,6 @@ body,
   border-right: 1px solid #666666;
   border-bottom: 1px solid #666666;
 }
-.ios-files-page .finder-upper-pane {
-  background: #45A8F8;
-}
 .ios-files-page .finder-project-pane {
   display: flex;
   align-items: center;
@@ -2204,14 +2201,11 @@ body,
 .ios-files-page > .finder-layout {
   position: relative;
 }
-.ios-files-page .finder-window-header {
-  grid-column: 1 / -1;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 1.5rem;
-  background: #0a0a0a;
-}
 .ios-files-page .finder-window-controls {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 5;
   display: flex;
   align-items: center;
   gap: 0.625rem;
@@ -2748,7 +2742,7 @@ body:has(.project-finder-window) .content.project-finder-page {
   background: linear-gradient(to bottom, #141414 0%, #0E0E0E 100%);
   overflow: auto;
 }
-.project-finder-window .finder-window-header {
+.project-finder-window .finder-window-controls {
   position: sticky;
   top: 0;
   align-self: stretch;
@@ -2759,11 +2753,6 @@ body:has(.project-finder-window) .content.project-finder-page {
   background: #141414;
   z-index: 5;
   flex: 0 0 auto;
-}
-.project-finder-window .finder-window-controls {
-  display: flex;
-  align-items: center;
-  gap: 0.625rem;
 }
 .project-finder-window .finder-window-control {
   display: block;
@@ -2822,7 +2811,7 @@ body:has(#bttf) .project-finder-window .finder-window-close-link {
     padding: 0 0.75rem 1.25rem;
     gap: 1rem;
   }
-  .project-finder-window .finder-window-header {
+  .project-finder-window .finder-window-controls {
     width: calc(100% + 3rem);
     margin-left: -1.5rem;
     padding: 1rem 0 0.75rem 1rem;
