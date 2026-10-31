@@ -3793,4 +3793,11 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-
+/* Evenly align the three project SVGs across the bottom-left Finder pane. */
+.ios-files-page .finder-project-pane .ios-file-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-items: center;
+  align-items: center;
+  gap: 0;
+}
