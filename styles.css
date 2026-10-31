@@ -3772,18 +3772,23 @@ h1, h2, h3, h4, h5, h6,
 }
 
 
-/* Keep all three bottom Finder project hover rectangles equal and square. */
+/* Keep every bottom Finder project hover rectangle the same fixed square size. */
 .ios-files-page .finder-project-pane button.ios-file-item {
+  --finder-project-item-size: clamp(64px, 7vw, 100px);
   box-sizing: border-box;
-  flex: 0 0 clamp(64px, 7vw, 100px);
-  width: clamp(64px, 7vw, 100px);
+  flex: 0 0 var(--finder-project-item-size);
+  width: var(--finder-project-item-size);
+  min-width: var(--finder-project-item-size);
+  max-width: var(--finder-project-item-size);
+  height: var(--finder-project-item-size);
+  min-height: var(--finder-project-item-size);
+  max-height: var(--finder-project-item-size);
   aspect-ratio: 1 / 1;
   padding: 0.5rem !important;
 }
 @media (max-width: 600px) {
   .ios-files-page .finder-project-pane button.ios-file-item {
-    flex-basis: clamp(44px, 12vw, 64px);
-    width: clamp(44px, 12vw, 64px);
+    --finder-project-item-size: clamp(44px, 12vw, 64px);
     padding: 0.25rem !important;
   }
 }
