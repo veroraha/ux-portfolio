@@ -3707,3 +3707,30 @@ h1, h2, h3, h4, h5, h6,
   font-size: 1.125rem !important;
   font-weight: 400 !important;
 }
+
+
+/* Scale the selected project SVG to fill the Finder preview stage. */
+.ios-files-page .finder-preview-stage {
+  height: 100%;
+}
+.ios-files-page .finder-preview-stage .finder-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.ios-files-page .finder-preview-stage .ios-file-icon {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  margin: 0;
+}
+.ios-files-page .finder-preview-stage .ios-file-icon svg,
+.ios-files-page .finder-preview-stage .ios-file-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
