@@ -3770,3 +3770,20 @@ h1, h2, h3, h4, h5, h6,
 .ios-files-page .finder-project-pane button.ios-file-item .ios-file-icon {
   flex-shrink: 0;
 }
+
+
+/* Keep all three bottom Finder project hover rectangles equal and square. */
+.ios-files-page .finder-project-pane button.ios-file-item {
+  box-sizing: border-box;
+  flex: 0 0 clamp(64px, 7vw, 100px);
+  width: clamp(64px, 7vw, 100px);
+  aspect-ratio: 1 / 1;
+  padding: 0.5rem !important;
+}
+@media (max-width: 600px) {
+  .ios-files-page .finder-project-pane button.ios-file-item {
+    flex-basis: clamp(44px, 12vw, 64px);
+    width: clamp(44px, 12vw, 64px);
+    padding: 0.25rem !important;
+  }
+}
