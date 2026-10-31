@@ -3792,3 +3792,21 @@ h1, h2, h3, h4, h5, h6,
     padding: 0.375rem !important;
   }
 }
+
+
+/* Center every project icon in the bottom-left Finder panel horizontally and vertically. */
+.ios-files-page .finder-project-pane .ios-file-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ios-files-page .finder-project-pane button.ios-file-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ios-files-page .finder-project-pane button.ios-file-item .ios-file-icon {
+  flex: 0 0 auto;
+  align-self: center;
+  margin: 0;
+}
