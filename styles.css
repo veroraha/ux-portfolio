@@ -1768,8 +1768,16 @@ body,
   margin: 0;
   transition: transform 180ms ease;
 }
-.ios-files-page .finder-preview:hover .ios-file-icon,
-.ios-files-page .finder-preview:focus-visible .ios-file-icon {
+.ios-files-page .finder-preview-stage .ios-file-icon > svg,
+.ios-files-page .finder-preview-stage .ios-file-icon > img {
+  transform: scale(1);
+  transform-origin: center;
+  transition: transform 180ms ease;
+}
+.ios-files-page .finder-preview:hover .ios-file-icon > svg,
+.ios-files-page .finder-preview:hover .ios-file-icon > img,
+.ios-files-page .finder-preview:focus-visible .ios-file-icon > svg,
+.ios-files-page .finder-preview:focus-visible .ios-file-icon > img {
   transform: scale(1.04);
 }
 .ios-files-page .finder-preview:focus-visible {
