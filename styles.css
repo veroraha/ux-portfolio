@@ -3742,3 +3742,31 @@ h1, h2, h3, h4, h5, h6,
   height: 100%;
   object-fit: contain;
 }
+
+
+/* Keep the OTW and BTTF mockups at 80% width in the large Finder preview. */
+.ios-files-page .finder-upper-pane .ios-file-icon--cyan img,
+.ios-files-page .finder-upper-pane .ios-file-icon--purple img {
+  width: 80%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Scale only the mockup artwork in the project strip, not its hover/selection rectangle. */
+.ios-files-page .finder-project-pane button.ios-file-item[data-project="otw"] .ios-file-icon img {
+  transform: scale(1.375);
+  transform-origin: center;
+}
+.ios-files-page .finder-project-pane button.ios-file-item[data-project="bttf"] .ios-file-icon img {
+  transform: scale(0.875);
+  transform-origin: center;
+}
+
+/* Keep the hover/selected rectangles uniform regardless of mockup artwork scale. */
+.ios-files-page .finder-project-pane button.ios-file-item {
+  width: 100%;
+  min-width: 0;
+}
+.ios-files-page .finder-project-pane button.ios-file-item .ios-file-icon {
+  flex-shrink: 0;
+}
