@@ -82,31 +82,12 @@
 			const modifiedRow = document.querySelector('.finder-modified-row');
 			if (modifiedRow) modifiedRow.hidden = !document.querySelector('.finder-project-pane .ios-file-item[data-project="bah"][aria-pressed="true"]');
 
-			// Inline mockup SVGs so the device artwork can animate independently of the background.
-			const inlineMockupSvg = async (container) => {
-				if (!container) return;
-				const image = container.querySelector('img[src$=".svg"]');
-				if (!image) return;
-				try {
-					const response = await fetch(image.src);
-					if (!response.ok) return;
-					const svgText = await response.text();
-					const parsed = new DOMParser().parseFromString(svgText, 'image/svg+xml');
-					const svg = parsed.documentElement;
-					if (svg.localName !== 'svg' || parsed.querySelector('parsererror')) return;
-					image.replaceWith(document.importNode(svg, true));
-				} catch (error) {
-					console.error('Unable to load project mockup SVG:', error);
-				}
-			};
-			projectButtons.forEach((button) => inlineMockupSvg(button.querySelector('.ios-file-icon')));
 			projectButtons.forEach((button) => {
 				button.addEventListener('click', () => {
 					const selectedIcon = button.querySelector('.ios-file-icon');
 					if (!selectedIcon) return;
 					previewIcon.className = selectedIcon.className;
 					previewIcon.innerHTML = selectedIcon.innerHTML;
-					inlineMockupSvg(previewIcon);
 					preview.href = button.dataset.href;
 					const viewProject = document.querySelector('.finder-view-project');
 					if (viewProject) viewProject.href = button.dataset.href;
