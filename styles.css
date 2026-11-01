@@ -996,9 +996,9 @@ body:has(.home-page) .page-header {
 
 /* VE monogram replaces the LinkedIn glyph while keeping the link */
 .site-header .header-monogram {
-	font-family: "Roboto", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 1.35rem;
-	font-weight: 400;
+	font-weight: 600;
 	letter-spacing: -0.09em;
 	line-height: 1;
 }
