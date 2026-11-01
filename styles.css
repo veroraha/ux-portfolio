@@ -2200,6 +2200,15 @@ body,
 /* macOS-style window controls in the top-left corner of the Projects window */
 .ios-files-page > .finder-layout {
   position: relative;
+  grid-template-rows: auto minmax(0, 1fr);
+}
+.ios-files-page .finder-window-header {
+  grid-column: 1 / -1;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1.5rem 0 1.5rem 2rem;
+  background: linear-gradient(to bottom, #1B1B1B 0%, #131313 100%);
+  border-bottom: 1px solid #666666;
 }
 .ios-files-page .finder-window-controls {
   position: absolute;
