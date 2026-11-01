@@ -3680,13 +3680,6 @@ body:has(.headshot) .about-finder-window::-webkit-scrollbar-track {
   font-weight: 600 !important;
 }
 
-/* Tighten letter spacing on the home monogram button. */
-.site-header .header-home,
-.site-header .header-home:hover,
-.site-header .header-home:focus-visible {
-  letter-spacing: 0 !important;
-}
-
 
 /* Extra spacing above the Planning secondary content header only. */
 .content h3.secondary-content-header.planning-header {
