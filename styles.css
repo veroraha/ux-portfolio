@@ -2592,7 +2592,10 @@ body:has(.headshot) .content {
 .ios-files-page .finder-left-pane {
   background: linear-gradient(to bottom, #232323 0%, #191919 100%) !important;
 }
-.ios-files-page .finder-upper-pane,
+.ios-files-page .finder-upper-pane {
+  background: linear-gradient(to bottom, #45A8F8 0%, #5555DD 100%) !important;
+}
+
 .ios-files-page .finder-project-pane {
   background: transparent !important;
 }
