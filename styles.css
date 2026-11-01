@@ -3822,3 +3822,19 @@ h1, h2, h3, h4, h5, h6,
   justify-content: center;
 }
 
+
+/* Final override: keep Finder window titles and all navbar labels at regular weight. */
+.site-header .header-links a,
+.site-header .header-links .nav-current,
+.site-header .dropdown-links a,
+.site-header .dropdown-links .nav-current,
+.site-header .dropdown-btn {
+  font-weight: 400 !important;
+}
+
+.about-finder-title,
+.project-finder-window > .case-study-header,
+.ios-files-page .finder-information h2,
+.ios-files-page .finder-information h3 {
+  font-weight: 400 !important;
+}
