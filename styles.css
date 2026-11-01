@@ -3865,3 +3865,9 @@ h1, h2, h3, h4, h5, h6,
 .site-header .dropdown-btn {
   font-weight: 400 !important;
 }
+
+
+/* Projects page main heading: use bold platform weight. */
+body:has(.ios-files-page) h1 {
+  font-weight: 700 !important;
+}
