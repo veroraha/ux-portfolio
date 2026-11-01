@@ -3760,7 +3760,7 @@ h1, h2, h3, h4, h5, h6,
   height: 100%;
   object-fit: contain;
 }
-.ios-files-page .finder-upper-pane .finder-preview .ios-file-icon img {
+.ios-files-page .finder-upper-pane .finder-preview[href="/projects/bah"] .ios-file-icon img {
   transform: scale(0.8);
   transform-origin: center;
 }
