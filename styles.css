@@ -1440,7 +1440,6 @@ body,
   border: 1px solid transparent;
   border-radius: 1rem;
   font-size: 0.95rem;
-  letter-spacing: 0;
   text-decoration: none;
   transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
 }
@@ -3679,6 +3678,13 @@ body:has(.headshot) .about-finder-window::-webkit-scrollbar-track {
 .site-header .header-home:focus-visible {
   font-family: "Montserrat", sans-serif !important;
   font-weight: 600 !important;
+}
+
+/* Tighten letter spacing on the home monogram button. */
+.site-header .header-home,
+.site-header .header-home:hover,
+.site-header .header-home:focus-visible {
+  letter-spacing: 0 !important;
 }
 
 
