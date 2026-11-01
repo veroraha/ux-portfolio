@@ -3901,3 +3901,15 @@ body:has(h1#otw) .project-finder-window > .case-study-header,
 body:has(h1#flix) .project-finder-window > .case-study-header {
   font-family: "Blinker", sans-serif !important;
 }
+
+
+/* Keep the About Finder title in Blinker and project Finder page headers semibold. */
+.about-finder-title {
+  font-family: "Blinker", sans-serif !important;
+}
+body:has(h1#bah) .project-finder-window > .case-study-header,
+body:has(h1#bttf) .project-finder-window > .case-study-header,
+body:has(h1#otw) .project-finder-window > .case-study-header,
+body:has(h1#flix) .project-finder-window > .case-study-header {
+  font-weight: 600 !important;
+}
