@@ -2206,7 +2206,7 @@ body,
   grid-column: 1 / -1;
   box-sizing: border-box;
   width: 100%;
-  padding: 1.5rem 0 1.5rem 2rem;
+  padding: 1rem 0 1rem 2rem;
   background: #1B1B1B;
 }
 .ios-files-page .finder-window-controls {
