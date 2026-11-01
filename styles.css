@@ -2207,8 +2207,7 @@ body,
   box-sizing: border-box;
   width: 100%;
   padding: 1.5rem 0 1.5rem 2rem;
-  background: linear-gradient(to bottom, #1B1B1B 0%, #131313 100%);
-  border-bottom: 1px solid #666666;
+  background: #1B1B1B;
 }
 .ios-files-page .finder-window-controls {
   position: static;
