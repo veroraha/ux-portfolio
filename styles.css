@@ -2211,10 +2211,10 @@ body,
   border-bottom: 1px solid #666666;
 }
 .ios-files-page .finder-window-controls {
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-  z-index: 5;
+  position: static;
+  top: auto;
+  left: auto;
+  z-index: auto;
   display: flex;
   align-items: center;
   gap: 0.625rem;
