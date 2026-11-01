@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Montserrat:wght@600&family=Tomorrow:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Tomorrow:wght@300;400;500;600;700&display=swap');
 
 /** font imports **/
 
@@ -39,12 +39,12 @@
 	font-family: "Roboto", sans-serif;
 }
 
-/** Display typography: Montserrat for headings, site name, and navigation **/
+/** Display typography: platform for headings, site name, and navigation **/
 h1, h2, h3, h4, h5, h6,
 .nav a,
 .nav .nav-current,
 .page-header {
-	font-family: "Montserrat", sans-serif !important;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 	font-weight: 600 !important;
 }
 
@@ -996,7 +996,7 @@ body:has(.home-page) .page-header {
 
 /* VE monogram replaces the LinkedIn glyph while keeping the link */
 .site-header .header-monogram {
-	font-family: "Montserrat", sans-serif;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 	font-size: 1.35rem;
 	font-weight: 600;
 	letter-spacing: 0;
@@ -2106,7 +2106,7 @@ body,
   overflow-wrap: normal;
   word-break: normal;
 
-  font-family: "Montserrat", sans-serif !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 	font-weight: 600 !important;}
 
 
@@ -2333,13 +2333,13 @@ body:has(#bttf) .case-study-body p {
 }
 
 
-/* Use Montserrat for Finder and file-explorer window headings. */
+/* Use platform for Finder and file-explorer window headings. */
 .about-finder-title,
 .project-finder-window > .case-study-header,
 .ios-files-page .finder-information h2,
 .ios-files-page .finder-information h3 {
   color: #e0e0e0 !important;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 	font-weight: 400 !important;
 }
 
@@ -3672,11 +3672,11 @@ body:has(.headshot) .about-finder-window::-webkit-scrollbar-track {
 }
 
 
-/* Keep the circular home button typography in Montserrat. */
+/* Keep the circular home button typography in platform. */
 .site-header .header-home,
 .site-header .header-home:hover,
 .site-header .header-home:focus-visible {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   font-weight: 600 !important;
 }
 
