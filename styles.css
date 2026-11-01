@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Montserrat&family=Tomorrow:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Montserrat:wght@700&family=Tomorrow:wght@300;400;500;600;700&display=swap');
 
 /** font imports **/
 
@@ -45,6 +45,7 @@ h1, h2, h3, h4, h5, h6,
 .nav .nav-current,
 .page-header {
 	font-family: "Montserrat", sans-serif !important;
+	font-weight: 700 !important;
 }
 
 
@@ -2106,7 +2107,8 @@ body,
   overflow-wrap: normal;
   word-break: normal;
 
-  font-family: "Montserrat", sans-serif !important;}
+  font-family: "Montserrat", sans-serif !important;
+	font-weight: 700 !important;}
 
 
 /* Align the selected project title and description at the top of the right pane. */
@@ -2339,6 +2341,7 @@ body:has(#bttf) .case-study-body p {
 .ios-files-page .finder-information h3 {
   color: #e0e0e0 !important;
   font-family: "Montserrat", sans-serif !important;
+	font-weight: 700 !important;
 }
 
 /* Label the About Finder window beside its traffic-light controls. */
