@@ -2593,12 +2593,12 @@ body:has(.headshot) .content {
   background: linear-gradient(to bottom, #232323 0%, #191919 100%) !important;
 }
 .ios-files-page .finder-upper-pane {
-  background: linear-gradient(to bottom, #8787E5 0%, #5555DD 100%) !important;
+  background: linear-gradient(to bottom, #7777E3 0%, #5555DD 100%) !important;
 }
 
 /* Use the Mission Support accent gradient when that project is selected. */
 .ios-files-page .finder-left-pane:has(.finder-project-pane [data-project="bah"][aria-pressed="true"]) .finder-upper-pane {
-  background: linear-gradient(to bottom, #7CC2FA 0%, #45A8F8 100%) !important;
+  background: linear-gradient(to bottom, #6AB9F9 0%, #45A8F8 100%) !important;
 }
 
 .ios-files-page .finder-project-pane {
