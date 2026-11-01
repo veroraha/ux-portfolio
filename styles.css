@@ -2246,7 +2246,7 @@ body,
 
 /* Give the project icon strip 25% of the left Finder pane height. */
 .ios-files-page .finder-left-pane {
-  grid-template-rows: 66fr 34fr;
+  grid-template-rows: 3fr 1fr;
 }
 
 /* Center the About page content vertically and inset its three paragraphs. */
