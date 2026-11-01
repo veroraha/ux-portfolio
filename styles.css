@@ -3888,3 +3888,16 @@ header *,
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Blinker", sans-serif !important;
 }
+
+
+/* Blinker typography for project-page H1s and Finder window titles (BAH, BTTF, OTW, Flix). */
+body:has(h1#bah) h1#bah,
+body:has(h1#bttf) h1#bttf,
+body:has(h1#otw) h1#otw,
+body:has(h1#flix) h1#flix,
+body:has(h1#bah) .project-finder-window > .case-study-header,
+body:has(h1#bttf) .project-finder-window > .case-study-header,
+body:has(h1#otw) .project-finder-window > .case-study-header,
+body:has(h1#flix) .project-finder-window > .case-study-header {
+  font-family: "Blinker", sans-serif !important;
+}
