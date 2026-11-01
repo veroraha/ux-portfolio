@@ -1147,6 +1147,7 @@ body:has(.home-page) .page-header {
   --border-color: #5B7CD7;
   --primary-accent-color: #D20F73;
   --secondary-accent-color: #5555DD;
+  --accent-color: #7777E3;
   --footer-bg-color: #0a0a0a;
   --placard-border: #5B7CD7;
 }html,  body,  .home-page, 
@@ -2292,7 +2293,7 @@ body:has(#bttf) .case-study-body p {
 
 /* Project page primary headers are blue; italicized subheaders remain light gray. */
 .project-finder-window .case-study-body h2 {
-  color: #45A8F8 !important;
+  color: var(--accent-color) !important;
 }
 .project-finder-window .case-study-body h3.secondary-content-header {
   color: var(--nav-and-button-hover-color) !important;
