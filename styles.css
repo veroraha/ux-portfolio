@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Tenor+Sans&family=Tomorrow:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=ST+Titan&family=Tomorrow:wght@300;400;500;600;700&display=swap');
 
 /** font imports **/
 
@@ -39,12 +39,12 @@
 	font-family: "Roboto", sans-serif;
 }
 
-/** Display typography: Tenor+Sans for headings, site name, and navigation **/
+/** Display typography: ST+Titan for headings, site name, and navigation **/
 h1, h2, h3, h4, h5, h6,
 .nav a,
 .nav .nav-current,
 .page-header {
-	font-family: "Tenor Sans", sans-serif !important;
+	font-family: "ST Titan", sans-serif !important;
 }
 
 
@@ -2106,7 +2106,7 @@ body,
   overflow-wrap: normal;
   word-break: normal;
 
-  font-family: "Tenor Sans", sans-serif !important;}
+  font-family: "ST Titan", sans-serif !important;}
 
 
 /* Align the selected project title and description at the top of the right pane. */
@@ -2332,13 +2332,13 @@ body:has(#bttf) .case-study-body p {
 }
 
 
-/* Use Tenor+Sans for Finder and file-explorer window headings. */
+/* Use ST+Titan for Finder and file-explorer window headings. */
 .about-finder-title,
 .project-finder-window > .case-study-header,
 .ios-files-page .finder-information h2,
 .ios-files-page .finder-information h3 {
   color: #e0e0e0 !important;
-  font-family: "Tenor Sans", sans-serif !important;
+  font-family: "ST Titan", sans-serif !important;
 }
 
 /* Label the About Finder window beside its traffic-light controls. */
@@ -3670,7 +3670,7 @@ body:has(.headshot) .about-finder-window::-webkit-scrollbar-track {
 }
 
 
-/* Keep the circular home button typography in Tenor+Sans. */
+/* Keep the circular home button typography in ST+Titan. */
 .site-header .header-home,
 .site-header .header-home:hover,
 .site-header .header-home:focus-visible {
