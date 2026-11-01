@@ -3867,7 +3867,11 @@ h1, h2, h3, h4, h5, h6,
 }
 
 
-/* Projects page main heading: use bold platform weight. */
+/* Project case-study H1 headers: use bold platform weight on BAH, BTTF, OTW, and Flix. */
+h1#bah,
+h1#bttf,
+h1#otw,
+h1#flix,
 body:has(.ios-files-page) h1 {
   font-weight: 700 !important;
 }
