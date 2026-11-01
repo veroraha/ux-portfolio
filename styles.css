@@ -708,6 +708,11 @@ body:has(.home-page) .page-header {
 
 
 
+/* Use the platform system font for the homepage greeting. */
+.home-page #home-greeting {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
 /** homepage type scale increase **/
 .home-page .page-header {
 	font-size: 4.2rem;
