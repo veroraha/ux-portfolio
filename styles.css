@@ -3837,3 +3837,31 @@ h1, h2, h3, h4, h5, h6,
 .ios-files-page .finder-information h3 {
   font-weight: 400 !important;
 }
+
+
+/* Platform type uses semibold throughout, except Finder window headers and navbar text. */
+h1, h2, h3, h4, h5, h6,
+.page-header,
+.case-study-header,
+.nav .header-links h3,
+.nav .dropdown-links h3,
+.site-header .header-home,
+.site-header .header-home:hover,
+.site-header .header-home:focus-visible,
+.site-header .header-monogram,
+.ios-files-page .finder-selected-label {
+  font-weight: 600 !important;
+}
+
+/* Preserve regular weight for Finder window headers and all navbar labels. */
+.about-finder-title,
+.project-finder-window > .case-study-header,
+.ios-files-page .finder-information h2,
+.ios-files-page .finder-information h3,
+.site-header .header-links a,
+.site-header .header-links .nav-current,
+.site-header .dropdown-links a,
+.site-header .dropdown-links .nav-current,
+.site-header .dropdown-btn {
+  font-weight: 400 !important;
+}
