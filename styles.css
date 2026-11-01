@@ -999,7 +999,7 @@ body:has(.home-page) .page-header {
 	font-family: "Montserrat", sans-serif;
 	font-size: 1.35rem;
 	font-weight: 600;
-	letter-spacing: -0.09em;
+	letter-spacing: 0;
 	line-height: 1;
 }
 .site-header .header-home {
