@@ -2743,6 +2743,9 @@ body:has(.project-finder-window) .content.project-finder-page {
   overflow: auto;
 }
 .project-finder-window .finder-window-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
   position: sticky;
   top: 0;
   align-self: stretch;
