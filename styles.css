@@ -2158,7 +2158,7 @@ body,
   line-height: 1.2;
 }
 .ios-files-page .finder-work-tag--professional {
-  background: #45A8F8;
+  background: #5555DD;
 }
 .ios-files-page .finder-work-tag--earlier {
   background: var(--secondary-accent-color);
@@ -2598,7 +2598,7 @@ body:has(.headshot) .content {
 
 /* Use the Mission Support accent gradient when that project is selected. */
 .ios-files-page .finder-left-pane:has(.finder-project-pane [data-project="bah"][aria-pressed="true"]) .finder-upper-pane {
-  background: linear-gradient(to bottom, #6AB9F9 0%, #45A8F8 100%) !important;
+  background: linear-gradient(to bottom, #7777E3 0%, #5555DD 100%) !important;
 }
 
 .ios-files-page .finder-project-pane {
