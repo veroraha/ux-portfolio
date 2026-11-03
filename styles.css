@@ -982,7 +982,7 @@ body:has(.home-page) .page-header {
 
 /* VE monogram replaces the LinkedIn glyph while keeping the link */
 .site-header .header-monogram {
-	font-family: "Blinker", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 1.25rem;
 	font-weight: 400;
 	letter-spacing: 0;
