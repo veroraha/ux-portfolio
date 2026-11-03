@@ -296,8 +296,18 @@ video {
 
 body:has(.home-page) .page-header {
 	padding-bottom: 0;
-}#about,  #projects,  #bah,  #otw,  #bttf{
+}#about,
+#projects {
 	padding-top: 4rem;
+	margin-top: 0;
+	min-height: 2.2rem;
+}
+
+#bah,
+#otw,
+#bttf,
+#flix {
+	padding-top: 1rem;
 	margin-top: 0;
 	min-height: 2.2rem;
 }
