@@ -3893,3 +3893,8 @@ body:has(h1#otw) .project-finder-window > .case-study-header,
 body:has(h1#flix) .project-finder-window > .case-study-header {
   font-weight: 600 !important;
 }
+
+/* Projects page Finder Information heading uses Roboto. */
+.ios-files-page .finder-information h4 {
+  font-family: "Roboto", sans-serif !important;
+}
