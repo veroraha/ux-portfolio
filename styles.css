@@ -3904,3 +3904,31 @@ body:has(h1#flix) .project-finder-window > .case-study-header {
 .ios-files-page .finder-information h4 {
   font-family: "Roboto", sans-serif !important;
 }
+
+/* Align the Projects information pane with the upper preview and span the
+   project icon strip across the full Finder window width. */
+.ios-files-page > .finder-layout {
+  grid-template-rows: auto minmax(0, 7fr) minmax(0, 3fr) !important;
+}
+.ios-files-page > .finder-layout > .finder-left-pane {
+  display: contents !important;
+}
+.ios-files-page > .finder-layout > .finder-left-pane > .finder-upper-pane {
+  grid-column: 1;
+  grid-row: 2;
+  min-height: 0;
+}
+.ios-files-page > .finder-layout > .finder-left-pane > .finder-project-pane {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  width: 100%;
+  box-sizing: border-box;
+  border-right: 0;
+}
+.ios-files-page > .finder-layout > .finder-right-pane {
+  grid-column: 2;
+  grid-row: 2;
+  height: 100%;
+  min-height: 0;
+  box-sizing: border-box;
+}
