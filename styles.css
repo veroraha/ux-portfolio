@@ -982,9 +982,9 @@ body:has(.home-page) .page-header {
 
 /* VE monogram replaces the LinkedIn glyph while keeping the link */
 .site-header .header-monogram {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-	font-size: 1.35rem;
-	font-weight: 600;
+	font-family: "Blinker", sans-serif;
+	font-size: 1.25rem;
+	font-weight: 400;
 	letter-spacing: 0;
 	line-height: 1;
 }
@@ -3830,7 +3830,6 @@ h1, h2, h3, h4, h5, h6,
 .site-header .header-home,
 .site-header .header-home:hover,
 .site-header .header-home:focus-visible,
-.site-header .header-monogram,
 .ios-files-page .finder-selected-label {
   font-weight: 600 !important;
 }
