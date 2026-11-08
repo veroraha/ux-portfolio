@@ -3662,7 +3662,7 @@ body:has(.headshot) .about-finder-window::-webkit-scrollbar-track {
 
 /* Highlight emphasized text in the About page. */
 .about-finder-window .emphasis {
-  color: #e0e0e0 !important;
+  color: #7777E3 !important;
   font-weight: 600 !important;
 }
 
