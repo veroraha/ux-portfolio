@@ -339,9 +339,11 @@ body:has(.home-page) .page-header {
 
 .case-study-subtitle--plain {
 	text-transform: none;
+	margin-left: 0;
+	margin-right: 0;
 	margin-bottom: 1.5rem;
 	padding-bottom: 0;
-	max-width: 40rem;
+	max-width: none;
 }
 
 .case-study-body {
