@@ -54,12 +54,12 @@
 								<img src="/bah/bah-mockup.svg" alt="" />
 							</span>
 						</button>
-						<button class="ios-file-item" type="button" data-project="otw" data-href="/projects/otw" data-label="On The Way" data-description="End-to-end product design for a route-aware navigation experience" data-work-type="Selected earlier work" data-work-type-class="earlier" aria-label="Preview On The Way project" aria-pressed="false">
+						<button class="ios-file-item" type="button" data-project="otw" data-href="/projects/otw" data-label="On The Way" data-description="End-to-end product design for a route-aware navigation experience" data-work-type="Selected earlier work" data-work-type-class="earlier" data-qualifier="Onboarding project" aria-label="Preview On The Way project" aria-pressed="false">
 							<span class="ios-file-icon ios-file-icon--otw" aria-hidden="true">
 								<img src="/otw/otw-mockup.svg" alt="" />
 							</span>
 						</button>
-						<button class="ios-file-item" type="button" data-project="bttf" data-href="/projects/bttf" data-label="Back to the Future" data-description="UX research and interaction design to enable music sharing in Spotify" data-work-type="Selected earlier work" data-work-type-class="earlier" aria-label="Preview Back to the Future project" aria-pressed="false">
+						<button class="ios-file-item" type="button" data-project="bttf" data-href="/projects/bttf" data-label="Back to the Future" data-description="UX research and interaction design to enable music sharing in Spotify" data-work-type="Selected earlier work" data-work-type-class="earlier" data-qualifier="Competition entry" aria-label="Preview Back to the Future project" aria-pressed="false">
 							<span class="ios-file-icon ios-file-icon--bttf" aria-hidden="true">
 								<img src="/bttf/bttf-mockup.svg" alt="" />
 							</span>
@@ -67,7 +67,7 @@
 					</div>
 				</section>
 			</div>
-			<aside class="finder-right-pane" aria-label="Selected project"><div class="finder-project-copy"><span class="finder-selected-label" aria-live="polite">Mission support application</span><p class="finder-selected-description" aria-live="polite">UX design and product ownership for a complex operational tool</p><span class="finder-work-tag finder-work-tag--professional" aria-live="polite">Professional work</span><section class="finder-information" aria-label="Project information"><h4>Information</h4><div class="finder-information-row"><span>Created</span><span>2021</span></div><div class="finder-information-row finder-modified-row" hidden><span>Modified</span><span>Present</span></div></section><a class="finder-view-project" href="/projects/bah"><span>View project</span><svg class="nav-icon finder-view-project-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 12h14M12 5.5l6.5 6.5-6.5 6.5"/></svg></a></div></aside>
+			<aside class="finder-right-pane" aria-label="Selected project"><div class="finder-project-copy"><span class="finder-selected-label" aria-live="polite">Mission support application</span><p class="finder-selected-description" aria-live="polite">UX design and product ownership for a complex operational tool</p><span class="finder-work-tag finder-work-tag--professional" aria-live="polite">Professional work</span><span class="finder-project-qualifier" aria-live="polite" hidden></span><section class="finder-information" aria-label="Project information"><h4>Information</h4><div class="finder-information-row"><span>Created</span><span>2021</span></div><div class="finder-information-row finder-modified-row" hidden><span>Modified</span><span>Present</span></div></section><a class="finder-view-project" href="/projects/bah"><span>View project</span><svg class="nav-icon finder-view-project-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 12h14M12 5.5l6.5 6.5-6.5 6.5"/></svg></a></div></aside>
 		</div>
 	</main>
 	<script>
@@ -96,6 +96,11 @@
 					const modifiedRow = document.querySelector('.finder-modified-row');
 					if (modifiedRow) modifiedRow.hidden = button.dataset.project !== 'bah';
 					const workTag = document.querySelector('.finder-work-tag');
+					const qualifierTag = document.querySelector('.finder-project-qualifier');
+					if (qualifierTag) {
+						qualifierTag.textContent = button.dataset.qualifier || '';
+						qualifierTag.hidden = !button.dataset.qualifier;
+					}
 					if (workTag) {
 						workTag.textContent = button.dataset.workType || 'Professional work';
 						workTag.className = 'finder-work-tag finder-work-tag--' + (button.dataset.workTypeClass || 'professional');
