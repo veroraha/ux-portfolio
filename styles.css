@@ -454,7 +454,7 @@ body:has(.home-page) .page-header {
 	display: block;
 	width: 100%;
 	height: auto;
-	border-radius: 8px;
+	border-radius: 0;
 	box-shadow: 0 8px 30px rgba(18, 19, 22, 0.08), 0 2px 8px rgba(18, 19, 22, 0.04);
 	background-color: #0a0a0a;
 }
@@ -466,7 +466,7 @@ body:has(.home-page) .page-header {
 
 .case-study-figure figcaption {
 	margin-top: 0.65rem;
-	font-size: 0.95rem;
+	font-size: 1rem;
 	line-height: 1.45;
 	font-style: italic;
 	text-align: center;
@@ -486,7 +486,7 @@ body:has(.home-page) .page-header {
 	display: block;
 	width: 100%;
 	height: auto;
-	border-radius: 14px;
+	border-radius: 0;
 	box-shadow: 0 8px 30px rgba(18, 19, 22, 0.08), 0 2px 8px rgba(18, 19, 22, 0.04);
 }
 
@@ -3612,9 +3612,11 @@ body:has(.headshot) .headshot.headshot-entered {
 .project-finder-window .case-study-subtitle,
 .project-finder-window .case-study-body p,
 .project-finder-window .case-study-body li,
-.project-finder-window .case-study-body figcaption,
 .project-finder-window .case-study-body .research-stat-label {
   font-size: 1.125rem !important;
+}
+.project-finder-window .case-study-body figcaption {
+  font-size: 1rem !important;
 }
 
 /* Keep research statistic values larger than surrounding case-study copy. */
