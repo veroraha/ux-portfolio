@@ -1,0 +1,327 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="410" viewBox="0 0 1080 410">
+  <defs>
+    <clipPath id="clip-operations">
+      <rect width="1080" height="410"/>
+    </clipPath>
+  </defs>
+  <g id="operations" clip-path="url(#clip-operations)">
+    <rect width="1080" height="410" fill="#121212"/>
+    <g id="Group_8794" data-name="Group 8794" transform="translate(-1473 80)">
+      <g id="Group_8798" data-name="Group 8798" transform="translate(1473 -80)">
+        <g id="Group_8793" data-name="Group 8793">
+          <path id="Tab_background" data-name="Tab background" d="M0,30.046H1080v410H0Z" transform="translate(0 -30.046)" fill="#2d3037"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_11398" data-name="Group 11398" transform="translate(4 4.5)">
+      <path id="Rectangle_2478" data-name="Rectangle 2478" d="M4,0H730a4,4,0,0,1,4,4V335a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V4A4,4,0,0,1,4,0Z" transform="translate(302 26)" fill="#4d5058"/>
+      <g id="Group_10319" data-name="Group 10319" transform="translate(-529 -652)">
+        <g id="Group_10331" data-name="Group 10331">
+          <g id="Group_10335" data-name="Group 10335" transform="translate(0 244.5)">
+            <g id="Group_10274" data-name="Group 10274">
+              <path id="Rectangle_2468" data-name="Rectangle 2468" d="M0,0H248a4,4,0,0,1,4,4V37a4,4,0,0,1-4,4H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(571 678)" fill="#44474e"/>
+              <text id="Topic_6" data-name="Topic 6" transform="translate(583 703)" fill="#fafafa" font-size="14" font-family="SourceSans3-Regular, 'Source Sans \33 '"><tspan x="0" y="0">Topic 6</tspan></text>
+              <g id="Group_10329" data-name="Group 10329">
+                <path id="Rectangle_2477" data-name="Rectangle 2477" d="M4,0H16a0,0,0,0,1,0,0V41a0,0,0,0,1,0,0H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(555 678)" fill="#65789a"/>
+                <text id="_6" data-name="6" transform="translate(560 703)" fill="#fff" font-size="14" font-family="SourceSans3-Semibold, 'Source Sans \33 '" font-weight="600"><tspan x="0" y="0">6</tspan></text>
+              </g>
+              <g id="Group_10333" data-name="Group 10333" transform="translate(751 688.5)">
+                <g id="Path_2872" data-name="Path 2872" fill="#c2c6d1">
+                  <path d="M 53.4252815246582 19.5 L 2.574709892272949 19.5 C 1.450099945068359 19.5 0.5 18.063720703125 0.5 16.3636302947998 L 0.5 3.636359930038452 C 0.5 1.936280012130737 1.450099945068359 0.5 2.574709892272949 0.5 L 53.4252815246582 0.5 C 54.54988861083984 0.5 55.5 1.936280012130737 55.5 3.636359930038452 L 55.5 16.3636302947998 C 55.5 18.063720703125 54.54988861083984 19.5 53.4252815246582 19.5 Z" stroke="none"/>
+                  <path d="M 2.574710845947266 1 C 1.829891204833984 1 1 2.082710266113281 1 3.636360168457031 L 1 16.3636302947998 C 1 17.91728019714355 1.829891204833984 19 2.574710845947266 19 L 53.42527008056641 19 C 54.17008972167969 19 55 17.91728019714355 55 16.3636302947998 L 55 3.636360168457031 C 55 2.082710266113281 54.17008972167969 1 53.42527008056641 1 L 2.574710845947266 1 M 2.574710845947266 0 L 53.42527008056641 0 C 54.84725189208984 0 56 1.628059387207031 56 3.636360168457031 L 56 16.3636302947998 C 56 18.37194061279297 54.84725189208984 20 53.42527008056641 20 L 2.574710845947266 20 C 1.152740478515625 20 0 18.37194061279297 0 16.3636302947998 L 0 3.636360168457031 C 0 1.628059387207031 1.152740478515625 0 2.574710845947266 0 Z" stroke="none" fill="#727781"/>
+                </g>
+                <text id="Upcoming" transform="translate(8 13)" font-size="9" font-family="SourceSans3-Semibold, 'Source Sans \33 '" font-weight="600"><tspan x="0" y="0">Upcoming</tspan></text>
+              </g>
+            </g>
+          </g>
+          <g id="Group_10334" data-name="Group 10334" transform="translate(0 195.5)">
+            <g id="Group_10274-2" data-name="Group 10274">
+              <path id="Rectangle_2468-2" data-name="Rectangle 2468" d="M0,0H248a4,4,0,0,1,4,4V37a4,4,0,0,1-4,4H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(571 678)" fill="#44474e"/>
+              <text id="Topic_5" data-name="Topic 5" transform="translate(583 703)" fill="#fafafa" font-size="14" font-family="SourceSans3-Regular, 'Source Sans \33 '"><tspan x="0" y="0">Topic 5</tspan></text>
+              <g id="Group_10329-2" data-name="Group 10329">
+                <path id="Rectangle_2477-2" data-name="Rectangle 2477" d="M4,0H16a0,0,0,0,1,0,0V41a0,0,0,0,1,0,0H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(555 678)" fill="#65789a"/>
+                <text id="_5" data-name="5" transform="translate(560 703)" fill="#fff" font-size="14" font-family="SourceSans3-Semibold, 'Source Sans \33 '" font-weight="600"><tspan x="0" y="0">5</tspan></text>
+              </g>
+              <g id="Group_10333-2" data-name="Group 10333" transform="translate(751 688.5)">
+                <g id="Path_2872-2" data-name="Path 2872" fill="#c2c6d1">
+                  <path d="M 53.4252815246582 19.5 L 2.574709892272949 19.5 C 1.450099945068359 19.5 0.5 18.063720703125 0.5 16.3636302947998 L 0.5 3.636359930038452 C 0.5 1.936280012130737 1.450099945068359 0.5 2.574709892272949 0.5 L 53.4252815246582 0.5 C 54.54988861083984 0.5 55.5 1.936280012130737 55.5 3.636359930038452 L 55.5 16.3636302947998 C 55.5 18.063720703125 54.54988861083984 19.5 53.4252815246582 19.5 Z" stroke="none"/>
+                  <path d="M 2.574710845947266 1 C 1.829891204833984 1 1 2.082710266113281 1 3.636360168457031 L 1 16.3636302947998 C 1 17.91728019714355 1.829891204833984 19 2.574710845947266 19 L 53.42527008056641 19 C 54.17008972167969 19 55 17.91728019714355 55 16.3636302947998 L 55 3.636360168457031 C 55 2.082710266113281 54.17008972167969 1 53.42527008056641 1 L 2.574710845947266 1 M 2.574710845947266 0 L 53.42527008056641 0 C 54.84725189208984 0 56 1.628059387207031 56 3.636360168457031 L 56 16.3636302947998 C 56 18.37194061279297 54.84725189208984 20 53.42527008056641 20 L 2.574710845947266 20 C 1.152740478515625 20 0 18.37194061279297 0 16.3636302947998 L 0 3.636360168457031 C 0 1.628059387207031 1.152740478515625 0 2.574710845947266 0 Z" stroke="none" fill="#727781"/>
+                </g>
+                <text id="Upcoming-2" data-name="Upcoming" transform="translate(8 13)" font-size="9" font-family="SourceSans3-Semibold, 'Source Sans \33 '" font-weight="600"><tspan x="0" y="0">Upcoming</tspan></text>
+              </g>
+            </g>
+          </g>
+          <g id="Group_10332" data-name="Group 10332" transform="translate(0 146.5)">
+            <g id="Group_10274-3" data-name="Group 10274">
+              <path id="Rectangle_2468-3" data-name="Rectangle 2468" d="M0,0H248a4,4,0,0,1,4,4V37a4,4,0,0,1-4,4H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(571 678)" fill="#44474e"/>
+              <text id="Topic_4" data-name="Topic 4" transform="translate(583 703)" fill="#fafafa" font-size="14" font-family="SourceSans3-Regular, 'Source Sans \33 '"><tspan x="0" y="0">Topic 4</tspan></text>
+              <g id="Group_10329-3" data-name="Group 10329">
+                <path id="Rectangle_2477-3" data-name="Rectangle 2477" d="M4,0H16a0,0,0,0,1,0,0V41a0,0,0,0,1,0,0H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(555 678)" fill="#65789a"/>
+                <text id="_4" data-name="4" transform="translate(559.5 703)" fill="#fff" font-size="14" font-family="SourceSans3-Semibold, 'Source Sans \33 '" font-weight="600"><tspan x="0" y="0">4</tspan></text>
+              </g>
+              <g id="Group_10333-3" data-name="Group 10333" transform="translate(751 688.5)">
+                <g id="Path_2872-3" data-name="Path 2872" fill="#c2c6d1">
+                  <path d="M 53.4252815246582 19.5 L 2.574709892272949 19.5 C 1.450099945068359 19.5 0.5 18.063720703125 0.5 16.3636302947998 L 0.5 3.636359930038452 C 0.5 1.936280012130737 1.450099945068359 0.5 2.574709892272949 0.5 L 53.4252815246582 0.5 C 54.54988861083984 0.5 55.5 1.936280012130737 55.5 3.636359930038452 L 55.5 16.3636302947998 C 55.5 18.063720703125 54.54988861083984 19.5 53.4252815246582 19.5 Z" stroke="none"/>
+                  <path d="M 2.574710845947266 1 C 1.829891204833984 1 1 2.082710266113281 1 3.636360168457031 L 1 16.3636302947998 C 1 17.91728019714355 1.829891204833984 19 2.574710845947266 19 L 53.42527008056641 19 C 54.17008972167969 19 55 17.91728019714355 55 16.3636302947998 L 55 3.636360168457031 C 55 2.082710266113281 54.17008972167969 1 53.42527008056641 1 L 2.574710845947266 1 M 2.574710845947266 0 L 53.42527008056641 0 C 54.84725189208984 0 56 1.628059387207031 56 3.636360168457031 L 56 16.3636302947998 C 56 18.37194061279297 54.84725189208984 20 53.42527008056641 20 L 2.574710845947266 20 C 1.152740478515625 20 0 18.37194061279297 0 16.3636302947998 L 0 3.636360168457031 C 0 1.628059387207031 1.152740478515625 0 2.574710845947266 0 Z" stroke="none" fill="#727781"/>
+                </g>
+                <text id="Upcoming-3" data-name="Upcoming" transform="translate(8 13)" font-size="9" font-family="SourceSans3-Semibold, 'Source Sans \33 '" font-weight="600"><tspan x="0" y="0">Upcoming</tspan></text>
+              </g>
+            </g>
+          </g>
+          <g id="Group_10278" data-name="Group 10278" transform="translate(0 98)">
+            <path id="Rectangle_2467" data-name="Rectangle 2467" d="M4,0H16a0,0,0,0,1,0,0V40.5a0,0,0,0,1,0,0H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(555 678)" fill="#7e91b5"/>
+            <g id="Group_10274-4" data-name="Group 10274" transform="translate(571 677.5)">
+              <rect id="Rectangle_2468-4" data-name="Rectangle 2468" width="260" height="40.5" transform="translate(0 0.5)" fill="#4d5058"/>
+              <g id="Group_10272" data-name="Group 10272" transform="translate(187 0)" opacity="0.01">
+                <g id="Path_2872-4" data-name="Path 2872" fill="#f8e08d">
+                  <path d="M 19.07740783691406 9.5 L 0.9195399880409241 9.5 C 0.8220300078392029 9.473919868469238 0.5 9.02670955657959 0.5 8.181819915771484 L 0.5 1.818179965019226 C 0.5 0.9732900261878967 0.8220300078392029 0.5260800123214722 0.924310028553009 0.4995200037956238 L 19.08045959472656 0.5 C 19.17797088623047 0.5260800123214722 19.5 0.9732900261878967 19.5 1.818179965019226 L 19.5 8.181819915771484 C 19.5 9.022017478942871 19.1815299987793 9.468941688537598 19.07740783691406 9.5 Z" stroke="none"/>
+                  <path d="M 1.152748107910156 1 C 1.083189010620117 1.146991729736328 1 1.430559158325195 1 1.818180084228516 L 1 8.181819915771484 C 1 8.569440841674805 1.083189010620117 8.853008270263672 1.152748107910156 9 L 18.84725189208984 9 C 18.91680908203125 8.853008270263672 19 8.569440841674805 19 8.181819915771484 L 19 1.818180084228516 C 19 1.430559158325195 18.91680908203125 1.146991729736328 18.84725189208984 1 L 1.152748107910156 1 M 0.9195404052734375 0 L 19.08045959472656 0 C 19.58831024169922 0 20 0.8140296936035156 20 1.818180084228516 L 20 8.181819915771484 C 20 9.185970306396484 19.58831024169922 10 19.08045959472656 10 L 0.9195404052734375 10 C 0.4116897583007812 10 0 9.185970306396484 0 8.181819915771484 L 0 1.818180084228516 C 0 0.8140296936035156 0.4116897583007812 0 0.9195404052734375 0 Z" stroke="none" fill="#f1c21a"/>
+                </g>
+                <text id="Ongoing" transform="translate(8 5)" font-size="1" font-family="SourceSans3-Semibold, 'Source Sans \33 '" font-weight="600"><tspan x="0" y="0">Ongoing</tspan></text>
+              </g>
+              <g id="Group_10280" data-name="Group 10280" transform="translate(12 11.311)">
+                <g id="Group_10360" data-name="Group 10360">
+                  <text id="Topic_3" data-name="Topic 3" transform="translate(0 14)" fill="#fafafa" font-size="14" font-family="SourceSans3-Semibold, 'Source Sans \33 '" font-weight="600"><tspan x="0" y="0">Topic 3</tspan></text>
+                </g>
+              </g>
+            </g>
+            <text id="_3" data-name="3" transform="translate(559 702.744)" fill="#fff" font-size="14" font-family="SourceSans3-Bold, 'Source Sans \33 '" font-weight="700"><tspan x="0" y="0">3</tspan></text>
+          </g>
+          <g id="Group_10330" data-name="Group 10330" transform="translate(0 48.5)">
+            <g id="Group_10274-5" data-name="Group 10274">
+              <path id="Rectangle_2468-5" data-name="Rectangle 2468" d="M0,0H248a4,4,0,0,1,4,4V37a4,4,0,0,1-4,4H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(571 678)" fill="#44474e"/>
+              <text id="Topic_2" data-name="Topic 2" transform="translate(583 703)" fill="#fafafa" font-size="14" font-family="SourceSans3-Regular, 'Source Sans \33 '"><tspan x="0" y="0">Topic 2</tspan></text>
+              <g id="Group_10272-2" data-name="Group 10272" transform="translate(749 688.5)">
+                <g id="Path_2872-5" data-name="Path 2872" fill="#95dbab">
+                  <path d="M 55.33330917358398 19.5 L 2.666670083999634 19.5 C 2.117759943008423 19.5 1.591300010681152 19.19430923461914 1.184249997138977 18.63924980163574 C 0.7430099844932556 18.03754997253418 0.5 17.22937965393066 0.5 16.3636302947998 L 0.5 3.636359930038452 C 0.5 2.770610094070435 0.7430099844932556 1.96245002746582 1.184249997138977 1.360749959945679 C 1.591300010681152 0.8056899905204773 2.117769956588745 0.5 2.666670083999634 0.5 L 55.33330917358398 0.5 C 55.88222122192383 0.5 56.40869140625 0.8056899905204773 56.81573867797852 1.360749959945679 C 57.25698852539062 1.96245002746582 57.5 2.770610094070435 57.5 3.636359930038452 L 57.5 16.3636302947998 C 57.5 17.22937965393066 57.25698852539062 18.03754997253418 56.81573867797852 18.63924980163574 C 56.40869140625 19.19430923461914 55.88222122192383 19.5 55.33330917358398 19.5 Z" stroke="none"/>
+                  <path d="M 2.666660308837891 1 C 2.146499633789062 1 1.767238616943359 1.411270141601562 1.587448120117188 1.656429290771484 C 1.214118957519531 2.165519714355469 1 2.887180328369141 1 3.636360168457031 L 1 16.3636302947998 C 1 17.1128101348877 1.214118957519531 17.83447074890137 1.587448120117188 18.34357070922852 C 1.767238616943359 18.58872985839844 2.146499633789062 19 2.666660308837891 19 L 55.33330917358398 19 C 55.85348129272461 19 56.23276138305664 18.58872032165527 56.41254043579102 18.34355926513672 C 56.78588104248047 17.83447074890137 57 17.1128101348877 57 16.3636302947998 L 57 3.636360168457031 C 57 2.887180328369141 56.78588104248047 2.165529251098633 56.41254043579102 1.656429290771484 C 56.23276138305664 1.411279678344727 55.85348129272461 1 55.33330917358398 1 L 2.666660308837891 1 M 2.666660308837891 0 L 55.33330917358398 0 C 56.80607986450195 0 58 1.628059387207031 58 3.636360168457031 L 58 16.3636302947998 C 58 18.37194061279297 56.80607986450195 20 55.33330917358398 20 L 2.666660308837891 20 C 1.19390869140625 20 0 18.37194061279297 0 16.3636302947998 L 0 3.636360168457031 C 0 1.628059387207031 1.19390869140625 0 2.666660308837891 0 Z" stroke="none" fill="#42be65"/>
+                </g>
+                <text id="Completed" transform="translate(8 13)" font-size="9" font-family="SourceSans3-Semibold, 'Source Sans \33 '" font-weight="600"><tspan x="0" y="0">Completed</tspan></text>
+              </g>
+              <g id="Group_10329-4" data-name="Group 10329">
+                <path id="Rectangle_2477-4" data-name="Rectangle 2477" d="M4,0H16a0,0,0,0,1,0,0V41a0,0,0,0,1,0,0H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(555 678)" fill="#65789a"/>
+                <text id="_2" data-name="2" transform="translate(560 703)" fill="#fff" font-size="14" font-family="SourceSans3-Semibold, 'Source Sans \33 '" font-weight="600"><tspan x="0" y="0">2</tspan></text>
+              </g>
+            </g>
+          </g>
+          <g id="Group_10275" data-name="Group 10275" transform="translate(0 -0.5)">
+            <g id="Group_10274-6" data-name="Group 10274">
+              <path id="Rectangle_2468-6" data-name="Rectangle 2468" d="M0,0H248a4,4,0,0,1,4,4V37a4,4,0,0,1-4,4H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(571 678)" fill="#44474e"/>
+              <text id="Topic_1" data-name="Topic 1" transform="translate(583 703)" fill="#fafafa" font-size="14" font-family="SourceSans3-Regular, 'Source Sans \33 '"><tspan x="0" y="0">Topic 1</tspan></text>
+              <g id="Group_10272-3" data-name="Group 10272" transform="translate(749 688.5)">
+                <g id="Path_2872-6" data-name="Path 2872" fill="#95dbab">
+                  <path d="M 55.33330917358398 19.5 L 2.666670083999634 19.5 C 2.117759943008423 19.5 1.591300010681152 19.19430923461914 1.184249997138977 18.63924980163574 C 0.7430099844932556 18.03754997253418 0.5 17.22937965393066 0.5 16.3636302947998 L 0.5 3.636359930038452 C 0.5 2.770610094070435 0.7430099844932556 1.96245002746582 1.184249997138977 1.360749959945679 C 1.591300010681152 0.8056899905204773 2.117769956588745 0.5 2.666670083999634 0.5 L 55.33330917358398 0.5 C 55.88222122192383 0.5 56.40869140625 0.8056899905204773 56.81573867797852 1.360749959945679 C 57.25698852539062 1.96245002746582 57.5 2.770610094070435 57.5 3.636359930038452 L 57.5 16.3636302947998 C 57.5 17.22937965393066 57.25698852539062 18.03754997253418 56.81573867797852 18.63924980163574 C 56.40869140625 19.19430923461914 55.88222122192383 19.5 55.33330917358398 19.5 Z" stroke="none"/>
+                  <path d="M 2.666660308837891 1 C 2.146499633789062 1 1.767238616943359 1.411270141601562 1.587448120117188 1.656429290771484 C 1.214118957519531 2.165519714355469 1 2.887180328369141 1 3.636360168457031 L 1 16.3636302947998 C 1 17.1128101348877 1.214118957519531 17.83447074890137 1.587448120117188 18.34357070922852 C 1.767238616943359 18.58872985839844 2.146499633789062 19 2.666660308837891 19 L 55.33330917358398 19 C 55.85348129272461 19 56.23276138305664 18.58872032165527 56.41254043579102 18.34355926513672 C 56.78588104248047 17.83447074890137 57 17.1128101348877 57 16.3636302947998 L 57 3.636360168457031 C 57 2.887180328369141 56.78588104248047 2.165529251098633 56.41254043579102 1.656429290771484 C 56.23276138305664 1.411279678344727 55.85348129272461 1 55.33330917358398 1 L 2.666660308837891 1 M 2.666660308837891 0 L 55.33330917358398 0 C 56.80607986450195 0 58 1.628059387207031 58 3.636360168457031 L 58 16.3636302947998 C 58 18.37194061279297 56.80607986450195 20 55.33330917358398 20 L 2.666660308837891 20 C 1.19390869140625 20 0 18.37194061279297 0 16.3636302947998 L 0 3.636360168457031 C 0 1.628059387207031 1.19390869140625 0 2.666660308837891 0 Z" stroke="none" fill="#42be65"/>
+                </g>
+                <text id="Completed-2" data-name="Completed" transform="translate(8 13)" font-size="9" font-family="SourceSans3-Semibold, 'Source Sans \33 '" font-weight="600"><tspan x="0" y="0">Completed</tspan></text>
+              </g>
+              <g id="Group_10329-5" data-name="Group 10329">
+                <path id="Rectangle_2477-5" data-name="Rectangle 2477" d="M4,0H16a0,0,0,0,1,0,0V41a0,0,0,0,1,0,0H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(555 678)" fill="#65789a"/>
+                <text id="_1" data-name="1" transform="translate(560 703)" fill="#fff" font-size="14" font-family="SourceSans3-Semibold, 'Source Sans \33 '" font-weight="600"><tspan x="0" y="0">1</tspan></text>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="Group_10325" data-name="Group 10325" transform="translate(-545 -632)">
+        <g id="Group_10357" data-name="Group 10357" transform="translate(0 117)">
+          <g id="Group_10356" data-name="Group 10356">
+            <text id="_0_complete" data-name="0% complete" transform="translate(871 775)" fill="#fafafa" font-size="14" font-family="SourceSans3-Bold, 'Source Sans \33 '" font-weight="700"><tspan x="0" y="0">0% </tspan><tspan y="0" font-family="SourceSans3-Regular, 'Source Sans \33 '" font-weight="400">complete</tspan></text>
+            <g id="Group_10353" data-name="Group 10353">
+              <g id="Group_9926" data-name="Group 9926" transform="translate(871 742)">
+                <text id="COA_2" data-name="COA 2" transform="translate(0 14)" fill="#d6e3fe" font-size="14" font-family="SourceSans3-Semibold, 'Source Sans \33 '" font-weight="600"><tspan x="0" y="0">COA 2</tspan></text>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="Group_11397" data-name="Group 11397" transform="translate(914 855)">
+          <g id="Group_10312" data-name="Group 10312" transform="translate(0 50)">
+            <g id="Group_10311" data-name="Group 10311">
+              <g id="Group_10310" data-name="Group 10310" transform="translate(1.5 33)">
+                <g id="OGA_counter" data-name="OGA counter" transform="translate(278)">
+                  <circle id="Ellipse_360" data-name="Ellipse 360" cx="10" cy="10" r="10" fill="#f8e08c"/>
+                  <text id="_2-2" data-name="2" transform="translate(4.5 0.5)" fill="#4d3d05" font-size="14" font-family="SourceSans3-Bold, 'Source Sans \33 '" font-weight="700"><tspan x="-3.696" y="14">2</tspan></text>
+                </g>
+                <g id="OGA_counter-2" data-name="OGA counter" transform="translate(414)">
+                  <circle id="Ellipse_360-2" data-name="Ellipse 360" cx="10" cy="10" r="10" fill="#c2c6d1"/>
+                  <text id="_0" data-name="0" transform="translate(4.5 0.5)" fill="#22262e" font-size="14" font-family="SourceSans3-Bold, 'Source Sans \33 '" font-weight="700"><tspan x="-3.696" y="14">0</tspan></text>
+                </g>
+                <g id="OGA_counter-3" data-name="OGA counter" transform="translate(552)">
+                  <circle id="Ellipse_360-3" data-name="Ellipse 360" cx="10" cy="10" r="10" fill="#f8e08c"/>
+                  <text id="_2-3" data-name="2" transform="translate(4.5 0.5)" fill="#4d3d05" font-size="14" font-family="SourceSans3-Bold, 'Source Sans \33 '" font-weight="700"><tspan x="-3.696" y="14">2</tspan></text>
+                </g>
+                <g id="OGA_counter-4" data-name="OGA counter" transform="translate(141)">
+                  <circle id="Ellipse_360-4" data-name="Ellipse 360" cx="10" cy="10" r="10" fill="#c2c6d1"/>
+                  <text id="_0-2" data-name="0" transform="translate(4.5 0.5)" font-size="14" font-family="SourceSans3-Bold, 'Source Sans \33 '" font-weight="700"><tspan x="-3.696" y="14">0</tspan></text>
+                </g>
+                <g id="OGA_counter-5" data-name="OGA counter" transform="translate(4)">
+                  <circle id="Ellipse_360-5" data-name="Ellipse 360" cx="10" cy="10" r="10" fill="#c2c6d1"/>
+                  <text id="_0-3" data-name="0" transform="translate(4.5 0.5)" font-size="14" font-family="SourceSans3-Bold, 'Source Sans \33 '" font-weight="700"><tspan x="-3.696" y="14">0</tspan></text>
+                </g>
+                <g id="OGA_counter-6" data-name="OGA counter" transform="translate(278)">
+                  <circle id="Ellipse_360-6" data-name="Ellipse 360" cx="10" cy="10" r="10" fill="#c2c6d1"/>
+                  <text id="_0-4" data-name="0" transform="translate(4.5 0.5)" font-size="14" font-family="SourceSans3-Bold, 'Source Sans \33 '" font-weight="700"><tspan x="-3.696" y="14">0</tspan></text>
+                </g>
+                <g id="OGA_counter-7" data-name="OGA counter" transform="translate(552)">
+                  <circle id="Ellipse_360-7" data-name="Ellipse 360" cx="10" cy="10" r="10" fill="#c2c6d1"/>
+                  <text id="_0-5" data-name="0" transform="translate(4.5 0.5)" font-size="14" font-family="SourceSans3-Bold, 'Source Sans \33 '" font-weight="700"><tspan x="-3.696" y="14">0</tspan></text>
+                </g>
+              </g>
+              <g id="Group_10313" data-name="Group 10313">
+                <line id="Line_1077" data-name="Line 1077" x2="579" transform="translate(0 12.5)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="4"/>
+                <g id="Group_10291" data-name="Group 10291" transform="translate(-858)">
+                  <g id="Group_11396" data-name="Group 11396" transform="translate(305 -800)">
+                    <rect id="Rectangle_2558" data-name="Rectangle 2558" width="32" height="29" transform="translate(1101 800)" fill="#4d5058"/>
+                    <path id="Path_5630" data-name="Path 5630" d="M75,64a2.75,2.75,0,1,1-2.75,2.75A2.753,2.753,0,0,1,75,64Zm4.125,13.406A3.089,3.089,0,0,1,77.75,79.98v3.957A2.063,2.063,0,0,1,75.688,86H74.313a2.063,2.063,0,0,1-2.062-2.062V79.98a3.089,3.089,0,0,1-1.375-2.574V75.688a4.125,4.125,0,0,1,8.25,0Zm-11-12.031a2.406,2.406,0,1,1-2.406,2.406A2.408,2.408,0,0,1,68.125,65.375Zm.688,10.313v1.375A5.486,5.486,0,0,0,70.188,80.7v3.236c0,.052,0,.107,0,.159a2.061,2.061,0,0,1-1.379.529H67.438a2.063,2.063,0,0,1-2.062-2.062V80.13A2.745,2.745,0,0,1,64,77.75V76.375a4.126,4.126,0,0,1,4.125-4.125,4.177,4.177,0,0,1,1.543.3A6.174,6.174,0,0,0,68.813,75.688Zm11,8.25V80.7a5.478,5.478,0,0,0,1.375-3.639V75.688a6.186,6.186,0,0,0-.855-3.141A4.131,4.131,0,0,1,86,76.375V77.75a2.745,2.745,0,0,1-1.375,2.38v2.432a2.063,2.063,0,0,1-2.062,2.063H81.188a2.048,2.048,0,0,1-1.379-.529C79.808,84.045,79.813,83.989,79.813,83.938Zm2.063-18.562a2.406,2.406,0,1,1-2.406,2.406A2.408,2.408,0,0,1,81.875,65.375Z" transform="translate(1042 740)" fill="#f9f9fe"/>
+                  </g>
+                  <g id="Group_11395" data-name="Group 11395" transform="translate(168 -800)">
+                    <rect id="Rectangle_2558-2" data-name="Rectangle 2558" width="32" height="29" transform="translate(1101 800)" fill="#4d5058"/>
+                    <g id="folder-open" transform="translate(1106 806.115)">
+                      <path id="Path_2990" data-name="Path 2990" d="M65.359,103.8,64.4,106.65V98.58A2.593,2.593,0,0,1,67,96h5.636a2.623,2.623,0,0,1,1.56.516l1.56,1.161a1.294,1.294,0,0,0,.78.258H81.3a2.593,2.593,0,0,1,2.6,2.58v.645H69.057a3.9,3.9,0,0,0-3.7,2.644ZM82.5,112.77H67.106a1.936,1.936,0,0,1-1.849-2.548l1.95-5.8a1.948,1.948,0,0,1,1.849-1.322H84.449a1.936,1.936,0,0,1,1.849,2.548l-1.95,5.8A1.948,1.948,0,0,1,82.5,112.77Z" transform="translate(-64.4 -96)" fill="#f9f9fe"/>
+                    </g>
+                  </g>
+                  <g id="Group_11394" data-name="Group 11394" transform="translate(31 -800)">
+                    <rect id="Rectangle_2558-3" data-name="Rectangle 2558" width="32" height="29" transform="translate(1101 800)" fill="#4d5058"/>
+                    <path id="Path_5629" data-name="Path 5629" d="M127.9,72.057a8,8,0,1,1,16,0c0,5.1-5.007,11.205-7.1,13.533a1.2,1.2,0,0,1-1.8,0c-2.091-2.328-7.1-8.437-7.1-13.533Zm8,2.879a2.735,2.735,0,1,0-2.666-2.734A2.7,2.7,0,0,0,135.9,74.936Z" transform="translate(981.1 740)" fill="#f9f9fe"/>
+                  </g>
+                  <g id="Group_11393" data-name="Group 11393" transform="translate(-7)">
+                    <rect id="Rectangle_2557" data-name="Rectangle 2557" width="32" height="29" transform="translate(1002)" fill="#4d5058"/>
+                    <g id="phone" transform="translate(1007 4)">
+                      <path id="Path_2985" data-name="Path 2985" d="M70.958,65.063a1.746,1.746,0,0,0-2.067-1.014l-.236.064A5.864,5.864,0,0,0,64.2,70.834,19.546,19.546,0,0,0,79.23,85.865a5.858,5.858,0,0,0,6.721-4.456l.064-.236A1.74,1.74,0,0,0,85,79.106l-4.181-1.74a1.743,1.743,0,0,0-2.02.507L77.146,79.9a14.716,14.716,0,0,1-6.85-7.09l1.9-1.547a1.746,1.746,0,0,0,.507-2.02Z" transform="translate(-64.077 -63.988)" fill="#ecf0fc"/>
+                    </g>
+                  </g>
+                  <g id="Group_11392" data-name="Group 11392" transform="translate(-8)">
+                    <rect id="Rectangle_2556" data-name="Rectangle 2556" width="32" height="29" transform="translate(866)" fill="#4d5058"/>
+                    <path id="Path_5628" data-name="Path 5628" d="M66.75,128A2.712,2.712,0,0,0,64,130.667v10.667A2.712,2.712,0,0,0,66.75,144h16.5A2.712,2.712,0,0,0,86,141.333V130.667A2.712,2.712,0,0,0,83.25,128Zm4.125,10.667a1.376,1.376,0,1,1-1.375-1.333A1.353,1.353,0,0,1,70.875,138.667Zm-1.375-4a1.334,1.334,0,1,1,1.375-1.333A1.353,1.353,0,0,1,69.5,134.667Zm5.156-2.333h6.188a1,1,0,1,1,0,2H74.656a1,1,0,1,1,0-2Zm0,5.333h6.188a1,1,0,1,1,0,2H74.656a1,1,0,1,1,0-2Z" transform="translate(807 -121)" fill="#ecf0fc"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g id="Group_10358" data-name="Group 10358">
+            <text id="Really_long_stage_name" data-name="Really long stage name" transform="translate(-43 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '" opacity="0"><tspan x="0" y="0">Really long stage name</tspan></text>
+            <text id="Really_long_stage_name-2" data-name="Really long stage name" transform="translate(92 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '" opacity="0"><tspan x="0" y="0">Really long stage name</tspan></text>
+            <text id="Really_long_stage_name-3" data-name="Really long stage name" transform="translate(229 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '" opacity="0"><tspan x="0" y="0">Really long stage name</tspan></text>
+            <text id="Really_long_stage_name-4" data-name="Really long stage name" transform="translate(369 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '" opacity="0"><tspan x="0" y="0">Really long stage name</tspan></text>
+            <text id="Really_long_stage_name-5" data-name="Really long stage name" transform="translate(509 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '" opacity="0"><tspan x="0" y="0">Really long stage name</tspan></text>
+            <text id="Stage_1" data-name="Stage 1" transform="translate(-3 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '"><tspan x="0" y="0">Stage 1</tspan></text>
+            <text id="Stage_2" data-name="Stage 2" transform="translate(136 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '"><tspan x="0" y="0">Stage 2</tspan></text>
+            <text id="Stage_3" data-name="Stage 3" transform="translate(272 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '"><tspan x="0" y="0">Stage 3</tspan></text>
+            <text id="Stage_4" data-name="Stage 4" transform="translate(409 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '"><tspan x="0" y="0">Stage 4</tspan></text>
+            <text id="Stage_5" data-name="Stage 5" transform="translate(545 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '"><tspan x="0" y="0">Stage 5</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g id="Group_10326" data-name="Group 10326" transform="translate(-545 -648)">
+        <g id="Group_10324" data-name="Group 10324" transform="translate(914 738)">
+          <g id="Group_10312-2" data-name="Group 10312" transform="translate(0 50)">
+            <g id="Group_10311-2" data-name="Group 10311">
+              <g id="Group_10310-2" data-name="Group 10310" transform="translate(1.5 33)">
+                <g id="OGA_counter-8" data-name="OGA counter" transform="translate(278)">
+                  <circle id="Ellipse_360-8" data-name="Ellipse 360" cx="10" cy="10" r="10" fill="#f8e08c"/>
+                  <text id="_2-4" data-name="2" transform="translate(4.5 0.5)" fill="#4d3d05" font-size="14" font-family="SourceSans3-Bold, 'Source Sans \33 '" font-weight="700"><tspan x="-3.696" y="14">2</tspan></text>
+                </g>
+                <g id="OGA_counter-9" data-name="OGA counter" transform="translate(414)">
+                  <circle id="Ellipse_360-9" data-name="Ellipse 360" cx="10" cy="10" r="10" fill="#c2c6d1"/>
+                  <text id="_0-6" data-name="0" transform="translate(4.5 0.5)" fill="#22262e" font-size="14" font-family="SourceSans3-Bold, 'Source Sans \33 '" font-weight="700"><tspan x="-3.696" y="14">0</tspan></text>
+                </g>
+                <g id="OGA_counter-10" data-name="OGA counter" transform="translate(552)">
+                  <circle id="Ellipse_360-10" data-name="Ellipse 360" cx="10" cy="10" r="10" fill="#f8e08c"/>
+                  <text id="_2-5" data-name="2" transform="translate(4.5 0.5)" fill="#4d3d05" font-size="14" font-family="SourceSans3-Bold, 'Source Sans \33 '" font-weight="700"><tspan x="-3.696" y="14">2</tspan></text>
+                </g>
+                <g id="OGA_counter-11" data-name="OGA counter" transform="translate(141)">
+                  <circle id="Ellipse_360-11" data-name="Ellipse 360" cx="10" cy="10" r="10" fill="#c2c6d1"/>
+                  <text id="_0-7" data-name="0" transform="translate(4.5 0.5)" font-size="14" font-family="SourceSans3-Bold, 'Source Sans \33 '" font-weight="700"><tspan x="-3.696" y="14">0</tspan></text>
+                </g>
+                <g id="OGA_counter-12" data-name="OGA counter" transform="translate(4)">
+                  <circle id="Ellipse_360-12" data-name="Ellipse 360" cx="10" cy="10" r="10" fill="#c2c6d1"/>
+                  <text id="_0-8" data-name="0" transform="translate(4.5 0.5)" font-size="14" font-family="SourceSans3-Bold, 'Source Sans \33 '" font-weight="700"><tspan x="-3.696" y="14">0</tspan></text>
+                </g>
+              </g>
+              <g id="Group_10313-2" data-name="Group 10313">
+                <line id="Line_1077-2" data-name="Line 1077" x2="579" transform="translate(0 12.5)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="4"/>
+                <g id="Group_10291-2" data-name="Group 10291" transform="translate(-858)">
+                  <g id="Group_11396-2" data-name="Group 11396" transform="translate(305 -800)">
+                    <rect id="Rectangle_2558-4" data-name="Rectangle 2558" width="32" height="29" transform="translate(1101 800)" fill="#4d5058"/>
+                    <path id="Path_5630-2" data-name="Path 5630" d="M75,64a2.75,2.75,0,1,1-2.75,2.75A2.753,2.753,0,0,1,75,64Zm4.125,13.406A3.089,3.089,0,0,1,77.75,79.98v3.957A2.063,2.063,0,0,1,75.688,86H74.313a2.063,2.063,0,0,1-2.062-2.062V79.98a3.089,3.089,0,0,1-1.375-2.574V75.688a4.125,4.125,0,0,1,8.25,0Zm-11-12.031a2.406,2.406,0,1,1-2.406,2.406A2.408,2.408,0,0,1,68.125,65.375Zm.688,10.313v1.375A5.486,5.486,0,0,0,70.188,80.7v3.236c0,.052,0,.107,0,.159a2.061,2.061,0,0,1-1.379.529H67.438a2.063,2.063,0,0,1-2.062-2.062V80.13A2.745,2.745,0,0,1,64,77.75V76.375a4.126,4.126,0,0,1,4.125-4.125,4.177,4.177,0,0,1,1.543.3A6.174,6.174,0,0,0,68.813,75.688Zm11,8.25V80.7a5.478,5.478,0,0,0,1.375-3.639V75.688a6.186,6.186,0,0,0-.855-3.141A4.131,4.131,0,0,1,86,76.375V77.75a2.745,2.745,0,0,1-1.375,2.38v2.432a2.063,2.063,0,0,1-2.062,2.063H81.188a2.048,2.048,0,0,1-1.379-.529C79.808,84.045,79.813,83.989,79.813,83.938Zm2.063-18.562a2.406,2.406,0,1,1-2.406,2.406A2.408,2.408,0,0,1,81.875,65.375Z" transform="translate(1042 740)" fill="#f9f9fe"/>
+                  </g>
+                  <g id="Group_11395-2" data-name="Group 11395" transform="translate(168 -800)">
+                    <rect id="Rectangle_2558-5" data-name="Rectangle 2558" width="32" height="29" transform="translate(1101 800)" fill="#4d5058"/>
+                    <g id="folder-open-2" data-name="folder-open" transform="translate(1106 806.115)">
+                      <path id="Path_2990-2" data-name="Path 2990" d="M65.359,103.8,64.4,106.65V98.58A2.593,2.593,0,0,1,67,96h5.636a2.623,2.623,0,0,1,1.56.516l1.56,1.161a1.294,1.294,0,0,0,.78.258H81.3a2.593,2.593,0,0,1,2.6,2.58v.645H69.057a3.9,3.9,0,0,0-3.7,2.644ZM82.5,112.77H67.106a1.936,1.936,0,0,1-1.849-2.548l1.95-5.8a1.948,1.948,0,0,1,1.849-1.322H84.449a1.936,1.936,0,0,1,1.849,2.548l-1.95,5.8A1.948,1.948,0,0,1,82.5,112.77Z" transform="translate(-64.4 -96)" fill="#f9f9fe"/>
+                    </g>
+                  </g>
+                  <g id="Group_11394-2" data-name="Group 11394" transform="translate(31 -800)">
+                    <rect id="Rectangle_2558-6" data-name="Rectangle 2558" width="32" height="29" transform="translate(1101 800)" fill="#4d5058"/>
+                    <path id="Path_5629-2" data-name="Path 5629" d="M127.9,72.057a8,8,0,1,1,16,0c0,5.1-5.007,11.205-7.1,13.533a1.2,1.2,0,0,1-1.8,0c-2.091-2.328-7.1-8.437-7.1-13.533Zm8,2.879a2.735,2.735,0,1,0-2.666-2.734A2.7,2.7,0,0,0,135.9,74.936Z" transform="translate(981.1 740)" fill="#f9f9fe"/>
+                  </g>
+                  <g id="Group_11393-2" data-name="Group 11393" transform="translate(-7)">
+                    <rect id="Rectangle_2557-2" data-name="Rectangle 2557" width="32" height="29" transform="translate(1002)" fill="#4d5058"/>
+                    <g id="phone-2" data-name="phone" transform="translate(1007 4)">
+                      <path id="Path_2985-2" data-name="Path 2985" d="M70.958,65.063a1.746,1.746,0,0,0-2.067-1.014l-.236.064A5.864,5.864,0,0,0,64.2,70.834,19.546,19.546,0,0,0,79.23,85.865a5.858,5.858,0,0,0,6.721-4.456l.064-.236A1.74,1.74,0,0,0,85,79.106l-4.181-1.74a1.743,1.743,0,0,0-2.02.507L77.146,79.9a14.716,14.716,0,0,1-6.85-7.09l1.9-1.547a1.746,1.746,0,0,0,.507-2.02Z" transform="translate(-64.077 -63.988)" fill="#ecf0fc"/>
+                    </g>
+                  </g>
+                  <g id="Group_11392-2" data-name="Group 11392" transform="translate(-8)">
+                    <rect id="Rectangle_2556-2" data-name="Rectangle 2556" width="32" height="29" transform="translate(866)" fill="#4d5058"/>
+                    <path id="Path_5628-2" data-name="Path 5628" d="M66.75,128A2.712,2.712,0,0,0,64,130.667v10.667A2.712,2.712,0,0,0,66.75,144h16.5A2.712,2.712,0,0,0,86,141.333V130.667A2.712,2.712,0,0,0,83.25,128Zm4.125,10.667a1.376,1.376,0,1,1-1.375-1.333A1.353,1.353,0,0,1,70.875,138.667Zm-1.375-4a1.334,1.334,0,1,1,1.375-1.333A1.353,1.353,0,0,1,69.5,134.667Zm5.156-2.333h6.188a1,1,0,1,1,0,2H74.656a1,1,0,1,1,0-2Zm0,5.333h6.188a1,1,0,1,1,0,2H74.656a1,1,0,1,1,0-2Z" transform="translate(807 -121)" fill="#ecf0fc"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g id="Group_10358-2" data-name="Group 10358">
+            <text id="Really_long_stage_name-6" data-name="Really long stage name" transform="translate(-43 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '" opacity="0"><tspan x="0" y="0">Really long stage name</tspan></text>
+            <text id="Really_long_stage_name-7" data-name="Really long stage name" transform="translate(92 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '" opacity="0"><tspan x="0" y="0">Really long stage name</tspan></text>
+            <text id="Really_long_stage_name-8" data-name="Really long stage name" transform="translate(229 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '" opacity="0"><tspan x="0" y="0">Really long stage name</tspan></text>
+            <text id="Really_long_stage_name-9" data-name="Really long stage name" transform="translate(369 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '" opacity="0"><tspan x="0" y="0">Really long stage name</tspan></text>
+            <text id="Really_long_stage_name-10" data-name="Really long stage name" transform="translate(509 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '" opacity="0"><tspan x="0" y="0">Really long stage name</tspan></text>
+            <text id="Stage_1-2" data-name="Stage 1" transform="translate(-3 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '"><tspan x="0" y="0">Stage 1</tspan></text>
+            <text id="Stage_2-2" data-name="Stage 2" transform="translate(136 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '"><tspan x="0" y="0">Stage 2</tspan></text>
+            <text id="Stage_3-2" data-name="Stage 3" transform="translate(272 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '"><tspan x="0" y="0">Stage 3</tspan></text>
+            <text id="Stage_4-2" data-name="Stage 4" transform="translate(409 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '"><tspan x="0" y="0">Stage 4</tspan></text>
+            <text id="Stage_5-2" data-name="Stage 5" transform="translate(545 117)" fill="#fff" font-size="12" font-family="SourceSans3-Regular, 'Source Sans \33 '"><tspan x="0" y="0">Stage 5</tspan></text>
+          </g>
+        </g>
+        <g id="Group_10337" data-name="Group 10337">
+          <g id="Group_10356-2" data-name="Group 10356">
+            <g id="Group_10355" data-name="Group 10355" transform="translate(871 761)">
+              <g id="Group_10285" data-name="Group 10285" transform="translate(-868)">
+                <text id="_75_complete" data-name="75% complete" transform="translate(868 14)" fill="#fff" font-size="14" font-family="SourceSans3-Bold, 'Source Sans \33 '" font-weight="700"><tspan x="0" y="0">75% </tspan><tspan y="0" font-family="SourceSans3-Regular, 'Source Sans \33 '" font-weight="400">complete</tspan></text>
+              </g>
+            </g>
+            <g id="Group_10353-2" data-name="Group 10353">
+              <g id="Group_9926-2" data-name="Group 9926" transform="translate(871 742)">
+                <text id="COA_1" data-name="COA 1" transform="translate(0 14)" fill="#d6e3fe" font-size="14" font-family="SourceSans3-Semibold, 'Source Sans \33 '" font-weight="600"><tspan x="0" y="0">COA 1</tspan></text>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="Group_11317" data-name="Group 11317" transform="translate(-528 -635)">
+        <g id="Group_11316" data-name="Group 11316">
+          <g id="Group_11314" data-name="Group 11314">
+            <g id="Group_10632" data-name="Group 10632" transform="translate(398 271)">
+              <text id="Topic_3-2" data-name="Topic 3" transform="translate(456 423)" fill="#fafafa" font-size="20" font-family="SourceSans3-Semibold, 'Source Sans \33 '" font-weight="600"><tspan x="0" y="0">Topic 3</tspan></text>
+            </g>
+            <g id="Group_11318" data-name="Group 11318" transform="translate(939 678)">
+              <g id="Path_2872-7" data-name="Path 2872" fill="#f8e08c">
+                <path d="M 46.74710845947266 19.5 L 2.252870082855225 19.5 C 1.683179974555969 19.5 1.276559948921204 18.98097991943359 1.084890007972717 18.67160034179688 C 0.7077199816703796 18.06281089782715 0.5 17.24315071105957 0.5 16.3636302947998 L 0.5 3.636359930038452 C 0.5 2.756839990615845 0.7077199816703796 1.937190055847168 1.084890007972717 1.328400015830994 C 1.276559948921204 1.019019961357117 1.683179974555969 0.5 2.252870082855225 0.5 L 46.74710845947266 0.5 C 47.31681060791016 0.5 47.72343063354492 1.019019961357117 47.91511154174805 1.328400015830994 C 48.29227828979492 1.937190055847168 48.5 2.756839990615845 48.5 3.636359930038452 L 48.5 16.3636302947998 C 48.5 17.24315071105957 48.29227828979492 18.06281089782715 47.91511154174805 18.67160034179688 C 47.72343063354492 18.98097991943359 47.31681060791016 19.5 46.74710845947266 19.5 Z" stroke="none"/>
+                <path d="M 2.25286865234375 1 C 1.742031097412109 1 1 2.027019500732422 1 3.636360168457031 L 1 16.3636302947998 C 1 17.97298049926758 1.742031097412109 19 2.25286865234375 19 L 46.74710845947266 19 C 47.25796127319336 19 48 17.97298049926758 48 16.3636302947998 L 48 3.636360168457031 C 48 2.027019500732422 47.25796127319336 1 46.74710845947266 1 L 2.25286865234375 1 M 2.25286865234375 0 L 46.74710845947266 0 C 47.99134063720703 0 49 1.628059387207031 49 3.636360168457031 L 49 16.3636302947998 C 49 18.37194061279297 47.99134063720703 20 46.74710845947266 20 L 2.25286865234375 20 C 1.008640289306641 20 0 18.37194061279297 0 16.3636302947998 L 0 3.636360168457031 C 0 1.628059387207031 1.008640289306641 0 2.25286865234375 0 Z" stroke="none" fill="#4d3d05"/>
+              </g>
+              <text id="Ongoing-2" data-name="Ongoing" transform="translate(8 13)" font-size="9" font-family="SourceSans3-Semibold, 'Source Sans \33 '" font-weight="600"><tspan x="0" y="0">Ongoing</tspan></text>
+            </g>
+          </g>
+          <g id="Group_10646" data-name="Group 10646" transform="translate(344 272)">
+            <g id="Filled_button_S" data-name="Filled button S" transform="translate(1100 403)">
+              <rect id="Rectangle_1" data-name="Rectangle 1" width="80" height="24" rx="4" fill="#f6932f"/>
+              <g id="Group_7580" data-name="Group 7580" transform="translate(-59.382 1.5)">
+                <text id="Edit" transform="translate(90.881 14)" fill="#2e1500" font-size="10" font-family="SourceSans3-Medium, 'Source Sans \33 '" font-weight="500"><tspan x="0" y="0">Edit</tspan></text>
+              </g>
+            </g>
+          </g>
+        </g>
+        <line id="Line_1083" data-name="Line 1083" x2="734" transform="translate(830 713)" fill="none" stroke="#c2c6d1" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
