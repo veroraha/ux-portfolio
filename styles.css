@@ -2151,7 +2151,7 @@ body,
   margin: 1rem 0 0 0.5rem;
   padding: 0.35rem 0.65rem;
   border-radius: 0.25rem;
-  background: #7b7b7b;
+  background: #121316;
   color: #e0e0e0;
   font-size: 0.875rem;
   font-weight: 700;
@@ -2159,6 +2159,12 @@ body,
 }
 .ios-files-page .finder-project-qualifier[hidden] {
   display: none;
+}
+
+@media (max-width: 600px) {
+  .ios-files-page .finder-project-qualifier {
+    margin-left: 0;
+  }
 }
 /* Project metadata beneath the selected project summary. */
 .ios-files-page .finder-information {
