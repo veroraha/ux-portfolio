@@ -2146,6 +2146,20 @@ body,
 .ios-files-page .finder-work-tag--earlier {
   background: var(--secondary-accent-color);
 }
+.ios-files-page .finder-project-qualifier {
+  display: inline-block;
+  margin: 1rem 0 0 0.5rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.25rem;
+  background: #7777E3;
+  color: #e0e0e0;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.ios-files-page .finder-project-qualifier[hidden] {
+  display: none;
+}
 /* Project metadata beneath the selected project summary. */
 .ios-files-page .finder-information {
   margin-top: 2rem;
