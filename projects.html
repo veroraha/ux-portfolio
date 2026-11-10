@@ -49,7 +49,7 @@
 				</section>
 				<section class="finder-project-pane" aria-label="Choose a project preview">
 					<div class="ios-file-grid">
-						<button class="ios-file-item" type="button" data-project="bah" data-href="/projects/bah" data-label="Mission support application" data-description="UX design and product ownership of an operational tool for the United States government" data-work-type="Professional work" data-work-type-class="professional" aria-label="Preview Mission Support project" aria-pressed="true">
+						<button class="ios-file-item" type="button" data-project="bah" data-href="/projects/bah" data-label="Mission support application" data-description="UX design and product ownership of an operational tool" data-work-type="Professional work" data-work-type-class="professional" aria-label="Preview Mission Support project" aria-pressed="true">
 							<span class="ios-file-icon ios-file-icon--blue" aria-hidden="true">
 								<img src="/bah/bah-mockup.svg" alt="" />
 							</span>
@@ -67,7 +67,7 @@
 					</div>
 				</section>
 			</div>
-			<aside class="finder-right-pane" aria-label="Selected project"><div class="finder-project-copy"><span class="finder-selected-label" aria-live="polite">Mission support application</span><p class="finder-selected-description" aria-live="polite">UX design and product ownership of an operational tool for the United States government</p><span class="finder-work-tag finder-work-tag--professional" aria-live="polite">Professional work</span><span class="finder-project-qualifier" aria-live="polite" hidden></span><section class="finder-information" aria-label="Project information"><h4>Information</h4><div class="finder-information-row"><span>Created</span><span>2021</span></div><div class="finder-information-row finder-modified-row" hidden><span>Modified</span><span>Present</span></div></section><a class="finder-view-project" href="/projects/bah"><span>View project</span><svg class="nav-icon finder-view-project-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 12h14M12 5.5l6.5 6.5-6.5 6.5"/></svg></a></div></aside>
+			<aside class="finder-right-pane" aria-label="Selected project"><div class="finder-project-copy"><span class="finder-selected-label" aria-live="polite">Mission support application</span><p class="finder-selected-description" aria-live="polite">UX design and product ownership of an operational tool</p><span class="finder-work-tag finder-work-tag--professional" aria-live="polite">Professional work</span><span class="finder-project-qualifier" aria-live="polite" hidden></span><section class="finder-information" aria-label="Project information"><h4>Information</h4><div class="finder-information-row"><span>Created</span><span>2021</span></div><div class="finder-information-row finder-modified-row" hidden><span>Modified</span><span>Present</span></div></section><a class="finder-view-project" href="/projects/bah"><span>View project</span><svg class="nav-icon finder-view-project-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 12h14M12 5.5l6.5 6.5-6.5 6.5"/></svg></a></div></aside>
 		</div>
 	</main>
 	<script>
@@ -92,7 +92,7 @@
 					const selectedLabel = document.querySelector('.finder-selected-label');
 					if (selectedLabel) selectedLabel.textContent = button.dataset.label;
 					const selectedDescription = document.querySelector('.finder-selected-description');
-					if (selectedDescription) selectedDescription.textContent = button.dataset.description || 'UX design and product ownership of an operational tool for the United States government';
+					if (selectedDescription) selectedDescription.textContent = button.dataset.description || 'UX design and product ownership of an operational tool';
 					const modifiedRow = document.querySelector('.finder-modified-row');
 					if (modifiedRow) modifiedRow.hidden = button.dataset.project !== 'bah';
 					const workTag = document.querySelector('.finder-work-tag');
