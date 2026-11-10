@@ -475,7 +475,7 @@ body:has(.home-page) .page-header {
 }
 
 .case-study-mockup-row {
-	--mockup-gap: 0.65rem;
+	--mockup-gap: 2rem;
 	display: grid;
 	grid-template-columns: repeat(4, minmax(0, 1fr));
 	align-items: start;
